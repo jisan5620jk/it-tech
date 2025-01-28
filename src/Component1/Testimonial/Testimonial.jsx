@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import TestimonialNavigation from './TestimonialNavigation';
+import TestimonialNavigation from './TestimonialNavigation';         
 
 const testiData = [
   {
