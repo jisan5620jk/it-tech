@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
-import bannerImg from '/images/hero-thumb.png';
+import bannerImg from '/images/single-seo.png';
 import bannerShape from '/images/hero-shape.png';
 import subTilteShape from '/images/hero-title-shape1.png';
 import titleShape from '/images/hero-title-shape2.png';
-import bannerReview from '/images/rating-shape.png';
+import bannerReview from '/images/google.png';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
+            <h5 className='font-Rajdhani text-SecondaryColor-0 text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
               <img
                 src={subTilteShape}
                 alt='Shape'
@@ -20,7 +20,7 @@ const Banner = () => {
               />
               Best software agency
             </h5>
-            <h1 className='font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
+            <h1 className='font-Rajdhani font-extrabold text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
               Convert Idea to
               <br />
               <span className='flex items-center gap-4'>
@@ -32,7 +32,7 @@ const Banner = () => {
                 Your Business
               </span>
             </h1>
-            <p className='font-Nunito sm:text-xl text-white mb-10 mt-6'>
+            <p className='font-Nunito sm:text-xl text-SecondaryColor-0 mb-10 mt-6'>
               Continually formulate B2C partnerships orthogonal software
               <br className='hidden 2xl:block' /> maintainable quality through
               low budgets
@@ -52,7 +52,10 @@ const Banner = () => {
               </Link>
             </div>
             <div>
-              <img src={bannerReview} alt="Image" />
+              <img
+                src={bannerReview}
+                alt='Image'
+              />
             </div>
           </div>
           <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>

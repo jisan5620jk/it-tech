@@ -7,20 +7,16 @@ const CounterCard = ({
   counterSuffex,
 }) => {
   return (
-    <div
-      className="text-center relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-[1px] before:h-full before:bg-gradient-to-b before:from-transparent before:via-white before:to-transparent />"
-    >
-      <div>
+    <div className="text-center">
+      <div className="mt-3">
         <CountUp
           start={-11}
           end={counterNumber}
           suffix={counterSuffex}
-          className="font-Rajdhani text-[50px] text-white font-bold"
+          className="font-Rajdhani text-[56px] text-white font-bold"
         />
       </div>
-      <p className="font-Nunito text-white opacity-80 capitalize">
-        {counterDesc}
-      </p>
+      <p className="font-Nunito text-[15px] text-TextColor-0 uppercase">{counterDesc}</p>
     </div>
   );
 };

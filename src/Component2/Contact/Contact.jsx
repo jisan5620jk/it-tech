@@ -1,44 +1,48 @@
-import { BiRightTopArrowCircle } from "react-icons/bi";
+/* eslint-disable no-unused-vars */
 import { FaPhoneAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import contactThumb from "/images/contact-thumb.png";
-import contactShape from "/images/contact-shape.png";
+import ContactCard from "./ContactCard";
+import { HiOutlineMail } from "react-icons/hi";
+import { LuClock4 } from "react-icons/lu";
+
+const processData = [
+  {
+    id: 1,
+    contactIcon: <FaPhoneAlt />,
+    contactSubTitle: "Call Us  Anytime",
+    contactTitle: "+123 (4567) 890",
+  },
+  {
+    id: 2,
+    contactIcon: <HiOutlineMail />,
+    contactSubTitle: "Send E-Mail",
+    contactTitle: "info@gmail.com",
+  },
+  {
+    id: 3,
+    contactIcon: <LuClock4 />,
+    contactSubTitle: "Opening Hours",
+    contactTitle: "Mon - Fri (8.00 - 5.00",
+  },
+];
 
 const Contact = () => {
   return (
-    <section className="bg-[url('/images/contact-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1100px] sm:h-[1250px] lg:h-[732px] flex items-center relative">
+    <section className="py-[120px] bg-[url('/images/contact-info-bg.png')] bg-cover bg-no-repeat bg-center">
       <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0">
-          <div className="pt-[130px]">
-            <div className="w-[82px] h-[82px] rounded-full bg-[#1e1e8c] text-white flex items-center justify-center relative before:absolute before:-left-[9px] before:-top-[9px] before:w-[100px] before:h-[100px] before:rounded-full before:border-2 before:border-PrimaryColor-0 before:border-dashed before:animate-rotational">
-              <FaPhoneAlt size={"26"} />
-            </div>
-            <h5 className="font-Rajdhani font-medium text-white text-[22px] mt-8 mb-4">
-              Call Us Anytime
-            </h5>
-            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white">
-              +980 123 (4567) 890
-            </h1>
-            <p className="font-Nunito text-TextColor-0 text-lg mt-6 mb-2">
-              Professionally optimize interdependent intellectual interoperable{" "}
-              <br className="hidden sm:block lg:hidden xl:block" />
-              best practices. Progressively fabricate
-            </p>
-            <Link to={"/about"} className="mt-7 inline-block">
-              <button className="primary-btn3">
-                {`More About`}
-                <BiRightTopArrowCircle size={"20"} />
-              </button>
-            </Link>
-          </div>
-          <div className="flex lg:justify-end 2xl:justify-center 2xl:ml-20 relative">
-            <img src={contactThumb} draggable={false} />
-            <img
-              src={contactShape}
-              draggable={false}
-              className="absolute lg:top-32 2xl:top-48 left-0 lg:-left-20 2xl:-left-28 animate-swing hidden md:block"
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10">
+          {processData.map(
+            ({ id, contactIcon, contactSubTitle, contactTitle }) => {
+              return (
+                <div key={id}>
+                  <ContactCard
+                    contactIcon={contactIcon}
+                    contactSubTitle={contactSubTitle}
+                    contactTitle={contactTitle}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
