@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import bannerImg from '/images/single-seo.png';
 import bannerShape from '/images/hero-shape.png';
 import subTilteShape from '/images/hero-title-shape1.png';
-import titleShape from '/images/hero-title-shape2.png';
+import titleShape from '/images/horen.png';
 import bannerReview from '/images/google.png';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
@@ -21,16 +21,17 @@ const Banner = () => {
               Best software agency
             </h5>
             <h1 className='font-Rajdhani font-extrabold text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
-              Convert Idea to
-              <br />
-              <span className='flex items-center gap-4'>
+              <div className='flex items-center gap-6'>
+                Dominate
                 <img
                   src={titleShape}
                   alt='Shape'
-                  className='animate-bounce'
-                />{' '}
-                Your Business
-              </span>
+                  className='animate-swing'
+                />
+                Search
+              </div>
+              Results and Expand <br />
+              Your Reach
             </h1>
             <p className='font-Nunito sm:text-xl text-SecondaryColor-0 mb-10 mt-6'>
               Continually formulate B2C partnerships orthogonal software
@@ -58,11 +59,11 @@ const Banner = () => {
               />
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>
+          <div className='sm:flex justify-center lg:justify-end relative -right-[60px] hidden'>
             <img
               src={bannerImg}
               draggable='false'
-              className=':w-[inherit]'
+              className='2xl:w-[inherit]'
             />
             <img
               src={bannerShape}
