@@ -45,7 +45,7 @@ const provideData = [
 
 const Provide = () => {
   return (
-    <section className='py-28 relative bg-white z-10 '>
+    <section className='pt-28 relative bg-white'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -68,7 +68,7 @@ const Provide = () => {
           </h1>
         </div>
       </div>
-      <div className='mt-[46px] relative overflow-hidden bg-[url(/images/service-bg21.png)] bg-cover bg-center max-w-[1490px] w-full mx-auto rounded-lg py-[100px]'>
+      <div className='mt-[46px] relative z-10 overflow-hidden bg-[url(/images/service-bg21.png)] bg-cover bg-center max-w-[1490px] w-full mx-auto rounded-lg py-[100px]'>
         <div className='Container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10'>
           {provideData.map(
             ({

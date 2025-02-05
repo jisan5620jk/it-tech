@@ -98,6 +98,14 @@ export default {
           from: { transform: 'rotate(0deg)' },
           to: { transform: 'rotate(360deg)' },
         },
+        wobble_vertical: {
+          '16.65%': { transform: 'translateY(8px)' },
+          '33.3%': { transform: 'translateY(-6px)' },
+          '49.95%': { transform: 'translateY(4px)' },
+          '66.6%': { transform: 'translateY(-2px)' },
+          '83.25%': { transform: 'translateY(1px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -113,6 +121,7 @@ export default {
         swing: 'swing 1s ease-in-out 1s forwards infinite alternate',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
+        wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',
