@@ -10,6 +10,7 @@ export default {
       colors: {
         PrimaryColor: ['#0c5adb'],
         PrimaryColor2: ['#1a90ff'],
+        PrimaryColor3: ['#3326fc'],
         SecondaryColor: ['#021533'],
         HeadingColor: ['#041424'],
         TextColor: ['#b6b9c0'],

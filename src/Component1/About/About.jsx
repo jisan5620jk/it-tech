@@ -1,101 +1,156 @@
-import aboutThumb from '/images/about-thumb.png';
-import aboutIcon from '/images/about-icon1.png';
+import aboutThumb from '/images/left-img-1.png';
+import aboutThumb2 from '/images/about-1.png';
+import titleShape from '/images/sub-title-shape.png';
+import itemIcon from '/images/tam1.png';
+import itemIcon2 from '/images/terget-1.png';
+import itemIcon3 from '/images/time.png';
+import itemIcon4 from '/images/message.png';
+import arrowShape from '/images/arrow-shape.png';
 import { Link } from 'react-router-dom';
-import { RiCheckFill } from 'react-icons/ri';
-import { IoMdPlay } from 'react-icons/io';
-import { useState } from 'react';
-import FsLightbox from 'fslightbox-react';
-import { BiRightTopArrowCircle } from 'react-icons/bi';
+import OnScrollCounter from './OnScrollCounter';
+import { AiOutlineRise } from 'react-icons/ai';
 
 const About = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <section className='pt-[220px] pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='bg-[url(/images/banner-1.png)] py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
-          <div className='relative z-10'>
+          <div className='relative z-10 flex items-start gap-7 max-w-[712px] w-full -ml-[160px]'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='md:w-full lg:w 2xl:-ml-[38px] 2xl:max-w-[inherit]'
+              className='w-[inherit]'
             />
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:-ml-[38px]'>
-              <button className='h-14 w-14 sm:h-[100px] sm:w-[100px] border-2 border-white rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping'>
-                <IoMdPlay
-                  size={'30'}
-                  className='text-white'
-                  onClick={() => setToggler(!toggler)}
-                />
-              </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={[
-                  'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                ]}
-              />
-            </div>
-            <div className='absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden'>
-              <div>
-                <img
-                  src={aboutIcon}
-                  draggable={false}
-                />
+            <img
+              src={aboutThumb2}
+              draggable='false'
+              className='w-[inherit]'
+            />
+            <div className='absolute bottom-0 left-[14.5rem] text-center px-7 flex flex-col items-center justify-center size-[240px] bg-gradient-to-r to-PrimaryColor3-0 from-PrimaryColor2-0 rounded-xl'>
+              <div className='flex items-center justify-center text-white'>
+                <AiOutlineRise size={40} />
               </div>
-              <div>
-                <h5 className='font-Rajdhani font-semibold text-xl leading-8 text-HeadingColor-0'>
-                  Award Wining
-                </h5>
-                <h5 className='font-Rajdhani font-semibold text-xl leading-8 text-HeadingColor-0 border-t border-HeadingColor-0'>
-                  Best Services
-                </h5>
+              <div className='text-[42px] font-semibold font-Rajdhani text-white flex items-center justify-center'>
+                <h2 className=' font-Rajdhani'>+</h2>
+                <OnScrollCounter
+                  start={0}
+                  end={300}
+                  duration={3000}
+                />
+                <h2 className=' font-Rajdhani'>%</h2>
               </div>
+              <h6 className='font-Nunito text-lg text-white'>Growing Organic Traffics</h6>
             </div>
           </div>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
-              IT Support For Business
+            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4'>
-              Ensuring Your Success Trusted <br />
-              IT Services Source
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              Transform Your Website into a<br />
+              Revenue-Generating Machine
+              <br />
+              Achieve Online Success
             </h1>
             <p className='font-Nunito text-TextColor2-0 pb-7'>
-              Monotonectally synergize granular markets and front markets.
-              Collaboratively visualize strategic infomediaries after multimedia
-              based models. Synergistically task state of the art
-              infrastructures for
+              Competently leverage existing top-line bandwidth vis-a-vis
+              client-centric supply chains. Enthusiastically maximize cost
+              effective technologies
             </p>
-            <div className='flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center'>
-              <ul>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  Holisticly matrix highly modelling
+            <div className='flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center mb-11'>
+              <ul className='grid items-center grid-cols-2 gap-8'>
+                <li className='flex items-center gap-4'>
+                  <div>
+                    <img
+                      src={itemIcon}
+                      draggable={false}
+                      alt='Icon'
+                    />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-[22px] leading-[28px] text-HeadingColor-0'>
+                    Real time Performance Report send
+                  </h5>
                 </li>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  Growing audience for Business
+                <li className='flex items-center gap-4'>
+                  <div>
+                    <img
+                      src={itemIcon2}
+                      draggable={false}
+                      alt='Icon2'
+                    />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-[22px] leading-[28px] text-HeadingColor-0'>
+                    User Friendly SEO Dashboard
+                  </h5>
                 </li>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  24/7 Technical Supports
+                <li className='flex items-center gap-4'>
+                  <div>
+                    <img
+                      src={itemIcon3}
+                      draggable={false}
+                      alt='Icon3'
+                    />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-[22px] leading-[28px] text-HeadingColor-0'>
+                    Local SEO & Business Integrations
+                  </h5>
+                </li>
+                <li className='flex items-center gap-4'>
+                  <div>
+                    <img
+                      src={itemIcon4}
+                      draggable={false}
+                      alt='Icon4'
+                    />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-[22px] leading-[28px] text-HeadingColor-0'>
+                    Social Media Integration and Sharing
+                  </h5>
                 </li>
               </ul>
             </div>
-            <Link
-              to={'/about'}
-              className='mt-7 inline-block'
-            >
-              <button className='primary-btn3'>
-                {`More About`}
-                <BiRightTopArrowCircle size={'20'} />
-              </button>
-            </Link>
+            <div className='flex items-center gap-16'>
+              <Link
+                to={'/about'}
+                className='inline-block'
+              >
+                <button className='primary-btn'>
+                  {`More About`}
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </button>
+              </Link>
+              <div>
+                <img
+                  src={arrowShape}
+                  draggable={false}
+                  alt='Shape'
+                  className='animate-dance3'
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

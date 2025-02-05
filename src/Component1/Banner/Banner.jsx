@@ -1,29 +1,30 @@
-import { Link } from 'react-router-dom';
 import bannerImg from '/images/single-seo.png';
-import bannerShape from '/images/hero-shape.png';
+import bannerShape from '/images/shape-3.png';
 import subTilteShape from '/images/hero-title-shape1.png';
 import titleShape from '/images/horen.png';
 import bannerReview from '/images/google.png';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { GoGlobe } from 'react-icons/go';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[950px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-SecondaryColor-0 text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
+            <h5 className='font-Rajdhani bg-gradient-to-r to-PrimaryColor3-0 to-50% from-PrimaryColor2-0 bg-clip-text text-transparent text-xl font-semibold flex items-center gap-2 mb-5 uppercase'>
               <img
+                draggable='false'
                 src={subTilteShape}
                 alt='Shape'
                 className='animate-swing'
               />
-              Best software agency
+              Best agency based in usa
             </h5>
-            <h1 className='font-Rajdhani font-extrabold text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
+            <h1 className='font-Rajdhani font-extrabold tracking-tight text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[80px] 2xl:text-[80px] 2xl:leading-[80px]'>
               <div className='flex items-center gap-6'>
                 Dominate
                 <img
+                  draggable='false'
                   src={titleShape}
                   alt='Shape'
                   className='animate-swing'
@@ -33,27 +34,54 @@ const Banner = () => {
               Results and Expand <br />
               Your Reach
             </h1>
-            <p className='font-Nunito sm:text-xl text-SecondaryColor-0 mb-10 mt-6'>
+            <p className='font-Nunito sm:text-xl text-TextColor2-0 mb-8 mt-3'>
               Continually formulate B2C partnerships orthogonal software
               <br className='hidden 2xl:block' /> maintainable quality through
               low budgets
             </p>
-            <div className='flex flex-col sm:flex-row gap-5 mb-9'>
-              <Link to={'/about'}>
-                <button className='flex items-center gap-2 border border-PrimaryColor-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase bg-gradient-to-b to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
-                  {`Learn More`}
-                  <FaArrowRightLong size={'18'} />
-                </button>
-              </Link>
-              <Link to={'/about'}>
-                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
-                  {`Contact Us`}
-                  <FaArrowRightLong size={'18'} />
-                </button>
-              </Link>
+            <div className='relative'>
+              <div className='relative'>
+                <input
+                  type='text'
+                  id='search'
+                  name='search'
+                  placeholder='Your Website URL'
+                  required
+                  className='w-full max-w-[580px] h-[62px] py-3 px-12 rounded-full border font-Nunito border-PrimaryColor-0 border-opacity-30 bg-transparent outline-none'
+                />
+                <span className='absolute top-1/2 -translate-y-1/2 left-7 text-PrimaryColor3-0'>
+                  <GoGlobe />
+                </span>
+              </div>
+              <button
+                type='submit'
+                className='absolute top-1/2 right-0 -translate-y-1/2 banner-btn flex items-center gap-2 px-9 py-[17px] font-Rajdhani text-lg uppercase font-medium rounded-r-full text-white bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 transition-all duration-500'
+              >
+                Analyze Now
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-3 w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
+              </button>
             </div>
-            <div>
+            <div className='mt-10'>
               <img
+                draggable='false'
                 src={bannerReview}
                 alt='Image'
               />
@@ -68,7 +96,7 @@ const Banner = () => {
             <img
               src={bannerShape}
               draggable={false}
-              className='absolute -top-7 right-0 md:right-20 lg:right-0 xl:right-0 2xl:right-[5rem] animate-rotational hidden sm:block'
+              className='absolute bottom-[60px] right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[90px] animate-wiggle hidden sm:block'
             />
           </div>
         </div>
