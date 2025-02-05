@@ -62,7 +62,7 @@ const About = () => {
               client-centric supply chains. Enthusiastically maximize cost
               effective technologies
             </p>
-            <div className='flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center mb-11'>
+            <div className='mb-11'>
               <ul className='grid items-center grid-cols-2 gap-8'>
                 <li className='flex items-center gap-4'>
                   <div>
