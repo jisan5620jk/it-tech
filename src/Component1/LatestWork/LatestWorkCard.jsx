@@ -10,7 +10,7 @@ const LatestWorkCard = ({
 }) => {
   return (
     <div className='pl-[30px] pt-[30px]'>
-      <div className='bg-BodyBg3-0 rounded-lg relative z-10  before:absolute before:top-0 before:right-0 before:bg-gradient-to-br before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 before:rounded-lg hover:before:w-full hover:before:left-0'>
+      <div className='bg-BodyBg3-0 rounded-lg relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-br before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 before:rounded-lg hover:before:w-full hover:before:left-0'>
         <div className='-ml-[30px] relative -top-[30px]'>
           <img
             src={latestWorkCardImg}

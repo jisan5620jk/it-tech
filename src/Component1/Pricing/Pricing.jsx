@@ -1,171 +1,175 @@
-import { Link } from "react-router-dom";
-import PricingAccordion from "./Accordion/PricingAccordion";
-import { FaCheck } from "react-icons/fa6";
-import CountUp from "react-countup";
-import { useEffect } from "react";
+import titleShape from '/images/sub-title-shape.png';
+import './pricing-box.css';
+import OnScrollCounter from './OnScrollCounter';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
-  //  All Faqs and  answers.
-  const Faqs = [
-    {
-      title: "How to increase products sales 2024?",
-      text: "Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardinate flexible social marketing working technologies and robust services available",
-      active: true,
-    },
-    {
-      title: "What kinds of web traffics?",
-      text: "Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardinate flexible social marketing working technologies and robust services available",
-      active: false,
-    },
-    {
-      title: "How to generate organic audience?",
-      text: "Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardinate flexible social marketing working technologies and robust services available",
-      active: false,
-    },
-    {
-      title: "Do you have any custom services?",
-      text: "Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardinate flexible social marketing working technologies and robust services available",
-      active: false,
-    },
-  ];
+  let isMonthly = true;
 
-  useEffect(() => {
-    const handleMouseEnter = (event) => {
-      event.target.classList.add("active");
+  function togglePlans() {
+    isMonthly = !isMonthly;
 
-      // Remove 'active' class from siblings
-      const parent = event.target.parentElement;
-      if (parent) {
-        const siblings = parent.querySelectorAll(".pricing-box");
-        siblings.forEach((sibling) => {
-          if (sibling !== event.target) {
-            sibling.classList.remove("active");
-          }
-        });
-      }
-    };
+    // Toggle the content
+    document.getElementById('monthly').classList.toggle('active', isMonthly);
+    document.getElementById('yearly').classList.toggle('active', !isMonthly);
 
-    const elements = document.querySelectorAll(".pricing-box");
-    elements.forEach((element) => {
-      element.addEventListener("mouseenter", handleMouseEnter);
-    });
+    // Move the toggle circle
+    const toggleCircle = document.getElementById('toggleCircle');
+    toggleCircle.style.transform = isMonthly
+      ? 'translateX(0)'
+      : 'translateX(30px)';
+  }
 
-    // Clean up event listeners when component unmounts
-    return () => {
-      elements.forEach((element) => {
-        element.removeEventListener("mouseenter", handleMouseEnter);
-      });
-    };
-  }, []);
+  // useEffect(() => {
+  //   const handleMouseEnter = (event) => {
+  //     event.target.classList.add('active');
+
+  //     // Remove 'active' class from siblings
+  //     const parent = event.target.parentElement;
+  //     if (parent) {
+  //       const siblings = parent.querySelectorAll('.pricing-box');
+  //       siblings.forEach((sibling) => {
+  //         if (sibling !== event.target) {
+  //           sibling.classList.remove('active');
+  //         }
+  //       });
+  //     }
+  //   };
+
+  //   const elements = document.querySelectorAll('.pricing-box');
+  //   elements.forEach((element) => {
+  //     element.addEventListener('mouseenter', handleMouseEnter);
+  //   });
+
+  //   // Clean up event listeners when component unmounts
+  //   return () => {
+  //     elements.forEach((element) => {
+  //       element.removeEventListener('mouseenter', handleMouseEnter);
+  //     });
+  //   };
+  // }, []);
 
   return (
-    <section
-      className="relative overflow-hidden py-28 bg-[url('/images/pricing-bg.jpg')] bg-cover bg-no-repeat
-     bg-center"
-    >
-      <div className="Container">
-        <div className="grid grid-cols-1 gap-10 lg:gap-16 xl:gap-24 2xl:gap-[140px] lg:grid-cols-2 items-center">
-          <div className="w-full mx-auto">
-            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-              Pricing Plans
+    <section className="relative overflow-hidden py-28 bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
+      <div className='Container'>
+        <div className='flex justify-between items-center'>
+          <div className='w-full mx-auto'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              About Us
             </h5>
-            <h1 className="font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[32px] xl:leading-[42px] 2xl:text-[37px] 2xl:leading-[47px] text-white mt-[18px] mb-12">
-              Our Best Affordable Pricing Plan <br />
-              Choose Your Plans
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              Transform Your Website into a<br />
+              Revenue-Generating Machine
+              <br />
+              Achieve Online Success
             </h1>
-            <div>
-              {Faqs.map((faq, index) => (
-                <PricingAccordion
-                  key={index}
-                  faqIcon={faq.faqIcon}
-                  title={faq.title}
-                  id={`faqs-${index}`}
-                  active={faq.active}
-                >
-                  {faq.text}
-                </PricingAccordion>
-              ))}
-            </div>
           </div>
+          <div
+            className='toggle-container'
+            onClick={togglePlans}
+          >
+            <div>Monthly</div>
+            <div className={`toggle ${isMonthly ? 'active' : ''}`}>
+              <div
+                id='toggleCircle'
+                className='toggle-circle'
+                style={{
+                  transform: isMonthly ? 'translateX(0)' : 'translateX(30px)',
+                }}
+              ></div>
+            </div>
+            <div>Yearly</div>
+          </div>
+        </div>
+        <div className='grid grid-cols-3 gap-7'>
           <div>
-            <div className="pricing-box active group bg-white rounded-md px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500 mb-[50px]">
-              <h6 className="pricing-quality px-[22px] py-[5px] text-lg bg-PrimaryColor-0 rounded font-Rajdhani text-white font-medium transition-all duration-500 absolute -top-[19px] right-7">
-                Popular
-              </h6>
-              <div className="absolute top-6 sm:top-10 right-7 flex items-baseline gap-1">
-                <CountUp
-                  start={-9}
-                  end={99}
-                  prefix="$"
-                  suffix="."
-                  className="pricing-price text-[40px] font-Rajdhani font-semibold text-HeadingColor-0 transition-all duration-500"
-                />
-                <h6 className="pricing-price font-Rajdhani font-semibold text-lg transition-all duration-500">
-                  99
-                </h6>
-              </div>
-              <h6 className="pricing-limit font-Rajdhani font-semibold text-lg transition-all duration-500 mb-3">
-                FOR 1 YEARS
-              </h6>
-              <div className="flex gap-5">
-                <div className="pricing-icon w-[42px] h-[42px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center relative z-10 overflow-hidden transition-all duration-500 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:transition-all before:duration-500 before:-z-10 before:scale-0 group-hover:before:scale-100 group-hover:text-PrimaryColor-0 mt-3">
-                  <FaCheck size={"20"} />
-                </div>
-                <div className="flex-1">
-                  <h5 className="pricing-title font-Rajdhani font-semibold mt-2 sm:mt-2 text-2xl sm:text-[28px] text-HeadingColor-0 transition-all duration-500 mb-1">
-                    19 Days For Free
-                  </h5>
-                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[26px]">
-                    Multifunctional human capital after awesome{" "}
-                    <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
-                    superior scenarios my coordinate
+            <div
+              id='monthly'
+              className={`tab-content ${isMonthly ? 'active' : ''}`}
+            >
+              <div className='group bg-HeadingColor-0 bg-opacity-5 px-10 py-10'>
+                <h5 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0'>
+                  Basic Plan
+                </h5>
+                <div className='flex items-center gap-1'>
+                  <h6 className='font-Rajdhani font-semibold text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={30}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 ml-3'>
+                    Competently leverage <br /> maximize done
                   </p>
-                  <Link to={"/"}>
-                    <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
-                      Purchaces
-                    </button>
-                  </Link>
                 </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-5 text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
               </div>
             </div>
-            <div className="pricing-box group bg-white rounded-md px-[30px] pt-9 pb-10 relative z-10  before:absolute before:top-0 before:right-0 before:-z-10 before:w-0 before:h-full before:bg-PrimaryColor-0 before:rounded-md before:transition-all before:duration-500">
-              <h6 className="pricing-quality px-[22px] py-[5px] text-lg bg-PrimaryColor-0 rounded font-Rajdhani text-white font-medium transition-all duration-500 absolute -top-[19px] right-7">
-                Business
-              </h6>
-              <div className="absolute top-6 sm:top-10 right-7 flex items-baseline gap-1">
-                <CountUp
-                  start={-9}
-                  end={19}
-                  prefix="$"
-                  suffix="."
-                  className="pricing-price text-[40px] font-Rajdhani font-semibold text-HeadingColor-0 transition-all duration-500"
-                />
-                <h6 className="pricing-price font-Rajdhani font-semibold text-lg transition-all duration-500">
-                  99
-                </h6>
-              </div>
-              <h6 className="pricing-limit font-Rajdhani font-semibold text-lg transition-all duration-500 mb-3">
-                FOR 1 MONTH
-              </h6>
-              <div className="flex gap-5">
-                <div className="pricing-icon w-[42px] h-[42px] rounded bg-PrimaryColor-0 text-white flex justify-center items-center relative z-10 overflow-hidden transition-all duration-500 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:transition-all before:duration-500 before:-z-10 before:scale-0 group-hover:before:scale-100 group-hover:text-PrimaryColor-0 mt-3">
-                  <FaCheck size={"20"} />
-                </div>
-                <div className="flex-1">
-                  <h5 className="pricing-title font-Rajdhani font-semibold mt-2 sm:mt-2 text-2xl sm:text-[28px] text-HeadingColor-0 transition-all duration-500 mb-1">
-                    09 Days For Free
-                  </h5>
-                  <p className="pricing-desc font-Nunito text-TextColor2-0 transition-all duration-500 mb-[26px]">
-                    Multifunctional human capital after awesome{" "}
-                    <br className="hidden sm:block lg:hidden 2xl:block" />{" "}
-                    superior scenarios my coordinate
-                  </p>
-                  <Link to={"/"}>
-                    <button className="pricing-btn font-Rajdhani font-medium text-lg text-HeadingColor-0 border border-PrimaryColor-0 rounded px-7 py-2 transition-all duration-500">
-                      Purchaces
-                    </button>
-                  </Link>
-                </div>
+
+            <div
+              id='yearly'
+              className={`tab-content ${isMonthly ? '' : 'active'}`}
+            >
+              <div className='group bg-HeadingColor-0 bg-opacity-5'>
+                <h2>Yearly Plan</h2>
               </div>
             </div>
           </div>

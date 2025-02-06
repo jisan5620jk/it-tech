@@ -140,6 +140,7 @@ body {
 
 .banner-btn:hover .icon-style g:nth-of-type(1),
 .latest-work-btn:hover .icon-style g:nth-of-type(1),
+.pricing-btn:hover .icon-style g:nth-of-type(1),
 .primary-btn:hover .icon-style g:nth-of-type(1) {
   transform: translateX(var(--qode-hover-move-x))
     translateY(calc(-1 * var(--qode-hover-move-y))) translateZ(0);
@@ -149,6 +150,7 @@ body {
 
 .banner-btn:hover .icon-style g:nth-of-type(2),
 .latest-work-btn:hover .icon-style g:nth-of-type(2),
+.pricing-btn:hover .icon-style g:nth-of-type(2),
 .primary-btn:hover .icon-style g:nth-of-type(2) {
   transform: translateX(0) translateY(0) translateZ(0);
   opacity: 1;
