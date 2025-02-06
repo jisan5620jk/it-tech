@@ -8,6 +8,7 @@ import WhyChooseCard from './WhyChooseCard';
 import './why-choose.css';
 import { IoSearchSharp } from 'react-icons/io5';
 import bannerShape from '/images/shape-3.png';
+import whyChooseShape from '/images/choose-google.png';
 
 const WhyChoose = () => {
   useEffect(() => {
@@ -82,6 +83,12 @@ const WhyChoose = () => {
           </div>
           <div>
             <div className='relative'>
+              <img
+                src={whyChooseShape}
+                draggable={false}
+                alt='Shape'
+                className='absolute top-10 right-0 animate-dance2 hidden sm:block'
+              />
               <img
                 src={whyChooseImg}
                 draggable={false}
