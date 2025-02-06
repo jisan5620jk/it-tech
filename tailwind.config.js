@@ -69,6 +69,16 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        fadeInUp: {
+          '0%': {
+            transform: 'translateY(10%)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+        },
         dance2: {
           '0%': { transform: 'translate3d(0, 0, 0)' },
           '50%': {
@@ -121,6 +131,7 @@ export default {
         dance5: 'dance5 10s alternate infinite',
         dance7: 'dance7 4s alternate infinite',
         swing: 'swing 1s ease-in-out 1s forwards infinite alternate',
+        fadeInUp: 'fadeInUp 0.5s linear',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
