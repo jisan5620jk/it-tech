@@ -1,52 +1,46 @@
-/* eslint-disable no-unused-vars */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import TestimonialNavigation from './TestimonialNavigation';         
+import titleShape from '/images/sub-title-shape.png';
+import reviewLogo from '/images/star-1-1.png';
+import testiImg from '/images/author.png';
+import testiQuate from '/images/quote.png';
+import Brand from './Brand';
 
 const testiData = [
   {
     id: 1,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiTitle: 'Design Quality!',
+    testiQuate: testiQuate,
+    testiDesc: `Credibly embrace covalent growth strategies 
+                without out-of-the-box value. Collaboratively 
+                transition focused total linkage`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
+    testiImg: testiImg,
   },
   {
     id: 2,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiTitle: 'Awesome Support!',
+    testiQuate: testiQuate,
+    testiDesc: `Credibly embrace covalent growth strategies 
+                without out-of-the-box value. Collaboratively 
+                transition focused total linkage`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
+    testiName: 'Jhon D. Alexon',
+    testiImg: testiImg,
   },
   {
     id: 3,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
+    testiTitle: 'Best Development!',
+    testiQuate: testiQuate,
+    testiDesc: `Credibly embrace covalent growth strategies 
+                without out-of-the-box value. Collaboratively 
+                transition focused total linkage`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
-  },
-  {
-    id: 4,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
-  },
-  {
-    id: 5,
-    testiDesc: `Completely extend leveraged customer service rather than performance based imperatives.
-                magnetic relationships rather than leveraged e-markets. Rapidiously transform timely niches technology. Enthusiastically e-enable global e-markets for cooperative e-business. Authoritatively deliver highly efficient expertise`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
+    testiName: 'Murad Junaid',
+    testiImg: testiImg,
   },
 ];
 
@@ -61,67 +55,78 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       1400: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
-    },
-  };
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + ' pagination-bullet"></span>';
     },
   };
   return (
-    <section className='testimonial py-28 bg-[url(/images/testi-bg.jpg)] bg-no-repeat bg-cover bg-center relative z-10 overflow-hidden'>
+    <section className='testimonial pt-[135px] pb-28 bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-top bg-HeadingColor-0 relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='text-center'>
-          <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
-            Testimonial
-          </h5>
-          <h1 className='font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0e mt-[18px]'>
-            Customer’s Awesome Feedback <br />
-            About Our Services
-          </h1>
-        </div>
-        <div className='mt-[46px]'>
-          <Swiper
-            {...settings}
-            pagination={pagination}
-            modules={[Pagination]}
-          >
+        <div className='grid grid-cols-3'>
+          <div className='text-left col-span-1'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              Testimonials
+            </h5>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-6'>
+              Trusted by Industry
+              <br />
+              Leaders Customers
+              <br />
+              Testimonials
+            </h1>
             <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className='pt-[80px] md:pt-[150px]'>
-                        <TestimonialCard
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
+              <img
+                src={reviewLogo}
+                draggable='false'
+                alt='Review Logo'
+              />
             </div>
-            <TestimonialNavigation />
-          </Swiper>
+          </div>
+          <div className='col-span-2'>
+            <Swiper {...settings}>
+              <div>
+                {testiData.map(
+                  ({
+                    id,
+                    testiTitle,
+                    testiQuate,
+                    testiRatingIcon,
+                    testiName,
+                    testiImg,
+                    testiDesc,
+                  }) => {
+                    return (
+                      <SwiperSlide key={id}>
+                        <div className=''>
+                          <TestimonialCard
+                            testiTitle={testiTitle}
+                            testiQuate={testiQuate}
+                            testiRatingIcon={testiRatingIcon}
+                            testiName={testiName}
+                            testiImg={testiImg}
+                            testiDesc={testiDesc}
+                          />
+                        </div>
+                      </SwiperSlide>
+                    );
+                  }
+                )}
+              </div>
+            </Swiper>
+          </div>
         </div>
+        <Brand />
       </div>
     </section>
   );

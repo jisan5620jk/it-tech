@@ -10,7 +10,7 @@ import arrowShape from '/images/arrow-shape.png';
 
 const Integrations = () => {
   return (
-    <section className='relative py-28 z-10'>
+    <section className='bg-[url(/images/integration-bg2.png)] bg-cover bg-center bg-no-repeat relative py-28 z-10'>
       <div className='Container'>
         <div className='grid grid-cols-2 items-center'>
           <div>
@@ -75,7 +75,8 @@ const Integrations = () => {
                   </div>
                 </div>
                 <p className='font-Nunito text-TextColor2-0 text-[15px]'>
-                  Revenue Generating for Local<br /> and Global Business
+                  Revenue Generating for Local
+                  <br /> and Global Business
                 </p>
               </div>
             </div>

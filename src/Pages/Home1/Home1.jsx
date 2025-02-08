@@ -6,6 +6,7 @@ import Integrations from "../../Component1/Integrations/Integrations";
 import LatestWork from "../../Component1/LatestWork/LatestWork";
 import Pricing from "../../Component1/Pricing/Pricing";
 import Provide from "../../Component1/Provide/Provide";
+import Testimonial from "../../Component1/Testimonial/Testimonial";
 import WhyChoose from "../../Component1/Whychoose/WhyChoose";
 
 const Home1 = () => {
@@ -20,6 +21,7 @@ const Home1 = () => {
       <CallDoAction />
       <Pricing />
       <Integrations />
+      <Testimonial />
     </>
   );
 };
