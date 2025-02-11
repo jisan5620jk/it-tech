@@ -29,9 +29,7 @@ const About = () => {
               </button>
               <FsLightbox
                 toggler={toggler}
-                sources={[
-                  'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-                ]}
+                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
               />
             </div>
             <div className='absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden'>

@@ -8,6 +8,7 @@ import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';
 import About from '../About/About';
+import Work from '../Work/Work';
 
 const processData = [
   {
@@ -122,6 +123,7 @@ const Feature = () => {
         </div>
       </div>
       <About />
+      <Work />
     </section>
   );
 };
