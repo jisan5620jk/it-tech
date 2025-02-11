@@ -1,53 +1,70 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import FsLightbox from "fslightbox-react";
+import { Link } from 'react-router-dom';
+import bannerImg from '/images/hero-thumb.png';
+import bannerShape from '/images/hero-shape.png';
+import subTilteShape from '/images/hero-title-shape1.png';
+import titleShape from '/images/hero-title-shape2.png';
+import bannerReview from '/images/rating-shape.png';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Banner = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <section className="bg-[url('/images/hero3-bg.jpg')] bg-cover bg-center bg-no-repeat h-[1000px] sm:h-[900px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
-      <div className="Container">
-        <div className="grid gap-16 lg:gap-0 lg:grid-cols-12 items-center">
-          <div className="col-span-9 relative">
-            <h5 className="font-Rajdhani text-white text-xl sm:text-2xl uppercase font-medium flex items-center gap-2 mb-5">
-              Welcome to Toptech
+    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+      <div className='Container'>
+        <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
+          <div className='relative'>
+            <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
+              <img
+                src={subTilteShape}
+                alt='Shape'
+                className='animate-swing'
+              />
+              Best software agency
             </h5>
-            <h1 className="font-Rajdhani font-extrabold text-white text-[26px] leading-[30px] sm:text-[48px] sm:leading-[50px] md:text-[62px] md:leading-[62px] lg:text-[50px] lg:leading-[50px] xl:text-[74px] xl:leading-[74px]">
-              TOP IT SOLUTIONS AGENCY
+            <h1 className='font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
+              Convert Idea to
               <br />
-              IN THE WORLD
+              <span className='flex items-center gap-4'>
+                <img
+                  src={titleShape}
+                  alt='Shape'
+                  className='animate-bounce'
+                />{' '}
+                Your Business
+              </span>
             </h1>
-            <p className="font-Nunito sm:text-[17px] text-white mb-[50px] mt-6 w-full">
-              Play In Order To Make A Business, Brand
-              <br className="sm:hidden" /> Advertising And Marketing Plays An
-              <br className="block sm:hidden md:block" /> Important Role. Similarly, In Making{" "}
-              <br className="sm:hidden" /> Cultivation Business
+            <p className='font-Nunito sm:text-xl text-white mb-10 mt-6'>
+              Continually formulate B2C partnerships orthogonal software
+              <br className='hidden 2xl:block' /> maintainable quality through
+              low budgets
             </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <Link to={"/about"}>
-                <button className="primary-btn3 !py-4 !px-10 !rounded-none">
-                  {`How IT Works`}
+            <div className='flex flex-col sm:flex-row gap-5 mb-9'>
+              <Link to={'/about'}>
+                <button className='flex items-center gap-2 border border-PrimaryColor-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase bg-gradient-to-b to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
+                  {`Learn More`}
+                  <FaArrowRightLong size={'18'} />
                 </button>
               </Link>
-              <Link to={"/service"}>
-                <button className="primary-btn3 !py-4 !px-10 !rounded-none !border-white hover:!border-PrimaryColor-0 !bg-transparent before:!bg-PrimaryColor-0">{`It Services`}</button>
+              <Link to={'/about'}>
+                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
+                  {`Contact Us`}
+                  <FaArrowRightLong size={'18'} />
+                </button>
               </Link>
             </div>
+            <div>
+              <img src={bannerReview} alt="Image" />
+            </div>
           </div>
-          <div className="col-span-3 flex justify-center">
-            <button className="size-[120px] border-2 border-white rounded-full bg-transparent flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-white before:opacity-50 before:-z-10 before:rounded-full before:animate-ping">
-              <span
-                className="text-white uppercase font-Nunito text-2xl"
-                onClick={() => setToggler(!toggler)}
-              >
-                Play
-              </span>
-            </button>
-            <FsLightbox
-              toggler={toggler}
-              sources={[
-                "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-              ]}
+          <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>
+            <img
+              src={bannerImg}
+              draggable='false'
+              className=':w-[inherit]'
+            />
+            <img
+              src={bannerShape}
+              draggable={false}
+              className='absolute -top-7 right-0 md:right-20 lg:right-0 xl:right-0 2xl:right-[5rem] animate-rotational hidden sm:block'
             />
           </div>
         </div>

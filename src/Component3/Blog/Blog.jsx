@@ -48,7 +48,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <section className="py-28">
+    <section className="py-28 bg-BodyBg-0">
       <div className="Container">
         <div className="text-center">
           <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">

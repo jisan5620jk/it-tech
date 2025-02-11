@@ -1,61 +1,55 @@
 /* eslint-disable no-unused-vars */
-import processImg from "/images/process-icon-1.png";
-import processImg2 from "/images/process-icon-2.png";
-import processImg3 from "/images/process-icon-3.png";
-import processImg4 from "/images/process-icon-4.png";
-import boxShape from "/images/process3-shape.png";
-import boxShape2 from "/images/process3-shape2.png";
+import processImg from "/images/process-1.png";
+import processImg2 from "/images/process-2.png";
+import processImg3 from "/images/process-3.png";
+import boxShape from "/images/porcess-shape1.png";
+import boxShape2 from "/images/porcess-shape2.png";
 import ProcessCard from "./ProcessCard";
 
 const processData = [
   {
     id: 1,
     processImg: processImg,
-    boxNumber1: "1",
+    boxNumber1: "01",
     boxShape: boxShape,
-    processTitle: "Select A Project",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processTitle: "Start A Project",
+    processDesc:
+      "Proactively drive maintainable value next mission-critical infrastructures done the new business to planning",
   },
 
   {
     id: 2,
     processImg: processImg2,
-    boxNumber1: "2",
+    boxNumber1: "02",
     boxShape: boxShape2,
     processTitle: "Project Analysis",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processDesc:
+      "Proactively drive maintainable value next mission-critical infrastructures done the new business to planning",
   },
   {
     id: 3,
     processImg: processImg3,
-    boxNumber1: "3",
-    boxShape: boxShape,
-    processTitle: "Start a Project",
-    processDesc: "We have the technology and IT expertise to develop.",
-  },
-  {
-    id: 4,
-    processImg: processImg4,
-    boxNumber1: "4",
+    boxNumber1: "03",
     processTitle: "Deliver to Succes",
-    processDesc: "We have the technology and IT expertise to develop.",
+    processDesc:
+      "Proactively drive maintainable value next mission-critical infrastructures done the new business to planning",
   },
 ];
 
 const Process = () => {
   return (
-    <section className="py-28 relative z-10 ">
+    <section className="pb-10 relative bg-SecondaryColor-0 z-10 ">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            WORK PROCESS
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            Working Process
           </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
-            Working Process For{" "}
-            <span className="text-PrimaryColor-0">Technology</span>
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
+            We Follow the Easy Working Steps
           </h1>
         </div>
-          <div className="mt-[94px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-16">
+        <div className="pb-16 mt-[60px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
             {processData.map(
               ({
                 id,
@@ -78,6 +72,7 @@ const Process = () => {
                 );
               }
             )}
+          </div>
         </div>
       </div>
     </section>

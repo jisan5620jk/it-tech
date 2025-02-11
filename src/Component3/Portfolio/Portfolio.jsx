@@ -1,51 +1,45 @@
 /* eslint-disable no-unused-vars */
 import { FaPlus } from "react-icons/fa6";
-import portfolioThumb from "/images/portfolio4-1.jpg";
-import portfolioThumb2 from "/images/portfolio4-2.jpg";
-import portfolioThumb3 from "/images/portfolio4-3.jpg";
-import portfolioThumb4 from "/images/portfolio4-4.jpg";
+import portfolioThumb from "/images/portfolio-1.png";
+import portfolioThumb2 from "/images/portfolio-2.png";
+import portfolioThumb3 from "/images/portfolio-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 import PortfolioCard from "./PortfolioCard";
 
-const portfolioData = [
+const PortfolioData = [
   {
     id: 1,
     portfolioThumb: portfolioThumb,
-    portfolioSubTilte: "Design",
-    portfolioTitle: "Mobile UI/UX Design",
+    portfolioIcon: "01",
+    portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
     id: 2,
     portfolioThumb: portfolioThumb2,
-    portfolioSubTilte: "Technology",
-    portfolioTitle: "Cyber Security & Protect",
+    portfolioIcon: "02",
+    portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
     id: 3,
     portfolioThumb: portfolioThumb3,
-    portfolioSubTilte: "IT Solution",
-    portfolioTitle: "Website Development",
+    portfolioIcon: "03",
+    portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
   {
     id: 4,
-    portfolioThumb: portfolioThumb4,
-    portfolioSubTilte: "Technology",
-    portfolioTitle: "Cyber Security & Protect",
-    portfolioUrl: "/project_details",
-    portfolioBtn: <FaPlus />,
-  },
-  {
-    id: 5,
-    portfolioThumb: portfolioThumb2,
-    portfolioSubTilte: "IT Solution",
-    portfolioTitle: "Website Development",
+    portfolioThumb: portfolioThumb,
+    portfolioIcon: "04",
+    portfolioTitle: "Business Growth with Toptech Agency ",
     portfolioUrl: "/project_details",
     portfolioBtn: <FaPlus />,
   },
@@ -70,40 +64,47 @@ const Portfolio = () => {
         slidesPerView: 3,
       },
       1400: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className="portfolio2 relative z-10 py-28 bg-white">
+    <section className="portfolio relative z-10 py-28 bg-SecondaryColor-0 before:absolute before:top-0 before:left-0 before:h-[70%] before:w-full before:bg-[url('/images/portfolio-bg.jpg')] before:-z-10 before:bg-center before:bg-cover before:bg-no-repeat -mb-[1px]">
       <div className="Container">
-        <div>
-          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            PORTFOLIO
+        <div className="text-center">
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
           </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-HeadingColor-0 mt-3 mb-4">
-            Our Completed <span className="text-PrimaryColor-0">Projects</span>
+          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-3">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
           </h1>
         </div>
       </div>
-      <div className="mt-[60px] 2xl:mx-[60px]">
-        <Swiper {...settings}>
+      <div className="mt-[60px] 2xl:mx-[100px]">
+        <Swiper {...settings} pagination={pagination} modules={[Pagination]}>
           <div>
-            {portfolioData.map(
+            {PortfolioData.map(
               ({
                 id,
                 portfolioThumb,
-                portfolioSubTilte,
+                portfolioIcon,
                 portfolioTitle,
                 portfolioUrl,
                 portfolioBtn,
               }) => {
                 return (
                   <SwiperSlide key={id}>
-                    <div>
+                    <div className="pb-[90px]">
                       <PortfolioCard
                         portfolioThumb={portfolioThumb}
-                        portfolioSubTilte={portfolioSubTilte}
+                        portfolioIcon={portfolioIcon}
                         portfolioUrl={portfolioUrl}
                         portfolioTitle={portfolioTitle}
                         portfolioBtn={portfolioBtn}

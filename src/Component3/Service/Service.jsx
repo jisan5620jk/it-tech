@@ -1,98 +1,105 @@
 /* eslint-disable no-unused-vars */
-import serviceIcon from "/images/service3-icon1.png";
-import serviceIcon2 from "/images/service3-icon2.png";
-import serviceIcon3 from "/images/service3-icon3.png";
-import serviceIcon4 from "/images/service3-icon4.png";
-import serviceIcon5 from "/images/service3-icon5.png";
-import serviceIcon6 from "/images/service3-icon6.png";
+import serviceIcon from "/images/service-1.png";
+import serviceIcon2 from "/images/service-2.png";
+import serviceIcon3 from "/images/service-3.png";
+import serviceIcon4 from "/images/service-4.png";
+import serviceIcon5 from "/images/service-5.png";
+import serviceIcon6 from "/images/service-6.png";
 import ServiceCard from "./ServiceCard";
-import { FaAnglesRight } from "react-icons/fa6";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 const ServiceData = [
   {
     id: 1,
     serviceIcon: serviceIcon,
-    serviceTitle: "Web Design",
+    serviceNumber: "01",
+    serviceTitle: "Graphic Design",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 2,
     serviceIcon: serviceIcon2,
-    serviceTitle: "Motion Design",
+    serviceNumber: "02",
+    serviceTitle: "Cloud Solutions",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 3,
     serviceIcon: serviceIcon3,
-    serviceTitle: "Digital Marketing",
+    serviceNumber: "03",
+    serviceTitle: "WP Development",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 4,
     serviceIcon: serviceIcon4,
-    serviceTitle: "Web Development",
+    serviceNumber: "04",
+    serviceTitle: "Digital Marketing",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 5,
     serviceIcon: serviceIcon5,
-    serviceTitle: "App Development",
+    serviceNumber: "05",
+    serviceTitle: "3D Vector Illustration",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
   {
     id: 6,
     serviceIcon: serviceIcon6,
-    serviceTitle: "Creative Solution",
+    serviceNumber: "06",
+    serviceTitle: "Hosting Services",
     serviceDesc:
-      "Proin Pulvinar Eu Sem Eu Vehicula and, Integer Urna Libero, Semper mes.",
+      "Monotonectally synergize grants to business visualize strategic infomediaries",
     serviceUrl: "/service_details",
-    serviceBtn: "Read More",
-    serviceBtnIcon: <FaAnglesRight />,
+    serviceButton: "Read More",
+    serviceBtnIcon: <HiMiniArrowLongRight />,
   },
 ];
 
 const Service = () => {
   return (
-    <section className="pt-28 pb-[120px] bg-[url('/images/service-bg.jpg')] bg-cover bg-no-repeat bg-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-HeadingColor-0 before:-z-10 before:opacity-80">
+    <section className="relative pt-28 pb-[120px] bg-[url('/images/service-bg.png')] bg-cover bg-no-repeat bg-center">
       <div className="Container">
         <div className="text-center">
-          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            SERVICE WE PROVIDE
+          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+            IT Support For Business
           </h5>
-          <h1 className="font-Rajdhani font-bold text-lg leading-6 sm:text-[32px] sm:leading-[42px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-white mt-3 mb-4">
-            All Professional We’re Offering Best & <br />
-            IT Solutions & <span className="text-PrimaryColor-0">Services</span>
+          <h1 className="font-Rajdhani font-bold text-[20px] leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[18px]">
+            Ensuring Your Success Trusted <br />
+            IT Services Source
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[54px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[54px]">
           {ServiceData.map(
             ({
               id,
               serviceIcon,
+              serviceNumber,
               serviceTitle,
               serviceDesc,
               serviceUrl,
-              serviceBtn,
+              serviceButton,
               serviceBtnIcon,
             }) => {
               return (
@@ -100,10 +107,11 @@ const Service = () => {
                   <div key={id}>
                     <ServiceCard
                       serviceIcon={serviceIcon}
+                      serviceNumber={serviceNumber}
                       serviceTitle={serviceTitle}
                       serviceDesc={serviceDesc}
                       serviceUrl={serviceUrl}
-                      serviceBtn={serviceBtn}
+                      serviceButton={serviceButton}
                       serviceBtnIcon={serviceBtnIcon}
                     />
                   </div>

@@ -1,5 +1,6 @@
 import About from "../../Component1/About/About";
 import Banner from "../../Component1/Banner/Banner";
+import Blog from "../../Component1/Blog/Blog";
 import CallDoAction from "../../Component1/CallDoAction/CallDoAction";
 import Feature from "../../Component1/Feature/Feature";
 import Integrations from "../../Component1/Integrations/Integrations";
@@ -22,6 +23,7 @@ const Home1 = () => {
       <Pricing />
       <Integrations />
       <Testimonial />
+      <Blog />
     </>
   );
 };

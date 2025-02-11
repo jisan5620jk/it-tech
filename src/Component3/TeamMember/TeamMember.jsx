@@ -1,85 +1,112 @@
-import teamThumb from "/images/team1.jpg";
-import teamThumb2 from "/images/team2.jpg";
-import teamThumb3 from "/images/team3.jpg";
-import teamThumb4 from "/images/team4.jpg";
+import teamThumb from "/images/team-1.png";
+import teamThumb2 from "/images/team-2.png";
+import teamThumb3 from "/images/team-4.png";
+import teamThumb4 from "/images/team-3.png";
 import TeamCard from "./TeamCard";
 import {
+  FaFacebookF,
   FaLinkedinIn,
   FaPinterestP,
   FaXTwitter,
 } from "react-icons/fa6";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { GoArrowRight } from "react-icons/go";
 
-const TeamData = [
+const teamData = [
   {
     id: 1,
     teamThumb: teamThumb,
-    teamTitle: "Anjelina Watson",
-    teamDesc: "Web Developer",
-    socialIcon: <FaXTwitter />,
-    socialIcon2: <FaLinkedinIn />,
-    socialIcon3: <FaPinterestP />,
+    teamTitle: "Connie Diaz",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "CEO & Founder",
+    teamShareIcon: <IoShareSocialOutline />,
   },
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamTitle: "Jhon D. Alexon",
-    teamDesc: "IT Specialist",
-    socialIcon: <FaXTwitter />,
-    socialIcon2: <FaLinkedinIn />,
-    socialIcon3: <FaPinterestP />,
+    teamTitle: "James E. Huey",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "Co Founder",
+    teamShareIcon: <IoShareSocialOutline />,
   },
   {
     id: 3,
-    teamThumb: teamThumb3,
-    teamTitle: "Al-Amin Islam",
-    teamDesc: "Graphic Designer",
-    socialIcon: <FaXTwitter />,
-    socialIcon2: <FaLinkedinIn />,
-    socialIcon3: <FaPinterestP />,
+    teamThumb: teamThumb4,
+    teamTitle: "Jone D. Alexon",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "IT Expert",
+    teamShareIcon: <IoShareSocialOutline />,
   },
   {
     id: 4,
-    teamThumb: teamThumb4,
-    teamTitle: "Ricerd Powel",
-    teamDesc: "Marketing",
-    socialIcon: <FaXTwitter />,
-    socialIcon2: <FaLinkedinIn />,
-    socialIcon3: <FaPinterestP />,
+    teamThumb: teamThumb3,
+    teamTitle: "June D. Vargas",
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: "Hr. Maneger",
+    teamShareIcon: <IoShareSocialOutline />,
   },
 ];
 
 const TeamMember = () => {
   return (
-    <section className="pb-28">
+    <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
       <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Rajdhani text-[19px] font-semibold text-PrimaryColor-0 inline-block relative pl-5 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:h-[10px] before:w-[10px] before:bg-PrimaryColor-0 before:rounded-full">
-            TEAM MEMBER
-          </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[44px] xl:leading-[46px] 2xl:text-[48px] 2xl:leading-[50px] text-SecondaryColor-0 mt-3 mb-4">
-            Meet With Our <span className="text-PrimaryColor-0">Engineer</span>
-          </h1>
+        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+              Dedicated Team
+            </h5>
+            <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
+              Meet Our Dedicated Member <br />
+              For Any Enquery
+            </h1>
+          </div>
+          <div className="flex lg:justify-end">
+            <Link to={"/team_inner"}>
+              <button className="primary-btn">
+                {`All Member`}
+                <GoArrowRight size={"22"} />
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-20 mt-12">
-          {TeamData.map(
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
+          {teamData.map(
             ({
               id,
               teamThumb,
               teamTitle,
-              teamDesc,
               socialIcon,
               socialIcon2,
               socialIcon3,
+              socialIcon4,
+              teamDesc,
+              teamShareIcon,
             }) => {
               return (
                 <div key={id}>
                   <TeamCard
                     teamThumb={teamThumb}
                     teamTitle={teamTitle}
-                    teamDesc={teamDesc}
                     socialIcon={socialIcon}
                     socialIcon2={socialIcon2}
                     socialIcon3={socialIcon3}
+                    socialIcon4={socialIcon4}
+                    teamDesc={teamDesc}
+                    teamShareIcon={teamShareIcon}
                   />
                 </div>
               );
