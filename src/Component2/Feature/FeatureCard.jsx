@@ -26,7 +26,7 @@ const FeatureCard = ({
       <div className='inline-block mt-[30px]'>
         <Link
           to={featureUrl}
-          className='flex items-center gap-2 bg-BodyBg-0 px-8 py-[7px] rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg relative z-10 before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-0 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:h-full'
+          className='flex items-center gap-2 bg-BodyBg-0 px-8 py-[7px] rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-0 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:h-full group-hover:before:top-0'
         >
           {featureBtnText}
           {featureBtnIcon}

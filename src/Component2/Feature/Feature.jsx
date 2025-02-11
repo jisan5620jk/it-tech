@@ -7,6 +7,7 @@ import featureShape2 from '/images/AI-4.png';
 import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';
+import About from '../About/About';
 
 const processData = [
   {
@@ -54,7 +55,7 @@ const processData = [
 const Feature = () => {
   return (
     <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center py-28'>
-      <div className='Container'>
+      <div className='Container '>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
@@ -75,8 +76,20 @@ const Feature = () => {
             <br />
             Performance in Every Industry
           </h1>
-          <div className='absolute top-10 left-28 animate-wiggle'><img src={featureShape} draggable='false' alt="Shape" /></div>
-          <div className='absolute top-10 right-20 animate-dance2'><img src={featureShape2} draggable='false' alt="Shape" /></div>
+          <div className='absolute top-10 left-28 animate-wiggle'>
+            <img
+              src={featureShape}
+              draggable='false'
+              alt='Shape'
+            />
+          </div>
+          <div className='absolute top-10 right-20 animate-dance2'>
+            <img
+              src={featureShape2}
+              draggable='false'
+              alt='Shape'
+            />
+          </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 relative z-10 mt-11'>
           {processData.map(
@@ -90,7 +103,10 @@ const Feature = () => {
               featureBtnIcon,
             }) => {
               return (
-                <div key={id} className='feature-box'>
+                <div
+                  key={id}
+                  className='feature-box'
+                >
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureTitle={featureTitle}
@@ -105,6 +121,7 @@ const Feature = () => {
           )}
         </div>
       </div>
+      <About />
     </section>
   );
 };
