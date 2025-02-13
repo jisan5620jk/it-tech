@@ -7,6 +7,8 @@ import workImg2 from '/images/ai2.png';
 import workImg3 from '/images/ai1-1.png';
 import workImg4 from '/images/AI-3.png';
 import './work.css';
+import { GoArrowUpRight } from 'react-icons/go';
+import { Link } from 'react-router-dom';
 
 const workCard = [
   {
@@ -108,6 +110,49 @@ const Work = () => {
             )}
           </div>
         </Swiper>
+      </div>
+      <div className='Container mt-14'>
+        <div className='flex items-center justify-between'>
+          <div className='flex items-start gap-2'>
+            <div className='text-PrimaryColor-0 mt-1'>
+              <GoArrowUpRight size={30} />
+            </div>
+            <p className='font-Nunito text-lg'>
+              Continually formulate B2C partnerships orthogonal software
+              <br />
+              maintainable quality through low budget
+            </p>
+          </div>
+          <div>
+            <Link
+              to={'/about'}
+              className='inline-block mt-7'
+            >
+              <button className='primary-btn'>
+                {`More About`}
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

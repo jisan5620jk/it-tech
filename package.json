@@ -14,6 +14,7 @@
     "gsap": "^3.12.7",
     "node": "^23.5.0",
     "react": "^18.3.1",
+    "react-animated-progress-bar": "^1.1.2",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",

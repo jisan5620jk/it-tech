@@ -13,7 +13,7 @@ const WorkCard = ({
 }) => {
   const [toggler, setToggler] = useState(false);
   return (
-    <div>
+    <div className='overflow-hidden'>
       <div className='relative group before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-gradient-to-b before:from-transparent before:to-SecondaryColor-0 before:transition-all before:duration-500 hover:before:h-2/4'>
         <img
           src={workImg}

@@ -55,7 +55,7 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center py-28'>
+    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat py-28'>
       <div className='Container '>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
