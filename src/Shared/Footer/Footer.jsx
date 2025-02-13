@@ -72,12 +72,10 @@ const Footer = () => {
               <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
                 About IT-Tech
               </h4>
-              <p className='font-Nunito text-white opacity-80 mt-6 mb-8 w-10/12'>
-                Monotonectally synergize granular top{' '}
-                <br className='hidden xl:block' /> visualize strategic
-                infomediaries afters <br className='hidden xl:block' /> task
-                state of the art infrastructures{' '}
-                <br className='hidden xl:block' /> digital agency in north
+              <p className='font-Nunito text-white opacity-80 mt-6 mb-8 w-full max-w-[340px]'>
+                <br className='hidden xl:block' /> Monotonectally synergize
+                granular top visualize strategic infomediaries afters task state
+                of the art infrastructures digital agency in north
               </p>
               <div>
                 <Link to={'/about'}>

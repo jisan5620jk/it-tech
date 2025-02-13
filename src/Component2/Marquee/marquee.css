@@ -1,0 +1,38 @@
+.marquee-text-section {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.marquee-animation {
+  display: inline-block;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-text-section:hover .marquee-animation {
+  animation-play-state: paused;
+}
+
+span.marquee-text-item {
+  display: inline-block;
+  font-size: 60px;
+  color: #041424;
+  margin: 0 30px; /* Increased margin */
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-weight: 700;
+}
+
+/* Animation */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

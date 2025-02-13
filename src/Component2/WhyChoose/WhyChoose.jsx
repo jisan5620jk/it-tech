@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import './why-choose.css';
 import Counter from './Counter';
 import Testimonial from '../Testimonial/Testimonial';
+import Marquee from '../Marquee/Marquee';
 
 const WhyChoose = () => {
   return (
@@ -171,6 +172,7 @@ const WhyChoose = () => {
       </div>
       <Counter />
       <Testimonial />
+      <Marquee />
     </section>
   );
 };

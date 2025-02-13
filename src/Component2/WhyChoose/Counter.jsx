@@ -3,7 +3,7 @@ import OnScrollCounter from "../../Shared/Counter/OnScrollCounter";
 const Counter = () => {
     return (
       <div className='Container'>
-        <div className='grid grid-cols-12 items-center bg-white bg-opacity-20 border-2 border-white rounded-[10px] px-[60px] py-[52px] mt-[60px]'>
+        <div className='grid grid-cols-12 items-center bg-white bg-opacity-20 border-2 border-white backdrop-filter backdrop-blur-md rounded-[10px] px-[60px] py-[52px] mt-[60px]'>
           <div className='col-span-4'>
             <h3 className='font-Rajdhani font-bold text-HeadingColor-0 text-3xl'>
               Top Robotic Agency
