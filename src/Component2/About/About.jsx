@@ -32,7 +32,7 @@ const About = () => {
                 draggable={false}
                 alt='Shape'
               />{' '}
-             About Us
+              About Us
             </h5>
             <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Building Tomorrow’s Technology
@@ -47,40 +47,40 @@ const About = () => {
               effective technologies dynamically negotiate multimedia based
               e-commerce competitive
             </p>
-              <ul className='grid grid-cols-2'>
-                <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <div className='text-PrimaryColor-0'>
-                    <GoCheckCircleFill size={20} />
-                  </div>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
-                    Autonomous Navigation
-                  </h5>
-                </li>
-                <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <div className='text-PrimaryColor-0'>
-                    <GoCheckCircleFill size={20} />
-                  </div>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
-                    AI-Powered Decision Making
-                  </h5>
-                </li>
-                <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <div className='text-PrimaryColor-0'>
-                    <GoCheckCircleFill size={20} />
-                  </div>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
-                    Real-Time Data Processing
-                  </h5>
-                </li>
-                <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <div className='text-PrimaryColor-0'>
-                    <GoCheckCircleFill size={20} />
-                  </div>
-                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
-                    Adaptive Learning
-                  </h5>
-                </li>
-              </ul>
+            <ul className='grid grid-cols-2'>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+                <div className='text-PrimaryColor-0'>
+                  <GoCheckCircleFill size={20} />
+                </div>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                  Autonomous Navigation
+                </h5>
+              </li>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+                <div className='text-PrimaryColor-0'>
+                  <GoCheckCircleFill size={20} />
+                </div>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                  AI-Powered Decision Making
+                </h5>
+              </li>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+                <div className='text-PrimaryColor-0'>
+                  <GoCheckCircleFill size={20} />
+                </div>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                  Real-Time Data Processing
+                </h5>
+              </li>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+                <div className='text-PrimaryColor-0'>
+                  <GoCheckCircleFill size={20} />
+                </div>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                  Adaptive Learning
+                </h5>
+              </li>
+            </ul>
 
             <Link
               to={'/about'}

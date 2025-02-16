@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '/images/it-tech-logo-1.png';
+import Logo from '/images/main-logo.png';
 import Logo2 from '/images/logo2.png';
 import Logo3 from '/images/logo.png';
 import './navbar.css';

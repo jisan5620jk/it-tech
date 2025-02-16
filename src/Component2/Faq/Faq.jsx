@@ -1,9 +1,11 @@
-import { FaChevronDown, FaRegUser } from 'react-icons/fa6';
+import { FaChevronDown, FaRegEnvelope, FaRegUser } from 'react-icons/fa6';
 import faqIcon from '/images/AI-2-2.png';
 import faqIcon2 from '/images/AI-2-1-1.png';
 import faqIcon3 from '/images/AI-2-2-1.png';
+import Shape from '/images/AI-2-3.png';
 import { useState, useRef, useEffect } from 'react';
 import titleShape from '/images/sub-title-shape.png';
+import { RiSendPlaneFill } from 'react-icons/ri';
 
 const faqs = [
   {
@@ -51,10 +53,16 @@ const Faq = () => {
   };
 
   return (
-    <section className='pt-28'>
+    <section className='pt-[145px] relative'>
+      <img
+        src={Shape}
+        draggable='false'
+        alt='Shape'
+        className='absolute bottom-6 right-20 animate-wiggle'
+      />
       <div className='Container'>
         <div className='grid grid-cols-2 items-center'>
-          <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[10px] overflow-hidden px-[50px] pt-[50px] pb-[64px] max-w-[520px] w-full text-center'>
+          <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-[50px] pt-[50px] pb-[64px] max-w-[520px] w-full text-center'>
             <h3 className='font-Rajdhani font-bold text-[40px] text-white'>
               Send A Message
             </h3>
@@ -88,20 +96,45 @@ const Faq = () => {
                   className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 />
                 <span className='absolute top-0 left-0 size-[60px] flex items-center justify-center text-white text-opacity-40 border-r border-white border-opacity-10'>
-                  <FaRegUser />
+                  <FaRegEnvelope />
                 </span>
               </div>
               <div className='relative'>
-                <input
-                  type='text'
-                  name='name'
-                  id='name'
-                  placeholder='Your Name'
-                  required
-                  className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
-                />
+                <select className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'>
+                  <option
+                    value=''
+                    disabled
+                    selected
+                  >
+                    Select Subject
+                  </option>
+                  <option
+                    value='math'
+                    className='bg-HeadingColor-0'
+                  >
+                    Mathematics
+                  </option>
+                  <option
+                    value='science'
+                    className='bg-HeadingColor-0'
+                  >
+                    Science
+                  </option>
+                  <option
+                    value='history'
+                    className='bg-HeadingColor-0'
+                  >
+                    History
+                  </option>
+                  <option
+                    value='literature'
+                    className='bg-HeadingColor-0'
+                  >
+                    Literature
+                  </option>
+                </select>
                 <span className='absolute top-0 left-0 size-[60px] flex items-center justify-center text-white text-opacity-40 border-r border-white border-opacity-10'>
-                  <FaRegUser />
+                  <RiSendPlaneFill size={20} />
                 </span>
               </div>
               <div className='relative'>
@@ -113,9 +146,28 @@ const Faq = () => {
               </div>
               <button
                 type='submit'
-                className='h-[60px] w-full rounded-md text-white font-Nunito bg-PrimaryColor-0 outline-none border-2 border-transparent transition-all duration-500 ease-linear '
+                className='primary-btn !rounded-md !w-full'
               >
-                Send Message
+                {`Send Message`}
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
               </button>
             </form>
           </div>
@@ -133,10 +185,10 @@ const Faq = () => {
               <br />
               Robotics Industry
             </h1>
-            <ul className='space-y-[26px]'>
+            <ul className='space-y-[26px] mt-7'>
               {faqs.map((faq, index) => (
                 <li key={index}>
-                  <div className='flex gap-7 group px-8 py-7 bg-white bg-opacity-45 border-2 border-white rounded-[10px] shadow-cases'>
+                  <div className='flex gap-5 group px-8 py-7 bg-white bg-opacity-45 border-2 border-white rounded-[10px] shadow-cases'>
                     <div>
                       <img
                         src={faq.icon}
@@ -155,7 +207,11 @@ const Faq = () => {
                         <h5 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0'>
                           {faq.question}
                         </h5>
-                        <span>
+                        <span
+                          className={`transition-transform duration-300 ${
+                            activeIndex === index ? 'rotate-0' : '-rotate-90'
+                          }`}
+                        >
                           <FaChevronDown />
                         </span>
                       </div>
@@ -163,7 +219,7 @@ const Faq = () => {
                         ref={(el) => (contentRefs.current[index] = el)}
                         className='max-h-0 overflow-hidden transition-all duration-500'
                       >
-                        <p className='font-Nunito text-TextColor2-0 w-[90%]'>
+                        <p className='font-Nunito text-TextColor2-0 w-[90%] pt-2'>
                           {faq.answer}
                         </p>
                       </div>

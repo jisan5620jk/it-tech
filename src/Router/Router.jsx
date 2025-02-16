@@ -3,6 +3,7 @@ import Main from "../Main/Main";
 import Home1 from "../Pages/Home1/Home1";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import Home2 from "../Pages/Home2/Home2";
+import Main2 from "../Main/Main2";
 // import Main3 from "../Main/Main3";
 // import Home3 from "../Pages/Home3/Home3";
 // import AboutInner from "../Pages/InnerPage/AboutInner/AboutInner";
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
   },
   {
     errorElement: <ErrorPage />,
-    element: <Main />,
+    element: <Main2 />,
     children: [
       {
         path: "/home2",
