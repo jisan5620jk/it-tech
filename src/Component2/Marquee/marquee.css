@@ -3,13 +3,14 @@
   overflow: hidden;
   white-space: nowrap;
   background: transparent;
-  padding: 20px 0;
+  margin: 100px 0 0;
 }
 
 .marquee-animation {
   display: inline-block;
   will-change: transform;
   animation: marquee 30s linear infinite;
+  overflow: hidden;
 }
 
 .marquee-text-section:hover .marquee-animation {
@@ -20,7 +21,7 @@ span.marquee-text-item {
   display: inline-block;
   font-size: 60px;
   color: #041424;
-  margin: 0 30px; /* Increased margin */
+  margin: 0 25px; /* Increased margin */
   text-transform: uppercase;
   font-family: 'Rajdhani';
   font-weight: 700;

@@ -71,7 +71,7 @@ const Footer2 = () => {
                 </button>
               </a>
             </div>
-            <ul className='flex gap-3 mt-6'>
+            <ul className='flex gap-3 mt-7'>
               <li>
                 <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
                   <FaFacebookF />
@@ -206,7 +206,7 @@ const Footer2 = () => {
                   id='email'
                   placeholder='Enter Your E-Mail*'
                   required
-                  className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-HeadingColor-0 bg-opacity-10 px-8 py-2 text-HeadingColor-0 placeholder:text-HeadingColor-0 mb-4'
+                  className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-HeadingColor-0 bg-opacity-10 px-8 py-2 text-HeadingColor-0 placeholder:text-HeadingColor-0 mb-3'
                 />
                 <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-HeadingColor-0 text-xl' />
               </label>
@@ -221,7 +221,7 @@ const Footer2 = () => {
                 </button>
               </div>
             </form>
-            <p className='font-Nunito flex gap-2 text-HeadingColor-0 font-medium mb-[26px]'>
+            <p className='font-Nunito flex gap-2 text-HeadingColor-0 font-medium mt-5'>
               <span className='relative top-[3px] text-green-600'>
                 <FaRegCircleCheck />
               </span>
@@ -229,36 +229,22 @@ const Footer2 = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0'>
-          <div>
-            <p className='font-Nunito text-HeadingColor-0'>
-              &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream IT
-              Solution
-            </p>
-          </div>
-          <div>
-            <ul className='flex gap-3'>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaFacebookF />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaXTwitter />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaLinkedinIn />
-                </button>
-              </li>
-              <li>
-                <button className='size-9 rounded-full text-sm bg-HeadingColor-0 bg-opacity-10 flex items-center justify-center text-HeadingColor-0 overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
-                  <FaPinterestP />
-                </button>
-              </li>
-            </ul>
+      </div>
+      <div className='bg-HeadingColor-0 bg-opacity-10 mt-[96px]'>
+        <div className='Container'>
+          <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7 border-t border-BorderColor-0'>
+            <div>
+              <p className='font-Nunito text-HeadingColor-0'>
+                &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream IT
+                Solution
+              </p>
+            </div>
+            <div>
+              <ul className='flex items-center gap-10'>
+                <li ><Link to={'/'} className='font-Nunito text-HeadingColor-0'>Terms & Conditions</Link></li>
+                <li ><Link to={'/'} className='font-Nunito text-HeadingColor-0'>Privacy Policy</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

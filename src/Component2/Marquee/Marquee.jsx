@@ -7,7 +7,7 @@ const Marquee = () => {
       <div className='marquee-text-section'>
         <div className='marquee-animation'>
           <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -15,7 +15,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -23,7 +23,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -31,7 +31,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -39,39 +39,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -81,7 +49,7 @@ const Marquee = () => {
         </div>
         <div className='marquee-animation'>
           <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -89,7 +57,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -97,7 +65,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -105,7 +73,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -113,39 +81,7 @@ const Marquee = () => {
             />
           </span>
           <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item'>
+          <span className='marquee-text-item animate-rotational'>
             <img
               src={star}
               draggable={false}
