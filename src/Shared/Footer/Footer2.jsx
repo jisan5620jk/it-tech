@@ -241,8 +241,22 @@ const Footer2 = () => {
             </div>
             <div>
               <ul className='flex items-center gap-10'>
-                <li ><Link to={'/'} className='font-Nunito text-HeadingColor-0'>Terms & Conditions</Link></li>
-                <li ><Link to={'/'} className='font-Nunito text-HeadingColor-0'>Privacy Policy</Link></li>
+                <li>
+                  <Link
+                    to={'/'}
+                    className='font-Nunito text-HeadingColor-0'
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to={'/'}
+                    className='font-Nunito text-HeadingColor-0'
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
