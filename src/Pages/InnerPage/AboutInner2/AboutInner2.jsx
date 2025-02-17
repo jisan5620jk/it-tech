@@ -4,14 +4,16 @@ import Contact from "../../../Component2/Contact/Contact";
 import WhyChoose from "../../../Component2/WhyChoose/WhyChoose";
 import About from "./About";
 import Counter from "../../../Component2/WhyChoose/Counter";
+import HelmetChanger from "../../../Shared/Helmet/Helmet";
 
 const AboutInner2 = () => {
   return (
     <>
+      <HelmetChanger title={'About Inner Page Two'} />
       <BreadCrumb
-        breadCrumbTitle={"About Us 02"}
+        breadCrumbTitle={'About Us 02'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"About Us 02"}
+        breadCrumbLink={'About Us 02'}
       />
       <About />
       <Contact />

@@ -14,6 +14,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import HelmetChanger from "../../../Shared/Helmet/Helmet";
 
 const teamData = [
   {
@@ -108,34 +109,35 @@ const teamData = [
 const TeamInner = () => {
   return (
     <>
+      <HelmetChanger title={'Team Member Inner Page'} />
       <BreadCrumb
-        breadCrumbTitle={"Team Member"}
+        breadCrumbTitle={'Team Member'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Team Member"}
+        breadCrumbLink={'Team Member'}
       />
       ;
       <section className="bg-[url('/images/team-bg.jpg')] bg-no-repeat bg-cover bg-center py-28 relative">
-        <div className="Container">
-          <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center">
+        <div className='Container'>
+          <div className='grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 lg:items-center'>
             <div>
-              <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
+              <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
                 Dedicated Team
               </h5>
-              <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
+              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]'>
                 Meet Our Dedicated Member <br />
                 For Any Enquery
               </h1>
             </div>
-            <div className="flex lg:justify-end">
-              <Link to={"/about"}>
-                <button className="primary-btn">
+            <div className='flex lg:justify-end'>
+              <Link to={'/about'}>
+                <button className='primary-btn'>
                   {`All Member`}
-                  <GoArrowRight size={"22"} />
+                  <GoArrowRight size={'22'} />
                 </button>
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]">
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-[50px] mt-[52px]'>
             {teamData.map(
               ({
                 id,

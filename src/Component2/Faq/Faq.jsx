@@ -100,11 +100,13 @@ const Faq = () => {
                 </span>
               </div>
               <div className='relative'>
-                <select className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'>
+                <select
+                  className='h-[60px] w-full cursor-pointer rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  defaultValue=''
+                >
                   <option
                     value=''
                     disabled
-                    selected
                   >
                     Select Subject
                   </option>
@@ -133,6 +135,7 @@ const Faq = () => {
                     Literature
                   </option>
                 </select>
+
                 <span className='absolute top-0 left-0 size-[60px] flex items-center justify-center text-white text-opacity-40 border-r border-white border-opacity-10'>
                   <RiSendPlaneFill size={20} />
                 </span>
@@ -141,6 +144,7 @@ const Faq = () => {
                 <textarea
                   name='message'
                   id='message'
+                  placeholder='Write Message...'
                   className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 ></textarea>
               </div>

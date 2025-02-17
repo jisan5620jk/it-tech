@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import serviceIcon from "/images/service-1.png";
 import serviceIcon2 from "/images/service-2.png";
 import serviceIcon3 from "/images/service-3.png";

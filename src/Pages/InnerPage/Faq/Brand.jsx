@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import brandThumb from "/images/brand-1.png";
-import brandThumb2 from "/images/brand-2.png";
-import brandThumb3 from "/images/brand-3.png";
-import brandThumb4 from "/images/brand-4.png";
-import brandThumb5 from "/images/brand-5.png";
+import brandImg from '/images/AI-2-1.png';
+import brandImg2 from '/images/1.png';
+import brandImg3 from '/images/3.png';
+import brandImg5 from '/images/4.png';
 
 const Brand = () => {
   const settings = {
@@ -36,32 +35,32 @@ const Brand = () => {
         <Swiper {...settings}>
           <SwiperSlide>
             <div>
-              <img src={brandThumb} draggable="false" className="m-auto" />
+              <img src={brandImg} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb2} draggable="false" className="m-auto" />
+              <img src={brandImg2} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb3} draggable="false" className="m-auto" />
+              <img src={brandImg3} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb4} draggable="false" className="m-auto" />
+              <img src={brandImg} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb5} draggable="false" className="m-auto" />
+              <img src={brandImg5} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div>
-              <img src={brandThumb} draggable="false" className="m-auto" />
+              <img src={brandImg} draggable="false" className="m-auto" />
             </div>
           </SwiperSlide>
         </Swiper>

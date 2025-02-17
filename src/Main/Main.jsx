@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <>
-      <HelmetChanger title={'Main Page'} />
+      <HelmetChanger title={'SEO & Digital Marketing'} />
       <Navbar />
       <ScrollToTop />
       <div>

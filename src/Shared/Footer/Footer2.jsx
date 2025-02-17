@@ -16,7 +16,7 @@ const Footer2 = () => {
   return (
     <footer className="bg-[url('/images/footer_bg2.jpg')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
       <div className='Container'>
-        <div className='grid gap-y-7 grid-cols-12'>
+        <div className='lg:grid gap-y-7 grid-cols-12 border-b border-HeadingColor-0 border-opacity-10 pb-5 hidden'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
             <Link to={'/home2'}>
               <img
@@ -25,7 +25,36 @@ const Footer2 = () => {
                 alt='Brand Logo'
               />
             </Link>
-            <p className='font-Nunito text-HeadingColor-0 mt-6 mb-8 w-full max-w-[340px]'>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-2'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+              Company
+            </h4>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+              Our Services
+            </h4>
+          </div>
+          <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold'>
+              Newsletter
+            </h4>
+          </div>
+        </div>
+        <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
+          <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+            <div className='lg:hidden mb-7'>
+              <Link to={'/home2'}>
+                <img
+                  src={logo}
+                  draggable={false}
+                  alt='Brand Logo'
+                  title='IT-Tech'
+                />
+              </Link>
+            </div>
+            <p className='font-Nunito text-HeadingColor-0 lg:-mt-1 mb-5 w-full max-w-[340px]'>
               Globally expedite enterprise-wide action items rather than
               distinctive architectures. Globally engage market positioning.
             </p>
@@ -66,7 +95,7 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-[33px]'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
               Company
             </h4>
             <ul>
@@ -113,7 +142,7 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-[33px]'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-7 lg:hidden'>
               Our Services
             </h4>
             <ul>
@@ -160,7 +189,7 @@ const Footer2 = () => {
             </ul>
           </div>
           <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-[30px]'>
+            <h4 className='font-Rajdhani text-[28px] text-HeadingColor-0 font-semibold mb-[30px] lg:hidden'>
               Newsletter
             </h4>
             <form
@@ -203,8 +232,8 @@ const Footer2 = () => {
         <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0'>
           <div>
             <p className='font-Nunito text-HeadingColor-0'>
-              © 2024 Toptech. Designed By Dream IT Solution
-              <span className='text-PrimaryColor-0'> Dream IT</span>
+              &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream IT
+              Solution
             </p>
           </div>
           <div>

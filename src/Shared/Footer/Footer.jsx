@@ -37,13 +37,16 @@ const Footer = () => {
             </div>
           </div>
           <div className='flex lg:justify-center md:border-l lg:border-l-0 xl:border-x border-BorderColor2-0 border-opacity-30 py-4'>
-            <a href='call-to:'>
+            <Link
+              to={'/'}
+              title='IT-Tech'
+            >
               <img
                 src={footerLogo}
                 draggable='false'
                 className='brightness-0 invert-[1]'
               />
-            </a>
+            </Link>
           </div>
           <div className='flex lg:justify-end'>
             <div className=''>

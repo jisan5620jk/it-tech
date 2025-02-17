@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
 import blogGridImg from "/images/blog-1.png";
 import blogGridImg2 from "/images/blog-2.png";
@@ -9,6 +8,7 @@ import blogGridImg6 from "/images/blog-6.png";
 import BlogGridCard from "./BlogGridCard";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import { LuArrowUpRight } from "react-icons/lu";
+import HelmetChanger from "../../../Shared/Helmet/Helmet";
 
 const blogData = [
   {
@@ -88,14 +88,15 @@ const blogData = [
 const BlogGrid = () => {
   return (
     <>
+      <HelmetChanger title={'Blog Grid Inner Page'} />
       <BreadCrumb
-        breadCrumbTitle={"Blog Grid"}
+        breadCrumbTitle={'Blog Grid'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={"Blog Grid"}
+        breadCrumbLink={'Blog Grid'}
       />
-      <section className="pt-28">
-        <div className="Container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+      <section className='pt-28'>
+        <div className='Container'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
             {blogData.map(
               ({
                 id,
@@ -126,24 +127,24 @@ const BlogGrid = () => {
         </div>
       </section>
       <div>
-        <ul className="flex items-center gap-2 justify-center pb-[120px] pt-[80px]">
+        <ul className='flex items-center gap-2 justify-center pb-[120px] pt-[80px]'>
           <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               01
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               02
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               03
             </button>
           </li>
           <li>
-            <button className="h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100">
+            <button className='h-[50px] w-[50px] font-Nunito rounded-full border-BorderColor2-0 border bg-white flex justify-center items-center text-HeadingColor-0 transition-all duration-500 hover:text-white overflow-hidden relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
               <FaAngleRight />
             </button>
           </li>
