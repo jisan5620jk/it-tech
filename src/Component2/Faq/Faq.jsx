@@ -141,7 +141,7 @@ const Faq = () => {
                 <textarea
                   name='message'
                   id='message'
-                  className='min-h-[150px] w-full rounded-md pl-[80px] resize-none text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
+                  className='min-h-[150px] w-full rounded-md px-7 py-3 resize-none text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 ></textarea>
               </div>
               <button

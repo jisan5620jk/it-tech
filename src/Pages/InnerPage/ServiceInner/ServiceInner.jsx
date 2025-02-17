@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { FaArrowRightLong, FaCheck } from "react-icons/fa6";
-import serviceIcon from "/images/service-icon1.png";
-import serviceIcon2 from "/images/service-icon2.png";
-import serviceIcon3 from "/images/service-icon3.png";
-import serviceIcon4 from "/images/service-icon4.png";
-import serviceIcon5 from "/images/service-icon5.png";
-import serviceIcon6 from "/images/service-icon6.png";
+import serviceIcon from "/images/service3-icon1.png";
+import serviceIcon2 from "/images/service3-icon2.png";
+import serviceIcon3 from "/images/service3-icon3.png";
+import serviceIcon4 from "/images/service3-icon4.png";
+import serviceIcon5 from "/images/service3-icon5.png";
+import serviceIcon6 from "/images/service3-icon6.png";
 import ServiceCard from "./ServiceCard";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";

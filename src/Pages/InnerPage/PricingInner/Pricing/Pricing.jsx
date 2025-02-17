@@ -1,221 +1,798 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import PricingCard from "./PricingCard";
-
-const pricingData = [
-  {
-    id: 1,
-    currency: "$",
-    offerPrice: 29,
-    mainPrice: "$39",
-    pricingDateLine: "/Monthly",
-    pricingTitle: "Basic Plans",
-    pricingSubTitle: "Small Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-  {
-    id: 2,
-    currency: "$",
-    offerPrice: 59,
-    mainPrice: "$69",
-    pricingDateLine: "/Monthly",
-    pricingTitle: "Standard Plans",
-    pricingSubTitle: "Medium Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-  {
-    id: 3,
-    currency: "$",
-    offerPrice: 89,
-    mainPrice: "$99",
-    pricingDateLine: "/Monthly",
-    pricingTitle: "Premium Plans",
-    pricingSubTitle: "Large Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-];
-
-const pricingData2 = [
-  {
-    id: 1,
-    currency: "$",
-    offerPrice: 129,
-    mainPrice: "$139",
-    pricingDateLine: "/Yearly",
-    pricingTitle: "Basic Plans",
-    pricingSubTitle: "Small Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-  {
-    id: 2,
-    currency: "$",
-    offerPrice: 159,
-    mainPrice: "$169",
-    pricingDateLine: "/Yearly",
-    pricingTitle: "Standard Plans",
-    pricingSubTitle: "Medium Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-  {
-    id: 3,
-    currency: "$",
-    offerPrice: 189,
-    mainPrice: "$199",
-    pricingDateLine: "/Yearly",
-    pricingTitle: "Premium Plans",
-    pricingSubTitle: "Large Team",
-    pricingContent1: "Email & Communication Services",
-    pricingContent2: "Implementing measures encryption.",
-    pricingContent3: "Standard Security Measuresimg",
-    pricingContent4: "Network and security management",
-    pricingContent5: "Helps understand past performance.",
-    pricingUrl: "/pricing_inner",
-    pricingBtn: "Get Started",
-  },
-];
+import titleShape from '/images/sub-title-shape.png';
+import './pricing-box.css';
+import OnScrollCounter from './OnScrollCounter';
+import { Link } from 'react-router-dom';
+import { FaRegCircleCheck } from 'react-icons/fa6';
 
 const Pricing = () => {
+  let isMonthly = true;
+
+  function togglePlans() {
+    isMonthly = !isMonthly;
+
+    // Toggle the content
+    document.getElementById('monthly').classList.toggle('active', isMonthly);
+    document.getElementById('yearly').classList.toggle('active', !isMonthly);
+
+    // Move the toggle circle
+    const toggleCircle = document.getElementById('toggleCircle');
+    toggleCircle.style.transform = isMonthly
+      ? 'translateX(0)'
+      : 'translateX(30px)';
+  }
+
+  // useEffect(() => {
+  //   const handleMouseEnter = (event) => {
+  //     event.target.classList.add('active');
+
+  //     // Remove 'active' class from siblings
+  //     const parent = event.target.parentElement;
+  //     if (parent) {
+  //       const siblings = parent.querySelectorAll('.pricing-box');
+  //       siblings.forEach((sibling) => {
+  //         if (sibling !== event.target) {
+  //           sibling.classList.remove('active');
+  //         }
+  //       });
+  //     }
+  //   };
+
+  //   const elements = document.querySelectorAll('.pricing-box');
+  //   elements.forEach((element) => {
+  //     element.addEventListener('mouseenter', handleMouseEnter);
+  //   });
+
+  //   // Clean up event listeners when component unmounts
+  //   return () => {
+  //     elements.forEach((element) => {
+  //       element.removeEventListener('mouseenter', handleMouseEnter);
+  //     });
+  //   };
+  // }, []);
+
   return (
-    <section className="py-28 bg-BodyBg-0">
-      <div className="Container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h1 className="font-Rajdhani font-bold text-2xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[28px] lg:leading-[38px] xl:text-[37px] xl:leading-[47px] 2xl:text-[37px] 2xl:leading-[47px] text-HeadingColor-0">
-              Choose Your Best Plan
+    <section className="relative overflow-hidden pt-28 pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
+      <div className='Container'>
+        <div className='flex justify-between items-center'>
+          <div className='w-full mx-auto'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              Pricing Plans
+            </h5>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              The Best value for Your SEO<br /> Marketing Plans
             </h1>
-            <p className="font-Nunito text-TextColor2-0 mt-3">
-              Services are professional offerings provided by businesses to meet
-              specific needs or solve problems for their customers. Services can
-              range from your services.
-            </p>
           </div>
-          <div></div>
+          <div
+            className='toggle-container flex items-center gap-2 py-[15px] px-8 bg-SecondaryColor-0 rounded-full bg-opacity-10'
+            onClick={togglePlans}
+          >
+            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
+              Monthly
+            </div>
+            <div className={`toggle ${isMonthly ? 'active' : ''}`}>
+              <div
+                id='toggleCircle'
+                className='toggle-circle'
+                style={{
+                  transform: isMonthly ? 'translateX(0)' : 'translateX(30px)',
+                }}
+              ></div>
+            </div>
+            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
+              Yearly
+            </div>
+          </div>
         </div>
-        <Tabs>
-          <div className="flex lg:items-end lg:justify-end">
-            <TabList className="flex items-center justify-end mt-8 lg:-mt-20 gap-x-2 w-[282px] sm:w-[361px] border border-BorderColor2-0 p-[6px] rounded-md overflow-hidden">
-              <Tab className="cursor-pointer outline-none bg-SecondaryColor-0 px-4 sm:px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-PrimaryColor-0">
-                Billed Monthly
-              </Tab>
-              <Tab className="cursor-pointer outline-none bg-PrimaryColor-0 px-4 sm:px-9 py-[14px] rounded-md font-Nunito text-white transition-all duration-500 hover:bg-SecondaryColor-0">
-                Billed Yearly
-              </Tab>
-            </TabList>
+        <div className='mt-9'>
+          <div
+            id='monthly'
+            className={`tab-content ${isMonthly ? 'active' : ''}`}
+          >
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                  Basic Plan
+                </h5>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={30}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your basic plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <div className='flex items-center justify-between'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                    Standard
+                  </h5>
+                  <h6 className='font-Rajdhani rounded-full text-sm px-[18px] py-[2px] bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-white'>
+                    Popular
+                  </h6>
+                </div>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={60}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your Standard plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                  Business
+                </h5>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={90}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your Business plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[56px]">
-              {pricingData.map(
-                ({
-                  id,
-                  currency,
-                  offerPrice,
-                  mainPrice,
-                  pricingDateLine,
-                  pricingTitle,
-                  pricingSubTitle,
-                  pricingContent1,
-                  pricingContent2,
-                  pricingContent3,
-                  pricingContent4,
-                  pricingContent5,
-                  pricingUrl,
-                  pricingBtn,
-                }) => {
-                  return (
-                    <div key={id}>
-                      <PricingCard
-                        currency={currency}
-                        offerPrice={offerPrice}
-                        mainPrice={mainPrice}
-                        pricingDateLine={pricingDateLine}
-                        pricingTitle={pricingTitle}
-                        pricingSubTitle={pricingSubTitle}
-                        pricingContent1={pricingContent1}
-                        pricingContent2={pricingContent2}
-                        pricingContent3={pricingContent3}
-                        pricingContent4={pricingContent4}
-                        pricingContent5={pricingContent5}
-                        pricingUrl={pricingUrl}
-                        pricingBtn={pricingBtn}
-                      />
-                    </div>
-                  );
-                }
-              )}
+
+          <div
+            id='yearly'
+            className={`tab-content ${isMonthly ? '' : 'active'}`}
+          >
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                  Basic Plan
+                </h5>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={298}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your basic plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <div className='flex items-center justify-between'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                    Standard
+                  </h5>
+                  <h6 className='font-Rajdhani rounded-full text-sm px-[18px] py-[2px] bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-white'>
+                    Popular
+                  </h6>
+                </div>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={689}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your Standard plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-HeadingColor-0 bg-opacity-5 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
+                  Business
+                </h5>
+                <div className='flex items-center gap-1 mb-[2px]'>
+                  <h6 className='font-Rajdhani font-semibold text-2xl xl:text-3xl text-HeadingColor-0 relative -top-2'>
+                    $
+                  </h6>
+                  <div className='font-Rajdhani text-[42px] sm:text-[50px] xl:text-[60px] text-HeadingColor-0 font-semibold'>
+                    <OnScrollCounter
+                      start={0}
+                      end={999}
+                      duration={1000}
+                    />
+                  </div>
+                  <p className='font-Nunito text-TextColor2-0 sm:ml-3'>
+                    Competently leverage <br /> maximize done
+                  </p>
+                </div>
+                <Link
+                  to={'/'}
+                  className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <Link
+                  to={'/'}
+                  className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
+                >
+                  Get StartTed Now
+                  <span className='icon-style'>
+                    <svg
+                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
+                      xmlns='http://www.w3.org/2000/svg'
+                      stroke='CurrentColor'
+                      width='14.2'
+                      height='14.2'
+                      viewBox='0 0 14.2 14.2'
+                    >
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                      <g>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      </g>
+                    </svg>
+                  </span>
+                </Link>
+                <h5 className='font-Rajdhani font-semibold text-xl mt-[22px]'>
+                  Features
+                </h5>
+                <p className='font-Nunito text-TextColor2-0 text-[15px] mb-[18px]'>
+                  Everything in your Business plans
+                </p>
+                <ul className='space-y-2'>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Campaigns
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Paid SEO Tools Included
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Domain & Hosting
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Marketing Resources
+                  </li>
+                  <li className='flex items-center gap-2 font-Nunito text-TextColor2-0'>
+                    <FaRegCircleCheck
+                      size={18}
+                      className='text-PrimaryColor-0'
+                    />
+                    Unlimited Support
+                  </li>
+                </ul>
+              </div>
             </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-[56px]">
-              {pricingData2.map(
-                ({
-                  id,
-                  currency,
-                  offerPrice,
-                  mainPrice,
-                  pricingDateLine,
-                  pricingTitle,
-                  pricingSubTitle,
-                  pricingContent1,
-                  pricingContent2,
-                  pricingContent3,
-                  pricingContent4,
-                  pricingContent5,
-                  pricingUrl,
-                  pricingBtn,
-                }) => {
-                  return (
-                    <div key={id}>
-                      <PricingCard
-                        currency={currency}
-                        offerPrice={offerPrice}
-                        mainPrice={mainPrice}
-                        pricingDateLine={pricingDateLine}
-                        pricingTitle={pricingTitle}
-                        pricingSubTitle={pricingSubTitle}
-                        pricingContent1={pricingContent1}
-                        pricingContent2={pricingContent2}
-                        pricingContent3={pricingContent3}
-                        pricingContent4={pricingContent4}
-                        pricingContent5={pricingContent5}
-                        pricingUrl={pricingUrl}
-                        pricingBtn={pricingBtn}
-                      />
-                    </div>
-                  );
-                }
-              )}
-            </div>
-          </TabPanel>
-        </Tabs>
+          </div>
+        </div>
       </div>
     </section>
   );

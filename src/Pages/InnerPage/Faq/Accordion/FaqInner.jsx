@@ -1,11 +1,8 @@
 import FaqAccordion from "./FaqAccordion";
-import faqIcon from "/images/faqs-icon-s.png";
-import faqIcon2 from "/images/faqs-icon1.png";
-import faqImg from "/images/faqs-1.jpg";
-import faqImg2 from "/images/faqs-2.jpg";
+import faqIcon from '/images/AI-2-2-1.png';
+import faqIcon2 from '/images/AI-2-1-1.png';
 import BreadCrumb from "../../../../Shared/BreadCrumb/BreadCrumb";
 import { FaArrowRightLong } from "react-icons/fa6";
-import Newsletter from "../../../../Component2/Newsletter/Newsletter";
 import Brand from "../Brand";
 
 const FaqInner = () => {
@@ -65,14 +62,6 @@ const FaqInner = () => {
                 Business tailored it design, management & support services needs
                 to be business agency elit, sed do eiusmod tempor proved.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-3 mb-10">
-                <div>
-                  <img src={faqImg} draggable="false" />
-                </div>
-                <div>
-                  <img src={faqImg2} draggable="false" />
-                </div>
-              </div>
               <div className="flex gap-5">
                 <div>
                   <img src={faqIcon} draggable="false" />
@@ -102,7 +91,6 @@ const FaqInner = () => {
           </div>
         </div>
       </section>
-      <Newsletter />
       <Brand />
     </>
   );
