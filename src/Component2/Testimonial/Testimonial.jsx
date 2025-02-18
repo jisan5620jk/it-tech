@@ -105,7 +105,7 @@ const Testimonial = () => {
   return (
     <section className='relative z-10 overflow-hidden px-[100px] pt-28'>
       <div className='text-center'>
-        <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+        <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
           <img
             src={titleShape}
             draggable={false}

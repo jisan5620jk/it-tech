@@ -27,7 +27,7 @@ const About = () => {
             </div>
           </div>
           <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -113,7 +113,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={shape} draggable={false} alt="Shape" className='absolute top-20 right-32 animate-dance2'/>
+      <img
+        src={shape}
+        draggable={false}
+        alt='Shape'
+        className='absolute top-20 right-32 animate-dance2'
+      />
     </section>
   );
 };

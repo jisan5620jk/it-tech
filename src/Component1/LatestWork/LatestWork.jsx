@@ -83,11 +83,11 @@ const LatestWork = () => {
     },
   };
   return (
-    <section className='bg-HeadingColor-0 py-28'>
+    <section className='bg-HeadingColor-0 py-16 lg:py-28'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center relative'>
+        <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center relative'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
@@ -101,7 +101,7 @@ const LatestWork = () => {
               Marketing Projects
             </h1>
           </div>
-          <div className='flex items-center justify-end'>
+          <div className='flex md:items-center md:justify-end'>
             <Link
               to={'/about'}
               className='inline-block'
@@ -138,7 +138,7 @@ const LatestWork = () => {
           />
         </div>
       </div>
-      <div className='max-w-[1758px] w-full px-5 mx-auto mt-[36px]'>
+      <div className='max-w-[1758px] w-full px-3 sm:px-5 mx-auto mt-[36px]'>
         <Swiper
           {...settings}
           pagination={pagination}

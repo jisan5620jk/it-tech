@@ -8,11 +8,11 @@ import { GoGlobe } from 'react-icons/go';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1200px] lg:h-[660px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani bg-gradient-to-r to-PrimaryColor3-0 to-50% from-PrimaryColor2-0 bg-clip-text text-transparent text-xl font-semibold flex items-center gap-2 mb-5 uppercase'>
+            <h5 className='font-Rajdhani bg-gradient-to-r to-PrimaryColor3-0 to-50% from-PrimaryColor2-0 bg-clip-text text-transparent text-lg sm:text-xl font-semibold flex items-center gap-2 mb-5 uppercase'>
               <img
                 draggable='false'
                 src={subTilteShape}
@@ -22,13 +22,13 @@ const Banner = () => {
               Best agency based in usa
             </h5>
             <h1 className='font-Rajdhani font-extrabold tracking-tight text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[80px] 2xl:text-[80px] 2xl:leading-[80px]'>
-              <div className='flex items-center gap-6'>
+              <div className='flex items-center gap-2 md:gap-6'>
                 Dominate
                 <img
                   draggable='false'
                   src={titleShape}
                   alt='Shape'
-                  className='animate-swing'
+                  className='animate-swing w-10'
                 />
                 Search
               </div>
@@ -48,7 +48,7 @@ const Banner = () => {
                   name='search'
                   placeholder='Your Website URL'
                   required
-                  className='w-full h-[62px] py-3 px-12 rounded-full border font-Nunito border-PrimaryColor-0 border-opacity-30 bg-transparent outline-none'
+                  className='w-full h-[50px] sm:h-[62px] py-3 px-12 rounded-full border font-Nunito border-PrimaryColor-0 border-opacity-30 bg-transparent outline-none'
                 />
                 <span className='absolute top-1/2 -translate-y-1/2 left-7 text-PrimaryColor3-0'>
                   <GoGlobe />
@@ -56,7 +56,7 @@ const Banner = () => {
               </div>
               <button
                 type='submit'
-                className='absolute top-1/2 right-0 -translate-y-1/2 banner-btn flex items-center gap-2 px-9 py-[17px] font-Rajdhani text-lg uppercase font-medium rounded-r-full text-white bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 transition-all duration-500'
+                className='absolute top-1/2 right-0 -translate-y-1/2 banner-btn flex items-center gap-2 px-4 sm:px-9 py-[13px] sm:py-[17px] font-Rajdhani text-base sm:text-lg uppercase font-medium rounded-r-full text-white bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 transition-all duration-500'
               >
                 Analyze Now
                 <span className='icon-style'>
@@ -85,6 +85,7 @@ const Banner = () => {
                 draggable='false'
                 src={bannerReview}
                 alt='Image'
+                className='w-[75%] sm:w-[inherit]'
               />
             </div>
             <img

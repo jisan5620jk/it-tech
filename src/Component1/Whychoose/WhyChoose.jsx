@@ -42,12 +42,12 @@ const WhyChoose = () => {
   }, []);
 
   return (
-    <section className='-mt-[176px] pt-[290px] pb-28 relative bg-[url(/images/choose-bg2.png)] bg-cover bg-center'>
+    <section className='lg:-mt-[176px] pt-16 lg:pt-[290px] pb-28 relative bg-[url(/images/choose-bg2.png)] bg-cover bg-center'>
       <div className='Container'>
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2'>
           <div>
             <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
@@ -104,7 +104,7 @@ const WhyChoose = () => {
                 alt='Why CHoose Image'
                 className='w-[inherit] -mb-28'
               />
-              <div className='absolute top-[39%] left-[170px] pointer-events-none'>
+              <div className='absolute top-[39%] left-[170px] pointer-events-none hidden md:block'>
                 <div className='relative'>
                   <input
                     type='text'

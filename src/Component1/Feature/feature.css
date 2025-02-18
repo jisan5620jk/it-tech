@@ -2,8 +2,10 @@
   border-radius: 10px;
 }
 
-.feature-box1:nth-child(2n + 2) {
-  margin-top: 42px;
+@media screen and (min-width: 992px) {
+  .feature-box1:nth-child(2n + 2) {
+    margin-top: 42px;
+  }
 }
 
 .feature-box1:nth-child(1) {

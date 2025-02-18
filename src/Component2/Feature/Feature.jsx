@@ -58,7 +58,7 @@ const Feature = () => {
     <section className='bg-[url("/images/long-bg.jpg")] bg-cover bg-center bg-no-repeat py-28'>
       <div className='Container '>
         <div className='relative text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
               src={titleShape}
               draggable={false}

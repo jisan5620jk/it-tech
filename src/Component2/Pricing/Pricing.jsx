@@ -28,7 +28,7 @@ const Pricing = () => {
         <div className='grid grid-cols-3'>
           <div className='col-span-1'>
             <div className='w-full mx-auto'>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
                 <img
                   src={titleShape}
                   draggable={false}
