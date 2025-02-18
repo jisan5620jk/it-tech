@@ -1,115 +1,118 @@
-import { useEffect } from 'react';
-import gsap from 'gsap';
+import featureIcon from '/images/goggle.png';
+import featureIcon2 from '/images/facebook.png';
+import featureIcon3 from '/images/feature-icon23.png';
+import featureIcon4 from '/images/feature-icon24.png';
+import featureShape from '/images/feature-animate.png';
+import titleShape from '/images/sub-title-shape.png';
+import FeatureCard from './FeatureCard';
+import { GoArrowRight } from 'react-icons/go';
+import './feature.css';
+
+const processData = [
+  {
+    id: 1,
+    featureIcon: featureIcon,
+    featureTitle: 'Google Analytics',
+    featureDesc:
+      'Clients-focused data are centric energistically communicate into installed done.',
+    featureUrl: '/service',
+    featureBtnText: 'Details',
+    featureBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 2,
+    featureIcon: featureIcon2,
+    featureTitle: 'Facebook Adds',
+    featureDesc:
+      'Clients-focused data are centric energistically communicate into installed done.',
+    featureUrl: '/service',
+    featureBtnText: 'Details',
+    featureBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 3,
+    featureIcon: featureIcon3,
+    featureTitle: 'Content Research',
+    featureDesc:
+      'Clients-focused data are centric energistically communicate into installed done.',
+    featureUrl: '/service',
+    featureBtnText: 'Details',
+    featureBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 4,
+    featureIcon: featureIcon4,
+    featureTitle: 'Competitor Analysis',
+    featureDesc:
+      'Clients-focused data are centric energistically communicate into installed done.',
+    featureUrl: '/service',
+    featureBtnText: 'Details',
+    featureBtnIcon: <GoArrowRight />,
+  },
+];
 
 const Feature = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll('.portfolio-single-box');
-
-    elements.forEach((el) => {
-      const overlay = el.querySelector('.overlay');
-
-      // Helper function to get the mouse position relative to the element.
-      function getRelativeMousePos(e) {
-        const rect = el.getBoundingClientRect();
-        const offsetX = rect.left + window.scrollX;
-        const offsetY = rect.top + window.scrollY;
-        return {
-          x: e.pageX - offsetX,
-          y: e.pageY - offsetY,
-          width: el.offsetWidth,
-          height: el.offsetHeight,
-        };
-      }
-
-      el.addEventListener('mouseenter', (e) => {
-        const pos = getRelativeMousePos(e);
-        const inaccuracy = 50;
-        let startX = 0,
-          startY = 0;
-
-        // Determine the starting position for the overlay based on where the mouse entered.
-        if (pos.x > pos.width - inaccuracy) {
-          // Entering from the right.
-          startX = pos.width;
-        } else if (pos.x < inaccuracy) {
-          // Entering from the left.
-          startX = -pos.width;
-        } else if (pos.y > pos.height - inaccuracy) {
-          // Entering from the bottom.
-          startY = pos.height;
-        } else if (pos.y < inaccuracy) {
-          // Entering from the top.
-          startY = -pos.height;
-        } else {
-          // Default to above the element.
-          startY = -pos.height;
-        }
-
-        // Set the starting position.
-        gsap.set(overlay, { x: startX, y: startY });
-
-        // Animate the overlay into view.
-        gsap.to(overlay, { duration: 0.5, x: 0, y: 0, ease: 'power2.out' });
-      });
-
-      el.addEventListener('mouseleave', (e) => {
-        const pos = getRelativeMousePos(e);
-        let endX = 0,
-          endY = 0;
-
-        // Determine the exit direction based on where the mouse leaves.
-        if (pos.x <= 0) {
-          // Exiting to the left.
-          endX = -pos.width;
-        } else if (pos.x >= pos.width) {
-          // Exiting to the right.
-          endX = pos.width;
-        } else if (pos.y <= 0) {
-          // Exiting to the top.
-          endY = -pos.height;
-        } else if (pos.y >= pos.height) {
-          // Exiting to the bottom.
-          endY = pos.height;
-        }
-
-        // Animate the overlay out.
-        gsap.to(overlay, {
-          duration: 0.5,
-          x: endX,
-          y: endY,
-          ease: 'power2.out',
-        });
-      });
-    });
-  }, []);
-
   return (
-    <div className='p-4 flex gap-4'>
-      <div className='portfolio-single-box relative overflow-hidden w-52 h-52'>
-        <img
-          src='https://ittech.dreamitsolution.net/wp-content/uploads/2024/08/project-img1.png'
-          alt='Image'
-          className='w-full h-full object-cover'
-        />
-        <div className='overlay absolute w-full h-full bg-black bg-opacity-50'></div>
+    <section className='bg-[url("/images/servicer-bg.jpg")] bg-cover bg-center bg-no-repeat pt-[152px] pb-28 -mt-9'>
+      <div className='Container '>
+        <div className='relative text-center'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-xl font-semibold text-white uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className=' brightness-0 invert-[1]'
+            />{' '}
+            WHAT WE PROVIDE{' '}
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className='rotate-180 brightness-0 invert-[1]'
+            />
+          </h5>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            Grow Your Business in a short Time
+          </h1>
+          <div className='absolute top-0 -right-12 animate-bounce'>
+            <img
+              src={featureShape}
+              draggable='false'
+              alt='Shape'
+            />
+          </div>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-start gap-7 relative z-10 mt-11'>
+          {processData.map(
+            ({
+              id,
+              featureIcon,
+              featureTitle,
+              featureDesc,
+              featureUrl,
+              featureBtnText,
+              featureBtnIcon,
+            }) => {
+              return (
+                <div
+                  key={id}
+                  className='feature-box1'
+                >
+                  <FeatureCard
+                    featureIcon={featureIcon}
+                    featureTitle={featureTitle}
+                    featureDesc={featureDesc}
+                    featureUrl={featureUrl}
+                    featureBtnText={featureBtnText}
+                    featureBtnIcon={featureBtnIcon}
+                  />
+                </div>
+              );
+            }
+          )}
+        </div>
       </div>
-      <div className='portfolio-single-box relative overflow-hidden w-52 h-52'>
-        <img
-          src='https://ittech.dreamitsolution.net/wp-content/uploads/2024/08/project-img1.png'
-          alt='Image'
-          className='w-full h-full object-cover'
-        />
-        <div className='overlay absolute w-full h-full bg-black bg-opacity-50'></div>
-      </div>
-      <div className='portfolio-single-box relative overflow-hidden w-52 h-52'>
-        <img
-          src='https://ittech.dreamitsolution.net/wp-content/uploads/2024/08/project-img1.png'
-          alt='Image'
-          className='w-full h-full object-cover'
-        />
-        <div className='overlay absolute w-full h-full bg-black bg-opacity-50'></div>
-      </div>
-    </div>
+    </section>
   );
 };
 

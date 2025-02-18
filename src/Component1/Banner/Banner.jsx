@@ -1,5 +1,6 @@
 import bannerImg from '/images/single-seo.png';
-import bannerShape from '/images/shape-3.png';
+import bannerShape from '/images/banner-arrow.png';
+import bannerShape2 from '/images/shape-3.png';
 import subTilteShape from '/images/hero-title-shape1.png';
 import titleShape from '/images/horen.png';
 import bannerReview from '/images/google.png';
@@ -39,7 +40,7 @@ const Banner = () => {
               <br className='hidden 2xl:block' /> maintainable quality through
               low budgets
             </p>
-            <div className='relative'>
+            <div className='relative max-w-[580px]'>
               <div className='relative'>
                 <input
                   type='text'
@@ -47,7 +48,7 @@ const Banner = () => {
                   name='search'
                   placeholder='Your Website URL'
                   required
-                  className='w-full max-w-[580px] h-[62px] py-3 px-12 rounded-full border font-Nunito border-PrimaryColor-0 border-opacity-30 bg-transparent outline-none'
+                  className='w-full h-[62px] py-3 px-12 rounded-full border font-Nunito border-PrimaryColor-0 border-opacity-30 bg-transparent outline-none'
                 />
                 <span className='absolute top-1/2 -translate-y-1/2 left-7 text-PrimaryColor3-0'>
                   <GoGlobe />
@@ -86,6 +87,11 @@ const Banner = () => {
                 alt='Image'
               />
             </div>
+            <img
+              src={bannerShape}
+              draggable={false}
+              className='absolute bottom-28 right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[60px] animate-dance3 hidden sm:block'
+            />
           </div>
           <div className='sm:flex justify-center lg:justify-end relative -right-[60px] hidden'>
             <img
@@ -94,7 +100,7 @@ const Banner = () => {
               className='2xl:w-[inherit]'
             />
             <img
-              src={bannerShape}
+              src={bannerShape2}
               draggable={false}
               className='absolute bottom-[60px] right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[90px] animate-wiggle hidden sm:block'
             />

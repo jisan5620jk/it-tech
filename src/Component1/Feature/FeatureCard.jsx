@@ -4,33 +4,35 @@ import { Link } from 'react-router-dom';
 const FeatureCard = ({
   featureIcon,
   featureTitle,
+  featureDesc,
   featureUrl,
+  featureBtnText,
   featureBtnIcon,
 }) => {
   return (
-    <div className='text-center flex items-center justify-between group px-10 py-14 rounded-lg bg-gradient-to-b to-PrimaryColor-0 from-PrimaryColor2-0 overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:h-full before:bg-HeadingColor-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0'>
-      <div className='flex items-center gap-5'>
-        <div className='relative text-center z-10'>
-          <img
-            src={featureIcon}
-            draggable='false'
-            className='m-auto'
-          />
-        </div>
-        <h4 className='font-Rajdhani font-bold text-2xl sm:text-[26px] lg:text-[28px]] xl:text-3xl text-white transition-all duration-500 group-hover:text-white'>
-          {featureTitle}
-        </h4>
-      </div>
-      <Link
-        to={featureUrl}
-        className='inline-block relative'
-      >
+    <div className='group px-8 py-10 bg-transparent transition-all duration-500 hover:border-opacity-0 rounded-[10px] overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
+      <div className='size-[72px] rounded-lg bg-HeadingColor-0 bg-opacity-10 relative z-10 flex items-center justify-center overflow-hidden before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-full before:scale-0 before:rotate-180 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:scale-100 group-hover:before:rotate-0'>
         <img
-          src={featureBtnIcon}
+          src={featureIcon}
           draggable='false'
-          alt='Icon'
+          className='group-hover:animate-wobble_vertical'
         />
-      </Link>
+      </div>
+      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3'>
+        {featureTitle}
+      </h4>
+      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70'>
+        {featureDesc}
+      </p>
+      <div className='inline-block mt-[30px]'>
+        <Link
+          to={featureUrl}
+          className='flex items-center gap-2 bg-HeadingColor-0 bg-opacity-10 px-8 py-[7px] rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-0 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:h-full group-hover:before:top-0'
+        >
+          {featureBtnText}
+          {featureBtnIcon}
+        </Link>
+      </div>
     </div>
   );
 };
