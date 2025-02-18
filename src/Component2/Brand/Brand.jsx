@@ -8,6 +8,7 @@ import { IoStarSharp } from 'react-icons/io5';
 import Shape from '/images/AI-2-9.png';
 import Shape2 from '/images/AI-2-10.png';
 import Shape3 from '/images/AI-2-8.png';
+import Shape4 from '/images/triangle.png';
 import Faq from '../Faq/Faq';
 
 const Brand = () => {
@@ -32,6 +33,12 @@ const Brand = () => {
             draggable={false}
             alt='Shape'
             className='absolute bottom-0 left-1/4 animate-bounce'
+          />
+          <img
+            src={Shape4}
+            draggable={false}
+            alt='Shape'
+            className='absolute bottom-0 right-[29%] animate-dance2'
           />
           <div className='max-w-[374px] w-full space-y-12'>
             <div>

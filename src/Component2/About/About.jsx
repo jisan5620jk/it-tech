@@ -1,6 +1,7 @@
 import aboutThumb from '/images/AI-11.png';
 import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
+import shape from '/images/about-shape.png';
 import { GoCheckCircleFill } from 'react-icons/go';
 
 const About = () => {
@@ -112,6 +113,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <img src={shape} draggable={false} alt="Shape" className='absolute top-20 right-32 animate-dance2'/>
     </section>
   );
 };

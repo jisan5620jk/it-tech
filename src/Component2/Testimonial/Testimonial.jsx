@@ -5,6 +5,10 @@ import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import { RiDoubleQuotesL } from 'react-icons/ri';
 import testiProfile from '/images/mans.png';
+import testiProfile2 from '/images/mans2.png';
+import testiProfile3 from '/images/mans3.png';
+import testiProfile4 from '/images/mans4.png';
+import testiProfile5 from '/images/mans5.png';
 
 const testiData = [
   {
@@ -17,7 +21,7 @@ const testiData = [
                 materials via high-payoff`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile,
-    testiName: 'Anjelina Watson',
+    testiName: 'Jhon D. Alexon',
     testiDesignation: 'Web Developer',
   },
   {
@@ -29,8 +33,8 @@ const testiData = [
                 effective technologies actualize alternatives
                 materials via high-payoff`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile,
-    testiName: 'Anjelina Watson',
+    testiProfile: testiProfile2,
+    testiName: 'Michel Jiyang',
     testiDesignation: 'Web Developer',
   },
   {
@@ -42,8 +46,8 @@ const testiData = [
                 effective technologies actualize alternatives
                 materials via high-payoff`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile,
-    testiName: 'Anjelina Watson',
+    testiProfile: testiProfile3,
+    testiName: 'Anjelina Jholi',
     testiDesignation: 'Web Developer',
   },
   {
@@ -55,8 +59,8 @@ const testiData = [
                 effective technologies actualize alternatives
                 materials via high-payoff`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile,
-    testiName: 'Anjelina Watson',
+    testiProfile: testiProfile4,
+    testiName: 'Mariya Watson',
     testiDesignation: 'Web Developer',
   },
   {
@@ -68,8 +72,8 @@ const testiData = [
                 effective technologies actualize alternatives
                 materials via high-payoff`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile,
-    testiName: 'Anjelina Watson',
+    testiProfile: testiProfile5,
+    testiName: 'David Hamilton',
     testiDesignation: 'Web Developer',
   },
 ];

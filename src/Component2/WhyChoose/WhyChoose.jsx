@@ -11,10 +11,10 @@ import Marquee from '../Marquee/Marquee';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat py-28'>
+    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat pt-28 pb-[90px]'>
       <div className='Container'>
         <div className='grid grid-cols-2 items-center relative'>
-          <div className='absolute top-28 -right-36 animate-wiggle'>
+          <div className='absolute top-16 -right-[184px] animate-wiggle'>
             <img
               src={featureShape}
               draggable='false'

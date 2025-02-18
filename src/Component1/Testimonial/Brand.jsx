@@ -88,7 +88,7 @@ const Brand = () => {
           <SwiperSlide>
             <div>
               <img
-                src={brandThumb}
+                src={brandThumb3}
                 draggable='false'
                 className='m-auto'
               />

@@ -23,7 +23,7 @@ const Pricing = () => {
   }
 
   return (
-    <section className="relative overflow-hidden pt-28 pb-[120px] bg-[url('/images/AI-2-1.jpg')] bg-cover bg-no-repeat bg-center">
+    <section className="relative overflow-hidden pt-28 pb-[90px] bg-[url('/images/AI-2-1.jpg')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
         <div className='grid grid-cols-3'>
           <div className='col-span-1'>
@@ -83,7 +83,7 @@ const Pricing = () => {
               className={`tab-content ${isMonthly ? 'active' : ''}`}
             >
               <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-                <div className='bg-white bg-opacity-45 border-2 border-white transition-all duration-500 ease-linear hover:border-PrimaryColor-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <div className='bg-white bg-opacity-45 border-2 border-white transition-all duration-500 ease-linear hover:bg-opacity-0 hover:border-PrimaryColor-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
                   <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
                     Basic Plan
                   </h5>
@@ -196,7 +196,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                 </div>
-                <div className='bg-white bg-opacity-45 border-2 border-white transition-all duration-500 ease-linear hover:border-PrimaryColor-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
+                <div className='bg-white bg-opacity-45 border-2 border-white transition-all duration-500 ease-linear hover:bg-opacity-0 hover:border-PrimaryColor-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
                   <div className='flex items-center justify-between'>
                     <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
                       Standard

@@ -3,6 +3,7 @@ import faqIcon from '/images/AI-2-2.png';
 import faqIcon2 from '/images/AI-2-1-1.png';
 import faqIcon3 from '/images/AI-2-2-1.png';
 import Shape from '/images/AI-2-3.png';
+import Shape2 from '/images/AI-5.png';
 import { useState, useRef, useEffect } from 'react';
 import titleShape from '/images/sub-title-shape.png';
 import { RiSendPlaneFill } from 'react-icons/ri';
@@ -60,6 +61,13 @@ const Faq = () => {
         alt='Shape'
         className='absolute bottom-6 right-20 animate-wiggle'
       />
+      <div className='absolute top-32 right-20 animate-dance3'>
+        <img
+          src={Shape2}
+          draggable='false'
+          alt='Shape'
+        />
+      </div>
       <div className='Container'>
         <div className='grid grid-cols-2 items-center'>
           <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-[50px] pt-[50px] pb-[64px] max-w-[520px] w-full text-center'>

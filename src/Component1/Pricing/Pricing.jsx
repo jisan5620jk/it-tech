@@ -21,35 +21,6 @@ const Pricing = () => {
       : 'translateX(30px)';
   }
 
-  // useEffect(() => {
-  //   const handleMouseEnter = (event) => {
-  //     event.target.classList.add('active');
-
-  //     // Remove 'active' class from siblings
-  //     const parent = event.target.parentElement;
-  //     if (parent) {
-  //       const siblings = parent.querySelectorAll('.pricing-box');
-  //       siblings.forEach((sibling) => {
-  //         if (sibling !== event.target) {
-  //           sibling.classList.remove('active');
-  //         }
-  //       });
-  //     }
-  //   };
-
-  //   const elements = document.querySelectorAll('.pricing-box');
-  //   elements.forEach((element) => {
-  //     element.addEventListener('mouseenter', handleMouseEnter);
-  //   });
-
-  //   // Clean up event listeners when component unmounts
-  //   return () => {
-  //     elements.forEach((element) => {
-  //       element.removeEventListener('mouseenter', handleMouseEnter);
-  //     });
-  //   };
-  // }, []);
-
   return (
     <section className="relative overflow-hidden pt-28 pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
@@ -64,7 +35,8 @@ const Pricing = () => {
               Pricing Plans
             </h5>
             <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              The Best value for Your SEO<br /> Marketing Plans
+              The Best value for Your SEO
+              <br /> Marketing Plans
             </h1>
           </div>
           <div

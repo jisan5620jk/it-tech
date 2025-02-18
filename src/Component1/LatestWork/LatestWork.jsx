@@ -4,6 +4,7 @@ import latestWorkCardImg from '/images/project-img1.png';
 import latestWorkCardImg2 from '/images/project-img2.png';
 import latestWorkCardImg3 from '/images/project-img3.png';
 import latestWorkCardImg4 from '/images/project-img4.png';
+import latestWorkShape from '/images/arrow.png';
 import LatestWorkCard from './LatestWorkCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -84,7 +85,7 @@ const LatestWork = () => {
   return (
     <section className='bg-HeadingColor-0 py-28'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center'>
+        <div className='grid grid-cols-2 items-center relative'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -129,6 +130,12 @@ const LatestWork = () => {
               </button>
             </Link>
           </div>
+          <img
+            src={latestWorkShape}
+            draggable={false}
+            alt='Shape'
+            className='absolute top-0 right-60 animate-swing hidden lg:block'
+          />
         </div>
       </div>
       <div className='max-w-[1758px] w-full px-5 mx-auto mt-[36px]'>

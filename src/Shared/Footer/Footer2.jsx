@@ -232,7 +232,7 @@ const Footer2 = () => {
       </div>
       <div className='bg-HeadingColor-0 bg-opacity-10 mt-[96px]'>
         <div className='Container'>
-          <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7 border-t border-BorderColor-0'>
+          <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
             <div>
               <p className='font-Nunito text-HeadingColor-0'>
                 &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream IT

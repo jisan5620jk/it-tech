@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import processImg from "/images/process-1.png";
 import processImg2 from "/images/process-2.png";
 import processImg3 from "/images/process-3.png";

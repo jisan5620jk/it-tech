@@ -12,6 +12,7 @@ import { GoArrowRight } from 'react-icons/go';
 import { HiOutlineMail } from 'react-icons/hi';
 import { PiArrowCircleRight, PiWhatsappLogoLight } from 'react-icons/pi';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
+import footerShape from '/images/hand.png';
 
 const Footer = () => {
   return (
@@ -72,12 +73,34 @@ const Footer = () => {
       </div>
       <footer className="bg-[url('/images/footer_bg.jpg')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
         <div className='Container'>
-          <div className='grid gap-y-7 grid-cols-12'>
+          <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 pb-5 hidden'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
                 About IT-Tech
               </h4>
-              <p className='font-Nunito text-TextColor-0 mt-6 mb-8 w-full max-w-[340px]'>
+            </div>
+            <div className='col-span-12 md:col-span-6 lg:col-span-2'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+                Company
+              </h4>
+            </div>
+            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+                Our Services
+              </h4>
+            </div>
+            <div className='col-span-12 md:col-span-6 lg:col-span-3'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
+                Newsletter
+              </h4>
+            </div>
+          </div>
+          <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
+            <div className='col-span-12 md:col-span-6 lg:col-span-4'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
+                About IT-Tech
+              </h4>
+              <p className='font-Nunito text-TextColor-0 mt-7 lg:mt-0 mb-5 w-full max-w-[340px]'>
                 Globally expedite enterprise-wide action items rather than
                 distinctive architectures. Globally engage market positioning.
               </p>
@@ -94,9 +117,31 @@ const Footer = () => {
                   </button>
                 </a>
               </div>
+              <ul className='flex gap-3 mt-7'>
+                <li>
+                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                    <FaFacebookF />
+                  </button>
+                </li>
+                <li>
+                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                    <FaXTwitter />
+                  </button>
+                </li>
+                <li>
+                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                    <FaLinkedinIn />
+                  </button>
+                </li>
+                <li>
+                  <button className='size-9 rounded-full text-sm bg-white bg-opacity-10 flex items-center justify-center text-white overflow-hidden transition-all duration-500 hover:text-white relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-gradient-to-l before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rotate-180 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100 hover:before:rotate-0'>
+                    <FaPinterestP />
+                  </button>
+                </li>
+              </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-2'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
                 Company
               </h4>
               <ul>
@@ -143,7 +188,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px] block lg:hidden'>
                 Our Services
               </h4>
               <ul>
@@ -190,15 +235,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className='col-span-12 md:col-span-6 lg:col-span-3'>
-              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[30px]'>
+              <h4 className='font-Rajdhani text-[28px] text-white font-semibold mb-[30px] block lg:hidden'>
                 Newsletter
               </h4>
-              <p className='font-Nunito flex gap-2 text-TextColor-0 font-medium mb-[26px]'>
-                <span className='relative top-[3px] text-green-400'>
-                  <FaRegCircleCheck />
-                </span>
-                Protecting Your Service
-              </p>
               <form
                 action='#'
                 method='post'
@@ -213,7 +252,7 @@ const Footer = () => {
                     id='email'
                     placeholder='Enter Your E-Mail*'
                     required
-                    className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-6 py-2 text-white placeholder:text-white mb-4'
+                    className='w-full h-[56px] font-Nunito rounded-full outline-none focus:outline-none border-none bg-white bg-opacity-10 px-8 py-2 text-white placeholder:text-white mb-3'
                   />
                   <HiOutlineMail className='absolute top-1/2 -translate-y-1/2 right-6 text-white text-xl' />
                 </label>
@@ -228,38 +267,51 @@ const Footer = () => {
                   </button>
                 </div>
               </form>
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-6 mt-[108px] border-t border-BorderColor-0'>
-            <div>
-              <p className='font-Nunito text-white'>
-                © 2024 Toptech. Designed By Dream IT Solution
-                <span className='text-PrimaryColor-0'> Dream IT</span>
+              <p className='font-Nunito flex gap-2 text-TextColor-0 font-medium mt-5'>
+                <span className='relative top-[3px] text-green-600'>
+                  <FaRegCircleCheck />
+                </span>
+                Protecting Your Service
               </p>
             </div>
-            <div>
-              <ul className='flex gap-3'>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
-                    <FaFacebookF />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
-                    <FaXTwitter />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
-                    <FaLinkedinIn />
-                  </button>
-                </li>
-                <li>
-                  <button className='size-9 rounded-full text-sm bg-[#ffffff2f] flex items-center justify-center text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:-z-10 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
-                    <FaPinterestP />
-                  </button>
-                </li>
-              </ul>
+          </div>
+        </div>
+        <div className='absolute right-20 bottom-[81px] animate-dance3'>
+          <img
+            src={footerShape}
+            draggable={false}
+            alt='Image'
+          />
+        </div>
+        <div className='bg-white bg-opacity-5 mt-[96px]'>
+          <div className='Container'>
+            <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
+              <div>
+                <p className='font-Nunito text-white'>
+                  &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream
+                  IT Solution
+                </p>
+              </div>
+              <div>
+                <ul className='flex items-center gap-10'>
+                  <li>
+                    <Link
+                      to={'/'}
+                      className='font-Nunito text-white'
+                    >
+                      Terms & Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to={'/'}
+                      className='font-Nunito text-white'
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import bannerImg from '/images/AI.png';
 import bannerShape from '/images/AI-1.png';
 import bannerShape2 from '/images/AI-2.png';
+import bannerShape3 from '/images/triangle.png';
 import subTilteShape from '/images/hero-title-shape1.png';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
@@ -81,6 +82,11 @@ const Banner = () => {
               src={bannerShape2}
               draggable={false}
               className='absolute top-0 left-10 animate-rotational hidden sm:block'
+            />
+            <img
+              src={bannerShape3}
+              draggable={false}
+              className='absolute top-14 -right-16 animate-dance2 hidden sm:block'
             />
           </div>
         </div>

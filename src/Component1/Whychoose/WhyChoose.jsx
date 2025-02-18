@@ -8,32 +8,35 @@ import WhyChooseCard from './WhyChooseCard';
 import './why-choose.css';
 import { IoSearchSharp } from 'react-icons/io5';
 import bannerShape from '/images/shape-3.png';
-import whyChooseShape from '/images/choose-google.png';
+import whyChooseShape from '/images/seo-rank.png';
+import whyChooseShape2 from '/images/choose-google.png';
 
 const WhyChoose = () => {
   useEffect(() => {
-    const boxes = document.querySelectorAll('.why-choose-box');
+    const handleMouseEnter = (event) => {
+      event.target.classList.add('active');
 
-    boxes.forEach((box) => {
-      box.addEventListener('mouseover', () => {
-        box.classList.add('active');
-      });
+      // Remove 'active' class from siblings
+      const parent = event.target.parentElement;
+      if (parent) {
+        const siblings = parent.querySelectorAll('.why-choose-box');
+        siblings.forEach((sibling) => {
+          if (sibling !== event.target) {
+            sibling.classList.remove('active');
+          }
+        });
+      }
+    };
 
-      box.addEventListener('mouseout', () => {
-        box.classList.remove('active');
-      });
+    const elements = document.querySelectorAll('.why-choose-box');
+    elements.forEach((element) => {
+      element.addEventListener('mouseenter', handleMouseEnter);
     });
 
-    // Cleanup event listeners on component unmount
+    // Clean up event listeners when component unmounts
     return () => {
-      boxes.forEach((box) => {
-        box.removeEventListener('mouseover', () => {
-          box.classList.add('active');
-        });
-
-        box.removeEventListener('mouseout', () => {
-          box.classList.remove('active');
-        });
+      elements.forEach((element) => {
+        element.removeEventListener('mouseenter', handleMouseEnter);
       });
     };
   }, []);
@@ -87,6 +90,12 @@ const WhyChoose = () => {
                 src={whyChooseShape}
                 draggable={false}
                 alt='Shape'
+                className='absolute top-40 left-0 animate-wiggle hidden sm:block'
+              />
+              <img
+                src={whyChooseShape2}
+                draggable={false}
+                alt='Shape'
                 className='absolute top-10 right-0 animate-dance2 hidden sm:block'
               />
               <img
@@ -95,7 +104,7 @@ const WhyChoose = () => {
                 alt='Why CHoose Image'
                 className='w-[inherit] -mb-28'
               />
-              <div className='absolute top-[39%] left-40 pointer-events-none'>
+              <div className='absolute top-[39%] left-[170px] pointer-events-none'>
                 <div className='relative'>
                   <input
                     type='text'

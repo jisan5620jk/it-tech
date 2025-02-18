@@ -129,7 +129,7 @@ const Work = () => {
               className='inline-block mt-7'
             >
               <button className='primary-btn'>
-                {`More About`}
+                {`All Works`}
                 <span className='icon-style'>
                   <svg
                     className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'

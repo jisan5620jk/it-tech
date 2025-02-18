@@ -7,7 +7,7 @@
   left: 0;
 }
 
-.why-choose-box.active > .why-choose-title,
-.why-choose-box.active > .why-choose-desc {
+.why-choose-box.active .why-choose-title,
+.why-choose-box.active .why-choose-desc {
   color: white;
 }

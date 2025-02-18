@@ -1,9 +1,10 @@
 import callDoAction from '/images/call-do-img.png';
 import callDoActionIcon from '/images/call-do-icon.png';
+import callDoActionShape from '/images/hand.png';
 
 const CallDoAction = () => {
   return (
-    <section className='bg-[url(/images/call-to-bg.png)] bg-cover bg-center'>
+    <section className='bg-[url(/images/call-to-bg.png)] bg-cover bg-center relative'>
       <div className='Container'>
         <div className='flex items-center justify-between'>
           <div className='flex pl-[272px] relative py-12'>
@@ -39,6 +40,13 @@ const CallDoAction = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='absolute right-20 bottom-0 animate-dance3'>
+        <img
+          src={callDoActionShape}
+          draggable={false}
+          alt='Image'
+        />
       </div>
     </section>
   );
