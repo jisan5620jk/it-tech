@@ -10,9 +10,9 @@ import arrowShape from '/images/arrow-shape.png';
 
 const Integrations = () => {
   return (
-    <section className='bg-[url(/images/integration-bg2.png)] bg-cover bg-center bg-no-repeat relative py-28 z-10'>
+    <section className='bg-[url(/images/integration-bg2.png)] bg-cover bg-center bg-no-repeat relative pt-16 pb-28 lg:py-28 z-10'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center'>
+        <div className='grid grid-cols-1 gap-12 lg:gap-0 lg:grid-cols-2 items-center'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -26,24 +26,21 @@ const Integrations = () => {
               Transform Your Website into a<br /> Revenue-Generating Machine
               <br /> Achieve Online Success
             </h1>
-            <div className='grid grid-cols-2 border-t border-HeadingColor-0 border-opacity-10 pt-8 mt-7 mr-4 xl:mr-8'>
+            <div className='grid grid-cols-1 gap-7 sm:gap-0 sm:grid-cols-2 border-t border-HeadingColor-0 border-opacity-10 pt-8 mt-7 mr-4 xl:mr-8'>
               <div>
                 <div className='flex items-start gap-2 -ml-[6px]'>
                   <div className='text-PrimaryColor-0 inline-block'>
-                    <BsArrowRight
-                      size={38}
-                      className='-rotate-90 inline-block'
-                    />
+                    <BsArrowRight className='-rotate-90 inline-block text-[26px] md:text-[38px]' />
                   </div>
-                  <div className='flex items-center -mt-3'>
-                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[60px] leading-10'>
+                  <div className='flex items-center -mt-1 md:-mt-3'>
+                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       <OnScrollCounter
                         start={0}
                         end={86}
                         duration={1000}
                       />
                     </div>
-                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-[60px] leading-10'>
+                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       %
                     </h6>
                   </div>
@@ -56,20 +53,17 @@ const Integrations = () => {
               <div>
                 <div className='flex items-start gap-2 -ml-[6px]'>
                   <div className='text-PrimaryColor-0 inline-block'>
-                    <BsArrowRight
-                      size={38}
-                      className='-rotate-90 inline-block'
-                    />
+                    <BsArrowRight className='-rotate-90 inline-block text-[26px] md:text-[38px]' />
                   </div>
-                  <div className='flex items-center -mt-3'>
-                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[60px] leading-10'>
+                  <div className='flex items-center -mt-1 md:-mt-3'>
+                    <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       <OnScrollCounter
                         start={0}
                         end={98}
                         duration={1000}
                       />
                     </div>
-                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-[60px] leading-10'>
+                    <h6 className='font-Rajdhani font-semibold text-HeadingColor-0 text-4xl md:text-[60px] leading-10'>
                       %
                     </h6>
                   </div>
@@ -86,7 +80,7 @@ const Integrations = () => {
                 className='inline-block'
               >
                 <button className='primary-btn'>
-                  {`More About`}
+                  {`Learn More`}
                   <span className='icon-style'>
                     <svg
                       className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
@@ -113,7 +107,7 @@ const Integrations = () => {
                   src={arrowShape}
                   draggable={false}
                   alt='Shape'
-                  className='animate-dance3'
+                  className='animate-dance3 hidden sm:block'
                 />
               </div>
             </div>
@@ -124,20 +118,20 @@ const Integrations = () => {
                 src={integrationImg}
                 draggable={false}
                 alt='Image'
-                className='relative z-10'
+                className='relative z-10 rotate-45'
               />
             </div>
             <img
               src={integrationShape2}
               draggable={false}
               alt='Image'
-              className='absolute -z-10 top-0 left-0 animate-rotational'
+              className='absolute -z-10 top-0 left-0 animate-rotational hidden md:block'
             />
             <img
               src={integrationShape3}
               draggable={false}
               alt='Image'
-              className='absolute -z-10 top-0 right-0 animate-wiggle'
+              className='absolute -z-10 top-0 right-0 animate-wiggle hidden md:block'
             />
           </div>
         </div>
@@ -146,7 +140,7 @@ const Integrations = () => {
         src={integrationShape}
         draggable={false}
         alt='Image'
-        className='absolute -z-10 bottom-0 right-[120px]'
+        className='w-44 absolute -z-10 bottom-0 right-0 lg:right-[120px]'
       />
     </section>
   );

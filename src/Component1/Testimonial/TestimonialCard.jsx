@@ -9,7 +9,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div>
-      <div className='relative text-left bg-BodyBgDark-0 px-9 py-8 mb-5 rounded-lg'>
+      <div className='relative text-left bg-BodyBgDark-0 px-5 sm:px-9 py-4 sm:py-8 mb-5 rounded-lg'>
         <div className='flex items-center justify-between mb-7'>
           <div>
             <h5 className='font-Rajdhani text-2xl text-white font-semibold'>

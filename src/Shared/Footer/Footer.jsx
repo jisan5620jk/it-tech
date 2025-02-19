@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <>
       <div className='Container -mb-[70px] relative z-10'>
-        <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-12 px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
+        <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-5 md:py-12 px-6 md:px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
           <div className=''>
             <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
               Email Us at :
@@ -276,7 +276,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='absolute right-20 bottom-[81px] animate-dance3'>
+        <div className='absolute right-20 bottom-[81px] animate-dance3 hidden md:block'>
           <img
             src={footerShape}
             draggable={false}

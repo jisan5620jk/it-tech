@@ -11,6 +11,7 @@ import blogPostIcon3 from '/images/user3.png';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 
 const blogData = [
   {
@@ -55,8 +56,12 @@ const Blog = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
-    autoplay: true,
+    modules: [Autoplay],
+    speed: 2000,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -76,9 +81,9 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-28 bg-white'>
+    <section className='py-16 lg:py-28 bg-white'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center'>
+        <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -93,7 +98,7 @@ const Blog = () => {
               <br /> from Our Blog Posts
             </h1>
           </div>
-          <div className='flex items-center justify-end'>
+          <div className='flex items-center md:justify-end'>
             <Link
               to={'/blog_grid'}
               className='inline-block'

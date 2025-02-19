@@ -22,9 +22,9 @@ const Pricing = () => {
   }
 
   return (
-    <section className="relative overflow-hidden pt-28 pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
+    <section className="relative overflow-hidden pt-16 lg:pt-28 pb-28 lg:pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
-        <div className='flex justify-between items-center'>
+        <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-center'>
           <div className='w-full mx-auto'>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -39,24 +39,26 @@ const Pricing = () => {
               <br /> Marketing Plans
             </h1>
           </div>
-          <div
-            className='toggle-container flex items-center gap-2 py-[15px] px-8 bg-SecondaryColor-0 rounded-full bg-opacity-10'
-            onClick={togglePlans}
-          >
-            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
-              Monthly
-            </div>
-            <div className={`toggle ${isMonthly ? 'active' : ''}`}>
-              <div
-                id='toggleCircle'
-                className='toggle-circle'
-                style={{
-                  transform: isMonthly ? 'translateX(0)' : 'translateX(30px)',
-                }}
-              ></div>
-            </div>
-            <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-[19px]'>
-              Yearly
+          <div className='flex'>
+            <div
+              className='toggle-container flex items-center gap-2 py-[15px] px-8 bg-SecondaryColor-0 rounded-full bg-opacity-10'
+              onClick={togglePlans}
+            >
+              <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-lg sm:text-[19px]'>
+                Monthly
+              </div>
+              <div className={`toggle ${isMonthly ? 'active' : ''}`}>
+                <div
+                  id='toggleCircle'
+                  className='toggle-circle'
+                  style={{
+                    transform: isMonthly ? 'translateX(0)' : 'translateX(30px)',
+                  }}
+                ></div>
+              </div>
+              <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-lg sm:text-[19px]'>
+                Yearly
+              </div>
             </div>
           </div>
         </div>

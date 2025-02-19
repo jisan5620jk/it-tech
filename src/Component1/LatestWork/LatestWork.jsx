@@ -9,7 +9,7 @@ import LatestWorkCard from './LatestWorkCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const latestWorkCard = [
   {
@@ -58,9 +58,13 @@ const LatestWork = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
     initialSlide: 1,
-    autoplay: true,
+    modules: [Autoplay],
+    speed: 2000,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,

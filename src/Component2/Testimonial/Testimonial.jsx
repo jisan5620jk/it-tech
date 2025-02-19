@@ -83,7 +83,10 @@ const Testimonial = () => {
     loop: true,
     spaceBetween: 30,
     speed: 1500,
-    autoplay: true,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,

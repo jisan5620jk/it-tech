@@ -348,6 +348,12 @@
   @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
 }
 
+@media screen and (max-width: 991px) {
+  .is-sticky {
+    @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
+  }
+}
+
 .header-creative.is-sticky {
   @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
 }

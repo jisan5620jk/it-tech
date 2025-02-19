@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
 import titleShape from '/images/sub-title-shape.png';
@@ -46,16 +47,20 @@ const testiData = [
 
 const Testimonial = () => {
   const settings = {
+    modules: [Autoplay],
     loop: true,
     spaceBetween: 30,
-    speed: 1500,
-    autoplay: true,
+    speed: 2000,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
         slidesPerView: 2,
@@ -66,9 +71,9 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial pt-[135px] pb-28 bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-top bg-HeadingColor-0 relative z-10 overflow-hidden'>
+    <section className='testimonial pt-16 lg:pt-[135px] pb-16 lg:pb-28 bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-top bg-HeadingColor-0 relative z-10 overflow-hidden'>
       <div className='Container'>
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-1 gap-10 md:gap-1 md:grid-cols-2 lg:grid-cols-3'>
           <div className='text-left col-span-1'>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img

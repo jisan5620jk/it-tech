@@ -28,7 +28,7 @@ const Banner = () => {
                   draggable='false'
                   src={titleShape}
                   alt='Shape'
-                  className='animate-swing w-10'
+                  className='animate-swing w-10 md:w-[inherit]'
                 />
                 Search
               </div>

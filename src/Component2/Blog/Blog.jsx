@@ -49,7 +49,10 @@ const Blog = () => {
     loop: true,
     spaceBetween: 32,
     speed: 1000,
-    autoplay: true,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
