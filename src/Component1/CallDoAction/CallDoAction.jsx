@@ -6,9 +6,9 @@ const CallDoAction = () => {
   return (
     <section className='bg-[url(/images/call-to-bg.png)] bg-cover bg-center relative'>
       <div className='Container'>
-        <div className='flex flex-col md:items-center justify-between px-2 md:px-0 py-10 md:py-0'>
-          <div className='flex lg:pl-[272px] relative md:py-12'>
-            <div className='absolute left-0 bottom-0 hidden md:block'>
+        <div className='flex flex-col lg:flex-row lg:items-center justify-between px-2 lg:px-0 py-10 lg:py-0'>
+          <div className='flex lg:pl-[272px] relative lg:py-12'>
+            <div className='absolute left-0 bottom-0 hidden lg:block'>
               <img
                 src={callDoAction}
                 draggable={false}
@@ -16,7 +16,7 @@ const CallDoAction = () => {
               />
             </div>
             <div>
-              <h1 className='font-Rajdhani font-bold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
+              <h1 className='font-Rajdhani font-bold text-lg leading-6 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[34px] xl:leading-[40px] text-white mt-[14px] mb-4'>
                 Need SEO Service for growing your <br /> Business? Just Call Us.
               </h1>
             </div>
@@ -42,7 +42,7 @@ const CallDoAction = () => {
           </div>
         </div>
       </div>
-      <div className='absolute right-20 bottom-0 animate-dance3 hidden md:block'>
+      <div className='absolute right-0 lg:right-20 bottom-0 animate-dance3 hidden md:block'>
         <img
           src={callDoActionShape}
           draggable={false}

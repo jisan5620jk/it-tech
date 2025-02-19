@@ -278,7 +278,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='absolute right-20 bottom-[81px] animate-dance3 hidden md:block'>
+        <div className='absolute right-0 lg:right-20 bottom-[81px] animate-dance3 hidden md:block'>
           <img
             src={footerShape}
             draggable={false}

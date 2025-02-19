@@ -22,7 +22,7 @@ const Pricing = () => {
   }
 
   return (
-    <section className="relative overflow-hidden pt-16 lg:pt-28 pb-28 lg:pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
+    <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-28 pb:pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
         <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-center'>
           <div className='w-full mx-auto'>
@@ -34,7 +34,7 @@ const Pricing = () => {
               />{' '}
               Pricing Plans
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               The Best value for Your SEO
               <br /> Marketing Plans
             </h1>

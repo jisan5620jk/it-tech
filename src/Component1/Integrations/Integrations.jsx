@@ -113,7 +113,7 @@ const Integrations = () => {
             </div>
           </div>
           <div className='inline-block relative'>
-            <div className='flex justify-end'>
+            <div className='flex lg:justify-end'>
               <img
                 src={integrationImg}
                 draggable={false}
@@ -140,7 +140,7 @@ const Integrations = () => {
         src={integrationShape}
         draggable={false}
         alt='Image'
-        className='w-44 absolute -z-10 bottom-0 right-0 sm:w-56 sm:right-20 lg:right-[120px]'
+        className='w-44 absolute -z-10 bottom-0 right-0 sm:w-56 md:w-[inherit] sm:right-20 md:right-0 lg:right-[120px]'
       />
     </section>
   );

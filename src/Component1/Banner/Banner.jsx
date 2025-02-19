@@ -8,7 +8,7 @@ import { GoGlobe } from 'react-icons/go';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1350px] lg:h-[660px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1350px] md:h-[1450px] lg:h-[660px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
@@ -91,10 +91,10 @@ const Banner = () => {
             <img
               src={bannerShape}
               draggable={false}
-              className='absolute bottom-28 right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[60px] animate-dance3 hidden md:block'
+              className='absolute bottom-28 right-0 lg:-right-24 xl:right-0 2xl:-right-[60px] animate-dance3 hidden md:block lg:hidden xl:block'
             />
           </div>
-          <div className='sm:flex justify-center lg:justify-end relative lg:-right-[60px] hidden'>
+          <div className='sm:flex justify-center lg:justify-end relative xl:-right-[60px] hidden'>
             <img
               src={bannerImg}
               draggable='false'
@@ -103,7 +103,7 @@ const Banner = () => {
             <img
               src={bannerShape2}
               draggable={false}
-              className='absolute bottom-[60px] right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[90px] animate-wiggle hidden md:block'
+              className='absolute bottom-[60px] right-0 md:right-20 lg:right-0 xl:right-0 2xl:-right-[90px] animate-wiggle lg:w-[38%] hidden md:block'
             />
           </div>
         </div>

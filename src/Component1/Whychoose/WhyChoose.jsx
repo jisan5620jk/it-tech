@@ -90,21 +90,21 @@ const WhyChoose = () => {
                 src={whyChooseShape}
                 draggable={false}
                 alt='Shape'
-                className='absolute top-40 left-0 animate-wiggle hidden sm:block'
+                className='absolute top-40 left-0 animate-wiggle hidden sm:block lg:hidden xl:block'
               />
               <img
                 src={whyChooseShape2}
                 draggable={false}
                 alt='Shape'
-                className='absolute top-10 right-0 animate-dance2 hidden sm:block'
+                className='absolute top-10 right-0 animate-dance2 hidden sm:block lg:hidden xl:block'
               />
               <img
                 src={whyChooseImg}
                 draggable={false}
                 alt='Why CHoose Image'
-                className='w-[inherit] -mb-28'
+                className='w-[inherit] -mb-28 lg:-mb-[200px]'
               />
-              <div className='absolute top-[39%] left-[170px] pointer-events-none hidden md:block'>
+              <div className='absolute top-[39%] left-[170px] pointer-events-none hidden md:block lg:hidden xl:block'>
                 <div className='relative'>
                   <input
                     type='text'
@@ -125,7 +125,7 @@ const WhyChoose = () => {
               <img
                 src={bannerShape}
                 draggable={false}
-                className='absolute bottom-40 right-0 md:right-20 lg:right-0 animate-wiggle hidden sm:block'
+                className='absolute bottom-40 right-0 md:right-20 lg:right-0 animate-wiggle hidden sm:block lg:hidden xl:block'
               />
             </div>
           </div>

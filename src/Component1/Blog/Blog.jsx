@@ -81,9 +81,9 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 lg:py-28 bg-BodyBg-0'>
+    <section className='py-16 md:py-20 lg:py-28 bg-BodyBg-0'>
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center'>
+        <div className='flex gap-4 flex-col md:flex-row justify-between items-center'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -93,12 +93,12 @@ const Blog = () => {
               />{' '}
               Latest Blog
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Ready Our Latest Insights
               <br /> from Our Blog Posts
             </h1>
           </div>
-          <div className='flex items-center md:justify-end'>
+          <div className=''>
             <Link
               to={'/blog_grid'}
               className='inline-block'
