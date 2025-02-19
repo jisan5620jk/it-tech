@@ -16,6 +16,7 @@ const LatestWorkCard = ({
             src={latestWorkCardImg}
             draggable={false}
             alt='Image'
+            className='w-full sm:pr-[30px]'
           />
         </div>
         <div className='px-4 sm:px-[38px] pb-7 pt-5 sm:pt-2'>

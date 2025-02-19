@@ -17,55 +17,57 @@ import footerShape from '/images/hand.png';
 const Footer = () => {
   return (
     <>
-      <div className='Container -mb-[70px] relative z-10'>
-        <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-5 md:py-12 px-6 md:px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
-          <div className=''>
-            <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
-              Email Us at :
-            </h6>
-            <div className='flex items-center gap-2'>
-              <div className='text-white'>
-                <HiOutlineEnvelope size={'28'} />
-              </div>
-              <a
-                href='mailto:example@gmail.com'
-                title='example@gmail.com'
-              >
-                <button className='font-Rajdhani text-2xl text-white font-medium'>
-                  example@gmail.com
-                </button>
-              </a>
-            </div>
-          </div>
-          <div className='flex lg:justify-center md:border-l lg:border-l-0 xl:border-x border-BorderColor2-0 border-opacity-30 py-4'>
-            <Link
-              to={'/'}
-              title='IT-Tech'
-            >
-              <img
-                src={footerLogo}
-                draggable='false'
-                className='brightness-0 invert-[1]'
-              />
-            </Link>
-          </div>
-          <div className='flex lg:justify-end'>
+      <div className='bg-BodyBg-0'>
+        <div className='Container -mb-[70px] relative z-10'>
+          <div className='bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 py-5 md:py-12 px-6 md:px-16 rounded-[10px] grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-7 lg:gap-0 lg:grid-cols-3 lg:items-center'>
             <div className=''>
               <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
-                Call Us Anytime
+                Email Us at :
               </h6>
               <div className='flex items-center gap-2'>
                 <div className='text-white'>
-                  <PiWhatsappLogoLight size={'28'} />
+                  <HiOutlineEnvelope size={'28'} />
                 </div>
                 <a
-                  href='tel:+001234567890'
-                  title='+00 123 4567 890'
+                  href='mailto:example@gmail.com'
+                  title='example@gmail.com'
                 >
-                  <button className='font-Rajdhani text-2xl text-white font-medium'>
-                    +00 123 4567 890
+                  <button className='font-Rajdhani text-xl sm:text-2xl text-white font-medium'>
+                    example@gmail.com
                   </button>
                 </a>
+              </div>
+            </div>
+            <div className='flex lg:justify-center lg:border-l-0 xl:border-x border-BorderColor2-0 border-opacity-30 py-4'>
+              <Link
+                to={'/'}
+                title='IT-Tech'
+              >
+                <img
+                  src={footerLogo}
+                  draggable='false'
+                  className='brightness-0 invert-[1]'
+                />
+              </Link>
+            </div>
+            <div className='flex lg:justify-end'>
+              <div className=''>
+                <h6 className='font-Nunito text-[15px] text-white mb-[6px]'>
+                  Call Us Anytime
+                </h6>
+                <div className='flex items-center gap-2'>
+                  <div className='text-white'>
+                    <PiWhatsappLogoLight size={'28'} />
+                  </div>
+                  <a
+                    href='tel:+001234567890'
+                    title='+00 123 4567 890'
+                  >
+                    <button className='font-Rajdhani text-xl sm:text-2xl text-white font-medium'>
+                      +00 123 4567 890
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -283,7 +285,7 @@ const Footer = () => {
             alt='Image'
           />
         </div>
-        <div className='bg-white bg-opacity-5 mt-[96px]'>
+        <div className='bg-white bg-opacity-5 mt-16 md:mt-[96px]'>
           <div className='Container'>
             <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
               <div>

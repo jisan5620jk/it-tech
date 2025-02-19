@@ -22,7 +22,7 @@ const blogData = [
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
-    blogTitle: 'Most Popular Chrome Extensionfor Business Promot',
+    blogTitle: 'Expert Advice for Growing Your Digital Presence',
     blogBtn: 'Read More',
     blogBtnIcon: <GoArrowRight />,
   },
@@ -34,7 +34,7 @@ const blogData = [
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details',
-    blogTitle: 'How to Secure your facebook Business Account',
+    blogTitle: 'Data-Driven Strategies and Case Studies Success',
     blogBtn: 'Read More',
     blogBtnIcon: <GoArrowRight />,
   },
@@ -45,8 +45,8 @@ const blogData = [
     blogDate: '24 Mar, 2024',
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
+    blogTitle: 'The Complete SEO Blog for Digital Success',
     blogUrl: '/blog_details',
-    blogTitle: 'Better Context Menus With Safe Triangles',
     blogBtn: 'Read More',
     blogBtnIcon: <GoArrowRight />,
   },
@@ -81,7 +81,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 lg:py-28 bg-white'>
+    <section className='py-16 lg:py-28 bg-BodyBg-0'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-4 md:gap-0 md:grid-cols-2 items-center'>
           <div>

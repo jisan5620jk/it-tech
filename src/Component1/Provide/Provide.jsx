@@ -62,7 +62,7 @@ const Provide = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-lg sm:text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]'>
+          <h1 className='font-Rajdhani font-bold text-lg leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]'>
             Dominate Local Search Results with <br /> Tailored Local SEO
             Solutions
           </h1>
@@ -70,31 +70,33 @@ const Provide = () => {
       </div>
       <div className='px-2 sm:px-4 md:px-5 lg:px-6 2xl:px-10 3xl:px-0'>
         <div className='mt-[46px] relative z-10 overflow-hidden bg-[url(/images/service-bg21.png)] bg-cover bg-center max-w-[1490px] w-full mx-auto rounded-lg py-8 lg:py-[100px]'>
-          <div className='Container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10'>
-            {provideData.map(
-              ({
-                id,
-                provideBoxIcon,
-                provideBoxTitle,
-                provideBoxDesc,
-                provideBoxBtnUrl,
-                provideBoxBtnText,
-                provideBoxBtnIcon,
-              }) => {
-                return (
-                  <div key={id}>
-                    <ProvideCard
-                      provideBoxIcon={provideBoxIcon}
-                      provideBoxTitle={provideBoxTitle}
-                      provideBoxDesc={provideBoxDesc}
-                      provideBoxBtnUrl={provideBoxBtnUrl}
-                      provideBoxBtnText={provideBoxBtnText}
-                      provideBoxBtnIcon={provideBoxBtnIcon}
-                    />
-                  </div>
-                );
-              }
-            )}
+          <div className='Container'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10'>
+              {provideData.map(
+                ({
+                  id,
+                  provideBoxIcon,
+                  provideBoxTitle,
+                  provideBoxDesc,
+                  provideBoxBtnUrl,
+                  provideBoxBtnText,
+                  provideBoxBtnIcon,
+                }) => {
+                  return (
+                    <div key={id}>
+                      <ProvideCard
+                        provideBoxIcon={provideBoxIcon}
+                        provideBoxTitle={provideBoxTitle}
+                        provideBoxDesc={provideBoxDesc}
+                        provideBoxBtnUrl={provideBoxBtnUrl}
+                        provideBoxBtnText={provideBoxBtnText}
+                        provideBoxBtnIcon={provideBoxBtnIcon}
+                      />
+                    </div>
+                  );
+                }
+              )}
+            </div>
           </div>
           <div className='Container'>
             <ul className='grid items-center grid-cols-1 md:grid-cols-20 lg:grid-cols-3 gap-8 mt-7'>

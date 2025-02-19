@@ -15,16 +15,16 @@ const About = () => {
     <section className='bg-[url(/images/banner-1.png)] pt-16 lg:pt-[120px] pb-24 lg:pb-[180px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
-          <div className='relative z-10 flex items-start gap-7 max-w-[712px] w-full md:-ml-[160px]'>
+          <div className='relative z-10 flex items-start gap-7 md:max-w-[712px] w-full md:-ml-[160px]'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='md:w-[inherit]'
+              className='w-full md:w-[inherit]'
             />
             <img
               src={aboutThumb2}
               draggable='false'
-              className='md:w-[inherit] hidden sm:block'
+              className='w-full md:w-[inherit] hidden sm:block'
             />
             <div className='absolute bottom-0 left-[25%] md:left-[14.5rem] size-[160px] md:size-[240px] text-center px-5 sm:px-7 flex flex-col items-center justify-center bg-gradient-to-r to-PrimaryColor3-0 from-PrimaryColor2-0 rounded-xl'>
               <div className='flex items-center justify-center text-white text-3xl sm:text-[40px]'>
@@ -63,7 +63,7 @@ const About = () => {
               effective technologies
             </p>
             <div className='mb-11'>
-              <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-8'>
+              <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-y-8'>
                 <li className='flex items-center gap-4'>
                   <div>
                     <img
@@ -72,7 +72,7 @@ const About = () => {
                       alt='Icon'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl sm:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Real time Performance Report send
                   </h5>
                 </li>
@@ -84,7 +84,7 @@ const About = () => {
                       alt='Icon2'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl sm:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] leading-[28px] text-HeadingColor-0'>
                     User Friendly SEO Dashboard
                   </h5>
                 </li>
@@ -96,7 +96,7 @@ const About = () => {
                       alt='Icon3'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl sm:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Local SEO & Business Integrations
                   </h5>
                 </li>
@@ -108,7 +108,7 @@ const About = () => {
                       alt='Icon4'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl sm:text-[22px] leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Social Media Integration and Sharing
                   </h5>
                 </li>

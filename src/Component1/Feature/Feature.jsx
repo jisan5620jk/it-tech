@@ -53,7 +53,7 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className='bg-[url("/images/servicer-bg.jpg")] bg-cover bg-center bg-no-repeat pt-28 lg:pt-[152px] pb-16 lg:pb-28 -mt-9'>
+    <section className='bg-[url("/images/servicer-bg.jpg")] bg-cover bg-center bg-no-repeat pt-28 sm:pt-32 lg:pt-[152px] pb-16 lg:pb-28 -mt-12 lg:-mt-9'>
       <div className='Container '>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
@@ -74,7 +74,7 @@ const Feature = () => {
           <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Grow Your Business in a short Time
           </h1>
-          <div className='absolute top-0 -right-12 animate-bounce hidden sm:block'>
+          <div className='absolute top-0 -right-12 animate-bounce hidden md:block'>
             <img
               src={featureShape}
               draggable='false'
