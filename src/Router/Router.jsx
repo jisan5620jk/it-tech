@@ -29,6 +29,8 @@ import PricingInner from "../Pages/InnerPage/PricingInner/PricingInner";
 import ProjectInner from "../Pages/InnerPage/ProjectInner/ProjectInner";
 import CareerInner from "../Pages/InnerPage/CareerInner/CareerInner";
 import FaqInner from "../Pages/InnerPage/Faq/Accordion/FaqInner";
+import Main4 from "../Main/Main4";
+import Home3 from "../Pages/Home3/Home3";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,16 @@ const router = createBrowserRouter([
   {
     errorElement: <ErrorPage />,
     element: <Main3 />,
+    children: [
+      {
+        path: "/home3",
+        element: <Home3 />,
+      },
+    ],
+  },
+  {
+    errorElement: <ErrorPage />,
+    element: <Main4 />,
     children: [
       {
         path: "/about",

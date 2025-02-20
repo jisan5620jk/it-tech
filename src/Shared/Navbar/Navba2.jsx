@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { Link } from 'react-router-dom';
-import Logo from '/images/logo.png';
+import Logo2 from '/images/logo2.png';
+import Logo3 from '/images/white-logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -12,9 +12,9 @@ import {
   FaXTwitter,
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import { MdLightMode, MdLocationPin } from 'react-icons/md';
+import { MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
-import { LuMoveRight } from 'react-icons/lu';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const Navbar2 = () => {
   //sticky
@@ -116,7 +116,7 @@ const Navbar2 = () => {
       <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
     </svg>
   </span>  
-`;
+  `;
 
   useEffect(() => {
     const mainMenuContent = document.querySelector('.main-menu-content');
@@ -145,8 +145,11 @@ const Navbar2 = () => {
           arrow.parentElement.parentElement
             .querySelectorAll('.submenu')
             .forEach((submenu) => {
-              submenu.style.display =
-                submenu.style.display === 'block' ? 'none' : 'block';
+              if (submenu.style.maxHeight) {
+                submenu.style.maxHeight = null;
+              } else {
+                submenu.style.maxHeight = submenu.scrollHeight + 'px';
+              }
             });
           arrow.parentElement.parentElement
             .querySelectorAll('.has-dropdown')
@@ -154,7 +157,7 @@ const Navbar2 = () => {
               if (sibling !== arrow.parentElement) {
                 sibling.classList.remove('dropdown-opened');
                 sibling.querySelectorAll('.submenu').forEach((submenu) => {
-                  submenu.style.display = 'none';
+                  submenu.style.maxHeight = null;
                 });
               }
             });
@@ -181,7 +184,7 @@ const Navbar2 = () => {
           <div className='offcanvas_logo'>
             <Link to={'/'}>
               <img
-                src={Logo}
+                src={Logo2}
                 draggable='false'
               />
             </Link>
@@ -256,28 +259,28 @@ const Navbar2 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div
-        id='header-sticky'
-        className='header-area header-sticky header-classic'
-      >
-        <div className='Container'>
+      <div className='header-area style-two header-sticky'>
+        <div className='px-5 md:px-10 xl:px-12'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
               <div className='header-logo'>
                 <Link to={'/'}>
                   <img
-                    src={Logo}
+                    src={Logo3}
                     draggable='false'
                   />
                 </Link>
               </div>
             </div>
-            <div className='col-span-8 hidden lg:block'>
-              <div className='header-main-menu text-center'>
+            <div className='col-span-7 3xl:col-span-8 hidden lg:block'>
+              <div className='header-main-menu text-right 2xl:text-center'>
                 <nav className='main-menu-content'>
                   <ul>
                     <li className='has-dropdown'>
-                      <Link to={'/'}>
+                      <Link
+                        to={'/'}
+                        className='active'
+                      >
                         Home
                         <span>
                           <FaChevronDown />
@@ -456,13 +459,23 @@ const Navbar2 = () => {
                 </nav>
               </div>
             </div>
-            <div className='col-span-2'>
-              <div className='header-right-box flex items-center gap-3 justify-end'>
+            <div className='col-span-3 3xl:col-span-2'>
+              <div className='header-right-box flex items-center gap-10 lg:gap-4 justify-end'>
                 <div className='header-btn hidden lg:block'>
                   <Link to={'/contact'}>
                     get a quote<span></span>
-                    <LuMoveRight />
+                    <GoArrowUpRight size={22} />
                   </Link>
+                </div>
+                <div
+                  className='header-sidebar hidden size-[50px] bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
+                  ref={menuSideBarRef}
+                >
+                  <button className='menu-sidebar'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
                 </div>
                 <div className='header-bar lg:hidden'>
                   <button
@@ -479,6 +492,149 @@ const Navbar2 = () => {
           </div>
         </div>
       </div>
+
+      <div className='sidebar-content'>
+        <div
+          ref={sidebarContentRef}
+          className='sidebar'
+        >
+          <div className='sidebar_close-btn'>
+            <button
+              ref={closeBtn2Ref}
+              className='close-btn2'
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className='sidebar_logo'>
+            <Link to={'/'}>
+              <img
+                src={Logo2}
+                draggable='false'
+              />
+            </Link>
+          </div>
+          <div className='sidebar_title'>
+            <p>
+              Business consultation provides expert advice to improve
+              performance.
+            </p>
+          </div>
+          <div>
+            <div className='sidebar_service-title'>
+              <h5>What Services We Provide?</h5>
+            </div>
+            <ul className='service_list'>
+              <li>
+                <Link to={'/'}>
+                  <button>Managed IT Services</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Cloud Services</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Cybersecurity Services</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Network Services</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Data Analytics</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>IT Consulting Services</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Backup and Disaster Recovery</button>
+                </Link>
+              </li>
+              <li>
+                <Link to={'/'}>
+                  <button>Website Development</button>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className='sidebar_contact-info'>
+            <div className='sidebar_contact-title'>
+              <h5>Have Questions? Contact Our Team!</h5>
+            </div>
+            <ul>
+              <li>
+                <MdLocationPin />
+                <Link to={'/'}>Melbone st, Australia, Ny 12099</Link>
+              </li>
+              <li>
+                <FaEnvelope />
+                <Link to={'/'}>needhelp@company.com</Link>
+              </li>
+              <li>
+                <FaPhoneAlt />
+                <Link to={'/'}>+48 555 223 224</Link>
+              </li>
+            </ul>
+          </div>
+          <div className='sidebar_input'>
+            <div className='offcanvas_input-title'>
+              <h4>Get Update</h4>
+            </div>
+            <form
+              action='#'
+              method='post'
+            >
+              <div className='relative'>
+                <input
+                  type='email'
+                  name='email'
+                  placeholder='Enter E-Mail'
+                  required
+                />
+                <button type='submit'>
+                  <IoMdPaperPlane />
+                </button>
+              </div>
+            </form>
+          </div>
+          <ul className='sidebar-social-icon'>
+            <li>
+              <Link to={'/'}>
+                <FaFacebookF />
+              </Link>
+            </li>
+            <li>
+              <Link to={'/'}>
+                <FaXTwitter />
+              </Link>
+            </li>
+            <li>
+              <Link to={'/'}>
+                <FaPinterestP />
+              </Link>
+            </li>
+            <li>
+              <Link to={'/'}>
+                <FaLinkedinIn />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        ref={bodyOverlay2Ref}
+        className='body-overlay2'
+      ></div>
     </>
   );
 };

@@ -1,6 +1,5 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import Contact from "../../../Component2/Contact/Contact";
 import WhyChoose from "../../../Component2/WhyChoose/WhyChoose";
 import About from "./About";
 import Counter from "../../../Component2/WhyChoose/Counter";
@@ -16,7 +15,6 @@ const AboutInner2 = () => {
         breadCrumbLink={'About Us 02'}
       />
       <About />
-      <Contact />
       <Counter />
       <WhyChoose />
     </>

@@ -477,7 +477,7 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div
-                  className='header-sidebar hidden size-[50px] bg-PrimaryColor-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
+                  className='header-sidebar hidden size-[50px] bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 rounded-full 2xl:flex items-center justify-center cursor-pointer'
                   ref={menuSideBarRef}
                 >
                   <button className='menu-sidebar'>
