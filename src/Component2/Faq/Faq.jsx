@@ -54,12 +54,12 @@ const Faq = () => {
   };
 
   return (
-    <section className='pt-20 md:pt-[145px] relative'>
+    <section className='pt-20 md:pt-28 lg:pt-[145px] relative'>
       <img
         src={Shape}
         draggable='false'
         alt='Shape'
-        className='absolute bottom-6 right-20 animate-wiggle hidden md:block'
+        className='absolute bottom-6 right-20 animate-wiggle hidden 3xl:block'
       />
       <div className='absolute top-32 right-20 animate-dance3 hidden md:block'>
         <img
@@ -69,7 +69,7 @@ const Faq = () => {
         />
       </div>
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 items-center'>
+        <div className='grid grid-cols-1 gap-8 xl:gap-0 lg:grid-cols-2 items-center'>
           <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-4 sm:px-8 md:px-[50px] pt-4 sm:pt-8 md:pt-[50px] pb-5 sm:pb-9 md:pb-[64px] max-w-[520px] w-full text-center'>
             <h3 className='font-Rajdhani font-bold text-2xl sm:text-3xl md:text-[40px] text-white'>
               Send A Message

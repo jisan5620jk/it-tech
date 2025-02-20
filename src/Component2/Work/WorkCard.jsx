@@ -27,10 +27,10 @@ const WorkCard = ({
         >
           {workVideoIcon}
         </button>
-        <div className='absolute z-10 w-5/6 md:w-[70%] lg:w-[55%] bottom-[78px] left-full opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100'>
+        <div className='absolute z-10 w-5/6 md:w-[70%] 3xl:w-[55%] bottom-[78px] left-full opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100'>
           <Link
             to={workBoxLink}
-            className='font-Rajdhani font-bold text-2xl md:text-[26px] leading-8 text-white'
+            className='font-Rajdhani font-bold text-2xl md:text-[26px] xl:text-2xl 2xl:text-[26px] leading-8 text-white'
           >
             {workTitle}
           </Link>

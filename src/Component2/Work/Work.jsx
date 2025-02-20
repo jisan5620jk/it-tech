@@ -83,7 +83,7 @@ const Work = () => {
     <section className='work-section'>
       <div className='Container'>
         <div>
-          <h1 className='font-Rajdhani text-center font-bold text-4xl sm:text-[34px] md:text-[44px] lg:text-[30px] xl:text-[36px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
+          <h1 className='font-Rajdhani text-center font-bold text-4xl sm:text-[44px] md:text-[54px] lg:text-[75px] xl:text-[85px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
             Works
           </h1>
         </div>
@@ -122,7 +122,7 @@ const Work = () => {
       </div>
       <div className='Container mt-14'>
         <div className='flex flex-col md:flex-row md:items-center justify-between'>
-          <div className='flex items-start gap-2'>
+          <div className='flex-1 flex items-start gap-2'>
             <div className='text-PrimaryColor-0 mt-1'>
               <GoArrowUpRight size={30} />
             </div>
@@ -135,7 +135,7 @@ const Work = () => {
           <div>
             <Link
               to={'/about'}
-              className='inline-block mt-7'
+              className='inline-block'
             >
               <button className='primary-btn'>
                 {`All Works`}

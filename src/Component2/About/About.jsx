@@ -49,35 +49,35 @@ const About = () => {
               e-commerce competitive
             </p>
             <ul className='grid grid-cols-1 sm:grid-cols-2'>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Autonomous Navigation
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   AI-Powered Decision Making
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Real-Time Data Processing
                 </h5>
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
+              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />
                 </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
+                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
                   Adaptive Learning
                 </h5>
               </li>
@@ -117,7 +117,7 @@ const About = () => {
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute top-20 right-32 animate-dance2'
+        className='absolute top-20 right-32 animate-dance2 hidden 2xl:block'
       />
     </section>
   );

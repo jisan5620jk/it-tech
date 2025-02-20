@@ -24,7 +24,7 @@ const processData = [
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: 'Robotic Automation',
+    featureTitle: 'Machine Learning',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
@@ -34,7 +34,7 @@ const processData = [
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: 'Robotic Automation',
+    featureTitle: 'AI System Design',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
@@ -44,7 +44,7 @@ const processData = [
   {
     id: 4,
     featureIcon: featureIcon4,
-    featureTitle: 'Robotic Automation',
+    featureTitle: 'AI Integrations',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
@@ -77,14 +77,14 @@ const Feature = () => {
             <br />
             Performance in Every Industry
           </h1>
-          <div className='absolute top-10 left-28 animate-wiggle hidden md:block'>
+          <div className='absolute top-10 left-28 animate-wiggle hidden lg:block'>
             <img
               src={featureShape}
               draggable='false'
               alt='Shape'
             />
           </div>
-          <div className='absolute top-10 right-20 animate-dance2 hidden md:block'>
+          <div className='absolute top-10 right-20 animate-dance2 hidden lg:block'>
             <img
               src={featureShape2}
               draggable='false'
@@ -92,7 +92,7 @@ const Feature = () => {
             />
           </div>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 relative z-10 mt-11'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 relative z-10 mt-11'>
           {processData.map(
             ({
               id,

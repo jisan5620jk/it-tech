@@ -31,7 +31,7 @@ const WhyChoose = () => {
               src={whyChooseShape}
               draggable={false}
               alt='Why Choose Shape'
-              className='absolute -left-16 top-60 animate-wiggle hidden md:block'
+              className='absolute left-0 3xl:-left-16 top-60 animate-wiggle hidden md:block'
             />
           </div>
           <div>
@@ -51,7 +51,7 @@ const WhyChoose = () => {
             <p className='font-Nunito text-TextColor2-0'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply
-              <br className='hidden md:block'/> chains. Enthusiastically maximize cost effective
+              <br className='hidden md:block lg:hidden 2xl:block'/> chains. Enthusiastically maximize cost effective
               technologies
             </p>
             <div className='-space-y-2'>

@@ -19,7 +19,7 @@ const LatestWorkCard = ({
             className='w-full sm:pr-[30px]'
           />
         </div>
-        <div className='px-4 sm:px-[38px] md:px-8 xl:px-[38px] pb-7 pt-5 sm:pt-2'>
+        <div className='px-4 sm:px-[38px] md:px-8 xl:px-[38px] 2xl:px-8 3xl:px-[38px] pb-7 pt-5 sm:pt-2'>
           <h6 className='text-white bg-white bg-opacity-5 font-Rajdhani font-medium uppercase text-sm rounded-full px-[26px] py-[7px] inline-block'>
             {latestWorkSubTitle}
           </h6>

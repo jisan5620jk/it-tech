@@ -105,7 +105,7 @@ const Brand = () => {
             <h1 className='text-center font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Our Trusted Customers
             </h1>
-            <div className='size-[260px] mt-16 mb-[50px] mx-auto rounded-full bg-gradient-to-l to-PrimaryColor-0 from-PrimaryColor2-0 text-center flex items-center flex-col justify-center'>
+            <div className='size-[220px] lg:size-[260px] mt-16 mb-[50px] mx-auto rounded-full bg-gradient-to-l to-PrimaryColor-0 from-PrimaryColor2-0 text-center flex items-center flex-col justify-center'>
               <div className='size-[50px] rounded-full flex items-center justify-center text-PrimaryColor-0 bg-white mx-auto'>
                 <IoStarSharp size={38} />
               </div>
