@@ -6,9 +6,9 @@ const CallDoAction = () => {
   return (
     <section className='bg-[url(/images/call-to-bg.png)] bg-cover bg-center relative'>
       <div className='Container'>
-        <div className='flex flex-col lg:flex-row lg:items-center justify-between px-2 lg:px-0 py-10 lg:py-0'>
-          <div className='flex lg:pl-[272px] relative lg:py-12'>
-            <div className='absolute left-0 bottom-0 hidden lg:block'>
+        <div className='flex flex-col lg:flex-row lg:items-center justify-between px-2 lg:px-0 py-10 xl:py-0'>
+          <div className='flex xl:pl-[272px] relative xl:py-12'>
+            <div className='absolute left-0 bottom-0 hidden xl:block'>
               <img
                 src={callDoAction}
                 draggable={false}
@@ -42,7 +42,7 @@ const CallDoAction = () => {
           </div>
         </div>
       </div>
-      <div className='absolute right-0 lg:right-20 bottom-0 animate-dance3 hidden md:block'>
+      <div className='absolute right-0 lg:right-20 bottom-0 animate-dance3 hidden md:block lg:hidden 3xl:block'>
         <img
           src={callDoActionShape}
           draggable={false}

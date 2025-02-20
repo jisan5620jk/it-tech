@@ -20,7 +20,7 @@ const ProvideCard = ({
             className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
           />
         </div>
-        <h4 className='flex-1 font-Rajdhani leading-6 sm:leading-7 font-semibold text-SecondaryColor-0 text-lg sm:text-2xl md:text-xl xl:text-2xl'>
+        <h4 className='flex-1 font-Rajdhani leading-6 sm:leading-7 font-semibold text-SecondaryColor-0 text-lg sm:text-2xl md:text-xl lg:text-[19px] 2xl:text-2xl'>
           {provideBoxTitle}
         </h4>
       </div>

@@ -19,8 +19,8 @@ const BlogCard = ({
         />
       </div>
       <div className='w-[calc(100%-20px)] sm:w-[calc(100%-40px)] -mt-[50px] mx-auto  relative z-20 flex justify-center bg-white rounded-lg transition-all duration-500 pt-3 sm:pt-5'>
-        <div className='mx-auto'>
-          <div className='px-3 sm:px-3 md:px-5 lg:px-3 2xl:px-[30px] pb-2'>
+        <div className='mx-auto w-full'>
+          <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pb-2'>
             <p className='font-Rajdhani font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img
                 src={blogPostIcon}
@@ -30,12 +30,12 @@ const BlogCard = ({
               {blogPost}
             </p>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-base xl:text-xl 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-5 mb-5'>
+              <button className='font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-[23px] xl:text-[21px] 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-5 mb-5'>
                 {blogTitle}
               </button>
             </Link>
           </div>
-          <div className='flex items-center justify-between px-3 sm:px-4 md:px-5 lg:px-3 2xl:px-[30px] border-t border-HeadingColor-0 border-opacity-10 py-3 sm:py-[19px]'>
+          <div className='flex items-center justify-between px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] border-t border-HeadingColor-0 border-opacity-10 py-3 sm:py-[19px]'>
             <p className='font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]'>
               <span className='text-PrimaryColor-0'>{blogDateIcon}</span>
               {blogDate}

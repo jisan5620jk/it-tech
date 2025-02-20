@@ -118,7 +118,7 @@ const Integrations = () => {
                 src={integrationImg}
                 draggable={false}
                 alt='Image'
-                className='relative z-10 rotate-45 md:rotate-0'
+                className='relative z-10 rotate-45 md:rotate-0 lg:rotate-[25deg] xl:rotate-[18deg] 2xl:rotate-12 3xl:rotate-0'
               />
             </div>
             <img
@@ -140,7 +140,7 @@ const Integrations = () => {
         src={integrationShape}
         draggable={false}
         alt='Image'
-        className='w-44 absolute -z-10 bottom-0 right-0 sm:w-56 md:w-[inherit] sm:right-20 md:right-0 lg:right-[120px]'
+        className='w-44 absolute -z-10 bottom-0 right-0 sm:w-56 md:w-[inherit] lg:w-52 xl:w-60 2xl:w-64 3xl:w-[inherit] sm:right-20 md:right-0 3xl:right-[120px]'
       />
     </section>
   );

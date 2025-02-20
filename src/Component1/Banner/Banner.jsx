@@ -8,7 +8,7 @@ import { GoGlobe } from 'react-icons/go';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1350px] md:h-[1450px] lg:h-[660px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/about-bg-1-1.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1350px] md:h-[1450px] lg:h-[750px] xl:h-[952px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
@@ -21,7 +21,7 @@ const Banner = () => {
               />
               Best agency based in usa
             </h5>
-            <h1 className='font-Rajdhani font-extrabold tracking-tight text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[80px] 2xl:text-[80px] 2xl:leading-[80px]'>
+            <h1 className='font-Rajdhani font-extrabold tracking-tight text-SecondaryColor-0 text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[64px] md:leading-[74px] lg:text-[50px] xl:text-[66px] xl:leading-[76px] 2xl:text-[80px] 2xl:leading-[80px]'>
               <div className='flex items-center gap-2 md:gap-6'>
                 Dominate
                 <img
@@ -91,10 +91,10 @@ const Banner = () => {
             <img
               src={bannerShape}
               draggable={false}
-              className='absolute bottom-28 right-0 lg:-right-24 xl:right-0 2xl:-right-[60px] animate-dance3 hidden md:block lg:hidden xl:block'
+              className='absolute bottom-28 right-0 lg:-right-24 xl:right-0 2xl:-right-[60px] animate-dance3 hidden md:block lg:hidden 2xl:block'
             />
           </div>
-          <div className='sm:flex justify-center lg:justify-end relative xl:-right-[60px] hidden'>
+          <div className='sm:flex justify-center lg:justify-end relative 2xl:-right-[60px] hidden'>
             <img
               src={bannerImg}
               draggable='false'

@@ -26,7 +26,7 @@ const LatestWorkCard = ({
           <div className='inline-block mt-4'>
             <Link
               to={latestWorkCardURL}
-              className='text-white text-xl sm:text-2xl md:text-xl lg:text-2xl font-Rajdhani font-medium'
+              className='text-white text-xl sm:text-2xl md:text-xl lg:text-2xl xl:text-xl 2xl:text-lg 3xl:text-2xl font-Rajdhani font-medium'
             >
               {latestWorkTitle}
             </Link>

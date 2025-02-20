@@ -72,7 +72,7 @@ const About = () => {
                       alt='Icon'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Real time Performance Report send
                   </h5>
                 </li>
@@ -84,7 +84,7 @@ const About = () => {
                       alt='Icon2'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     User Friendly SEO Dashboard
                   </h5>
                 </li>
@@ -96,7 +96,7 @@ const About = () => {
                       alt='Icon3'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Local SEO & Business Integrations
                   </h5>
                 </li>
@@ -108,7 +108,7 @@ const About = () => {
                       alt='Icon4'
                     />
                   </div>
-                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base leading-[28px] text-HeadingColor-0'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
                     Social Media Integration and Sharing
                   </h5>
                 </li>

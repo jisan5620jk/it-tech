@@ -73,6 +73,9 @@ const LatestWork = () => {
         slidesPerView: 2,
       },
       992: {
+        slidesPerView: 2,
+      },
+      1200: {
         slidesPerView: 3,
       },
       1400: {

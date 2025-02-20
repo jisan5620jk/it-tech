@@ -74,7 +74,7 @@ const Feature = () => {
           <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Grow Your Business in a short Time
           </h1>
-          <div className='absolute top-0 right-0 xl:-right-12 animate-bounce hidden lg:block'>
+          <div className='absolute top-0 right-0 2xl:-right-12 animate-bounce hidden lg:block'>
             <img
               src={featureShape}
               draggable='false'

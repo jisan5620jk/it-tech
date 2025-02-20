@@ -42,7 +42,7 @@ const WhyChoose = () => {
   }, []);
 
   return (
-    <section className='lg:-mt-[176px] pt-16 lg:pt-[290px] pb-28 relative bg-[url(/images/choose-bg2.png)] bg-cover bg-center'>
+    <section className='lg:-mt-[176px] pt-16 lg:pt-[290px] pb-28 relative bg-[url(/images/choose-bg2.png)] bg-cover bg-center overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2'>
           <div>
@@ -60,7 +60,7 @@ const WhyChoose = () => {
                 <br /> SEO Marketing Success
               </h1>
             </div>
-            <div className='space-y-6'>
+            <div className='space-y-5 mt-7'>
               <div className='why-choose-box transition-all duration-500 inline-block'>
                 <WhyChooseCard
                   whyChooseBoxIcon={whyChooseBoxIcon}
@@ -90,21 +90,21 @@ const WhyChoose = () => {
                 src={whyChooseShape}
                 draggable={false}
                 alt='Shape'
-                className='absolute top-40 left-0 animate-wiggle hidden sm:block lg:hidden xl:block'
+                className='absolute z-10 top-40 left-0 animate-wiggle hidden sm:block lg:hidden xl:block'
               />
               <img
                 src={whyChooseShape2}
                 draggable={false}
                 alt='Shape'
-                className='absolute top-10 right-0 animate-dance2 hidden sm:block lg:hidden xl:block'
+                className='absolute z-10 top-10 right-0 animate-dance2 hidden sm:block lg:hidden xl:block'
               />
               <img
                 src={whyChooseImg}
                 draggable={false}
                 alt='Why CHoose Image'
-                className='w-[inherit] -mb-28 lg:-mb-[200px]'
+                className='w-[inherit] -mb-28 relative lg:-bottom-[172px] xl:-bottom-[76px] lg:left-14 xl:left-5 2xl:left-0 2xl:-bottom-4'
               />
-              <div className='absolute top-[39%] left-[170px] pointer-events-none hidden md:block lg:hidden xl:block'>
+              <div className='absolute top-[39%] xl:top-[54%] 2xl:top-[41%] left-[170px] pointer-events-none hidden md:block lg:hidden xl:block'>
                 <div className='relative'>
                   <input
                     type='text'
@@ -112,7 +112,7 @@ const WhyChoose = () => {
                     id='Search'
                     placeholder='www.yoursite.com'
                     required
-                    className='w-[520px] h-[65px] rounded-full text-xl font-medium border border-white px-10 py-3 outline-none text-HeadingColor-0 font-Rajdhani placeholder:text-HeadingColor-0 bg-white bg-opacity-10 backdrop-filter backdrop-blur-[5px]'
+                    className='w-[520px] xl:w-[400px] 2xl:w-[520px] h-[65px] rounded-full text-xl font-medium border border-white px-10 py-3 outline-none text-HeadingColor-0 font-Rajdhani placeholder:text-HeadingColor-0 bg-white bg-opacity-10 backdrop-filter backdrop-blur-[5px]'
                   />
                   <button
                     type='submit'
@@ -125,7 +125,7 @@ const WhyChoose = () => {
               <img
                 src={bannerShape}
                 draggable={false}
-                className='absolute bottom-40 right-0 md:right-20 lg:right-0 animate-wiggle hidden sm:block lg:hidden xl:block'
+                className='absolute bottom-40 right-0 md:right-20 lg:right-0 animate-wiggle hidden sm:block lg:hidden xl:block xl:bottom-[14px] 2xl:bottom-40'
               />
             </div>
           </div>
