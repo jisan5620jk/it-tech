@@ -62,10 +62,16 @@ const Work = () => {
       320: {
         slidesPerView: 1,
       },
+      640: {
+        slidesPerView: 2,
+      },
       768: {
         slidesPerView: 2,
       },
       992: {
+        slidesPerView: 3,
+      },
+      1200: {
         slidesPerView: 4,
       },
       1400: {
@@ -77,7 +83,7 @@ const Work = () => {
     <section className='work-section'>
       <div className='Container'>
         <div>
-          <h1 className='font-Rajdhani text-center font-bold text-xl sm:text-[34px] md:text-[44px] lg:text-[30px] xl:text-[36px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-[74px]'>
+          <h1 className='font-Rajdhani text-center font-bold text-4xl sm:text-[34px] md:text-[44px] lg:text-[30px] xl:text-[36px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
             Works
           </h1>
         </div>
@@ -115,14 +121,14 @@ const Work = () => {
         </Swiper>
       </div>
       <div className='Container mt-14'>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col md:flex-row md:items-center justify-between'>
           <div className='flex items-start gap-2'>
             <div className='text-PrimaryColor-0 mt-1'>
               <GoArrowUpRight size={30} />
             </div>
             <p className='font-Nunito text-lg'>
               Continually formulate B2C partnerships orthogonal software
-              <br />
+              <br className='hidden lg:block' />
               maintainable quality through low budget
             </p>
           </div>

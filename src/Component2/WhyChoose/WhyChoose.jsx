@@ -11,10 +11,10 @@ import Marquee from '../Marquee/Marquee';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat pt-28 pb-[90px]'>
+    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat pt-16 md:pt-20 lg:pt-28 pb-10 sm:pb-16 md:pb-[90px]'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center relative'>
-          <div className='absolute top-16 -right-[184px] animate-wiggle'>
+        <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-center relative'>
+          <div className='absolute top-16 -right-[184px] animate-wiggle hidden md:block'>
             <img
               src={featureShape}
               draggable='false'
@@ -31,7 +31,7 @@ const WhyChoose = () => {
               src={whyChooseShape}
               draggable={false}
               alt='Why Choose Shape'
-              className='absolute -left-16 top-60 animate-wiggle'
+              className='absolute -left-16 top-60 animate-wiggle hidden md:block'
             />
           </div>
           <div>
@@ -51,7 +51,7 @@ const WhyChoose = () => {
             <p className='font-Nunito text-TextColor2-0'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply
-              <br /> chains. Enthusiastically maximize cost effective
+              <br className='hidden md:block'/> chains. Enthusiastically maximize cost effective
               technologies
             </p>
             <div className='-space-y-2'>

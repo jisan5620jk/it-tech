@@ -14,7 +14,7 @@ import logo from '/images/main-logo.png';
 
 const Footer2 = () => {
   return (
-    <footer className="bg-[url('/images/footer_bg2.jpg')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
+    <footer className="bg-[url('/images/footer_bg2.jpg')] bg-no-repeat bg-center bg-cover relative pt-16 md:pt-20 lg:pt-28 overflow-hidden">
       <div className='Container'>
         <div className='lg:grid gap-y-7 grid-cols-12 border-b border-HeadingColor-0 border-opacity-10 pb-5 hidden'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
@@ -230,7 +230,7 @@ const Footer2 = () => {
           </div>
         </div>
       </div>
-      <div className='bg-HeadingColor-0 bg-opacity-10 mt-[96px]'>
+      <div className='bg-HeadingColor-0 bg-opacity-10 mt-14 md:mt-[70px] lg:mt-[96px]'>
         <div className='Container'>
           <div className='flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-7'>
             <div>

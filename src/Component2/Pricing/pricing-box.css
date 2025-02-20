@@ -20,6 +20,18 @@
   transition: transform 0.3s;
 }
 
+@media screen and (max-width: 767px) {
+  .toggle {
+    width: 50px !important;
+    height: 25px !important;
+  }
+
+  .toggle-circle {
+    width: 25px !important;
+    height: 25px !important;
+  }
+}
+
 .tab-content {
   display: none;
 }

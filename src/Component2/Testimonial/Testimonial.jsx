@@ -92,12 +92,15 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       576: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       992: {
+        slidesPerView: 3,
+      },
+      1200: {
         slidesPerView: 4,
       },
       1400: {
@@ -106,7 +109,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='relative z-10 overflow-hidden px-[100px] pt-28'>
+    <section className='relative z-10 overflow-hidden px-4 sm:px-8 md:px-16 2xl:px-[100px] pt-16 md:pt-20 lg:pt-28'>
       <div className='text-center'>
         <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
           <img
@@ -114,7 +117,7 @@ const Testimonial = () => {
             draggable={false}
             alt='Shape'
           />{' '}
-          WHAT WE PROVIDE{' '}
+          Testimonials{' '}
           <img
             src={titleShape}
             draggable={false}
@@ -123,9 +126,7 @@ const Testimonial = () => {
           />
         </h5>
         <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-          AI-Driven Robotics Solutions Elevating
-          <br />
-          Performance in Every Industry
+          Trusted By Industry Leader for<br /> Clients Testimonial
         </h1>
       </div>
       <div className='mt-[46px]'>

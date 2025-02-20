@@ -55,7 +55,7 @@ const processData = [
 
 const Feature = () => {
   return (
-    <section className='bg-[url("/images/long-bg.jpg")] bg-cover bg-center bg-no-repeat py-28'>
+    <section className='bg-[url("/images/long-bg.jpg")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28'>
       <div className='Container '>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -72,19 +72,19 @@ const Feature = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+          <h1 className='font-Rajdhani font-bold text-lg leading-6 sm:text-[30px] sm:leading-[40px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
             AI-Driven Robotics Solutions Elevating
             <br />
             Performance in Every Industry
           </h1>
-          <div className='absolute top-10 left-28 animate-wiggle'>
+          <div className='absolute top-10 left-28 animate-wiggle hidden md:block'>
             <img
               src={featureShape}
               draggable='false'
               alt='Shape'
             />
           </div>
-          <div className='absolute top-10 right-20 animate-dance2'>
+          <div className='absolute top-10 right-20 animate-dance2 hidden md:block'>
             <img
               src={featureShape2}
               draggable='false'

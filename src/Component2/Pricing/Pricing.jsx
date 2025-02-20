@@ -23,9 +23,9 @@ const Pricing = () => {
   }
 
   return (
-    <section className="relative overflow-hidden pt-28 pb-[90px] bg-[url('/images/AI-2-1.jpg')] bg-cover bg-no-repeat bg-center">
+    <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-14 md:pb-[70px] lg:pb-[90px] bg-[url('/images/AI-2-1.jpg')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-1 lg:grid-cols-3'>
           <div className='col-span-1'>
             <div className='w-full mx-auto'>
               <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -77,7 +77,7 @@ const Pricing = () => {
               />
             </div>
           </div>
-          <div className='col-span-2'>
+          <div className='col-span-1 lg:col-span-2'>
             <div
               id='monthly'
               className={`tab-content ${isMonthly ? 'active' : ''}`}

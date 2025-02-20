@@ -10,7 +10,7 @@ const FeatureCard = ({
   featureBtnIcon,
 }) => {
   return (
-    <div className='group px-8 lg:px-4 xl:px-6 2xl:px-8 lg:py-4 xl:py-7 2xl:py-10 py-10 bg-transparent transition-all duration-500 hover:border-opacity-0 rounded-[10px] overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
+    <div className='group px-4 sm:px-8 lg:px-4 xl:px-6 2xl:px-8 lg:py-4 xl:py-7 2xl:py-10 py-5 sm:py-10 bg-transparent transition-all duration-500 hover:border-opacity-0 rounded-[10px] overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
       <div className='size-[72px] rounded-lg bg-HeadingColor-0 bg-opacity-10 relative z-10 flex items-center justify-center overflow-hidden before:absolute before:top-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-full before:scale-0 before:rotate-180 before:transition-all before:rounded-md before:duration-300 before:-z-10 before:ease-linear group-hover:before:scale-100 group-hover:before:rotate-0'>
         <img
           src={featureIcon}

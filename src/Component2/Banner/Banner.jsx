@@ -9,11 +9,11 @@ import { FaInstagram, FaLinkedinIn, FaXTwitter } from 'react-icons/fa6';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/ai-home.jpg')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[950px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/ai-home.jpg')] bg-cover bg-center bg-no-repeat h-[960px] sm:h-[1200px] lg:h-[660px] xl:h-[950px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl font-semibold flex items-center gap-2 mb-7 uppercase'>
+            <h5 className='font-Rajdhani text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl font-semibold flex items-center gap-2 mb-4 md:mb-7 uppercase'>
               <img
                 src={subTilteShape}
                 alt='Shape'
@@ -21,7 +21,7 @@ const Banner = () => {
               />
               Making Your Life Easier
             </h5>
-            <h1 className='font-Rajdhani font-bold uppercase text-HeadingColor-0 -tracking-[2px] text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[60px] 2xl:text-[65px] 2xl:leading-[68px]'>
+            <h1 className='font-Rajdhani font-bold uppercase text-HeadingColor-0 -tracking-[2px] text-[30px] leading-[36px] sm:text-[46px] sm:leading-[56px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[60px] 2xl:text-[65px] 2xl:leading-[68px]'>
               Empowering the Future
               <br />
               <span className='text-transparent bg-clip-text bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0'>
@@ -76,7 +76,7 @@ const Banner = () => {
             <img
               src={bannerImg}
               draggable='false'
-              className='w-[inherit] max-w-[inherit] relative -right-[128px]'
+              className='xl:w-[inherit] xl:max-w-[inherit] relative xl:-right-[128px]'
             />
             <img
               src={bannerShape2}
@@ -91,7 +91,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className='absolute top-1/2 -left-24'>
+      <div className='absolute top-1/2 -left-24 hidden md:block'>
         <div className='rotate-90 flex items-center gap-5'>
           <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 uppercase relative before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[60px] before:w-[50px] before:h-[1px] before:bg-gradient-to-r before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:from-70%'>
             Follow Us

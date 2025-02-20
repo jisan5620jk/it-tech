@@ -9,10 +9,10 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-9 pt-8 pb-10 bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg border-white border-2 rounded-[10px] ease-linear transition-all duration-500 hover:border-PrimaryColor-0'>
+    <div className='relative px-4 sm:px-9 pt-4 sm:pt-8 pb-5 sm:pb-10 bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg border-white border-2 rounded-[10px] ease-linear transition-all duration-500 hover:border-PrimaryColor-0'>
       <div className='flex gap-1 items-center'>
         <div className='text-[40px] text-PrimaryColor-0'>{testQuote}</div>
-        <h5 className='font-Rajdhani text-2xl text-HeadingColor-0 font-semibold'>
+        <h5 className='font-Rajdhani text-[22px] sm:text-2xl text-HeadingColor-0 font-semibold'>
           {testiTitle}
         </h5>
       </div>

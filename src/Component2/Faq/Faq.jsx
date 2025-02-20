@@ -54,14 +54,14 @@ const Faq = () => {
   };
 
   return (
-    <section className='pt-[145px] relative'>
+    <section className='pt-20 md:pt-[145px] relative'>
       <img
         src={Shape}
         draggable='false'
         alt='Shape'
-        className='absolute bottom-6 right-20 animate-wiggle'
+        className='absolute bottom-6 right-20 animate-wiggle hidden md:block'
       />
-      <div className='absolute top-32 right-20 animate-dance3'>
+      <div className='absolute top-32 right-20 animate-dance3 hidden md:block'>
         <img
           src={Shape2}
           draggable='false'
@@ -69,12 +69,12 @@ const Faq = () => {
         />
       </div>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center'>
-          <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-[50px] pt-[50px] pb-[64px] max-w-[520px] w-full text-center'>
-            <h3 className='font-Rajdhani font-bold text-[40px] text-white'>
+        <div className='grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-2 items-center'>
+          <div className='bg-[url("/images/AI-2-13.png")] bg-cover bg-center rounded-[20px] overflow-hidden px-4 sm:px-8 md:px-[50px] pt-4 sm:pt-8 md:pt-[50px] pb-5 sm:pb-9 md:pb-[64px] max-w-[520px] w-full text-center'>
+            <h3 className='font-Rajdhani font-bold text-2xl sm:text-3xl md:text-[40px] text-white'>
               Send A Message
             </h3>
-            <p className='font-Nunito text-TextColor-0 mb-9 -mt-[2px]'>
+            <p className='font-Nunito text-TextColor-0 mb-9 mt-2 md:-mt-[2px]'>
               Write Us Something sending a message
             </p>
             <form
@@ -200,7 +200,7 @@ const Faq = () => {
             <ul className='space-y-[26px] mt-7'>
               {faqs.map((faq, index) => (
                 <li key={index}>
-                  <div className='flex gap-5 group px-8 py-7 bg-white bg-opacity-45 border-2 border-white rounded-[10px] shadow-cases'>
+                  <div className='flex gap-2 sm:gap-5 group px-4 sm:px-8 py-3 sm:py-7 bg-white bg-opacity-45 border-2 border-white rounded-[10px] shadow-cases'>
                     <div>
                       <img
                         src={faq.icon}
@@ -216,7 +216,7 @@ const Faq = () => {
                         }`}
                         onClick={() => handleToggle(index)}
                       >
-                        <h5 className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0'>
+                        <h5 className='font-Rajdhani font-semibold text-xl sm:text-2xl text-HeadingColor-0'>
                           {faq.question}
                         </h5>
                         <span

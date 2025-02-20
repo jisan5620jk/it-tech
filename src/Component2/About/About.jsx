@@ -6,7 +6,7 @@ import { GoCheckCircleFill } from 'react-icons/go';
 
 const About = () => {
   return (
-    <section className='py-[120px] relative'>
+    <section className='py-16 md:py-20 lg:py-[120px] relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10'>
@@ -48,7 +48,7 @@ const About = () => {
               effective technologies dynamically negotiate multimedia based
               e-commerce competitive
             </p>
-            <ul className='grid grid-cols-2'>
+            <ul className='grid grid-cols-1 sm:grid-cols-2'>
               <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-2 mb-3'>
                 <div className='text-PrimaryColor-0'>
                   <GoCheckCircleFill size={20} />

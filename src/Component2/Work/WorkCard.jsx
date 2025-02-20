@@ -19,6 +19,7 @@ const WorkCard = ({
           src={workImg}
           draggable={false}
           alt='Image'
+          className='w-full'
         />
         <button
           className='absolute z-10 -top-12 right-8 transition-all duration-500 group-hover:top-8 size-[46px] rounded-full flex items-center justify-center text-white bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 text-xl'
@@ -26,10 +27,10 @@ const WorkCard = ({
         >
           {workVideoIcon}
         </button>
-        <div className='absolute z-10 w-[55%] bottom-[78px] left-full opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100'>
+        <div className='absolute z-10 w-5/6 md:w-[70%] lg:w-[55%] bottom-[78px] left-full opacity-0 transition-all duration-500 group-hover:left-8 group-hover:opacity-100'>
           <Link
             to={workBoxLink}
-            className='font-Rajdhani font-bold text-[26px] leading-8 text-white'
+            className='font-Rajdhani font-bold text-2xl md:text-[26px] leading-8 text-white'
           >
             {workTitle}
           </Link>

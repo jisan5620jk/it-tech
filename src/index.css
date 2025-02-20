@@ -554,8 +554,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   margin-top: 50px;
 }
 
-/* Team Member */
+/* Feature */
 
-.feature-box:nth-child(2n + 2) {
-  margin-top: 44px;
+@media screen and (min-width: 992px) {
+  .feature-box:nth-child(2n + 2) {
+    margin-top: 44px;
+  }
 }

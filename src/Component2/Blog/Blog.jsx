@@ -72,9 +72,9 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-28 bg-white'>
+    <section className='py-16 md:py-20 lg:py-28 bg-white'>
       <div className='Container'>
-        <div className='grid grid-cols-2 items-center'>
+        <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -89,7 +89,7 @@ const Blog = () => {
               <br /> from Our Blog Posts
             </h1>
           </div>
-          <div className='flex items-center justify-end'>
+          <div className=''>
             <Link
               to={'/blog_grid'}
               className='inline-block'
