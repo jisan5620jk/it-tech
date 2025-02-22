@@ -1,39 +1,17 @@
-import ProgressBar from 'react-animated-progress-bar';
 import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/AI-6.png';
-import whyChooseShape from '/images/AI-1-1.png';
-import featureShape from '/images/AI-5.png';
+import whyChooseThumb from '/images/choose-us-thumb-1.webp';
+import whyChooseShape from '/images/choose-us-shape.webp';
+import itemIcon from '/images/icon1.webp';
+import itemIcon2 from '/images/icon2.webp';
+import itemIcon3 from '/images/icon3.webp';
 import { Link } from 'react-router-dom';
 import './why-choose.css';
-import Counter from './Counter';
-import Testimonial from '../Testimonial/Testimonial';
-import Marquee from '../Marquee/Marquee';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-[url("images/bg-1.jpg")] bg-cover bg-center bg-no-repeat pt-16 md:pt-20 lg:pt-28 pb-10 sm:pb-16 md:pb-[90px]'>
+    <section className='bg-white py-16 md:py-20 lg:py-28'>
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-center relative'>
-          <div className='absolute top-16 -right-[184px] animate-wiggle hidden md:block'>
-            <img
-              src={featureShape}
-              draggable='false'
-              alt='Shape'
-            />
-          </div>
-          <div className='relative inline-block'>
-            <img
-              src={whyChooseThumb}
-              draggable={false}
-              alt='Why Choose Image'
-            />
-            <img
-              src={whyChooseShape}
-              draggable={false}
-              alt='Why Choose Shape'
-              className='absolute left-0 3xl:-left-16 top-60 animate-wiggle hidden md:block'
-            />
-          </div>
+        <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-end relative'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -43,106 +21,73 @@ const WhyChoose = () => {
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Advanced Machine Learning
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-6'>
+              Brain Storming, Researcing and
               <br />
-              for Robotic Vision
+              Work Strategist Create
             </h1>
-            <p className='font-Nunito text-TextColor2-0'>
-              Competently leverage existing top-line bandwidth vis-a-vis
-              client-centric supply
-              <br className='hidden md:block lg:hidden 2xl:block'/> chains. Enthusiastically maximize cost effective
-              technologies
-            </p>
-            <div className='-space-y-2'>
-              <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
-                  Data Science
-                </h5>
-                <div className='relative z-10 why-choose-progress1'>
-                  <ProgressBar
-                    rect
-                    width='100%'
-                    height='52px'
-                    fontColor='#001818'
-                    fontSize='18px'
-                    leading='10px'
-                    margin='0px'
-                    rectBorderRadius='5px'
-                    fontWeight='500'
-                    percentage='85'
-                    defColor={{
-                      excellent: '#eff3ff',
-                      good: '#eff3ff',
-                      fair: 'green',
-                      poor: 'red',
-                    }}
-                    trackPathColor='transparent'
-                    trackBorderColor='transparent'
-                    trackPathBorderRadius='6px'
+            <div className='space-y-7 border-t border-SecondaryColor-0 border-opacity-10 pt-8'>
+              <div className='flex gap-5 group'>
+                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+                  <img
+                    src={itemIcon}
+                    draggable={false}
+                    alt='Icon'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
                   />
                 </div>
-              </div>
-              <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
-                  MACHINE LEARNING
-                </h5>
-                <div className='relative z-10 why-choose-progress2'>
-                  <ProgressBar
-                    rect
-                    width='100%'
-                    height='52px'
-                    fontColor='#001818'
-                    fontSize='18px'
-                    leading='10px'
-                    margin='0px'
-                    rectBorderRadius='5px'
-                    fontWeight='500'
-                    percentage='90'
-                    defColor={{
-                      excellent: '#eff3ff',
-                      good: '#eff3ff',
-                      fair: 'green',
-                      poor: 'red',
-                    }}
-                    trackPathColor='transparent'
-                    trackBorderColor='transparent'
-                    trackPathBorderRadius='6px'
-                  />
+                <div className='flex-1 -mt-1'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                    Free Integrations
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                    Competently leverage existing top-line technology maximize
+                    cost effective service done
+                  </p>
                 </div>
               </div>
-              <div>
-                <h5 className='font-Rajdhani font-semibold text-lg text-HeadingColor-0 uppercase ml-7 translate-y-[40px] relative z-20'>
-                  ARTIFICIAL INTELLIGENCE
-                </h5>
-                <div className='relative z-10 why-choose-progress3'>
-                  <ProgressBar
-                    rect
-                    width='100%'
-                    height='52px'
-                    fontColor='#001818'
-                    fontSize='18px'
-                    leading='10px'
-                    margin='0px'
-                    rectBorderRadius='5px'
-                    fontWeight='500'
-                    percentage='95'
-                    defColor={{
-                      excellent: '#eff3ff',
-                      good: '#eff3ff',
-                      fair: 'green',
-                      poor: 'red',
-                    }}
-                    trackPathColor='transparent'
-                    trackBorderColor='transparent'
-                    trackPathBorderRadius='6px'
+              <div className='flex gap-5 group'>
+                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+                  <img
+                    src={itemIcon2}
+                    draggable={false}
+                    alt='Icon'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
                   />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                    Premium Resource
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                    Competently leverage existing top-line technology maximize
+                    cost effective service done
+                  </p>
+                </div>
+              </div>
+              <div className='flex gap-5 group'>
+                <div className='size-[62px] rounded-full flex items-center justify-center border border-BorderColor2-0 shadow-shadows relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:from-PrimaryColor2-0 before:to-PrimaryColor3-0 before:rounded-full before:transition-all before:duration-500 before:scale-0 before:-z-10 group-hover:before:scale-100'>
+                  <img
+                    src={itemIcon3}
+                    draggable={false}
+                    alt='Icon'
+                    className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
+                  />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                    Unlimited Supports
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                    Competently leverage existing top-line technology maximize
+                    cost effective service done
+                  </p>
                 </div>
               </div>
             </div>
             <Link
               to={'/about'}
-              className='inline-block mt-10'
+              className='inline-block mt-11'
             >
               <button className='primary-btn'>
                 {`Learn More`}
@@ -168,11 +113,21 @@ const WhyChoose = () => {
               </button>
             </Link>
           </div>
+          <div className='relative inline-block'>
+            <img
+              src={whyChooseThumb}
+              draggable={false}
+              alt='Why Choose Image'
+            />
+            <img
+              src={whyChooseShape}
+              draggable={false}
+              alt='Why Choose Shape'
+              className='absolute right-44 -top-28 animate-dance3 hidden md:block'
+            />
+          </div>
         </div>
       </div>
-      <Counter />
-      <Testimonial />
-      <Marquee />
     </section>
   );
 };

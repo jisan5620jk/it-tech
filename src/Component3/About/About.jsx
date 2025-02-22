@@ -139,7 +139,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={shape} draggable={false} alt="Shape" className='absolute -bottom-4 right-16 animate-dance3' />
+      <img src={shape} draggable={false} alt="Shape" className='absolute -bottom-12 right-16 animate-wiggle' />
     </section>
   );
 };
