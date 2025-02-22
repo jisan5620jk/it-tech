@@ -7,9 +7,8 @@ import featureIcon6 from '/images/service-icon5.webp';
 import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';
-import About from '../About/About';
-import Work from '../Work/Work';
 import { Link } from 'react-router-dom';
+import './feature.css';
 
 const processData = [
   {
@@ -19,7 +18,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
   {
@@ -29,7 +28,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
   {
@@ -39,7 +38,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
   {
@@ -49,7 +48,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
   {
@@ -59,7 +58,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
   {
@@ -69,7 +68,7 @@ const processData = [
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
     featureUrl: '/service',
-    featureBtnText: 'Details',
+    featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
 ];
@@ -154,8 +153,6 @@ const Feature = () => {
           )}
         </div>
       </div>
-      <About />
-      <Work />
     </section>
   );
 };
