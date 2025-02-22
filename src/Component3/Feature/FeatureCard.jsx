@@ -21,7 +21,7 @@ const FeatureCard = ({
       <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3'>
         {featureTitle}
       </h4>
-      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70'>
+      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70 max-w-[290px] w-full'>
         {featureDesc}
       </p>
       <div className='inline-block mt-[20px]'>

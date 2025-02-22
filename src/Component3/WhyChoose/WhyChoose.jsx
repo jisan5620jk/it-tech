@@ -123,7 +123,7 @@ const WhyChoose = () => {
               src={whyChooseShape}
               draggable={false}
               alt='Why Choose Shape'
-              className='absolute right-44 -top-28 animate-dance3 hidden md:block'
+              className='absolute right-44 lg:right-32 xl:right-44 -top-28 animate-dance3 hidden md:block'
             />
           </div>
         </div>

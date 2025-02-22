@@ -345,45 +345,13 @@
 
 /* Header Sticky */
 .is-sticky {
-  @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
+  @apply !fixed top-0 left-0 w-full z-50 shadow-shadows bg-white backdrop-blur-md animate-headerSlideDown;
 }
 
 @media screen and (max-width: 991px) {
   .is-sticky {
-    @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
+    @apply !fixed top-0 left-0 w-full z-50 shadow-shadows bg-HeadingColor-0 backdrop-blur-md animate-headerSlideDown;
   }
-}
-
-.header-creative.is-sticky {
-  @apply !fixed top-0 left-0 w-full z-50 shadow-shade bg-white backdrop-blur-md animate-headerSlideDown;
-}
-
-.header-creative.is-sticky .header-logo {
-  margin: 0;
-}
-
-.header-creative.is-sticky .header-logo img {
-  filter: brightness(0);
-}
-
-.header-creative.is-sticky .header-btn {
-  margin: 0;
-}
-
-.header-creative.is-sticky .header-btn a {
-  color: #0c5adb;
-}
-
-.header-creative.is-sticky .light-btn {
-  top: 0;
-}
-
-.header-creative.is-sticky .light-btn a {
-  background: #0c5adb;
-}
-
-.header-creative.is-sticky nav.main-menu-content > ul > li > a {
-  padding: 36px 28px 36px;
 }
 
 nav.main-menu-content > ul > li {
@@ -981,12 +949,34 @@ li.has-dropdown a button span {
 
 /* Header Style Two */
 
+.header-area.style-two .header-logo img {
+  filter: brightness(0) invert(1);
+}
+
 .header-area.style-two nav.main-menu-content > ul > li > a {
   color: #ffffff;
 }
 
 .header-area.style-two nav.main-menu-content > ul > li > a:before {
   border-color: #ffffff;
+}
+
+.header-area.style-two.is-sticky nav.main-menu-content > ul > li > a {
+  color: #041424;
+}
+
+.header-area.style-two.is-sticky nav.main-menu-content > ul > li > a:before {
+  border-color: #041424;
+}
+
+.header-area.style-two.is-sticky .header-logo img {
+  filter: brightness(1) invert(0);
+}
+
+@media screen and (max-width: 991px) {
+  .header-area.style-two.is-sticky .header-logo img {
+    filter: brightness(0) invert(1);
+  }
 }
 
 /* Header Sidebar */

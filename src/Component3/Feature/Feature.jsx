@@ -16,7 +16,7 @@ const processData = [
     featureIcon: featureIcon,
     featureTitle: 'Robotic Automation',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -26,7 +26,7 @@ const processData = [
     featureIcon: featureIcon2,
     featureTitle: 'Machine Learning',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -36,7 +36,7 @@ const processData = [
     featureIcon: featureIcon3,
     featureTitle: 'AI System Design',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -46,7 +46,7 @@ const processData = [
     featureIcon: featureIcon4,
     featureTitle: 'AI Integrations',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -56,7 +56,7 @@ const processData = [
     featureIcon: featureIcon5,
     featureTitle: 'AI Integrations',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -66,7 +66,7 @@ const processData = [
     featureIcon: featureIcon6,
     featureTitle: 'AI Integrations',
     featureDesc:
-      'Clients-focused data are centric energistically communicate into installed done.',
+      'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
@@ -87,7 +87,7 @@ const Feature = () => {
               />{' '}
               WAHT WE PROVIDE
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Provide High Quality Software’s
               <br />
               Service for All Industry
