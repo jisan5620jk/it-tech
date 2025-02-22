@@ -25,7 +25,8 @@ const Banner = () => {
               <br /> any business
             </h1>
             <p className='font-Nunito sm:text-xl lg:text-lg xl:text-xl text-white opacity-70 mb-9 mt-3'>
-              Continually formulate B2C partnerships orthogonal software
+              Continually formulate B2C partnerships orthogonal
+              <br className='hidden lg:block xl:hidden' /> software
               <br className='hidden md:block lg:hidden 2xl:block' />{' '}
               maintainable quality through low budgets
             </p>
@@ -68,17 +69,17 @@ const Banner = () => {
             <img
               src={bannerShape2}
               draggable={false}
-              className='absolute top-0 left-[27%] lg:left-[25%] lg:-top-7 xl:top-0 xl:left-[35%] animate-rotational hidden md:block'
+              className='absolute top-0 left-[27%] lg:left-[25%] xl:left-[30%] lg:-top-7 xl:top-0 2xl:left-[35%] animate-rotational hidden md:block'
             />
             <img
               src={bannerShape}
               draggable={false}
-              className='absolute top-14 -right-0 lg:-right-24 animate-wiggle hidden md:block lg:hidden xl:block'
+              className='absolute top-14 -right-0 lg:-right-24 animate-wiggle hidden md:block lg:hidden 2xl:block'
             />
           </div>
         </div>
       </div>
-      <div className='absolute bottom-20 left-0 animate-wiggle hidden 2xl:block'>
+      <div className='absolute bottom-20 left-0 animate-wiggle hidden 3xl:block'>
         <img
           src={provideShape}
           draggable={false}

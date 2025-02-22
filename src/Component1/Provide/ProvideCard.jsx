@@ -17,7 +17,7 @@ const ProvideCard = ({
             src={provideBoxIcon}
             draggable={false}
             alt='Icon'
-            className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]'
+            className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
           />
         </div>
         <h4 className='flex-1 font-Rajdhani leading-6 sm:leading-7 font-semibold text-SecondaryColor-0 text-lg sm:text-2xl md:text-xl lg:text-[19px] 2xl:text-2xl'>

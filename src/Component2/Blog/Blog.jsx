@@ -10,6 +10,7 @@ import blogPostIcon3 from '/images/user3.png';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 
 const blogData = [
   {
@@ -48,6 +49,7 @@ const Blog = () => {
   const settings = {
     loop: true,
     spaceBetween: 32,
+    modules: [Autoplay],
     speed: 1000,
     autoplay: {
       delay: 3000, // Set delay time in milliseconds

@@ -12,7 +12,7 @@ import { AiOutlineRise } from 'react-icons/ai';
 
 const About = () => {
   return (
-    <section className='bg-[url(/images/banner-1.png)] pt-16 lg:pt-[120px] pb-24 lg:pb-[180px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='bg-[url(/images/banner-1.png)] pt-16 md:pt-20 lg:pt-[120px] pb-24 md:pb-32 lg:pb-[180px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
           <div className='relative z-10 flex items-start gap-7 md:max-w-[712px] lg:max-w-full xl:max-w-[712px] w-full lg:-ml-[240px] xl:-ml-[160px]'>

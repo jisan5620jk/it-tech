@@ -10,14 +10,14 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
           <div className='relative z-10 xl:-ml-[62px]'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='w-full md:w-[inherit] lg:w-full xl:w-[inherit]'
+              className='w-full md:w-[inherit] lg:w-full 2xl:w-[inherit]'
             />
           </div>
           <div className='relative'>
@@ -139,7 +139,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={shape} draggable={false} alt="Shape" className='absolute -bottom-12 right-16 animate-wiggle hidden 2xl:block' />
+      <img
+        src={shape}
+        draggable={false}
+        alt='Shape'
+        className='absolute -bottom-12 right-16 animate-wiggle hidden 2xl:block'
+      />
     </section>
   );
 };

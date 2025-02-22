@@ -4,6 +4,7 @@ import Blog from "../../Component3/Blog/Blog";
 import Brand from "../../Component3/Brand/Brand";
 import Feature from "../../Component3/Feature/Feature";
 import Pricing from "../../Component3/Pricing/Pricing";
+import Service from "../../Component3/Service/Service";
 import Testimonial from "../../Component3/Testimonial/Testimonial";
 import WhyChoose from "../../Component3/WhyChoose/WhyChoose";
 import Work from "../../Component3/Work/Work";
@@ -15,6 +16,7 @@ const Home3 = () => {
       <Feature />
       <About />
       <WhyChoose />
+      <Service />
       <Testimonial />
       <Work />
       <Pricing />
