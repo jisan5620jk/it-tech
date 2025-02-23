@@ -17,8 +17,8 @@ const Home3 = () => {
       <About />
       <WhyChoose />
       <Service />
-      <Testimonial />
       <Work />
+      <Testimonial />
       <Pricing />
       <Brand />
       <Blog />

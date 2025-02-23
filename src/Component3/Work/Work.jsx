@@ -1,144 +1,86 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import WorkCard from './WorkCard';
-import { IoPlaySharp } from 'react-icons/io5';
-import workImg from '/images/ai3.png';
-import workImg2 from '/images/ai2.png';
-import workImg3 from '/images/ai1-1.png';
-import workImg4 from '/images/AI-3.png';
+import workImg from '/images/port-1-1.webp';
+import workImg2 from '/images/port-2-1.webp';
+import workImg3 from '/images/port-3-1.webp';
+import workImg4 from '/images/port-4.webp';
+import workImg5 from '/images/port-5.webp';
+import workImg6 from '/images/port-6.webp';
 import './work.css';
-import { GoArrowUpRight } from 'react-icons/go';
+import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';
 
 const workCard = [
   {
     id: 1,
     workImg: workImg4,
-    workVideoIcon: <IoPlaySharp />,
     workBoxLink: '/',
     workTitle: 'High Efficiency Robotics Automotion',
-    workTag: 'Artifial',
-    workTag2: 'Robotics',
+    workSubTitle: 'Design',
   },
   {
     id: 2,
     workImg: workImg3,
-    workVideoIcon: <IoPlaySharp />,
     workBoxLink: '/',
     workTitle: 'High Efficiency Robotics Automotion',
-    workTag: 'Artifial',
-    workTag2: 'Robotics',
+    workSubTitle: 'Design',
   },
   {
     id: 3,
     workImg: workImg2,
-    workVideoIcon: <IoPlaySharp />,
     workBoxLink: '/',
     workTitle: 'High Efficiency Robotics Automotion',
-    workTag: 'Artifial',
-    workTag2: 'Robotics',
+    workSubTitle: 'Design',
   },
   {
     id: 4,
     workImg: workImg,
-    workVideoIcon: <IoPlaySharp />,
     workBoxLink: '/',
     workTitle: 'High Efficiency Robotics Automotion',
-    workTag: 'Artifial',
-    workTag2: 'Robotics',
+    workSubTitle: 'Design',
+  },
+  {
+    id: 5,
+    workImg: workImg5,
+    workBoxLink: '/',
+    workTitle: 'High Efficiency Robotics Automotion',
+    workSubTitle: 'Design',
+  },
+  {
+    id: 6,
+    workImg: workImg6,
+    workBoxLink: '/',
+    workTitle: 'High Efficiency Robotics Automotion',
+    workSubTitle: 'Design',
   },
 ];
 
 const Work = () => {
-  const settings = {
-    loop: true,
-    speed: 1000,
-    initialSlide: 1,
-    autoplay: {
-      delay: 3000, // Set delay time in milliseconds
-      disableOnInteraction: false, // Keep autoplay on user interaction
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      640: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-      1400: {
-        slidesPerView: 4,
-      },
-    },
-  };
   return (
-    <section className='work-section'>
+    <section className='work-section mx-[52px]'>
       <div className='Container'>
-        <div>
-          <h1 className='font-Rajdhani text-center font-bold text-4xl sm:text-[44px] md:text-[54px] lg:text-[75px] xl:text-[85px] 2xl:text-[100px] text-HeadingColor-0 mt-[14px] uppercase mb-7 md:mb-[74px]'>
-            Works
-          </h1>
-        </div>
-      </div>
-      <div>
-        <Swiper {...settings}>
+        <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
-            {workCard.map(
-              ({
-                id,
-                workImg,
-                workVideoIcon,
-                workBoxLink,
-                workTitle,
-                workTag,
-                workTag2,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div>
-                      <WorkCard
-                        workImg={workImg}
-                        workVideoIcon={workVideoIcon}
-                        workBoxLink={workBoxLink}
-                        workTitle={workTitle}
-                        workTag={workTag}
-                        workTag2={workTag2}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              WAHT WE PROVIDE
+            </h5>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              Provide High Quality Software’s
+              <br />
+              Service for All Industry
+            </h1>
           </div>
-        </Swiper>
-      </div>
-      <div className='Container mt-14'>
-        <div className='flex flex-col md:flex-row md:items-center justify-between'>
-          <div className='flex-1 flex items-start gap-2'>
-            <div className='text-PrimaryColor-0 mt-1'>
-              <GoArrowUpRight size={30} />
-            </div>
-            <p className='font-Nunito text-lg'>
-              Continually formulate B2C partnerships orthogonal software
-              <br className='hidden lg:block' />
-              maintainable quality through low budget
-            </p>
-          </div>
-          <div>
+          <div className=''>
             <Link
-              to={'/about'}
+              to={'/service'}
               className='inline-block'
             >
               <button className='primary-btn'>
-                {`All Works`}
+                {`All Service`}
                 <span className='icon-style'>
                   <svg
                     className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
@@ -161,6 +103,24 @@ const Work = () => {
               </button>
             </Link>
           </div>
+        </div>
+      </div>
+      <div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]'>
+          {workCard.map(
+            ({ id, workImg, workBoxLink, workTitle, workSubTitle }) => {
+              return (
+                <div key={id}>
+                  <WorkCard
+                    workImg={workImg}
+                    workBoxLink={workBoxLink}
+                    workTitle={workTitle}
+                    workSubTitle={workSubTitle}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
