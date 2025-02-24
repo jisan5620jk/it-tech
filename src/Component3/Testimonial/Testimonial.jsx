@@ -3,22 +3,21 @@ import 'swiper/css';
 import titleShape from '/images/sub-title-shape.png';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import { RiDoubleQuotesL } from 'react-icons/ri';
-import testiProfile from '/images/mans.png';
-import testiProfile2 from '/images/mans2.png';
-import testiProfile3 from '/images/mans3.png';
-import testiProfile4 from '/images/mans4.png';
-import testiProfile5 from '/images/mans5.png';
+import testiShape from '/images/g-logo.webp';
+import testiProfile from '/images/t-author1.webp';
+import testiProfile2 from '/images/t-author2.webp';
+import testiProfile3 from '/images/t-author3.webp';
+import testiProfile4 from '/images/t-author2.webp';
+import TestiNavigation from './TestiNavigation';
 
 const testiData = [
   {
     id: 1,
-    testQuote: <RiDoubleQuotesL />,
+    testiShape: testiShape,
     testiTitle: 'Great 3d Modal',
-    testiDesc: `Competently leverage existing top line client 
-                centric supply chain. Enthusiastically maximi 
-                effective technologies actualize alternatives
-                materials via high-payoff`,
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile,
     testiName: 'Jhon D. Alexon',
@@ -26,55 +25,39 @@ const testiData = [
   },
   {
     id: 2,
-    testQuote: <RiDoubleQuotesL />,
+    testiShape: testiShape,
     testiTitle: 'Awesome Design',
-    testiDesc: `Competently leverage existing top line client 
-                centric supply chain. Enthusiastically maximi 
-                effective technologies actualize alternatives
-                materials via high-payoff`,
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile2,
-    testiName: 'Michel Jiyang',
-    testiDesignation: 'Web Developer',
+    testiName: 'Mariya Watson',
+    testiDesignation: 'UI/UX Designer',
   },
   {
     id: 3,
-    testQuote: <RiDoubleQuotesL />,
+    testiShape: testiShape,
     testiTitle: 'Great Supports',
-    testiDesc: `Competently leverage existing top line client 
-                centric supply chain. Enthusiastically maximi 
-                effective technologies actualize alternatives
-                materials via high-payoff`,
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile3,
     testiName: 'Anjelina Jholi',
-    testiDesignation: 'Web Developer',
+    testiDesignation: 'App Developer',
   },
   {
     id: 4,
-    testQuote: <RiDoubleQuotesL />,
+    testiShape: testiShape,
     testiTitle: 'Smart Development',
-    testiDesc: `Competently leverage existing top line client 
-                centric supply chain. Enthusiastically maximi 
-                effective technologies actualize alternatives
-                materials via high-payoff`,
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
     testiRatingIcon: <MdOutlineStarPurple500 />,
     testiProfile: testiProfile4,
     testiName: 'Mariya Watson',
-    testiDesignation: 'Web Developer',
-  },
-  {
-    id: 5,
-    testQuote: <RiDoubleQuotesL />,
-    testiTitle: 'Best Quality',
-    testiDesc: `Competently leverage existing top line client 
-                centric supply chain. Enthusiastically maximi 
-                effective technologies actualize alternatives
-                materials via high-payoff`,
-    testiRatingIcon: <MdOutlineStarPurple500 />,
-    testiProfile: testiProfile5,
-    testiName: 'David Hamilton',
-    testiDesignation: 'Web Developer',
+    testiDesignation: 'Mock-Up Developer',
   },
 ];
 
@@ -106,8 +89,8 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] bg-[url("/images/teasti-bg-2.png")] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-9 xl:px-16 2xl:px-14 3xl:px-[100px] pt-16 md:pt-20 lg:pt-28'>
-      <div className='Container'>
+    <section className="mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-9 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl mb-8">
+      <div className='Container -mb-[130px]'>
         <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
           <img
             src={titleShape}
@@ -123,22 +106,23 @@ const Testimonial = () => {
       </div>
       <div className='mt-[46px]'>
         <Swiper {...settings}>
-          <div>
-            {testiData.map(
-              ({
-                id,
-                testQuote,
-                testiTitle,
-                testiRatingIcon,
-                testiName,
-                testiProfile,
-                testiDesignation,
-                testiDesc,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
+          {testiData.map(
+            ({
+              id,
+              testiShape,
+              testiTitle,
+              testiRatingIcon,
+              testiName,
+              testiProfile,
+              testiDesignation,
+              testiDesc,
+            }) => {
+              return (
+                <SwiperSlide key={id}>
+                  <div className='pt-[138px]'>
+                    {' '}
                     <TestimonialCard
-                      testQuote={testQuote}
+                      testiShape={testiShape}
                       testiTitle={testiTitle}
                       testiRatingIcon={testiRatingIcon}
                       testiName={testiName}
@@ -146,11 +130,12 @@ const Testimonial = () => {
                       testiDesignation={testiDesignation}
                       testiDesc={testiDesc}
                     />
-                  </SwiperSlide>
-                );
-              }
-            )}
-          </div>
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          )}
+          <TestiNavigation />
         </Swiper>
       </div>
     </section>

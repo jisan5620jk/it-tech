@@ -6,6 +6,7 @@ import CallDoAction from "../../Component3/CallDoAction/CallDoAction";
 import Feature from "../../Component3/Feature/Feature";
 import Pricing from "../../Component3/Pricing/Pricing";
 import Service from "../../Component3/Service/Service";
+import TeamMember from "../../Component3/TeamMember/TeamMember";
 import Testimonial from "../../Component3/Testimonial/Testimonial";
 import WhyChoose from "../../Component3/WhyChoose/WhyChoose";
 import Work from "../../Component3/Work/Work";
@@ -21,6 +22,7 @@ const Home3 = () => {
       <Work />
       <CallDoAction/>
       <Testimonial />
+      <TeamMember />
       <Pricing />
       <Brand />
       <Blog />
