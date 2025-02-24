@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
           <div className='relative z-10 xl:-ml-[62px]'>

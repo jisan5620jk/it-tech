@@ -49,14 +49,14 @@ const workCard = [
     id: 6,
     workImg: workImg6,
     workBoxLink: '/',
-    workTitle: 'Bos Mocku-Up Design',
+    workTitle: 'Bos Mock-Up Design',
     workSubTitle: 'Design',
   },
 ];
 
 const Work = () => {
   return (
-    <section className='work-section mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28'>
+    <section className='work-section mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
@@ -105,7 +105,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-9'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[30px] mt-9'>
         {workCard.map(
           ({ id, workImg, workBoxLink, workTitle, workSubTitle }) => {
             return (

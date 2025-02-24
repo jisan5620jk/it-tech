@@ -96,7 +96,7 @@ const TeamMember = () => {
     },
   };
   return (
-    <section className='bg-[#0f34b9] mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28 rounded-lg lg:rounded-2xl relative'>
+    <section className='bg-[#0f34b9] mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28 rounded-lg lg:rounded-2xl relative'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
@@ -109,12 +109,12 @@ const TeamMember = () => {
               />{' '}
               MEET OUR TEAM
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
               High Professional Team Ready
               <br /> To Develope Your Business
             </h1>
           </div>
-          <div className=''>
+          <div className='lg:mr-6 xl:mr-0'>
             <Link
               to={'/blog_grid'}
               className='inline-block'

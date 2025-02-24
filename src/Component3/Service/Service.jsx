@@ -88,7 +88,7 @@ const Service = () => {
     },
   };
   return (
-    <section className="relative mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] py-16 md:py-20 lg:py-[120px] bg-[url('/images/service-bg2.webp')] bg-cover bg-no-repeat bg-center">
+    <section className="relative mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] py-16 md:py-20 lg:py-[120px] bg-[url('/images/service-bg2.webp')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>

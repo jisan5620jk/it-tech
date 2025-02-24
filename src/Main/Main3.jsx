@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer2 from '../Shared/Footer/Footer2';
+import Footer3 from '../Shared/Footer/Footer3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
@@ -35,7 +35,7 @@ const Main3 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer2 />
+      <Footer3 />
     </>
   );
 };

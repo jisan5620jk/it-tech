@@ -12,7 +12,7 @@ const TeamCard = ({
   teamShareIcon,
 }) => {
   return (
-    <div className='group relative p-[30px] bg-white bg-opacity-10 rounded-[10px]'>
+    <div className='group relative p-2 sm:p-[30px] bg-white bg-opacity-10 rounded-[10px]'>
       <div className='relative overflow-hidden'>
         <img
           src={teamThumb}
@@ -56,8 +56,8 @@ const TeamCard = ({
           </div>
         </div>
       </div>
-      <div className="bg-transparent relative transition-all duration-500 rounded-md text-center pt-[22px] rounded-b-md">
-        <h5 className='font-Rajdhani font-semibold text-[28px] text-white transition-all duration-500 pb-[2px]'>
+      <div className="bg-transparent relative transition-all duration-500 rounded-md text-center pt-3 sm:pt-[22px] rounded-b-md">
+        <h5 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white transition-all duration-500'>
           {teamTitle}
         </h5>
         <p className='font-Nunito text-TextColor-0 transition-all duration-500'>

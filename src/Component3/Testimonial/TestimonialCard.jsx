@@ -24,7 +24,7 @@ const TestimonialCard = ({
       </ul>
       <p className='font-Nunito text-TextColor2-0 text-lg'>{testiDesc}</p>
       <div className='flex items-center justify-between border-t border-HeadingColor-0 border-opacity-10 transition-all duration-300 ease-linear group-hover:border-PrimaryColor-0 group-hover:border-opacity-100 pt-[26px] mt-[26px]'>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-2 sm:gap-4'>
           <div>
             <img
               src={testiProfile}
@@ -33,15 +33,13 @@ const TestimonialCard = ({
             />
           </div>
           <div>
-            <h5 className='font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-2xl relative'>
+            <h5 className='font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-[22px] sm:text-2xl relative'>
               {testiName}
             </h5>
-            <p className='font-Nunito text-TextColor2-0'>
-              {testiDesignation}
-            </p>
+            <p className='font-Nunito text-TextColor2-0'>{testiDesignation}</p>
           </div>
         </div>
-        <div className=''>
+        <div className='hidden'>
           <img
             src={testiShape}
             draggable={false}
