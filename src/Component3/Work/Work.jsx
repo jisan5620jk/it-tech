@@ -21,42 +21,42 @@ const workCard = [
     id: 2,
     workImg: workImg3,
     workBoxLink: '/',
-    workTitle: 'High Efficiency Robotics Automotion',
-    workSubTitle: 'Design',
+    workTitle: 'Modern 3d Art for Business',
+    workSubTitle: '3d Art',
   },
   {
     id: 3,
     workImg: workImg2,
     workBoxLink: '/',
-    workTitle: 'High Efficiency Robotics Automotion',
+    workTitle: 'Business Card Design',
     workSubTitle: 'Design',
   },
   {
     id: 4,
     workImg: workImg,
     workBoxLink: '/',
-    workTitle: 'High Efficiency Robotics Automotion',
-    workSubTitle: 'Design',
+    workTitle: 'Mobile App Development',
+    workSubTitle: 'Development',
   },
   {
     id: 5,
     workImg: workImg5,
     workBoxLink: '/',
-    workTitle: 'High Efficiency Robotics Automotion',
+    workTitle: 'Website Design & Development',
     workSubTitle: 'Design',
   },
   {
     id: 6,
     workImg: workImg6,
     workBoxLink: '/',
-    workTitle: 'High Efficiency Robotics Automotion',
+    workTitle: 'Bos Mocku-Up Design',
     workSubTitle: 'Design',
   },
 ];
 
 const Work = () => {
   return (
-    <section className='work-section mx-[52px]'>
+    <section className='work-section mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
@@ -105,23 +105,21 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]'>
-          {workCard.map(
-            ({ id, workImg, workBoxLink, workTitle, workSubTitle }) => {
-              return (
-                <div key={id}>
-                  <WorkCard
-                    workImg={workImg}
-                    workBoxLink={workBoxLink}
-                    workTitle={workTitle}
-                    workSubTitle={workSubTitle}
-                  />
-                </div>
-              );
-            }
-          )}
-        </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-9'>
+        {workCard.map(
+          ({ id, workImg, workBoxLink, workTitle, workSubTitle }) => {
+            return (
+              <div key={id}>
+                <WorkCard
+                  workImg={workImg}
+                  workBoxLink={workBoxLink}
+                  workTitle={workTitle}
+                  workSubTitle={workSubTitle}
+                />
+              </div>
+            );
+          }
+        )}
       </div>
     </section>
   );

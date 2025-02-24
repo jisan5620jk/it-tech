@@ -95,35 +95,29 @@ const Testimonial = () => {
         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
-      1400: {
-        slidesPerView: 4,
+      1200: {
+        slidesPerView: 3,
       },
     },
   };
   return (
-    <section className='relative z-10 overflow-hidden px-4 sm:px-8 lg:px-9 xl:px-16 2xl:px-14 3xl:px-[100px] pt-16 md:pt-20 lg:pt-28'>
-      <div className='text-center'>
-        <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+    <section className='mx-2 sm:mx-3 md:mx-5 2xl:mx-[50px] bg-[url("/images/teasti-bg-2.png")] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-9 xl:px-16 2xl:px-14 3xl:px-[100px] pt-16 md:pt-20 lg:pt-28'>
+      <div className='Container'>
+        <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
           <img
             src={titleShape}
             draggable={false}
             alt='Shape'
           />{' '}
-          Testimonials{' '}
-          <img
-            src={titleShape}
-            draggable={false}
-            alt='Shape'
-            className='rotate-180'
-          />
+          Testimonials
         </h5>
         <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-          Trusted By Industry Leader for
+          Trusted By Industry Leader
           <br /> Clients Testimonial
         </h1>
       </div>

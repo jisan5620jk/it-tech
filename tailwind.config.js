@@ -122,6 +122,11 @@ export default {
           '83.25%': { transform: 'translateY(1px)' },
           '100%': { transform: 'translateY(0)' },
         },
+        rotateX: {
+          '0%': { transform: 'rotate3d(0, 0, 0)' },
+          '50%': { transform: 'rotate3d(0, 1, 0, 180deg)' },
+          '100%': { transform: 'rotate3d(0, 1, 0, 360deg)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -136,6 +141,7 @@ export default {
         dance7: 'dance7 4s alternate infinite',
         swing: 'swing 1s ease-in-out 1s forwards infinite alternate',
         fadeInUp: 'fadeInUp 0.5s linear',
+        rotateX: 'rotateX 5s linear infinite',
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
