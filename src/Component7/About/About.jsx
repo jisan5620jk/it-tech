@@ -2,8 +2,7 @@ import aboutThumb from '/images/about-thumb.png';
 import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/about-icon1.png';
 import itemIcon2 from '/images/about-icon2.png';
-import arrowShape from '/images/arrow-shape.png';
-import shape from '/images/shape.webp';
+import icon from '/images/call-icon.png';
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
@@ -75,7 +74,7 @@ const About = () => {
                 </div>
               </li>
             </ul>
-            <div className='flex items-center gap-16'>
+            <div className='flex items-center gap-5'>
               <Link
                 to={'/about'}
                 className='inline-block'
@@ -85,24 +84,31 @@ const About = () => {
                   <FaArrowRightLong />
                 </button>
               </Link>
-              <div>
-                <img
-                  src={arrowShape}
-                  draggable={false}
-                  alt='Shape'
-                  className='animate-dance3 hidden sm:block'
-                />
+              <div className='group flex gap-5 items-center'>
+                <div>
+                  <img
+                    src={icon}
+                    draggable={false}
+                    alt='Icon'
+                    className='group-hover:animate-wobble_vertical'
+                  />
+                </div>
+                <div className='flex-1'>
+                  <h6 className='font-Nunito text-TextColor2-0'>
+                    Call Us Anytime
+                  </h6>
+                  <a
+                    href='tel:+881234567890'
+                    className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0'
+                  >
+                    +88 123 4567 890
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src={shape}
-        draggable={false}
-        alt='Shape'
-        className='absolute -bottom-12 right-16 animate-wiggle hidden 2xl:block'
-      />
     </section>
   );
 };
