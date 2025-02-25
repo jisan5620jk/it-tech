@@ -39,20 +39,23 @@ const Banner = () => {
             </p>
             <div className='flex flex-col sm:flex-row gap-5 mb-9'>
               <Link to={'/about'}>
-                <button className='flex items-center gap-2 border border-PrimaryColor-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase bg-gradient-to-b to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
+                <button className='primary-btn'>
                   {`Learn More`}
                   <FaArrowRightLong size={'18'} />
                 </button>
               </Link>
               <Link to={'/about'}>
-                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[12px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-t'>
+                <button className='flex items-center gap-2 border border-BorderColor3-0 py-[13px] px-11 transition-all text-lg duration-500 ease-linear rounded-full text-white font-semibold font-Rajdhani uppercase bg-transparent to-PrimaryColor-0 from-PrimaryColor2-0 hover:border-PrimaryColor-0 hover:bg-gradient-to-l'>
                   {`Contact Us`}
                   <FaArrowRightLong size={'18'} />
                 </button>
               </Link>
             </div>
             <div>
-              <img src={bannerReview} alt="Image" />
+              <img
+                src={bannerReview}
+                alt='Image'
+              />
             </div>
           </div>
           <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>

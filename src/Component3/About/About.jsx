@@ -41,12 +41,13 @@ const About = () => {
             </p>
             <div className='mb-11'>
               <ul className='grid items-center grid-cols-1 sm:grid-cols-2 gap-8'>
-                <li className='flex items-center gap-4'>
+                <li className='group flex items-center gap-4'>
                   <div>
                     <img
                       src={itemIcon}
                       draggable={false}
                       alt='Icon'
+                      className="group-hover:animate-wobble_vertical"
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -55,12 +56,13 @@ const About = () => {
                     Management
                   </h5>
                 </li>
-                <li className='flex items-center gap-4'>
+                <li className='group flex items-center gap-4'>
                   <div>
                     <img
                       src={itemIcon2}
                       draggable={false}
                       alt='Icon2'
+                      className="group-hover:animate-wobble_vertical"
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -69,12 +71,13 @@ const About = () => {
                     Service Provide
                   </h5>
                 </li>
-                <li className='flex items-center gap-4'>
+                <li className='group flex items-center gap-4'>
                   <div>
                     <img
                       src={itemIcon3}
                       draggable={false}
                       alt='Icon3'
+                      className="group-hover:animate-wobble_vertical"
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -83,12 +86,13 @@ const About = () => {
                     Development
                   </h5>
                 </li>
-                <li className='flex items-center gap-4'>
+                <li className='group flex items-center gap-4'>
                   <div>
                     <img
                       src={itemIcon4}
                       draggable={false}
                       alt='Icon4'
+                      className="group-hover:animate-wobble_vertical"
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>

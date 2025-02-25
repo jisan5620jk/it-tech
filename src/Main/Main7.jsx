@@ -1,17 +1,16 @@
 import { Outlet } from 'react-router-dom';
+import Navbar2 from '../Shared/Navbar/Navbar2';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer3 from '../Shared/Footer/Footer3';
+import Footer7 from '../Shared/Footer/Footer7';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HelmetChanger from '../Shared/Helmet/Helmet';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar2 from '../Shared/Navbar/Navbar2';
 
-const Main3 = () => {
+const Main7 = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -29,14 +28,13 @@ const Main3 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Artificial Intelligence'} />
       <Navbar2 />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer3 />
+      <Footer7 />
     </>
   );
 };
-export default Main3;
+export default Main7;
