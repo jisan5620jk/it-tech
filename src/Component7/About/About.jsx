@@ -8,7 +8,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const About = () => {
   return (
-    <section className='bg-[url(/images/about-bg.webp)] pb-16 md:pb-20 lg:pb-[120px] pt-16 md:pt-28 lg:pt-[205px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='bg-[url(/images/about-bg.png)] pb-16 md:pb-20 lg:pb-[186px] pt-16 md:pt-28 lg:pt-[205px] bg-white bg-no-repeat bg-center bg-cover relative'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-end'>
           <div className='relative z-10 xl:-ml-[102px]'>
