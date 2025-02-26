@@ -344,6 +344,7 @@
 }
 
 /* Header Sticky */
+
 .is-sticky {
   @apply !fixed top-0 left-0 w-full z-50 shadow-shadows bg-white backdrop-blur-md animate-headerSlideDown;
 }
@@ -961,27 +962,15 @@ li.has-dropdown a button span {
   border-color: #ffffff;
 }
 
-.header-area.style-two.is-sticky nav.main-menu-content > ul > li > a {
-  color: #041424;
+.header-area.style-two.is-sticky {
+  background: #041424;
 }
 
-.header-area.style-two.is-sticky nav.main-menu-content > ul > li > a:before {
-  border-color: #041424;
-}
 
-.header-area.style-two.is-sticky .header-logo img {
-  filter: brightness(1) invert(0);
-}
-
-@media screen and (max-width: 991px) {
-  .header-area.style-two.is-sticky .header-logo img {
-    filter: brightness(0) invert(1);
-  }
-}
 
 /* Header Sidebar */
 
-/* Offcanvas */
+
 .body-overlay2 {
   position: fixed;
   top: 0;

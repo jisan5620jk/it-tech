@@ -34,7 +34,7 @@ const Brand = () => {
             <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
               See our happy customers
             </h5>{' '}
-            <div className='flex-1 w-full h-[1px] bg-white bg-opacity-10'></div>
+            <div className='flex-1 w-full h-[1px] bg-white bg-opacity-20'></div>
           </div>
           <div className='relative z-10 py-[52px]'>
             <Swiper {...settings}>
@@ -95,7 +95,7 @@ const Brand = () => {
             </Swiper>
           </div>
           <div className='flex items-center gap-2 sm:gap-4'>
-            <div className='flex-1 w-full h-[1px] bg-white bg-opacity-10'></div>{' '}
+            <div className='flex-1 w-full h-[1px] bg-white bg-opacity-20'></div>{' '}
             <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
               About 10k+ customers
               worldwide

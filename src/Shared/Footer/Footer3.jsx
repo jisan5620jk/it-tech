@@ -15,7 +15,6 @@ import { PiArrowCircleRight } from 'react-icons/pi';
 const Footer = () => {
   return (
     <>
-      <div className='bg-BodyBg-0'></div>
       <footer className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] mb-2 sm:mb-3 md:mb-5 2xl:mb-8 3xl:mb-[50px] rounded-b-lg lg:rounded-b-2xl bg-HeadingColor-0 relative pt-16 md:pt-20 lg:pt-28 overflow-hidden'>
         <div className='Container'>
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>

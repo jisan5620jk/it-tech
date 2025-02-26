@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer3 from '../Shared/Footer/Footer3';
+import Navbar2 from '../Shared/Navbar/Navbar2';
+import Footer4 from '../Shared/Footer/Footer4';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
@@ -9,7 +10,6 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar2 from '../Shared/Navbar/Navbar2';
 
 const Main4 = () => {
   useEffect(() => {
@@ -35,7 +35,7 @@ const Main4 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer3 />
+      <Footer4 />
     </>
   );
 };

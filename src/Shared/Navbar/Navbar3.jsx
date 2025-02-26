@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import Logo from '/images/main-logo.png';
 import Logo2 from '/images/logo2.png';
-import Logo3 from '/images/logo.png';
+import Logo3 from '/images/main-logo.png';
 import './navbar.css';
 import { useEffect, useRef } from 'react';
 import {
@@ -17,7 +16,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { IoMdPaperPlane } from 'react-icons/io';
 import { GoArrowUpRight } from 'react-icons/go';
 
-const Navbar = () => {
+const Navbar3 = () => {
   //sticky
 
   useEffect(() => {
@@ -260,22 +259,14 @@ const Navbar = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='header-area header-sticky'>
+      <div className='header-area style-two header-sticky'>
         <div className='px-5 md:px-10 xl:px-12'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
-              <div className='header-logo lg:hidden'>
+              <div className='header-logo'>
                 <Link to={'/'}>
                   <img
                     src={Logo3}
-                    draggable='false'
-                  />
-                </Link>
-              </div>
-              <div className='header-logo hidden lg:block'>
-                <Link to={'/'}>
-                  <img
-                    src={Logo}
                     draggable='false'
                   />
                 </Link>
@@ -648,4 +639,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar3;

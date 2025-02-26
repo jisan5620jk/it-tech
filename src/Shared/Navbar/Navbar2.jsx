@@ -167,7 +167,7 @@ const Navbar2 = () => {
   }, [headerIcon]);
 
   return (
-    <>
+    <div data-lenis-prevent>
       <div className='offcanvas-area'>
         <div
           ref={offcanvasRef}
@@ -635,7 +635,7 @@ const Navbar2 = () => {
         ref={bodyOverlay2Ref}
         className='body-overlay2'
       ></div>
-    </>
+    </div>
   );
 };
 

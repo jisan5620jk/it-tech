@@ -18,10 +18,10 @@ const BlogCard = ({
           className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
       </div>
-      <div className='w-[calc(100%-20px)] sm:w-[calc(100%-40px)] -mt-[50px] mx-auto  relative z-20 flex justify-center bg-BodyBg-0 rounded-lg transition-all duration-500 pt-3 sm:pt-5'>
+      <div className='w-[calc(100%-20px)] sm:w-[calc(100%-40px)] -mt-[50px] mx-auto flex justify-centerrounded-lg transition-all duration-500 pt-3 sm:pt-5 rounded-[10px] bg-gradient-to-t to-BoxBg-0 from-BoxBg3-0 relative z-20 overflow-hidden before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-BoxBg3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
         <div className='mx-auto w-full'>
           <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pb-2'>
-            <p className='font-Rajdhani font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
+            <p className='font-Rajdhani font-semibold text-white sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img
                 src={blogPostIcon}
                 draggable={false}
@@ -30,13 +30,13 @@ const BlogCard = ({
               {blogPost}
             </p>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-[23px] xl:text-[21px] 2xl:text-[23px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mt-5 mb-5'>
+              <button className='font-Rajdhani text-left font-semibold text-lg sm:text-[22px] md:text-xl lg:text-[23px] xl:text-[21px] 2xl:text-[23px] text-white transition-all duration-500 mt-5 mb-5'>
                 {blogTitle}
               </button>
             </Link>
           </div>
-          <div className='flex items-center justify-between px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] border-t border-HeadingColor-0 border-opacity-10 py-3 sm:py-[19px]'>
-            <p className='font-Nunito text-TextColor2-0 text-sm sm:text-base flex gap-2 items-center leading-[15px]'>
+          <div className='flex items-center justify-between px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] border-t border-white border-opacity-10 py-3 sm:py-[19px]'>
+            <p className='font-Nunito text-white text-opacity-80 text-sm sm:text-base flex gap-2 items-center leading-[15px]'>
               <span className='text-PrimaryColor-0'>{blogDateIcon}</span>
               {blogDate}
             </p>
@@ -44,10 +44,10 @@ const BlogCard = ({
               to={blogUrl}
               className='inline-block'
             >
-              <button className='blog-button flex items-center justify-center size-[38px] rounded-full border border-SecondaryColor-0 border-opacity-10 bg-BodyBg-0 text-PrimaryColor-0 relative z-10 before:absolute before:-z-10 before:top-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-full before:scale-0 before:transition-all before:duration-500 group-hover:before:scale-100 before:rounded-full group-hover:text-white transition-all duration-500'>
-                <span className='icon-style relative -top-[3px]'>
+              <button className='blog-button flex items-center justify-center size-[38px] rounded-full bg-white bg-opacity-10 text-white relative z-10 before:absolute before:-z-10 before:top-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:h-full before:scale-0 before:transition-all before:duration-500 group-hover:before:scale-100 before:rounded-full group-hover:text-white transition-all duration-500'>
+                <span className='icon-style relative -top-[2px]'>
                   <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-3 w-auto transition-all duration-500 text-PrimaryColor-0 group-hover:text-white'
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-3 w-auto transition-all duration-500 text-text-white'
                     xmlns='http://www.w3.org/2000/svg'
                     stroke='CurrentColor'
                     width='14.2'
