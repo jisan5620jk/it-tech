@@ -14,9 +14,9 @@ const Banner = () => {
           <div className='relative'>
             <h5 className='font-Rajdhani bg-gradient-to-r to-PrimaryColor3-0 to-50% from-PrimaryColor2-0 bg-clip-text text-transparent text-lg sm:text-xl font-semibold flex items-center gap-2 mb-5 uppercase'>
               <img
-                draggable='false'
                 src={subTilteShape}
                 alt='Shape'
+                draggable='false'
                 className='animate-swing'
               />
               Best agency based in usa

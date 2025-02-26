@@ -17,6 +17,7 @@ const Banner = () => {
               <img
                 src={subTilteShape}
                 alt='Shape'
+                draggable='false'
                 className='animate-swing'
               />
               Making Your Life Easier
@@ -34,8 +35,8 @@ const Banner = () => {
             <p className='font-Nunito sm:text-lg text-TextColor2-0 mb-9 mt-3'>
               Continually formulate B2C partnerships orthogonal software
               solutions
-              <br className='hidden md:block lg:hidden 2xl:block' /> maintainable quality through
-              low budgets
+              <br className='hidden md:block lg:hidden 2xl:block' />{' '}
+              maintainable quality through low budgets
             </p>
             <div>
               <Link

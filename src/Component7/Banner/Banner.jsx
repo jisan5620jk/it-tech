@@ -16,6 +16,7 @@ const Banner = () => {
               <img
                 src={subTilteShape}
                 alt='Shape'
+                draggable='false'
                 className='animate-swing'
               />
               Best software agency
