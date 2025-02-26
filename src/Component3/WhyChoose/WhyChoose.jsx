@@ -5,11 +5,12 @@ import itemIcon from '/images/icon1.webp';
 import itemIcon2 from '/images/icon2.webp';
 import itemIcon3 from '/images/icon3.webp';
 import { Link } from 'react-router-dom';
+import shape from '/images/shape.webp';
 import './why-choose.css';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-white py-16 md:py-20 lg:py-28'>
+    <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-end relative'>
           <div>
@@ -128,6 +129,12 @@ const WhyChoose = () => {
           </div>
         </div>
       </div>
+      <img
+        src={shape}
+        draggable={false}
+        alt='Shape'
+        className='absolute bottom-0 left-24 animate-dance3 hidden 3xl:block'
+      />
     </section>
   );
 };

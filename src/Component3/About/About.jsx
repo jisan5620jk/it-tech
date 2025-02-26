@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative z-20'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
           <div className='relative z-10 xl:-ml-[62px]'>
@@ -47,7 +47,7 @@ const About = () => {
                       src={itemIcon}
                       draggable={false}
                       alt='Icon'
-                      className="group-hover:animate-wobble_vertical"
+                      className='group-hover:animate-wobble_vertical'
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -62,7 +62,7 @@ const About = () => {
                       src={itemIcon2}
                       draggable={false}
                       alt='Icon2'
-                      className="group-hover:animate-wobble_vertical"
+                      className='group-hover:animate-wobble_vertical'
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -77,7 +77,7 @@ const About = () => {
                       src={itemIcon3}
                       draggable={false}
                       alt='Icon3'
-                      className="group-hover:animate-wobble_vertical"
+                      className='group-hover:animate-wobble_vertical'
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>
@@ -92,7 +92,7 @@ const About = () => {
                       src={itemIcon4}
                       draggable={false}
                       alt='Icon4'
-                      className="group-hover:animate-wobble_vertical"
+                      className='group-hover:animate-wobble_vertical'
                     />
                   </div>
                   <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[22px] lg:text-base xl:text-xl 2xl:text-[22px] leading-[28px] text-HeadingColor-0'>

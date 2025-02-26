@@ -27,7 +27,7 @@ const Brand = () => {
   };
 
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] bg-[url('/images/brand-bg.webp')] bg-cover bg-center bg-no-repeat pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/brand-bg.webp')] bg-cover bg-center bg-no-repeat pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5">
       <div className='Container'>
         <div className='flex items-center gap-2 sm:gap-4'>
           <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-HeadingColor-0 uppercase'>

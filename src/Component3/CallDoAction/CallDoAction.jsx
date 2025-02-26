@@ -5,12 +5,12 @@ import shape3 from '/images/call-do-shape1.webp';
 
 const CallDoAction = () => {
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat pt-4 pb-8 md:py-16 relative z-30">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat pt-4 pb-8 md:py-16 relative z-30">
       <img
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute top-[70px] left-24 animate-rotateX hidden 2xl:block'
+        className='absolute top-[70px] left-24 animate-rotateX hidden 3xl:block'
       />
       <div className='Container'>
         <div className='flex flex-col gap-7 md:gap-0 md:flex-row justify-between md:items-center'>
@@ -57,7 +57,7 @@ const CallDoAction = () => {
         src={shape2}
         draggable={false}
         alt='Shape'
-        className='absolute top-[70px] right-36 animate-movebtn hidden 2xl:block'
+        className='absolute top-[70px] right-36 animate-movebtn hidden 3xl:block'
       />
       <img
         src={shape3}

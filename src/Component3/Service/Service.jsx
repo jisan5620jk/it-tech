@@ -1,6 +1,7 @@
 import serviceIcon from '/images/service-shape1.webp';
 import serviceIcon2 from '/images/service-shape2.webp';
 import serviceIcon3 from '/images/service-shape3.webp';
+import shape from '/images/service_shape.png';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';
 import titleShape from '/images/sub-title-shape.png';
@@ -88,7 +89,7 @@ const Service = () => {
     },
   };
   return (
-    <section className="relative mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-md lg:rounded-[20px] py-16 md:py-20 lg:py-[120px] bg-[url('/images/service-bg2.webp')] bg-cover bg-no-repeat bg-center">
+    <section className="relative mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] py-16 md:py-20 lg:py-[120px] bg-[url('/images/service-bg2.webp')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
         <div className='relative text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -110,6 +111,12 @@ const Service = () => {
             <br />
             Successful Softwares
           </h1>
+          <img
+            src={shape}
+            draggable={false}
+            alt='Shape'
+            className='absolute top-2 2xl:right-0 3xl:-right-12 animate-rotational hidden 2xl:block'
+          />
         </div>
         <div className='mt-[54px]'>
           <Swiper {...settings}>

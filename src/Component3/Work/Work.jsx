@@ -56,7 +56,7 @@ const workCard = [
 
 const Work = () => {
   return (
-    <section className='work-section mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] py-16 md:py-20 lg:py-28'>
+    <section className='work-section mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] py-16 md:py-20 lg:py-28'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>

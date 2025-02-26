@@ -3,12 +3,12 @@ import shape from '/images/call-do-shape2.webp';
 
 const Counter = () => {
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat py-14 relative">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat py-14 relative">
       <img
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute top-[70px] left-24 animate-rotateX hidden 2xl:block'
+        className='absolute top-[70px] left-24 animate-rotateX hidden 3xl:block'
       />
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0 md:items-center'>
