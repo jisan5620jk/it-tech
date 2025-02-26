@@ -1,17 +1,16 @@
 import { Outlet } from 'react-router-dom';
+import Navbar from '../Shared/Navbar/Navbar';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer3 from '../Shared/Footer/Footer3';
+import Footer from '../Shared/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HelmetChanger from '../Shared/Helmet/Helmet';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Navbar2 from '../Shared/Navbar/Navbar2';
 
-const Main3 = () => {
+const Main14 = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -29,14 +28,13 @@ const Main3 = () => {
 
   return (
     <>
-      <HelmetChanger title={'Software Agency'} />
-      <Navbar2 />
+      <Navbar />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer3 />
+      <Footer />
     </>
   );
 };
-export default Main3;
+export default Main14;

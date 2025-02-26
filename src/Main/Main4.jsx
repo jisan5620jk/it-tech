@@ -1,14 +1,15 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
 import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
-import Footer from '../Shared/Footer/Footer';
+import Footer3 from '../Shared/Footer/Footer3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import HelmetChanger from '../Shared/Helmet/Helmet';
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Navbar2 from '../Shared/Navbar/Navbar2';
 
 const Main4 = () => {
   useEffect(() => {
@@ -28,12 +29,13 @@ const Main4 = () => {
 
   return (
     <>
-      <Navbar />
+      <HelmetChanger title={'Artificial Intelligence Dark'} />
+      <Navbar2 />
       <ScrollToTop />
       <div>
         <Outlet />
       </div>
-      <Footer />
+      <Footer3 />
     </>
   );
 };

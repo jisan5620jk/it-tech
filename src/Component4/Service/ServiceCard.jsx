@@ -1,35 +1,42 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({
   serviceIcon,
   serviceTitle,
   serviceDesc,
-  serviceUrl,
-  serviceBtn,
+  serviceBtnUrl,
+  serviceBtnText,
+  serviceBtnIcon,
 }) => {
   return (
-    <div className="px-[30px] lg:px-7 xl:px-[30px] pt-9 pb-[34px] rounded-lg bg-transparent group overflow-hidden border border-BorderColor-0 transition-all duration-500 hover:border-PrimaryColor-0 relative z-10 before:absolute before:left-1/2 before:top-0 before:h-full before:w-0 before:bg-PrimaryColor-0 before:transition-all before:duration-500 before:-z-10 after:absolute after:-right-28 after:-top-28 after:h-[224px] after:w-[225px] after:bg-white after:scale-0 after:opacity-10 after:rounded-full after:transition-all after:duration-500 after:-z-10 hover:before:w-full hover:after:scale-100 hover:before:left-0">
-      <div className="relative pb-8 z-10">
-        <img
-          src={serviceIcon}
-          draggable="false"
-          className="transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1]"
-        />
-      </div>
-      <Link to={serviceUrl}>
-        <button className="font-Rajdhani text-left font-semibold text-[22px] sm:text-2xl lg:text-xl xl:text-2xl pb-4 text-white">
+    <div className='group bg-BoxBg-0 rounded-lg py-5 sm:py-10 md:py-5 xl:py-11 px-4 md:px-9 lg:px-4 xl:px-9 2xl:px-10 relative z-10 overflow-hidden transition-all duration-500 group-hover:text-white before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-BoxBg3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
+      <div className='flex gap-4 sm:gap-6 lg:gap-4 xl:gap-6 items-center'>
+        <div className=''>
+          <img
+            src={serviceIcon}
+            draggable={false}
+            alt='Icon'
+            className='group-hover:animate-wobble_vertical'
+          />
+        </div>
+        <h4 className='flex-1 font-Rajdhani leading-6 sm:leading-7 font-semibold text-white text-lg sm:text-2xl md:text-xl lg:text-[19px] xl:text-xl 2xl:text-[26px]'>
           {serviceTitle}
-        </button>
-      </Link>
-      <p className="font-Nunito text-TextColor-0 transition-all duration-500 group-hover:text-white pb-7">
+        </h4>
+      </div>
+      <p className='font-Nunito text-white text-opacity-80 mt-5 mb-8'>
         {serviceDesc}
       </p>
-      <Link to={serviceUrl}>
-        <button className="header-btn !bg-[#ffffff1a] !border-none !px-7 !rounded-full uppercase font-Rajdhani !flex gap-2 items-center group-hover:before:w-full group-hover:before:left-0">
-          {serviceBtn}
-        </button>
-      </Link>
+      <div className='inline-block'>
+        <Link
+          to={serviceBtnUrl}
+          className='bg-transparent border border-white border-opacity-10 px-6 py-[8px] rounded-full flex items-center gap-1 text-white font-Rajdhani font-semibold relative z-10 overflow-hidden transition-all duration-500 group-hover:text-white before:absolute before:top-0 before:right-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:ease-linear before:-z-10 group-hover:before:w-full group-hover:before:left-0 uppercase'
+        >
+          {serviceBtnText}
+          <span className='text-xl -rotate-45'> {serviceBtnIcon}</span>
+        </Link>
+      </div>
     </div>
   );
 };

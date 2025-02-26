@@ -1,53 +1,63 @@
-/* eslint-disable no-unused-vars */
-import testiImg from '/images/testi1.png';
-import testiImg2 from '/images/testi2.png';
-import testiImg3 from '/images/testi3.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import titleShape from '/images/sub-title-shape.png';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import { IoStar } from 'react-icons/io5';
-import { PiStarFourFill } from 'react-icons/pi';
+import testiShape from '/images/g-logo.webp';
+import testiProfile from '/images/t-author1.webp';
+import testiProfile2 from '/images/t-author2.webp';
+import testiProfile3 from '/images/t-author3.webp';
+import testiProfile4 from '/images/t-author2.webp';
+import TestiNavigation from './TestiNavigation';
 
 const testiData = [
   {
     id: 1,
-    testiImg: testiImg,
-    testiRatingIcon: <IoStar />,
-    testiName: 'Founder & CEO',
+    testiShape: testiShape,
+    testiTitle: 'Great 3d Modal',
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiProfile: testiProfile,
+    testiName: 'Jhon D. Alexon',
     testiDesignation: 'Web Developer',
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
   },
   {
     id: 2,
-    testiImg: testiImg2,
-    testiRatingIcon: <IoStar />,
-    testiName: 'Anjelina Watson',
+    testiShape: testiShape,
+    testiTitle: 'Awesome Design',
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiProfile: testiProfile2,
+    testiName: 'Mariya Watson',
     testiDesignation: 'UI/UX Designer',
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
   },
   {
     id: 3,
-    testiImg: testiImg3,
-    testiRatingIcon: <IoStar />,
-    testiName: 'Al-Amin Islam',
-    testiDesignation: 'IT Specialist',
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiShape: testiShape,
+    testiTitle: 'Great Supports',
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiProfile: testiProfile3,
+    testiName: 'Anjelina Jholi',
+    testiDesignation: 'App Developer',
   },
   {
     id: 4,
-    testiImg: testiImg2,
-    testiRatingIcon: <IoStar />,
-    testiName: 'Anjelina Watson',
-    testiDesignation: 'Web Developer',
-    testiDesc: `Their relentless of attention to detail gave me peace
-    of mind. I highly recommend their legal
-    services; they are true advocates for clients.`,
+    testiShape: testiShape,
+    testiTitle: 'Smart Development',
+    testiDesc: `Competently leverage existing top-line bandwidth 
+client centric supply chains enthusiastically maxim 
+cost effective technologies the`,
+    testiRatingIcon: <MdOutlineStarPurple500 />,
+    testiProfile: testiProfile4,
+    testiName: 'Mariya Watson',
+    testiDesignation: 'Mock-Up Developer',
   },
 ];
 
@@ -55,7 +65,7 @@ const Testimonial = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
+    speed: 1500,
     autoplay: {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
@@ -64,62 +74,73 @@ const Testimonial = () => {
       320: {
         slidesPerView: 1,
       },
+      576: {
+        slidesPerView: 1,
+      },
       768: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
-      1400: {
+      1200: {
         slidesPerView: 3,
       },
     },
   };
   return (
-    <section className='pt-28 pb-[120px] bg-white relative z-10'>
-      <div className='Container'>
-        <div className='text-center'>
-          <h5 className='font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center justify-center gap-2'>
-            <PiStarFourFill size={'14'} />
-            TESTIMONIAL
-            <PiStarFourFill size={'14'} />
+    <div className='bg-BodyBgDark3-0 pb-8'>
+      <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-BodyBgDark2-0 relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl'>
+        <div className='Container md:-mb-[130px]'>
+          <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className='brightness-0 invert-[1]'
+            />{' '}
+            Testimonials
           </h5>
-          <h1 className='font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4 pb-1'>
-            What Our Loving Clients Saying
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            Trusted By Industry Leader
+            <br /> Clients Testimonial
           </h1>
         </div>
-        <div className='mt-[30px]'>
+        <div className='mt-[46px]'>
           <Swiper {...settings}>
-            <div>
-              {testiData.map(
-                ({
-                  id,
-                  testiImg,
-                  testiRatingIcon,
-                  testiName,
-                  testiDesignation,
-                  testiDesc,
-                }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <div className='pt-3'>
-                        <TestimonialCard
-                          testiImg={testiImg}
-                          testiRatingIcon={testiRatingIcon}
-                          testiName={testiName}
-                          testiDesignation={testiDesignation}
-                          testiDesc={testiDesc}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  );
-                }
-              )}
-            </div>
+            {testiData.map(
+              ({
+                id,
+                testiShape,
+                testiTitle,
+                testiRatingIcon,
+                testiName,
+                testiProfile,
+                testiDesignation,
+                testiDesc,
+              }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <div className='pt-[100px] md:pt-[138px]'>
+                      <TestimonialCard
+                        testiShape={testiShape}
+                        testiTitle={testiTitle}
+                        testiRatingIcon={testiRatingIcon}
+                        testiName={testiName}
+                        testiProfile={testiProfile}
+                        testiDesignation={testiDesignation}
+                        testiDesc={testiDesc}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              }
+            )}
+            <TestiNavigation />
           </Swiper>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

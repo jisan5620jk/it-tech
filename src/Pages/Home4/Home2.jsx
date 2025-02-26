@@ -1,33 +1,33 @@
-import About from "../../Component2/About/About";
-import Appionment from "../../Component2/Appionment/Appionment";
-import Banner from "../../Component2/Banner/Banner";
-import Blog from "../../Component2/Blog/Blog";
-import Contact from "../../Component2/Contact/Contact";
-import Counter from "../../Component2/Counter/Counter";
-import Feature from "../../Component2/Feature/Feature";
-import Newsletter from "../../Component2/Newsletter/Newsletter";
-import Project from "../../Component2/Project/Project";
-import Service from "../../Component2/Service/Service";
-import Testimonial from "../../Component2/Testimonial/Testimonial";
-import WhyChoose from "../../Component2/WhyChoose/WhyChoose";
+import About from '../../Component4/About/About';
+import Banner from '../../Component4/Banner/Banner';
+import Blog from '../../Component4/Blog/Blog';
+import Brand from '../../Component4/Brand/Brand';
+import CallDoAction from '../../Component4/CallDoAction/CallDoAction';
+import Counter from '../../Component4/Counter/Counter';
+import Feature from '../../Component4/Feature/Feature';
+import Service from '../../Component4/Service/Service';
+import TeamMember from '../../Component4/TeamMember/TeamMember';
+import Testimonial from '../../Component4/Testimonial/Testimonial';
+import WhyChoose from '../../Component4/WhyChoose/WhyChoose';
+import Work from '../../Component4/Work/Work';
 
-const Home2 = () => {
+const Home4 = () => {
   return (
     <>
       <Banner />
       <Feature />
       <About />
-      <Service />
-      <Contact />
-      <Counter />
       <WhyChoose />
-      <Project />
+      <Service />
+      <Work />
+      <CallDoAction />
       <Testimonial />
-      <Newsletter />
+      <TeamMember />
+      <Brand />
       <Blog />
-      <Appionment />
+      <Counter />
     </>
   );
 };
 
-export default Home2;
+export default Home4;

@@ -1,87 +1,140 @@
-/* eslint-disable no-unused-vars */
-import { FaArrowRightLong, FaStarOfLife } from "react-icons/fa6";
-import blogThumb from "/images/projects-img.png";
-import blogThumb2 from "/images/projects-img2.png";
-import blogThumb3 from "/images/projects-img3.png";
-import blogThumb4 from "/images/projects-img4.png";
-import BlogCard from "./BlogCard";
-import { PiStarFourFill } from "react-icons/pi";
-import { RxArrowRight } from "react-icons/rx";
+import { FaRegCalendarCheck } from 'react-icons/fa6';
+import blogThumb from '/images/blog_img.png';
+import blogThumb2 from '/images/blog_img2.png';
+import blogThumb3 from '/images/blog_img3.png';
+import titleShape from '/images/sub-title-shape.png';
+import BlogCard from './BlogCard';
+import { GoArrowRight } from 'react-icons/go';
+import blogPostIcon from '/images/user1.png';
+import blogPostIcon2 from '/images/user2.png';
+import blogPostIcon3 from '/images/user3.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
-    blogNumber: "01",
-    blogUrl: "/blog_details",
-    blogTitle: "Visual Design",
-    blogBtn: <RxArrowRight />,
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: '24 Mar, 2024',
+    blogPostIcon: blogPostIcon,
+    blogPost: 'By - Jhon D. Alexon',
+    blogUrl: '/blog_details',
+    blogTitle: 'Expert Advice for Growing Your Digital Presence',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
-    blogNumber: "02",
-    blogUrl: "/blog_details",
-    blogTitle: "Business Agency",
-    blogBtn: <RxArrowRight />,
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: '24 Mar, 2024',
+    blogPostIcon: blogPostIcon2,
+    blogPost: 'By - Samira Khan',
+    blogUrl: '/blog_details',
+    blogTitle: 'Data-Driven Strategies and Case Studies Success',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
-    blogNumber: "03",
-    blogUrl: "/blog_details",
-    blogTitle: "Business Factory",
-    blogBtn: <RxArrowRight />,
-  },
-  {
-    id: 4,
-    blogThumb: blogThumb4,
-    blogNumber: "04",
-    blogUrl: "/blog_details",
-    blogTitle: "Business Consultation",
-    blogBtn: <RxArrowRight />,
+    blogDateIcon: <FaRegCalendarCheck />,
+    blogDate: '24 Mar, 2024',
+    blogPostIcon: blogPostIcon3,
+    blogPost: 'By - Anjelina Watson',
+    blogTitle: 'The Complete SEO Blog for Digital Success',
+    blogUrl: '/blog_details',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
 const Blog = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    modules: [Autoplay],
+    speed: 2000,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  };
   return (
-    <section className="py-28 bg-BodyBg-0">
-      <div className="Container">
-        <div className="grid lg:grid-cols-2 lg:items-center">
-          <div>
-            <h5 className="font-Rajdhani text-lg font-medium text-PrimaryColor-0 flex items-center gap-2">
-              <PiStarFourFill size={"14"} />
-              LATEST PROJECTS
-            </h5>
-            <h1 className="font-Rajdhani font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[44px] xl:leading-[54px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-4 mb-4">
-              Words Meant For Pages
-              <br /> Not the Screens
-            </h1>
-          </div>
-          <div>
-            <p className="font-Nunito text-TextColor2-0 text-lg">
-              Professionaly optimize interdependent intelectual services visuali
-              design infoediaries main issue state icreative planing main best
-              practices.
-            </p>
-          </div>
+    <section className='py-16 md:py-20 lg:py-28 bg-white'>
+      <div className='Container'>
+        <div className='text-center'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+            />{' '}
+            Latest Blog{' '}
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className='rotate-180'
+            />
+          </h5>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            Ready Our Latest Insights from
+            <br /> Our Blog Posts
+          </h1>
         </div>
-        <div className="mt-[30px]">
-          {blogData.map(
-            ({ id, blogNumber, blogThumb, blogUrl, blogTitle, blogBtn }) => {
-              return (
-                <div key={id}>
-                  <BlogCard
-                    blogNumber={blogNumber}
-                    blogThumb={blogThumb}
-                    blogUrl={blogUrl}
-                    blogTitle={blogTitle}
-                    blogBtn={blogBtn}
-                  />
-                </div>
-              );
-            }
-          )}
+        <div className='mt-[46px]'>
+          <Swiper {...settings}>
+            {blogData.map(
+              ({
+                id,
+                blogThumb,
+                blogDateIcon,
+                blogDate,
+                blogPostIcon,
+                blogPost,
+                blogUrl,
+                blogTitle,
+                blogBtn,
+                blogBtnIcon,
+              }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <BlogCard
+                      blogThumb={blogThumb}
+                      blogDateIcon={blogDateIcon}
+                      blogDate={blogDate}
+                      blogPostIcon={blogPostIcon}
+                      blogPost={blogPost}
+                      blogUrl={blogUrl}
+                      blogTitle={blogTitle}
+                      blogBtn={blogBtn}
+                      blogBtnIcon={blogBtnIcon}
+                    />
+                  </SwiperSlide>
+                );
+              }
+            )}
+          </Swiper>
         </div>
       </div>
     </section>

@@ -39,7 +39,7 @@ const TestimonialCard = ({
             <p className='font-Nunito text-TextColor2-0'>{testiDesignation}</p>
           </div>
         </div>
-        <div className='hidden'>
+        <div className='hidden 3xl:block'>
           <img
             src={testiShape}
             draggable={false}
