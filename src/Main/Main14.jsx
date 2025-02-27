@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Shared/Navbar/Navbar';
-import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer from '../Shared/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -29,7 +29,7 @@ const Main14 = () => {
   return (
     <>
       <Navbar />
-      <ScrollToTop />
+      <BackToTop />
       <div>
         <Outlet />
       </div>

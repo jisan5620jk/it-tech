@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer3 from '../Shared/Footer/Footer3';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +31,7 @@ const Main3 = () => {
     <>
       <HelmetChanger title={'Software Agency'} />
       <Navbar2 />
-      <ScrollToTop />
+      <BackToTop />
       <div>
         <Outlet />
       </div>

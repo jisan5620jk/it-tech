@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Shared/Navbar/Navbar';
-import ScrollToTop from '../Shared/ScrollToTop/ScrollToTop';
+import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer2 from '../Shared/Footer/Footer2';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -31,7 +31,7 @@ const Main2 = () => {
     <>
       <HelmetChanger title={'Artificial Intelligence'} />
       <Navbar />
-      <ScrollToTop />
+      <BackToTop />
       <div>
         <Outlet />
       </div>
