@@ -9,6 +9,7 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import HelmetChanger from '../Shared/Helmet/Helmet';
 
 const Main7 = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const Main7 = () => {
 
   return (
     <>
+      <HelmetChanger title={'Start Up Agency'} />
       <Navbar2 />
       <ScrollToTop />
       <div>

@@ -39,7 +39,7 @@ const Banner = () => {
             <img
               src={bannerShape}
               draggable={false}
-              className="absolute -z-10 top-40 right-0 md:right-10 lg:-right-10 2xl:-right-[4rem] animate-dance3 hidden block"
+              className="absolute -z-10 top-40 right-0 md:right-10 lg:-right-10 2xl:-right-[4rem] animate-dance3 hidden lg:block"
             />
           </div>
         </div>

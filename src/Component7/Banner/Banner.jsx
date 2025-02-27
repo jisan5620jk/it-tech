@@ -28,6 +28,7 @@ const Banner = () => {
                 <img
                   src={titleShape}
                   alt='Shape'
+                  draggable='false'
                   className='animate-bounce'
                 />{' '}
                 Your Business
@@ -55,6 +56,7 @@ const Banner = () => {
             <div>
               <img
                 src={bannerReview}
+                draggable='false'
                 alt='Image'
               />
             </div>
