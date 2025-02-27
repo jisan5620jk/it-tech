@@ -8,7 +8,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[600px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[800px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
           <div className='relative'>
@@ -21,15 +21,15 @@ const Banner = () => {
               />
               Best software agency
             </h5>
-            <h1 className='font-Rajdhani font-extrabold text-white text-[30px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
+            <h1 className='font-Rajdhani font-extrabold text-white text-[34px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
               Convert Idea to
               <br />
-              <span className='flex items-center gap-4'>
+              <span className='flex items-center gap-2 smgap-4'>
                 <img
                   src={titleShape}
                   alt='Shape'
                   draggable='false'
-                  className='animate-bounce'
+                  className='animate-bounce w-8'
                 />{' '}
                 Your Business
               </span>
@@ -61,7 +61,7 @@ const Banner = () => {
               />
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end -mb-[132px] lg:-mb-12 relative hidden'>
+          <div className='sm:flex justify-center lg:justify-end md-mb-[132px] lg:-mb-12 relative hidden'>
             <img
               src={bannerImg}
               draggable='false'

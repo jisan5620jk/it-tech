@@ -74,7 +74,7 @@ const About = () => {
                 </div>
               </li>
             </ul>
-            <div className='flex items-center gap-5'>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-5'>
               <Link
                 to={'/about'}
                 className='inline-block'

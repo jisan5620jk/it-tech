@@ -7,6 +7,7 @@ import portfolioIcon3 from '/images/code.webp';
 import titleShape from '/images/sub-title-shape.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 import PortfolioCard from './PortfolioCard';
 import { FiArrowUpRight } from 'react-icons/fi';
 
@@ -15,7 +16,9 @@ const PortfolioData = [
     id: 1,
     portfolioThumb: portfolioThumb,
     portfolioIcon: portfolioIcon,
-    portfolioTitle: 'Business Growth with Toptech Agency ',
+    portfolioTitle: 'New IT Business Innovation',
+    portfolioDesc:
+      'Energistically customize just in time performance based quality',
     portfolioUrl: '/project_details',
     portfolioBtn: <FiArrowUpRight />,
   },
@@ -23,7 +26,9 @@ const PortfolioData = [
     id: 2,
     portfolioThumb: portfolioThumb2,
     portfolioIcon: portfolioIcon2,
-    portfolioTitle: 'Business Growth with Toptech Agency ',
+    portfolioTitle: 'SEO & Social Media Innovation',
+    portfolioDesc:
+      'Energistically customize just in time performance based quality',
     portfolioUrl: '/project_details',
     portfolioBtn: <FiArrowUpRight />,
   },
@@ -31,7 +36,9 @@ const PortfolioData = [
     id: 3,
     portfolioThumb: portfolioThumb3,
     portfolioIcon: portfolioIcon3,
-    portfolioTitle: 'Business Growth with Toptech Agency ',
+    portfolioTitle: 'Website Design and Development',
+    portfolioDesc:
+      'Energistically customize just in time performance based quality',
     portfolioUrl: '/project_details',
     portfolioBtn: <FiArrowUpRight />,
   },
@@ -41,8 +48,8 @@ const Portfolio = () => {
   const settings = {
     loop: true,
     spaceBetween: 30,
-    speed: 1000,
-    initialSlide: 1,
+    modules: [Autoplay],
+    speed: 2000,
     autoplay: {
       delay: 3000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
@@ -63,7 +70,7 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="portfolio relative z-10 py-28 bg-[url('/images/blog-bg.webp')] bg-center bg-cover bg-no-repeat">
+    <section className="portfolio relative z-10 pt-16 md:pt-20 lg:pt-28 pb-9 md:pb-14 lg:pb-[90px] bg-[url('/images/blog-bg.webp')] bg-center bg-cover bg-no-repeat">
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -80,7 +87,7 @@ const Portfolio = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-2'>
             We Provide Business Solutions
           </h1>
           <p className='font-Nunito text-TextColor2-0 max-w-[675px] w-full mx-auto'>
@@ -89,7 +96,7 @@ const Portfolio = () => {
             vectors whereas client-based ROI.
           </p>
         </div>
-        <div className='mt-[60px]'>
+        <div className='mt-[56px]'>
           <Swiper {...settings}>
             <div>
               {PortfolioData.map(
@@ -98,17 +105,19 @@ const Portfolio = () => {
                   portfolioThumb,
                   portfolioIcon,
                   portfolioTitle,
+                  portfolioDesc,
                   portfolioUrl,
                   portfolioBtn,
                 }) => {
                   return (
                     <SwiperSlide key={id}>
-                      <div>
+                      <div className='pb-7'>
                         <PortfolioCard
                           portfolioThumb={portfolioThumb}
                           portfolioIcon={portfolioIcon}
                           portfolioUrl={portfolioUrl}
                           portfolioTitle={portfolioTitle}
+                          portfolioDesc={portfolioDesc}
                           portfolioBtn={portfolioBtn}
                         />
                       </div>
