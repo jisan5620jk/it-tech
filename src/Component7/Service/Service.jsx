@@ -10,7 +10,7 @@ import titleShape from '/images/sub-title-shape.png';
 
 const Service = () => {
   return (
-    <section className="relative pt-16 md:py-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[190px] bg-[url('/images/service-bg-2.webp')] bg-cover bg-no-repeat bg-center">
+    <section className="relative pt-16 md:py-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[190px] bg-[url('/images/service-bg-2.webp')] bg-cover bg-no-repeat bg-bottom">
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>

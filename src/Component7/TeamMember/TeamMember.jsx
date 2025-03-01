@@ -2,7 +2,6 @@ import teamThumb from '/images/team.webp';
 import teamThumb2 from '/images/team2-1.webp';
 import teamThumb3 from '/images/team4.webp';
 import teamThumb4 from '/images/teram3.webp';
-import shape from '/images/cube-shape.png';
 import TeamCard from './TeamCard';
 import {
   FaFacebookF,
@@ -200,13 +199,6 @@ const TeamMember = () => {
             }
           )}
         </Swiper>
-      </div>
-      <div className='absolute left-20 -bottom-[70px] animate-dance2 hidden 3xl:block'>
-        <img
-          src={shape}
-          draggable={false}
-          alt='Shape'
-        />
       </div>
     </section>
   );
