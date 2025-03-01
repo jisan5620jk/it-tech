@@ -3,7 +3,6 @@ import blogThumb2 from '/images/02.jpg';
 import blogThumb3 from '/images/03.jpg';
 import titleShape from '/images/sub-title-shape.png';
 import BlogCard from './BlogCard';
-import { GoArrowRight } from 'react-icons/go';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
@@ -21,7 +20,6 @@ const blogData = [
     blogUrl: '/blog_details',
     blogTitle: 'Top 5 Ways Robotics Can Boost Your Productivity',
     blogBtnText: 'Read More',
-    blogBtnTextIcon: <GoArrowRight />,
   },
   {
     id: 2,
@@ -31,7 +29,6 @@ const blogData = [
     blogUrl: '/blog_details',
     blogTitle: 'Exploring Self-Driving Cars to Factory Automation',
     blogBtnText: 'Read More',
-    blogBtnTextIcon: <GoArrowRight />,
   },
   {
     id: 3,
@@ -41,7 +38,6 @@ const blogData = [
     blogUrl: '/blog_details',
     blogTitle: 'Exploring Self-Driving Cars to Factory Automation',
     blogBtnText: 'Read More',
-    blogBtnTextIcon: <GoArrowRight />,
   },
 ];
 
@@ -135,7 +131,6 @@ const Blog = () => {
                 blogUrl,
                 blogTitle,
                 blogBtnText,
-                blogBtnTextIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
@@ -146,7 +141,6 @@ const Blog = () => {
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
                       blogBtnText={blogBtnText}
-                      blogBtnTextIcon={blogBtnTextIcon}
                     />
                   </SwiperSlide>
                 );

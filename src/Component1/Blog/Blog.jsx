@@ -4,7 +4,6 @@ import blogThumb2 from '/images/blog_img2.png';
 import blogThumb3 from '/images/blog_img3.png';
 import titleShape from '/images/sub-title-shape.png';
 import BlogCard from './BlogCard';
-import { GoArrowRight } from 'react-icons/go';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
@@ -23,8 +22,6 @@ const blogData = [
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
     blogTitle: 'Expert Advice for Growing Your Digital Presence',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
@@ -35,8 +32,6 @@ const blogData = [
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details',
     blogTitle: 'Data-Driven Strategies and Case Studies Success',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
@@ -46,9 +41,6 @@ const blogData = [
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
     blogTitle: 'The Complete SEO Blog for Digital Success',
-    blogUrl: '/blog_details',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
@@ -140,8 +132,6 @@ const Blog = () => {
                 blogPost,
                 blogUrl,
                 blogTitle,
-                blogBtn,
-                blogBtnIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
@@ -153,8 +143,6 @@ const Blog = () => {
                       blogPost={blogPost}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtn={blogBtn}
-                      blogBtnIcon={blogBtnIcon}
                     />
                   </SwiperSlide>
                 );

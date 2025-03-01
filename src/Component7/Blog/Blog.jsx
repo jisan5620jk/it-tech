@@ -1,96 +1,165 @@
-/* eslint-disable no-unused-vars */
-import { FaRegCalendarCheck } from "react-icons/fa6";
-import blogThumb from "/images/blog1.png";
-import blogThumb2 from "/images/blog2.png";
-import blogThumb3 from "/images/blog3.png";
-import BlogCard from "./BlogCard";
-import { GoArrowRight } from "react-icons/go";
-import { PiUserCircleFill } from "react-icons/pi";
+import { FaRegCalendarCheck } from 'react-icons/fa6';
+import blogThumb from '/images/blog1.webp';
+import blogThumb2 from '/images/blog2.webp';
+import blogThumb3 from '/images/blog3.webp';
+import titleShape from '/images/sub-title-shape.png';
+import BlogCard from './BlogCard';
+import blogPostIcon from '/images/user1.png';
+import blogPostIcon2 from '/images/user2.png';
+import blogPostIcon3 from '/images/user3.png';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from 'swiper/modules';
 
 const blogData = [
   {
     id: 1,
     blogThumb: blogThumb,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Most Popular Chrome Extensionfor Business Promot",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogDate: '24',
+    blogMonth: 'Mar',
+    blogPostIcon: blogPostIcon,
+    blogPost: 'By - Jhon D. Alexon',
+    blogUrl: '/blog_details',
+    blogTitle: 'Expert Advice for Growing Your Digital Presence',
+    blogBtnText: 'Read More',
   },
   {
     id: 2,
     blogThumb: blogThumb2,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "How to Secure your facebook Business Account",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogDate: '18',
+    blogMonth: 'Apl',
+    blogPostIcon: blogPostIcon2,
+    blogPost: 'By - Samira Khan',
+    blogUrl: '/blog_details',
+    blogTitle: 'Data-Driven Strategies and Case Studies Success',
+    blogBtnText: 'Read More',
   },
   {
     id: 3,
     blogThumb: blogThumb3,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: "24 Mar, 2024",
-    blogTagIcon: <PiUserCircleFill />,
-    blogTag: "Admin",
-    blogUrl: "/blog_details",
-    blogTitle: "Better Context Menus With Safe Triangles",
-    blogBtn: "Read More",
-    blogBtnIcon: <GoArrowRight />,
+    blogDate: '20',
+    blogMonth: 'Jun',
+    blogPostIcon: blogPostIcon3,
+    blogPost: 'By - Anjelina Watson',
+    blogTitle: 'The Complete SEO Blog for Digital Success',
+    blogUrl: '/blog_details',
+    blogBtnText: 'Read More',
   },
 ];
 
 const Blog = () => {
+  const settings = {
+    loop: true,
+    spaceBetween: 30,
+    modules: [Autoplay],
+    speed: 2000,
+    autoplay: {
+      delay: 3000, // Set delay time in milliseconds
+      disableOnInteraction: false, // Keep autoplay on user interaction
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 3,
+      },
+    },
+  };
   return (
-    <section className="py-28 bg-BodyBg-0">
-      <div className="Container">
-        <div className="text-center">
-          <h5 className="font-Rajdhani text-lg font-semibold text-PrimaryColor-0">
-            Latest Blog
-          </h5>
-          <h1 className="font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px]">
-            Latest Inshights From Our Blog
-          </h1>
+    <section className='py-16 md:py-20 lg:py-28 bg-white'>
+      <div className='Container'>
+        <div className='flex gap-4 flex-col md:flex-row justify-between items-center'>
+          <div>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              Latest Blog
+            </h5>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              Ready Our Latest Insights
+              <br /> from Our Blog Posts
+            </h1>
+          </div>
+          <div className=''>
+            <Link
+              to={'/blog_grid'}
+              className='inline-block'
+            >
+              <button className='primary-btn'>
+                {`All Projects`}
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
-        <div className="mt-[46px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className='mt-[46px]'>
+          <Swiper {...settings}>
             {blogData.map(
               ({
                 id,
                 blogThumb,
                 blogDateIcon,
                 blogDate,
-                blogTagIcon,
-                blogTag,
+                blogMonth,
+                blogPostIcon,
+                blogPost,
                 blogUrl,
                 blogTitle,
-                blogBtn,
-                blogBtnIcon,
+                blogBtnText,
               }) => {
                 return (
-                  <div key={id}>
+                  <SwiperSlide key={id}>
                     <BlogCard
                       blogThumb={blogThumb}
                       blogDateIcon={blogDateIcon}
                       blogDate={blogDate}
-                      blogTagIcon={blogTagIcon}
-                      blogTag={blogTag}
+                      blogMonth={blogMonth}
+                      blogPostIcon={blogPostIcon}
+                      blogPost={blogPost}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtn={blogBtn}
-                      blogBtnIcon={blogBtnIcon}
+                      blogBtnText={blogBtnText}
                     />
-                  </div>
+                  </SwiperSlide>
                 );
               }
             )}
-          </div>
+          </Swiper>
         </div>
       </div>
     </section>
