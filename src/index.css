@@ -220,6 +220,7 @@ span.swiper-pagination-bullet {
   background: transparent !important;
   opacity: 0.7 !important;
   border-radius: 50%;
+  transition: all 0.5s;
   height: 14px !important;
   width: 14px !important;
   position: relative;
@@ -234,7 +235,7 @@ span.swiper-pagination-bullet::before {
   height: 14px;
   border-radius: 50%;
   border: 2px solid #1a90ff57;
-  transition: 0.5s;
+  transition: all 0.5s;
   transform: scale(1);
 }
 
