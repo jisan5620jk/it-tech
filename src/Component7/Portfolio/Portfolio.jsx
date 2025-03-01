@@ -5,6 +5,7 @@ import portfolioIcon from '/images/plane.webp';
 import portfolioIcon2 from '/images/mike-1.webp';
 import portfolioIcon3 from '/images/code.webp';
 import titleShape from '/images/sub-title-shape.png';
+import bgShape from '/images/blog-bg.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -70,7 +71,8 @@ const Portfolio = () => {
     },
   };
   return (
-    <section className="portfolio relative z-10 pt-16 md:pt-20 lg:pt-28 pb-9 md:pb-14 lg:pb-[90px] bg-[url('/images/blog-bg.webp')] bg-center bg-cover bg-no-repeat">
+    <section className="portfolio relative z-10 pt-16 md:pt-20 lg:pt-28 pb-9 md:pb-14 lg:pb-[90px] bg-white">
+      <div className='mx-auto'><img src={bgShape} draggable={false} alt="Bg Shape" className='w-full absolute -top-[28%] -z-10' /></div>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>

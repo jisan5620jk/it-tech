@@ -24,7 +24,7 @@ const Feature = () => {
   return (
     <section className='bg-BodyBg-0'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 relative z-10 mt-10 sm:-mt-[50px] lg:-mb-[114px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 relative z-30 mt-10 sm:-mt-[50px] lg:-mb-[114px]'>
           {processData.map(
             ({ id, featureIcon, featureTitle, featureUrl, featureBtnIcon }) => {
               return (

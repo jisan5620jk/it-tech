@@ -39,7 +39,7 @@ const BlogCard = ({
               {blogPost}
             </p>
           </div>
-          <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] mt-5 border-t border-HeadingColor-0 border-opacity-10 transition-all duration-500 ease-linear group-hover:border-PrimaryColor-0 py-3 sm:py-[19px]'>
+          <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] mt-3 border-t border-HeadingColor-0 border-opacity-10 transition-all duration-500 ease-linear group-hover:border-PrimaryColor-0 py-3 sm:py-[28px]'>
             <Link to={blogUrl}>
               <button className='font-Rajdhani text-left font-bold text-lg sm:text-[24px] md:text-xl lg:text-[24px] xl:text-[22px] 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mb-5'>
                 {blogTitle}
@@ -49,11 +49,11 @@ const BlogCard = ({
               to={blogUrl}
               className='inline-block'
             >
-              <button className='blog-button font-Rajdhani font-semibold text-lg uppercase fle items-center gap-2'>
+              <button className='blog-button bg-white px-7 py-[7px] rounded-full font-Rajdhani font-semibold text-base uppercase fle items-center gap-2 relative z-10 overflow-hidden transition-all duration-500 group-hover:text-white before:absolute before:top-0 before:right-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:ease-linear before:-z-10 group-hover:before:w-full group-hover:before:left-0'>
                 {blogBtnText}
                 <span className='icon-style relative left-2 -top-[1px]'>
                   <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-3 w-auto transition-all duration-500 text-HeadingColor-0'
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500 text-HeadingColor-0 group-hover:text-white'
                     xmlns='http://www.w3.org/2000/svg'
                     stroke='CurrentColor'
                     width='14.2'

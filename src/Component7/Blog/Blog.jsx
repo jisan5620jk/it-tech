@@ -7,7 +7,7 @@ import BlogCard from './BlogCard';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
-import { Link } from 'react-router-dom';
+import bgShape from '/images/blog-bg.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -22,7 +22,7 @@ const blogData = [
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
-    blogTitle: 'Expert Advice for Growing Your Digital Presence',
+    blogTitle: '5 popular online security tools for data protect',
     blogBtnText: 'Read More',
   },
   {
@@ -34,7 +34,7 @@ const blogData = [
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details',
-    blogTitle: 'Data-Driven Strategies and Case Studies Success',
+    blogTitle: 'How to Install SEO Tools on wordpress theme',
     blogBtnText: 'Read More',
   },
   {
@@ -45,7 +45,7 @@ const blogData = [
     blogMonth: 'Jun',
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
-    blogTitle: 'The Complete SEO Blog for Digital Success',
+    blogTitle: '10 Secreate and Hidden Tips Grow Audience',
     blogUrl: '/blog_details',
     blogBtnText: 'Read More',
   },
@@ -80,52 +80,40 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white'>
+    <section className='py-16 md:py-20 lg:py-28 bg-white relative z-10'>
+      <div className='mx-auto'>
+        <img
+          src={bgShape}
+          draggable={false}
+          alt='Bg Shape'
+          className='w-full absolute -top-[44%] -z-10'
+        />
+      </div>
       <div className='Container'>
-        <div className='flex gap-4 flex-col md:flex-row justify-between items-center'>
-          <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              Latest Blog
-            </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Ready Our Latest Insights
-              <br /> from Our Blog Posts
-            </h1>
-          </div>
-          <div className=''>
-            <Link
-              to={'/blog_grid'}
-              className='inline-block'
-            >
-              <button className='primary-btn'>
-                {`All Projects`}
-                <span className='icon-style'>
-                  <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                    xmlns='http://www.w3.org/2000/svg'
-                    stroke='CurrentColor'
-                    width='14.2'
-                    height='14.2'
-                    viewBox='0 0 14.2 14.2'
-                  >
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </Link>
-          </div>
+        <div className='text-center'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+            />{' '}
+            Latest Blog{' '}
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className='rotate-180'
+            />
+          </h5>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            Ready Our Latest Insights
+            <br /> from Our Blog Posts
+          </h1>
+          <p className='font-Nunito text-TextColor2-0 max-w-[605px] w-full mx-auto'>
+            Sit amet consectetur adipiscing elite sed eiusmod tempor incididunt
+            ut labore dolore pendisse ultrices gravidaisus commodo viva aliqua
+            quis
+          </p>
         </div>
         <div className='mt-[46px]'>
           <Swiper {...settings}>
