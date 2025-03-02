@@ -1,6 +1,7 @@
 import About from "../../Component7/About/About";
 import Banner from "../../Component7/Banner/Banner";
 import Blog from "../../Component7/Blog/Blog";
+import CallDoAction from "../../Component7/CallDoAction/CallDoAction";
 import Feature from "../../Component7/Feature/Feature";
 import Marquee from "../../Component7/Marquee/Marquee";
 import Portfolio from "../../Component7/Portfolio/Portfolio";
@@ -24,6 +25,7 @@ const Home7 = () => {
       <Marquee />
       <Testimonial />
       <Blog />
+      <CallDoAction />
     </>
   );
 };

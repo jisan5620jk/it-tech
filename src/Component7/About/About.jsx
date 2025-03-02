@@ -3,6 +3,7 @@ import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/about-icon1.png';
 import itemIcon2 from '/images/about-icon2.png';
 import icon from '/images/call-icon.png';
+import shape from '/images/line-shape.webp';
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
@@ -109,6 +110,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <img src={shape} draggable='false' alt="Shape" className='absolute -z-10 right-0 top-[35%] animate-wiggle hidden 2xl:block' />
     </section>
   );
 };

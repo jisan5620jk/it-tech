@@ -19,7 +19,7 @@ const Footer4 = () => {
         <div className='Container'>
           <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
-              <div className='font-Rajdhani text-[28px] text-white font-semibold mb-[33px]'>
+              <div className='mb-[33px]'>
                 <Link to={'/home3'}>
                   <img
                     src={logo}
