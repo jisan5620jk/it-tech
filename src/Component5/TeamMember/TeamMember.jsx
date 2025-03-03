@@ -1,8 +1,7 @@
 import teamThumb from '/images/team.webp';
 import teamThumb2 from '/images/team2-1.webp';
 import teamThumb3 from '/images/team4.webp';
-import teamThumb4 from '/images/team2-1.webp';
-import shape from '/images/cube-shape.png';
+import teamThumb4 from '/images/teram3.webp';
 import TeamCard from './TeamCard';
 import {
   FaFacebookF,
@@ -15,8 +14,9 @@ import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import TeamNavigation from './TeamNavigation';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
+import './team-member.css';
 
 const teamData = [
   {
@@ -33,7 +33,7 @@ const teamData = [
   {
     id: 2,
     teamThumb: teamThumb2,
-    teamTitle: 'James E. Huey',
+    teamTitle: 'Jone D. Alexon',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -43,8 +43,8 @@ const teamData = [
   },
   {
     id: 3,
-    teamThumb: teamThumb4,
-    teamTitle: 'Jone D. Alexon',
+    teamThumb: teamThumb3,
+    teamTitle: 'Alaina Melvis',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -54,8 +54,19 @@ const teamData = [
   },
   {
     id: 4,
+    teamThumb: teamThumb4,
+    teamTitle: 'Anjelina Jholi',
+    socialIcon: <FaFacebookF />,
+    socialIcon2: <FaXTwitter />,
+    socialIcon3: <FaLinkedinIn />,
+    socialIcon4: <FaPinterestP />,
+    teamDesc: 'Hr. Maneger',
+    teamShareIcon: <IoShareSocialOutline />,
+  },
+  {
+    id: 5,
     teamThumb: teamThumb3,
-    teamTitle: 'June D. Vargas',
+    teamTitle: 'Alaina Melvis',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,
@@ -86,31 +97,36 @@ const TeamMember = () => {
         slidesPerView: 2,
       },
       992: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       1200: {
         slidesPerView: 3,
       },
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
     },
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' pagination-bullet"></span>';
+    },
+  };
   return (
-    <section className='bg-[#0f34b9] mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] py-16 md:py-20 lg:py-28 rounded-lg lg:rounded-2xl relative'>
+    <section className='team-member bg-white mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] pt-16 pb-0 md:pt-0 lg:pt-0 xl:pt-28 md:pb-0 lg:pb-16 relative'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
                 src={titleShape}
                 draggable={false}
                 alt='Shape'
-                className='brightness-0 invert-[1]'
               />{' '}
               MEET OUR TEAM
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               High Professional Team Ready
               <br /> To Develope Your Business
             </h1>
@@ -145,48 +161,44 @@ const TeamMember = () => {
             </Link>
           </div>
         </div>
-        <div className='mt-[36px]'>
-          <Swiper {...settings}>
-            {teamData.map(
-              ({
-                id,
-                teamThumb,
-                teamTitle,
-                socialIcon,
-                socialIcon2,
-                socialIcon3,
-                socialIcon4,
-                teamDesc,
-                teamShareIcon,
-              }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <div className='pb-[104px]'>
-                      <TeamCard
-                        teamThumb={teamThumb}
-                        teamTitle={teamTitle}
-                        socialIcon={socialIcon}
-                        socialIcon2={socialIcon2}
-                        socialIcon3={socialIcon3}
-                        socialIcon4={socialIcon4}
-                        teamDesc={teamDesc}
-                        teamShareIcon={teamShareIcon}
-                      />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
-            )}
-            <TeamNavigation />
-          </Swiper>
-        </div>
       </div>
-      <div className='absolute left-20 -bottom-[70px] animate-dance2 hidden 3xl:block'>
-        <img
-          src={shape}
-          draggable={false}
-          alt='Shape'
-        />
+      <div className='mt-[36px]'>
+        <Swiper
+          {...settings}
+          pagination={pagination}
+          modules={[Pagination]}
+        >
+          {teamData.map(
+            ({
+              id,
+              teamThumb,
+              teamTitle,
+              socialIcon,
+              socialIcon2,
+              socialIcon3,
+              socialIcon4,
+              teamDesc,
+              teamShareIcon,
+            }) => {
+              return (
+                <SwiperSlide key={id}>
+                  <div className='pb-[78px]'>
+                    <TeamCard
+                      teamThumb={teamThumb}
+                      teamTitle={teamTitle}
+                      socialIcon={socialIcon}
+                      socialIcon2={socialIcon2}
+                      socialIcon3={socialIcon3}
+                      socialIcon4={socialIcon4}
+                      teamDesc={teamDesc}
+                      teamShareIcon={teamShareIcon}
+                    />
+                  </div>
+                </SwiperSlide>
+              );
+            }
+          )}
+        </Swiper>
       </div>
     </section>
   );

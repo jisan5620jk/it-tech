@@ -24,7 +24,7 @@ const Banner = () => {
             <h1 className='font-Rajdhani font-extrabold text-white text-[34px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[80px] 2xl:leading-[75px]'>
               Convert Idea to
               <br />
-              <span className='flex items-center gap-2 smgap-4'>
+              <span className='flex items-center gap-2 sm:gap-4'>
                 <img
                   src={titleShape}
                   alt='Shape'

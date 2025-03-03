@@ -1,129 +1,116 @@
-import aboutThumb from '/images/about-thumb2.png';
-import aboutAward from '/images/about-award-icon.png';
-import aboutShape from '/images/about-shape1.png';
-import aboutShape2 from '/images/about-shape-2.png';
-import phoneIcon from '/images/about-call-icon.png';
+import aboutThumb from '/images/about-thumb.png';
+import titleShape from '/images/sub-title-shape.png';
+import itemIcon from '/images/about-icon1.png';
+import itemIcon2 from '/images/about-icon2.png';
+import icon from '/images/call-icon.png';
+import shape from '/images/line-shape.webp';
 import { Link } from 'react-router-dom';
-import { RiCheckFill } from 'react-icons/ri';
-import { IoMdPlay } from 'react-icons/io';
-import { useState } from 'react';
-import FsLightbox from 'fslightbox-react';
-import { BiRightTopArrowCircle } from 'react-icons/bi';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const About = () => {
-  const [toggler, setToggler] = useState(false);
   return (
-    <section className='pt-3 pb-[120px] bg-white bg-no-repeat bg-center bg-cover relative'>
+    <section className='bg-[url(/images/about-bg.png)] pb-16 md:pb-20 lg:pb-[186px] pt-16 md:pt-28 lg:pt-[205px] bg-no-repeat bg-center bg-cover relative z-20'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-[92px] items-center'>
-          <div className='relative z-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 xl:gap-10 items-end'>
+          <div className='relative z-10 xl:-ml-[102px]'>
             <img
               src={aboutThumb}
               draggable='false'
-              className='md:w-full lg:w 2xl:-ml-[38px] 2xl:max-w-[inherit]'
-            />
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 2xl:-ml-[38px]'>
-              <button className='h-14 w-14 sm:h-[100px] sm:w-[100px] border-2 border-white rounded-full bg-PrimaryColor-0 flex justify-center items-center relative z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-PrimaryColor-0 before:opacity-50 before:-z-10 before:rounded-full before:animate-ping'>
-                <IoMdPlay
-                  size={'30'}
-                  className='text-white'
-                  onClick={() => setToggler(!toggler)}
-                />
-              </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-              />
-            </div>
-            <div className='absolute top-0 right-0 sm:flex gap-5 items-center animate-dance3 hidden'>
-              <div>
-                <img
-                  src={aboutAward}
-                  draggable={false}
-                />
-              </div>
-              <div>
-                <h5 className='font-Rajdhani font-semibold text-xl leading-8 text-HeadingColor-0'>
-                  Award Wining
-                </h5>
-                <h5 className='font-Rajdhani font-semibold text-xl leading-8 text-HeadingColor-0 border-t border-HeadingColor-0'>
-                  Best Services
-                </h5>
-              </div>
-            </div>
-            <img
-              src={aboutShape}
-              draggable='false'
-              className='absolute bottom-10 left-10 -z-10 animate-movebtn hidden sm:block'
+              className='w-full md:w-[inherit] lg:w-full 2xl:w-[inherit]'
             />
           </div>
           <div className='relative'>
-            <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
-              IT Support For Business
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-4'>
-              Ensuring Your Success Trusted <br />
-              IT Services Source
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+              Next Generation Depends on
+              <br />
+              Digital Software’s Growing
+              <br />
+              Business Smoothly
             </h1>
-            <p className='font-Nunito text-TextColor2-0 pb-7'>
-              Monotonectally synergize granular markets and front markets.
-              Collaboratively visualize strategic infomediaries after multimedia
-              based models. Synergistically task state of the art
-              infrastructures for
-            </p>
-            <div className='flex flex-col gap-y-7 2xl:flex-row 2xl:justify-between 2xl:items-center'>
-              <ul>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  Holisticly matrix highly modelling
-                </li>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  Growing audience for Business
-                </li>
-                <li className='font-Nunito font-medium text-HeadingColor-0 flex items-center gap-2 mb-3'>
-                  <span className='text-PrimaryColor-0'>
-                    <RiCheckFill size={'24'} />
-                  </span>
-                  24/7 Technical Supports
-                </li>
-              </ul>
-              <div className='bg-[#eff6fe] rounded-lg inline-block px-7 py-8 w-[300px]'>
-                <Link
-                  to={'/'}
-                  className='inline-block'
-                >
-                  <button className='text-2xl font-Rajdhani font-semibold text-HeadingColor-0 flex items-center gap-3'>
-                    <img
-                      src={phoneIcon}
-                      draggable={false}
-                    />
-                    +980 123 (456) 780
-                  </button>
-                </Link>
+            <ul className='mb-11 mt-10 space-y-8'>
+              <li className='group flex items-start gap-6'>
+                <div>
+                  <img
+                    src={itemIcon}
+                    draggable={false}
+                    alt='Icon'
+                    className='group-hover:animate-wobble_vertical'
+                  />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
+                    Advanced Marketing
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[362px] w-full mt-3'>
+                    Clients-focused data centric process energistically
+                    communicate installed done.
+                  </p>
+                </div>
+              </li>
+              <li className='group flex items-start gap-6'>
+                <div>
+                  <img
+                    src={itemIcon2}
+                    draggable={false}
+                    alt='Icon'
+                    className='group-hover:animate-wobble_vertical'
+                  />
+                </div>
+                <div className='flex-1 -mt-1'>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-xl md:text-[26px] lg:text-base xl:text-xl 2xl:text-[26px] leading-[28px] text-HeadingColor-0'>
+                    Innovation Soluitions
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[362px] w-full mt-3'>
+                    Clients-focused data centric process energistically
+                    communicate installed done.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div className='flex flex-col sm:flex-row sm:items-center gap-5'>
+              <Link
+                to={'/about'}
+                className='inline-block'
+              >
+                <button className='primary-btn'>
+                  {`More About`}
+                  <FaArrowRightLong />
+                </button>
+              </Link>
+              <div className='group flex gap-5 items-center'>
+                <div>
+                  <img
+                    src={icon}
+                    draggable={false}
+                    alt='Icon'
+                    className='group-hover:animate-wobble_vertical'
+                  />
+                </div>
+                <div className='flex-1'>
+                  <h6 className='font-Nunito text-TextColor2-0'>
+                    Call Us Anytime
+                  </h6>
+                  <a
+                    href='tel:+881234567890'
+                    className='font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'
+                  >
+                    +88 123 4567 890
+                  </a>
+                </div>
               </div>
             </div>
-            <Link
-              to={'/about'}
-              className='mt-7 inline-block'
-            >
-              <button className='primary-btn3'>
-                {`More About`}
-                <BiRightTopArrowCircle size={'20'} />
-              </button>
-            </Link>
-            <img
-              src={aboutShape2}
-              draggable='false'
-              className='absolute -bottom-0 left-1/2 animate-swing hidden sm:block'
-            />
           </div>
         </div>
       </div>
+      <img src={shape} draggable='false' alt="Shape" className='absolute -z-10 right-0 top-[35%] animate-wiggle hidden 2xl:block' />
     </section>
   );
 };

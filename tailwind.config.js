@@ -20,6 +20,7 @@ export default {
         BodyBgDark: ['#152534'],
         BodyBgDark2: ['#0f34b9'],
         BodyBgDark3: ['#0b2ba1'],
+        BodyBgDark4: ['#0128b8'],
         BodyBg2: ['#daeae7'],
         BodyBg3: ['#152433'],
         BodyBg4: ['#233342'],
