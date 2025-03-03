@@ -19,7 +19,7 @@ const PortfolioCard = ({
             className='w-full'
           />
         </div>
-        <div className='relative z-10 ml-4 sm:ml-[60px] pt-7 -mt-[136px] bg-white rounded-b-[10px] rounded-l-[10px] pl-4 sm:pl-8 border-PrimaryColor-0 transition-all duration-500 group-hover:pb-16 group-hover:-mt-[222px] shadow-shade overflow-hidden before:absolute before:bottom-0 before:-right-full before:w-[198px] before:h-[190px] before:bg-no-repeat before:bg-right-bottom before:bg-[url("/images/port-content-shape.png")] before:transition-all before:duration-500 group-hover:before:right-0'>
+        <div className='relative z-10 ml-4 sm:ml-[60px] lg:ml-7 xl:ml-[60px] pt-7 -mt-[136px] bg-white rounded-b-[10px] rounded-l-[10px] pl-4 sm:pl-8 border-PrimaryColor-0 transition-all duration-500 group-hover:pb-16 group-hover:-mt-[222px] shadow-shade overflow-hidden before:absolute before:bottom-0 before:-right-full before:w-[198px] before:h-[190px] before:bg-no-repeat before:bg-right-bottom before:bg-[url("/images/port-content-shape.png")] before:transition-all before:duration-500 group-hover:before:right-0'>
           <div className='mb-4'>
             <img
               src={portfolioIcon}
@@ -29,7 +29,7 @@ const PortfolioCard = ({
             />
           </div>
           <Link to={portfolioUrl}>
-            <button className='font-Rajdhani font-bold text-xl sm:text-[26px] lg:text-lg xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 text-left max-w-[220px] w-full transition-all duration-500 group-hover:text-PrimaryColor-0'>
+            <button className='font-Rajdhani font-bold text-xl sm:text-[26px] lg:text-2xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 text-left max-w-[220px] w-full transition-all duration-500 group-hover:text-PrimaryColor-0'>
               {portfolioTitle}
             </button>
           </Link>

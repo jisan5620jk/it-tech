@@ -100,7 +100,7 @@ const About = () => {
                   </h6>
                   <a
                     href='tel:+881234567890'
-                    className='font-Rajdhani font-semibold text-2xl text-HeadingColor-0'
+                    className='font-Rajdhani font-semibold text-2xl lg:text-xl xl:text-2xl text-HeadingColor-0'
                   >
                     +88 123 4567 890
                   </a>

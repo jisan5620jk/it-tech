@@ -74,13 +74,13 @@ const Blog = () => {
       992: {
         slidesPerView: 2,
       },
-      1400: {
+      1200: {
         slidesPerView: 3,
       },
     },
   };
   return (
-    <section className='pt-0 pb-16 md:pt-10 md:pb-20 lg:py-28 bg-white relative z-10'>
+    <section className='pt-0 pb-16 md:pt-10 md:pb-20 xl:py-20 2xl:py-28 bg-white relative z-10'>
       <div className='mx-auto'>
         <img
           src={bgShape}

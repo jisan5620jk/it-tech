@@ -29,7 +29,7 @@ const Banner = () => {
                   src={titleShape}
                   alt='Shape'
                   draggable='false'
-                  className='animate-bounce w-8 sm:w-12'
+                  className='animate-bounce w-8 sm:w-12 2xl:w-[inherit]'
                 />{' '}
                 Your Business
               </span>

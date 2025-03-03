@@ -71,7 +71,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] pb-32 sm:pb-40 md:pb-40 lg:pb-[192px] bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-bottom relative z-20 overflow-hidden'>
+    <section className='testimonial pt-16 md:pt-20 lg:pt-[120px] pb-32 sm:pb-40 md:pb-40 xl:pb-[192px] bg-[url(/images/testimonial.png)] bg-no-repeat bg-cover bg-bottom relative z-20 overflow-hidden'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 md:gap-2 md:grid-cols-2 lg:grid-cols-3'>
           <div className='text-left col-span-1'>

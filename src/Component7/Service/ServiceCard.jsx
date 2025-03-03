@@ -11,7 +11,7 @@ const ServiceCard = ({ serviceIcon, serviceTitle, serviceDesc }) => {
         />
       </div>
       <div className='flex-1'>
-        <h5 className='font-Rajdhani font-semibold text-xl sm:text-2xl pb-[10px] text-HeadingColor-0'>
+        <h5 className='font-Rajdhani font-semibold text-xl sm:text-2xl xl:text-[22px] 2xl:text-2xl pb-[10px] text-HeadingColor-0'>
           {serviceTitle}
         </h5>
         <p className='font-Nunito text-TextColor2-0 -mt-[6px]'>

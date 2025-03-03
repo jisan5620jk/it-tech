@@ -55,7 +55,7 @@ const CallDoAction = () => {
         src={shape3}
         draggable={false}
         alt='Shape'
-        className='absolute top-[155px] right-[29%] animate-swing hidden 3xl:block'
+        className='absolute top-[155px] right-[21%] 3xl:right-[29%] animate-swing hidden xl:block'
       />
     </section>
   );

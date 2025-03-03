@@ -5,7 +5,7 @@ import './skill.css';
 
 const Skill = () => {
   return (
-    <section className='bg-[url("images/faq-bg.webp")] bg-cover bg-top bg-no-repeat pt-32 md:pt-48 lg:pt-[172px] pb-16 md:pb-20 lg:pb-[110px]'>
+    <section className='bg-[url("images/faq-bg.webp")] bg-cover bg-top bg-no-repeat pt-32 md:pt-48 lg:pt-32 xl:pt-[172px] pb-16 md:pb-20 lg:pb-[110px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:grid-cols-2 items-center relative'>
           <div className='relative inline-block 2xl:-left-16'>

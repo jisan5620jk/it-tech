@@ -27,14 +27,14 @@ const Service = () => {
               className='rotate-180'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] xl:mb-2'>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] 3xl:mb-2'>
             We Provide Business Solutions
           </h1>
         </div>
       </div>
-      <div className='max-w-[1620px] flex flex-col gap-10 md:gap-[56px] w-full mx-auto px-2 md:px-3 lg:px-4 xl:pt-9'>
-        <div className='flex flex-col md:flex-row gap-10 md:gap-7 xl:gap-[56px]'>
-          <div className='max-w-[400px] w-full mt-[54px] space-y-7'>
+      <div className='max-w-[1620px] flex flex-col items-center gap-10 md:gap-[56px] w-full mx-auto px-2 md:px-3 lg:px-4 3xl:pt-9'>
+        <div className='flex flex-col md:flex-row items-center gap-10 md:gap-7 xl:gap-[56px]'>
+          <div className='max-w-[400px] w-full mt-[54px] xl:mt-0 space-y-7'>
             <div className='rounded-[10px] bg-white relative xl:left-20 xl:[clip-path:polygon(0_0,_100%_0,_93%_98%,_0%_100%)]'>
               <ServiceCard
                 serviceIcon={serviceIcon}
@@ -71,7 +71,7 @@ const Service = () => {
               alt='Image'
             />
           </div>
-          <div className='max-w-[400px] w-full md:mt-[54px] space-y-7 relative xl:-left-20'>
+          <div className='max-w-[400px] w-full md:mt-[54px] xl:mt-0 space-y-7 relative xl:-left-20'>
             <div className='rounded-[10px] bg-white xl:pl-4 xl:[clip-path:polygon(0%_0,_100%_0,_100%_100%,_6%_100%)]'>
               <ServiceCard
                 serviceIcon={serviceIcon4}
