@@ -282,7 +282,7 @@ const Navbar5 = () => {
               example@gmail.com
             </a>
           </div>
-          <div className='border-x border-white border-opacity-10 py-[18px] px-8'>
+          <div className='border-x border-white border-opacity-20 py-[18px] px-8'>
             <a
               href='tel:+00123456789'
               className='flex items-center gap-1 text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
