@@ -15,7 +15,7 @@ import { BiSolidPhoneCall } from 'react-icons/bi';
 
 const Footer7 = () => {
   return (
-    <footer className="bg-[url('/images/footer-bg.png')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
+    <footer className="bg-[url('/images/footer-bg.png')] bg-no-repeat bg-center bg-cover relative pt-16 md:pt-20 lg:pt-28 overflow-hidden">
       <div className='Container'>
         <div className='grid gap-y-7 grid-cols-12 lg:mt-2'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
@@ -197,7 +197,7 @@ const Footer7 = () => {
         </div>
       </div>
       <div className='Container'>
-        <div className='bg-white bg-opacity-5 mb-10 mt-16 md:mt-[112px] rounded-full flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-5 pl-8 pr-6'>
+        <div className='bg-white bg-opacity-5 mb-10 mt-12 md:mt-[112px] rounded-lg md:rounded-full flex flex-col md:flex-row gap-y-7 md: md:col-span-6 justify-between md:items-center py-5 pl-8 pr-6'>
           <div>
             <p className='font-Nunito text-white'>
               &copy; {new Date().getFullYear()} IT-Tech. Designed By Dream IT

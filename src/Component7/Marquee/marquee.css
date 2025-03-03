@@ -30,6 +30,13 @@ span.marquee-text-item {
 /* Responsive here */
 
 @media screen and (max-width: 667px) {
+  .marquee-text-section2 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(90deg, #3513f9 0%, #1a90ff 100%);
+    padding: 26px 0 18px;
+  }
   span.marquee-text-item {
     font-size: 20px;
     margin: 0 5px;

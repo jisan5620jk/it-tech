@@ -29,7 +29,7 @@ const BlogCard = ({
       </div>
       <div className='relative z-20 flex justify-center bg-BodyBg-0 rounded-b-[10px] transition-all duration-500 pt-3 sm:pt-5'>
         <div className='mx-auto w-full'>
-          <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pb-2'>
+          <div className='px-7 md:px-7 lg:px-[30px] 2xl:px-[30px] pb-2'>
             <p className='font-Rajdhani font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img
                 src={blogPostIcon}
@@ -39,9 +39,9 @@ const BlogCard = ({
               {blogPost}
             </p>
           </div>
-          <div className='px-3 sm:px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] mt-3 border-t border-HeadingColor-0 border-opacity-10 transition-all duration-500 ease-linear group-hover:border-PrimaryColor-0 py-3 sm:py-[28px]'>
+          <div className='px-7 md:px-7 lg:px-[30px] 2xl:px-[30px] mt-3 border-t border-HeadingColor-0 border-opacity-10 transition-all duration-500 ease-linear group-hover:border-PrimaryColor-0 py-3 sm:py-[28px]'>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-bold text-lg sm:text-[24px] md:text-xl lg:text-[24px] xl:text-[22px] 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mb-5'>
+              <button className='font-Rajdhani text-left font-bold text-xl sm:text-[24px] md:text-2xl lg:text-[26px] xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-PrimaryColor-0 mb-5 lg:mr-10 xl:mr-0'>
                 {blogTitle}
               </button>
             </Link>

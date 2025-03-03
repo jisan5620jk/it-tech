@@ -80,13 +80,13 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white relative z-10'>
+    <section className='pt-0 pb-16 md:pt-10 md:pb-20 lg:py-28 bg-white relative z-10'>
       <div className='mx-auto'>
         <img
           src={bgShape}
           draggable={false}
           alt='Bg Shape'
-          className='w-full absolute -top-[44%] -z-10'
+          className='w-full absolute -top-[20%] 2xl:-top-[44%] -z-10'
         />
       </div>
       <div className='Container'>

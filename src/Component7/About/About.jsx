@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section className='bg-[url(/images/about-bg.png)] pb-16 md:pb-20 lg:pb-[186px] pt-16 md:pt-28 lg:pt-[205px] bg-no-repeat bg-center bg-cover relative z-20'>
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-end'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 xl:gap-10 items-end'>
           <div className='relative z-10 xl:-ml-[102px]'>
             <img
               src={aboutThumb}

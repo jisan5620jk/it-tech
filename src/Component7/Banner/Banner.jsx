@@ -8,9 +8,9 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[800px] sm:h-[1200px] lg:h-[660px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/hero-bg.png')] bg-cover bg-center bg-no-repeat h-[700px] sm:h-[1260px] md:h-[1360px] lg:h-[700px] xl:h-[900px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
-        <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0'>
+        <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-0'>
           <div className='relative'>
             <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
               <img
@@ -29,7 +29,7 @@ const Banner = () => {
                   src={titleShape}
                   alt='Shape'
                   draggable='false'
-                  className='animate-bounce w-8'
+                  className='animate-bounce w-8 sm:w-12'
                 />{' '}
                 Your Business
               </span>
@@ -61,11 +61,11 @@ const Banner = () => {
               />
             </div>
           </div>
-          <div className='sm:flex justify-center lg:justify-end md-mb-[132px] lg:-mb-12 relative hidden'>
+          <div className='sm:flex justify-center lg:justify-end lg:-mb-12 relative hidden'>
             <img
               src={bannerImg}
               draggable='false'
-              className=':w-[inherit]'
+              className='2xl:w-[inherit]'
             />
             <img
               src={bannerShape}

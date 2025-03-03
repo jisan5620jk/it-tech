@@ -35,7 +35,7 @@ const Brand = () => {
         </h5>{' '}
         <div className='flex-1 w-full h-[1px] bg-white bg-opacity-10'></div>
       </div>
-      <div className='relative z-10 py-[52px]'>
+      <div className='relative z-10 py-10 md:py-[52px]'>
         <Swiper {...settings}>
           <SwiperSlide>
             <div>

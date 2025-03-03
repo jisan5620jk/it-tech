@@ -114,7 +114,7 @@ const TeamMember = () => {
     },
   };
   return (
-    <section className='team-member bg-white mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] py-16 md:pt-20 lg:pt-28 md:pb-20 lg:pb-16 relative'>
+    <section className='team-member bg-white mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] pt-16 pb-0 md:pt-0 lg:pt-10 xl:pt-28 md:pb-0 lg:pb-16 relative'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>

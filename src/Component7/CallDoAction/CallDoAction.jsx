@@ -4,7 +4,7 @@ import shape3 from '/images/cta-arrow.png';
 
 const CallDoAction = () => {
   return (
-    <section className="bg-[url('/images/cta-bg.png')] bg-cover bg-top bg-no-repeat pt-[120px] pb-[87px]  relative z-30">
+    <section className="bg-[url('/images/cta-bg.png')] bg-cover bg-top bg-no-repeat pt-20 md:pt-[120px] pb-10 md:pb-[87px]  relative z-30">
       <div className='Container'>
         <div className='flex flex-col gap-7 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
