@@ -5,6 +5,7 @@ import CallDoAction from "../../Component5/CallDoAction/CallDoAction";
 import Feature from "../../Component5/Feature/Feature";
 import Marquee from "../../Component5/Marquee/Marquee";
 import Portfolio from "../../Component5/Portfolio/Portfolio";
+import Process from "../../Component5/Process/Process";
 import Service from "../../Component5/Service/Service";
 import Skill from "../../Component5/Skill/Skill";
 import TeamMember from "../../Component5/TeamMember/TeamMember";
@@ -17,6 +18,7 @@ const Home5 = () => {
       <Banner />
       <Feature />
       <About />
+      <Process />
       <Portfolio />
       <WhyChoose />
       <Service />

@@ -30,7 +30,7 @@ const FeatureCard = ({
       <div className='inline-block absolute bottom-0 right-0'>
         <Link
           to={featureUrl}
-          className='size-[55px] flex items-center justify-center text-2xl bg-white bg-opacity-15 rounded-[10px] text-white overflow-hidden transition-all duration-500 relative z-10 before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:rotate-180 before:h-full before:scale-0 before:transition-all before:duration-300 before:-z-10 before:ease-linear group-hover:before:scale-100 group-hover:before:rotate-0'
+          className='size-[55px] flex items-center justify-center text-2xl bg-white bg-opacity-15 rounded-[10px] text-white overflow-hidden transition-all duration-500 relative z-10 group-hover:rounded-[30px] before:absolute before:bottom-0 before:left-0 before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-full before:rotate-180 before:h-full before:scale-0 before:transition-all before:duration-300 before:-z-10 before:ease-linear group-hover:before:scale-100 group-hover:before:rotate-0'
         >
           <span className='-rotate-45'>{featureBtnIcon}</span>
         </Link>
