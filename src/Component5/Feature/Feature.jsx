@@ -1,37 +1,66 @@
-import featureIcon from '/images/feature-icon1.png';
-import featureIcon2 from '/images/feature-icon2.png';
-import featureBtnIcon from '/images/feature-button-icon.png';
+import featureIcon from '/images/feature-icon1.webp';
+import featureIcon2 from '/images/feature-icon2.webp';
+import featureIcon3 from '/images/feature-icon3.webp';
+import shape from '/images/animation-shap2e.webp';
 import FeatureCard from './FeatureCard';
+import { HiDotsHorizontal } from 'react-icons/hi';
+import { TbArrowRight } from 'react-icons/tb';
 
 const processData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: 'Business Collaborations',
+    featureTitle: '3D Illustrations Designing',
+    featureDesc:
+      'Distinctively reconceptualize mission tech positioning materials after',
+    featureDotIcon: <HiDotsHorizontal />,
     featureUrl: '/service',
-    featureBtnIcon: featureBtnIcon,
+    featureBtnIcon: <TbArrowRight />,
   },
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: 'Top Revenue Generation',
+    featureTitle: 'Website Developments',
+    featureDesc:
+      'Distinctively reconceptualize mission tech positioning materials after',
+    featureDotIcon: <HiDotsHorizontal />,
     featureUrl: '/service',
-    featureBtnIcon: featureBtnIcon,
+    featureBtnIcon: <TbArrowRight />,
+  },
+  {
+    id: 3,
+    featureIcon: featureIcon3,
+    featureTitle: 'Network Managements',
+    featureDesc:
+      'Distinctively reconceptualize mission tech positioning materials after',
+    featureDotIcon: <HiDotsHorizontal />,
+    featureUrl: '/service',
+    featureBtnIcon: <TbArrowRight />,
   },
 ];
 
 const Feature = () => {
   return (
-    <section className='bg-BodyBg-0'>
+    <section className='bg-BodyBgDark4-0 py-16 md:py-20 lg:py-28 rounded-b-lg md:rounded-b-xl lg:rounded-b-[30px] relative z-20'>
       <div className='Container'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 relative z-30 mt-10 sm:-mt-[50px] lg:-mb-[114px]'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start gap-7 relative z-10'>
           {processData.map(
-            ({ id, featureIcon, featureTitle, featureUrl, featureBtnIcon }) => {
+            ({
+              id,
+              featureIcon,
+              featureTitle,
+              featureDesc,
+              featureDotIcon,
+              featureUrl,
+              featureBtnIcon,
+            }) => {
               return (
                 <div key={id}>
                   <FeatureCard
                     featureIcon={featureIcon}
                     featureTitle={featureTitle}
+                    featureDesc={featureDesc}
+                    featureDotIcon={featureDotIcon}
                     featureUrl={featureUrl}
                     featureBtnIcon={featureBtnIcon}
                   />
@@ -41,6 +70,12 @@ const Feature = () => {
           )}
         </div>
       </div>
+      <img
+        src={shape}
+        draggable={false}
+        alt='Shape'
+        className='absolute -bottom-24 right-24 animate-dance2'
+      />
     </section>
   );
 };
