@@ -5,41 +5,41 @@ const Marquee = () => {
   return (
     <div>
       <div className='marquee-text-section2'>
-        <div className='marquee-animation'>
-          <span className='marquee-text-item'>WEBSITE DEVELOPMENT</span>
-          <span className='marquee-text-item animate-rotational'>
+        <div className='marquee-animation2'>
+          <span className='marquee-text-item2'>WEBSITE DEVELOPMENT</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>UI/UX DESIGNING</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>UI/UX DESIGNING</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>ARTIFICIAL INTELLIGENCE</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>WEBSITE DEVELOPMENT</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>WEBSITE DEVELOPMENT</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>UI/UX DESIGNING</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>UI/UX DESIGNING</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
@@ -47,41 +47,41 @@ const Marquee = () => {
             />
           </span>
         </div>
-        <div className='marquee-animation'>
-          <span className='marquee-text-item'>WEBSITE DEVELOPMENT</span>
-          <span className='marquee-text-item animate-rotational'>
+        <div className='marquee-animation2'>
+          <span className='marquee-text-item2'>WEBSITE DEVELOPMENT</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>UI/UX DESIGNING</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>UI/UX DESIGNING</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>ARTIFICIAL INTELLIGENCE</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>WEBSITE DEVELOPMENT</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>WEBSITE DEVELOPMENT</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}
               alt='Star'
             />
           </span>
-          <span className='marquee-text-item'>UI/UX DESIGNING</span>
-          <span className='marquee-text-item animate-rotational'>
+          <span className='marquee-text-item2'>UI/UX DESIGNING</span>
+          <span className='marquee-text-item2 animate-rotational'>
             <img
               src={star}
               draggable={false}

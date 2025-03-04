@@ -8,6 +8,7 @@ import shape from '/images/process-shape3.webp';
 import shape2 from '/images/process-shape5.webp';
 import shape3 from '/images/process-shape4.webp';
 import { useEffect } from 'react';
+import './process.css';
 
 const Process = () => {
   useEffect(() => {

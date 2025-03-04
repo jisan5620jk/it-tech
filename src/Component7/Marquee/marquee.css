@@ -6,18 +6,18 @@
   padding: 44px 0 36px;
 }
 
-.marquee-animation {
+.marquee-animation2 {
   display: inline-block;
   will-change: transform;
   animation: marquee 30s linear infinite;
   overflow: hidden;
 }
 
-.marquee-text-section2:hover .marquee-animation {
+.marquee-text-section2:hover .marquee-animation2 {
   animation-play-state: paused;
 }
 
-span.marquee-text-item {
+span.marquee-text-item2 {
   display: inline-block;
   font-size: 36px;
   color: #ffffff;
@@ -37,12 +37,12 @@ span.marquee-text-item {
     background: linear-gradient(90deg, #3513f9 0%, #1a90ff 100%);
     padding: 26px 0 18px;
   }
-  span.marquee-text-item {
+  span.marquee-text-item2 {
     font-size: 20px;
     margin: 0 5px;
   }
 
-  span.marquee-text-item img {
+  span.marquee-text-item2 img {
     width: 20px;
   }
 }

@@ -1,12 +1,12 @@
-.why-choose-progress h2.rect-progress-bar-percent {
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-family: 'Rajdhani';
-    font-weight: 600;
-    color: #041424 !important;
+.skill-progress h2.rect-progress-bar-percent {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-family: 'Rajdhani';
+  font-weight: 600;
+  color: #041424 !important;
 }
 
-.inner-rect-bar {
+.skill-progress .inner-rect-bar {
   background: linear-gradient(90deg, #3513f9 0%, #1a90ff 100%) !important;
 }

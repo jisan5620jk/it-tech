@@ -1,114 +1,153 @@
-import serviceIcon from '/images/Software-Tecnology-3.webp';
-import serviceIcon2 from '/images/team-2.webp';
-import serviceIcon3 from '/images/support.webp';
-import serviceIcon4 from '/images/icon2-2.webp';
-import serviceIcon5 from '/images/color.webp';
-import serviceIcon6 from '/images/settings1.webp';
-import serviceThumb from '/images/Software-Tecnology-2.webp';
-import ServiceCard from './ServiceCard';
+import serviceIcon2 from '/images/service-icon1.webp';
+import serviceIcon3 from '/images/service-icon2.webp';
+import serviceIcon4 from '/images/service-icon3.webp';
+import serviceIcon5 from '/images/icon.webp';
+import serviceIcon6 from '/images/service-icon5.webp';
 import titleShape from '/images/sub-title-shape.png';
+import shape from '/images/animation-shap2e.webp';
+import ServiceCard from './ServiceCard';
+import { GoArrowRight } from 'react-icons/go';
+import { Link } from 'react-router-dom';
+import './service.css';
+
+const serviceData = [
+  {
+    id: 1,
+    serviceIcon: serviceIcon2,
+    serviceTitle: 'Website Design and Development',
+    serviceDesc:
+      'Competently leverage existing top-line maximize cost effective done',
+    serviceUrl: '/service',
+    serviceBtnText: 'Learn More',
+    serviceBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 2,
+    serviceIcon: serviceIcon3,
+    serviceTitle: 'Cloud Computing and Hosting Service',
+    serviceDesc:
+      'Competently leverage existing top-line maximize cost effective done',
+    serviceUrl: '/service',
+    serviceBtnText: 'Learn More',
+    serviceBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 3,
+    serviceIcon: serviceIcon4,
+    serviceTitle: 'Ai & Machine Learning Integrations',
+    serviceDesc:
+      'Competently leverage existing top-line maximize cost effective done',
+    serviceUrl: '/service',
+    serviceBtnText: 'Learn More',
+    serviceBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 4,
+    serviceIcon: serviceIcon5,
+    serviceTitle: 'Custom Softwares Development3D',
+    serviceDesc:
+      'Competently leverage existing top-line maximize cost effective done',
+    serviceUrl: '/service',
+    serviceBtnText: 'Learn More',
+    serviceBtnIcon: <GoArrowRight />,
+  },
+  {
+    id: 5,
+    serviceIcon: serviceIcon6,
+    serviceTitle: 'Graphics & Vector Designing',
+    serviceDesc:
+      'Competently leverage existing top-line maximize cost effective done',
+    serviceUrl: '/service',
+    serviceBtnText: 'Learn More',
+    serviceBtnIcon: <GoArrowRight />,
+  },
+];
 
 const Service = () => {
   return (
-    <section className="relative pt-16 md:py-20 lg:pt-28 pb-6 md:pb-48 lg:pb-[190px] bg-[url('/images/service-bg-2.webp')] bg-cover bg-no-repeat bg-bottom">
-      <div className='Container'>
-        <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-            <img
-              src={titleShape}
-              draggable={false}
-              alt='Shape'
-            />{' '}
-            WAHT WE PROVIDE{' '}
-            <img
-              src={titleShape}
-              draggable={false}
-              alt='Shape'
-              className='rotate-180'
-            />
-          </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] 3xl:mb-2'>
-            We Provide Business Solutions
-          </h1>
+    <section className='bg-white py-16 md:py-20 lg:py-28 relative z-20'>
+      <div className='Container '>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10'>
+          <div>
+            <div>
+              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+                <img
+                  src={titleShape}
+                  draggable={false}
+                  alt='Shape'
+                />{' '}
+                WAHT WE PROVIDE
+              </h5>
+              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+                Provide High Quality
+                <br /> Data-Driven Service
+                <br /> for IT Industry
+              </h1>
+            </div>
+            <Link
+              to={'/service'}
+              className='inline-block'
+            >
+              <button className='primary-btn'>
+                {`All Service`}
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </Link>
+          </div>
+          {serviceData.map(
+            ({
+              id,
+              serviceIcon,
+              serviceTitle,
+              serviceDesc,
+              serviceUrl,
+              serviceBtnText,
+              serviceBtnIcon,
+            }) => {
+              return (
+                <div
+                  key={id}
+                  className='service-box3'
+                >
+                  <ServiceCard
+                    serviceIcon={serviceIcon}
+                    serviceTitle={serviceTitle}
+                    serviceDesc={serviceDesc}
+                    serviceUrl={serviceUrl}
+                    serviceBtnText={serviceBtnText}
+                    serviceBtnIcon={serviceBtnIcon}
+                  />
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
-      <div className='max-w-[1620px] flex flex-col items-center gap-10 md:gap-[56px] w-full mx-auto px-2 md:px-3 lg:px-4 3xl:pt-9'>
-        <div className='flex flex-col md:flex-row items-center gap-10 md:gap-7 xl:gap-[56px]'>
-          <div className='max-w-[400px] w-full mt-[54px] xl:mt-0 space-y-7'>
-            <div className='rounded-[10px] bg-white relative xl:left-20 xl:[clip-path:polygon(0_0,_100%_0,_93%_98%,_0%_100%)]'>
-              <ServiceCard
-                serviceIcon={serviceIcon}
-                serviceTitle={'Graphic Design'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-            <div className='rounded-[10px] bg-white'>
-              <ServiceCard
-                serviceIcon={serviceIcon2}
-                serviceTitle={'Audience Generate'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-            <div className='rounded-[10px] bg-white relative xl:left-20 xl:[clip-path:polygon(0_0,_94%_0,_100%_100%,_0%_100%)]'>
-              <ServiceCard
-                serviceIcon={serviceIcon3}
-                serviceTitle={'Customer Strategy'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-          </div>
-          <div className='w-full md:hidden xl:block'>
-            <img
-              src={serviceThumb}
-              draggable={false}
-              className='max-w-[inherit] w-[inherit]'
-              alt='Image'
-            />
-          </div>
-          <div className='max-w-[400px] w-full md:mt-[54px] xl:mt-0 space-y-7 relative xl:-left-20'>
-            <div className='rounded-[10px] bg-white xl:pl-4 xl:[clip-path:polygon(0%_0,_100%_0,_100%_100%,_6%_100%)]'>
-              <ServiceCard
-                serviceIcon={serviceIcon4}
-                serviceTitle={'Market Research'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-            <div className='rounded-[10px] bg-white relative xl:left-20'>
-              <ServiceCard
-                serviceIcon={serviceIcon5}
-                serviceTitle={'Competitor Research'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-            <div className='rounded-[10px] bg-white xl:pl-4 xl:[clip-path:polygon(7%_0%,_100%_0,_100%_100%,_0%_100%)]'>
-              <ServiceCard
-                serviceIcon={serviceIcon6}
-                serviceTitle={'Data Driven Soft'}
-                serviceDesc={
-                  'Professionally pursue scalables on market positioning'
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div className='w-full hidden md:block xl:hidden'>
-          <img
-            src={serviceThumb}
-            draggable={false}
-            className='max-w-[inherit] w-[inherit]'
-            alt='Image'
-          />
-        </div>
+      <div className='absolute left-20 -bottom-[70px] animate-dance2 hidden 3xl:block'>
+        <img
+          src={shape}
+          draggable={false}
+          alt='Shape'
+          className='w-[120px]'
+        />
       </div>
     </section>
   );

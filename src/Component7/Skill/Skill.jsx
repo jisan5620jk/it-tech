@@ -40,7 +40,7 @@ const Skill = () => {
                 <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   Database Design
                 </h5>
-                <div className='relative z-10 why-choose-progress'>
+                <div className='relative z-10 skill-progress'>
                   <ProgressBar
                     rect
                     width='100%'
@@ -68,7 +68,7 @@ const Skill = () => {
                 <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   App Development
                 </h5>
-                <div className='relative z-10 why-choose-progress'>
+                <div className='relative z-10 skill-progress'>
                   <ProgressBar
                     rect
                     width='100%'
@@ -96,7 +96,7 @@ const Skill = () => {
                 <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 relative z-20 mb-[9px]'>
                   UI/UX Design
                 </h5>
-                <div className='relative z-10 why-choose-progress'>
+                <div className='relative z-10 skill-progress'>
                   <ProgressBar
                     rect
                     width='100%'

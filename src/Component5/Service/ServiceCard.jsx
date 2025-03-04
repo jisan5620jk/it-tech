@@ -1,22 +1,37 @@
 /* eslint-disable react/prop-types */
+import { Link } from 'react-router-dom';
 
-const ServiceCard = ({ serviceIcon, serviceTitle, serviceDesc }) => {
+const ServiceCard = ({
+  serviceIcon,
+  serviceTitle,
+  serviceDesc,
+  serviceUrl,
+  serviceBtnText,
+  serviceBtnIcon,
+}) => {
   return (
-    <div className='group flex gap-4 sm:gap-7 md:gap-4 lg:gap-7 px-4 sm:px-[34px] md:px-4 lg:px-7 2xl:px-[34px] pt-4 sm:pt-7 md:pt-4 lg:pt-7 pb-4 sm:pb-8 md:pb-4 lg:pb-8 '>
+    <div className='group px-4 sm:px-8 lg:px-4 xl:px-6 2xl:px-8 lg:pt-4 xl:pt-7 2xl:pt-10 pt-5 sm:pt-10 lg:pb-4 xl:pb-6 2xl:pb-8 pb-5 sm:pb-8 bg-transparent transition-all duration-500 rounded-[10px]  overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:w-0 before:opacity-0 before:h-full before:bg-gradient-to-b before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:transition-all before:duration-500 before:-z-10 hover:before:w-full hover:before:left-0 hover:before:opacity-100'>
       <div className=''>
         <img
           src={serviceIcon}
           draggable='false'
-          className='group-hover:animate-wobble_vertical'
+          className='transition-all duration-500 group-hover:brightness-0 group-hover:invert-[1] group-hover:animate-wobble_vertical'
         />
       </div>
-      <div className='flex-1'>
-        <h5 className='font-Rajdhani font-semibold text-xl sm:text-2xl xl:text-[22px] 2xl:text-2xl pb-[10px] text-HeadingColor-0'>
-          {serviceTitle}
-        </h5>
-        <p className='font-Nunito text-TextColor2-0 -mt-[6px]'>
-          {serviceDesc}
-        </p>
+      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-xl xl:text-2xl 2xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-7 mb-3 mr-16'>
+        {serviceTitle}
+      </h4>
+      <p className='font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white group-hover:text-opacity-70 max-w-[290px] w-full'>
+        {serviceDesc}
+      </p>
+      <div className='inline-block mt-[20px]'>
+        <Link
+          to={serviceUrl}
+          className='flex items-center gap-1 rounded-3xl text-HeadingColor-0 font-Rajdhani overflow-hidden transition-all duration-500 group-hover:text-white font-semibold text-lg uppercase relative z-10'
+        >
+          {serviceBtnText}
+          <span className='-rotate-45 text-xl'>{serviceBtnIcon}</span>
+        </Link>
       </div>
     </div>
   );
