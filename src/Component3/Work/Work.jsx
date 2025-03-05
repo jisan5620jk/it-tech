@@ -5,7 +5,6 @@ import workImg3 from '/images/port-3-1.webp';
 import workImg4 from '/images/port-4.webp';
 import workImg5 from '/images/port-5.webp';
 import workImg6 from '/images/port-6.webp';
-import './work.css';
 import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';
 
@@ -49,7 +48,7 @@ const workCard = [
     id: 6,
     workImg: workImg6,
     workBoxLink: '/',
-    workTitle: 'Bos Mock-Up Design',
+    workTitle: 'Mock-Up Design',
     workSubTitle: 'Design',
   },
 ];

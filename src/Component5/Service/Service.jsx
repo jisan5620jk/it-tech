@@ -4,7 +4,6 @@ import serviceIcon4 from '/images/service-icon3.webp';
 import serviceIcon5 from '/images/icon.webp';
 import serviceIcon6 from '/images/service-icon5.webp';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/animation-shap2e.webp';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
@@ -65,7 +64,7 @@ const serviceData = [
 
 const Service = () => {
   return (
-    <section className='bg-white py-16 md:py-20 lg:py-28 relative z-20'>
+    <section className='bg-white py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container '>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 relative z-10'>
           <div>
@@ -140,14 +139,6 @@ const Service = () => {
             }
           )}
         </div>
-      </div>
-      <div className='absolute left-20 -bottom-[70px] animate-dance2 hidden 3xl:block'>
-        <img
-          src={shape}
-          draggable={false}
-          alt='Shape'
-          className='w-[120px]'
-        />
       </div>
     </section>
   );

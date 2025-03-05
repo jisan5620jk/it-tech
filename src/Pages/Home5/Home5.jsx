@@ -5,9 +5,10 @@ import CallDoAction from '../../Component5/CallDoAction/CallDoAction';
 import Feature from '../../Component5/Feature/Feature'
 import Process from '../../Component5/Process/Process';
 import Service from '../../Component5/Service/Service';
-import TeamMember from '../../Component5/TeamMember/TeamMember';
 import Testimonial from '../../Component5/Testimonial/Testimonial';
 import WhyChoose from '../../Component5/WhyChoose/WhyChoose';
+import Work from '../../Component5/Work/Work';
+import Counter from '../../Component5/Counter/Counter';
 
 const Home5 = () => {
   return (
@@ -18,10 +19,11 @@ const Home5 = () => {
       <Process />
       <Service />
       <WhyChoose />
-      <TeamMember />
+      <Work />
+      <CallDoAction />
       <Testimonial />
       <Blog />
-      <CallDoAction />
+      <Counter />
     </>
   );
 };

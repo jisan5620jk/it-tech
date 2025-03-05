@@ -7,6 +7,7 @@ import borderShape from '/images/process-shape1.webp';
 import shape from '/images/process-shape3.webp';
 import shape2 from '/images/process-shape5.webp';
 import shape3 from '/images/process-shape4.webp';
+import Shape from '/images/animation-shap2e.webp';
 import { useEffect } from 'react';
 import './process.css';
 
@@ -41,7 +42,7 @@ const Process = () => {
   }, []);
 
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/process-bg.webp")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/process-bg.webp")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-20'>
       <div className='Container'>
         <div className='grid grid-cols-2 items-center'>
           <div>
@@ -162,6 +163,14 @@ const Process = () => {
             />
           </div>
         </div>
+      </div>
+      <div className='absolute left-20 -bottom-[70px] animate-dance2 hidden 3xl:block'>
+        <img
+          src={Shape}
+          draggable={false}
+          alt='Shape'
+          className='w-[120px]'
+        />
       </div>
     </section>
   );

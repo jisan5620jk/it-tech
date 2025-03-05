@@ -6,7 +6,6 @@ import itemIcon2 from '/images/icon2.webp';
 import itemIcon3 from '/images/icon3.webp';
 import { Link } from 'react-router-dom';
 import shape from '/images/shape.webp';
-import './why-choose.css';
 
 const WhyChoose = () => {
   return (

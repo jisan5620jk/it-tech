@@ -1,30 +1,29 @@
 import titleShape from '/images/sub-title-shape.png';
-import { Link } from 'react-router-dom';
-import { HiOutlineCheck } from 'react-icons/hi';
-import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
+import whyChooseThumb from '/images/choose-us-thumb.webp';
+import whyChooseShape from '/images/choose-us-shpe1.webp';
+import whyChooseShape2 from '/images/dotte-shpe.webp';
+import shape from '/images/animation-shap2e.webp';
+import { TbRosetteDiscountCheckFilled } from 'react-icons/tb';
+import Analysis from '../Analysis/Analysis';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-HeadingColor-0 lg:bg-[url("/images/why-choose.webp")] bg-cover bg-right lg:bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/why-choose-us-bg.webp")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
-        <div className='grid grid-cols-1 gap-10 lg:gap-28 xl:gap-[190px] lg:grid-cols-2 items-end relative'>
-          <div className='relative'>
-            <div className='lg:absolute -bottom-[72px] -right-9'>
-              <div className='font-Rajdhani font-bold flex items-center text-white text-[50px] -tracking-wide'>
-                <OnScrollCounter
-                  start={0}
-                  end={10}
-                  duration={3000}
-                />
-                <h1>K+</h1>
-              </div>
-              <div>
-                <h5 className='font-Rajdhani font-semibold leading-7 text-[22px] text-white'>
-                  OUR TOTAL FINISEHD
-                  <br /> PROJECTS
-                </h5>
-              </div>
-            </div>
+        <div className='grid grid-cols-1 gap-10 lg:gap-20 lg:grid-cols-2 items-end relative'>
+          <div className='relative inline-block'>
+            <img
+              src={whyChooseThumb}
+              draggable={false}
+              alt='Why Choose Image'
+              className='xl:w-[inherit] xl:max-w-[inherit] relative -left-20'
+            />
+            <img
+              src={whyChooseShape}
+              draggable={false}
+              alt='Why Choose Shape'
+              className='absolute left-60 bottom-14 animate-dance3 hidden md:block'
+            />
           </div>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -32,80 +31,69 @@ const WhyChoose = () => {
                 src={titleShape}
                 draggable={false}
                 alt='Shape'
-                className='brightness-0 invert-[1]'
               />{' '}
               Why Choose us?
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-9'>
-              Few Reason Why You Should
-              <br /> Choose Our Services for Your
-              <br /> Next Gen Business?
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-3'>
+              Brain Storming, Researcing and
+              <br />
+              Work Strategist for Create Best
+              <br />
+              Sucessfull Products
             </h1>
-            <ul className='space-y-5'>
-              <li className='flex gap-4'>
-                <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
-                  <HiOutlineCheck />
+            <p className='font-Nunito text-TextColor2-0 max-w-[580px] w-full'>
+              Competently leverage existing top-line bandwidth vis-a-vis
+              client-centric supply chains. Enthusiastically maximize cost
+              effective technologies
+            </p>
+            <div className='space-y-6 border-t border-SecondaryColor-0 border-opacity-10 pt-7 mt-6'>
+              <div className='flex gap-3 group'>
+                <div className='animate-wobble_vertical text-PrimaryColor-0'>
+                  <TbRosetteDiscountCheckFilled size={34} />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
-                  Globally underwhelm resource-leveling outsourcing
-                </p>
-              </li>
-              <li className='flex gap-4'>
-                <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
-                  <HiOutlineCheck />
+                <div className='flex-1 -mt-1'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                    Market Research
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                    Competently leverage existing top-line technology maximize
+                    cost effective service done
+                  </p>
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
-                  Rapidiously transform vertical information whereas accurate
-                  technologies. Uniquely predominate
-                </p>
-              </li>
-              <li className='flex gap-4'>
-                <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
-                  <HiOutlineCheck />
+              </div>
+              <div className='flex gap-3 group'>
+                <div className='animate-wobble_vertical text-PrimaryColor-0'>
+                  <TbRosetteDiscountCheckFilled size={34} />
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
-                  Dynamically coordinate intuitive infomediaries on team
-                </p>
-              </li>
-              <li className='flex gap-4'>
-                <div className='size-[28px] rounded-full flex items-center justify-center bg-white bg-opacity-10 text-white text-xl'>
-                  <HiOutlineCheck />
+                <div className='flex-1 -mt-1'>
+                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                    Project Analysis
+                  </h5>
+                  <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
+                    Competently leverage existing top-line technology maximize
+                    cost effective service done
+                  </p>
                 </div>
-                <p className='flex-1 font-Nunito text-lg text-white text-opacity-70'>
-                  Interactively optimize clicks-and-mortar vortals
-                </p>
-              </li>
-            </ul>
-            <Link
-              to={'/about'}
-              className='inline-block mt-11'
-            >
-              <button className='primary-btn'>
-                {`Learn More`}
-                <span className='icon-style'>
-                  <svg
-                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                    xmlns='http://www.w3.org/2000/svg'
-                    stroke='CurrentColor'
-                    width='14.2'
-                    height='14.2'
-                    viewBox='0 0 14.2 14.2'
-                  >
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                    <g>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
-            </Link>
+              </div>
+            </div>
           </div>
+          <div className='absolute -right-32 -top-2 animate-dance2 hidden 3xl:block'>
+            <img
+              src={shape}
+              draggable={false}
+              alt='Shape'
+              className='w-[120px]'
+            />
+          </div>
+          <img
+            src={whyChooseShape2}
+            draggable={false}
+            alt='Why Choose Shape'
+            className='absolute -right-36 -bottom-32 animate-wiggle hidden md:block'
+          />
         </div>
       </div>
+      <Analysis />
     </section>
   );
 };

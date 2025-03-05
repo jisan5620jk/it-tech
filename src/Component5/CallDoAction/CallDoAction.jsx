@@ -1,18 +1,26 @@
 import { Link } from 'react-router-dom';
-import shape2 from '/images/cta-thumb.png';
-import shape3 from '/images/cta-arrow.png';
+import shape from '/images/call-do-shape2.webp';
+import shape2 from '/images/call-do-shape3.webp';
+import shape3 from '/images/call-do-shape1.webp';
 
 const CallDoAction = () => {
   return (
-    <section className="bg-[url('/images/cta-bg.png')] bg-cover bg-top bg-no-repeat pt-20 md:pt-[120px] pb-10 md:pb-[87px]  relative z-30">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat pt-4 pb-8 md:py-16 relative z-30">
+      <img
+        src={shape}
+        draggable={false}
+        alt='Shape'
+        className='absolute top-[70px] left-24 animate-rotateX hidden 3xl:block'
+      />
       <div className='Container'>
         <div className='flex flex-col gap-7 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white'>
-              We Provide Best Solutions
-              <br />
-              For Your Business
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-2'>
+              {`Need any project? we're here`}
             </h1>
+            <p className='font-Nunito text-white'>
+              Feel free to contact with us. Our team ready to help
+            </p>
           </div>
           <div>
             <Link
@@ -20,7 +28,7 @@ const CallDoAction = () => {
               className='inline-block'
             >
               <button className='primary-btn'>
-                Get In Touch
+                Contact With Us
                 <span className='icon-style'>
                   <svg
                     className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
@@ -49,13 +57,13 @@ const CallDoAction = () => {
         src={shape2}
         draggable={false}
         alt='Shape'
-        className='absolute -bottom-[2px] left-1/2 -translate-x-1/2 hidden lg:block'
+        className='absolute top-[70px] right-36 animate-movebtn hidden 3xl:block'
       />
       <img
         src={shape3}
         draggable={false}
         alt='Shape'
-        className='absolute top-[155px] right-[21%] 3xl:right-[29%] animate-swing hidden xl:block'
+        className='absolute -bottom-36 left-1/2 -translate-x-1/2 animate-wiggle hidden lg:block'
       />
     </section>
   );

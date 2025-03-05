@@ -1,13 +1,13 @@
 import { FaRegCalendarCheck } from 'react-icons/fa6';
-import blogThumb from '/images/blog1.webp';
-import blogThumb2 from '/images/blog2.webp';
-import blogThumb3 from '/images/blog3.webp';
+import blogThumb from '/images/blog_img.png';
+import blogThumb2 from '/images/blog_img2.png';
+import blogThumb3 from '/images/blog_img3.png';
 import titleShape from '/images/sub-title-shape.png';
 import BlogCard from './BlogCard';
+import { GoArrowRight } from 'react-icons/go';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
-import bgShape from '/images/blog-bg.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -17,37 +17,37 @@ const blogData = [
     id: 1,
     blogThumb: blogThumb,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '24',
-    blogMonth: 'Mar',
+    blogDate: '24 Mar, 2024',
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
-    blogTitle: '5 popular online security tools for data protect',
-    blogBtnText: 'Read More',
+    blogTitle: 'Expert Advice for Growing Your Digital Presence',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
     blogThumb: blogThumb2,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '18',
-    blogMonth: 'Apl',
+    blogDate: '24 Mar, 2024',
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details',
-    blogTitle: 'How to Install SEO Tools on wordpress theme',
-    blogBtnText: 'Read More',
+    blogTitle: 'Data-Driven Strategies and Case Studies Success',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
     blogThumb: blogThumb3,
     blogDateIcon: <FaRegCalendarCheck />,
-    blogDate: '20',
-    blogMonth: 'Jun',
+    blogDate: '24 Mar, 2024',
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
-    blogTitle: '10 Secreate and Hidden Tips Grow Audience',
+    blogTitle: 'The Complete SEO Blog for Digital Success',
     blogUrl: '/blog_details',
-    blogBtnText: 'Read More',
+    blogBtn: 'Read More',
+    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
@@ -74,21 +74,13 @@ const Blog = () => {
       992: {
         slidesPerView: 2,
       },
-      1200: {
+      1400: {
         slidesPerView: 3,
       },
     },
   };
   return (
-    <section className='pt-0 pb-16 md:pt-10 md:pb-20 xl:py-20 2xl:py-28 bg-white relative z-10'>
-      <div className='mx-auto'>
-        <img
-          src={bgShape}
-          draggable={false}
-          alt='Bg Shape'
-          className='w-full absolute -top-[20%] 2xl:-top-[44%] -z-10'
-        />
-      </div>
+    <section className='py-16 md:py-20 lg:py-28 bg-white'>
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -106,14 +98,9 @@ const Blog = () => {
             />
           </h5>
           <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-            Ready Our Latest Insights
-            <br /> from Our Blog Posts
+            Ready Our Latest Insights from
+            <br /> Our Blog Posts
           </h1>
-          <p className='font-Nunito text-TextColor2-0 max-w-[605px] w-full mx-auto'>
-            Sit amet consectetur adipiscing elite sed eiusmod tempor incididunt
-            ut labore dolore pendisse ultrices gravidaisus commodo viva aliqua
-            quis
-          </p>
         </div>
         <div className='mt-[46px]'>
           <Swiper {...settings}>
@@ -123,12 +110,12 @@ const Blog = () => {
                 blogThumb,
                 blogDateIcon,
                 blogDate,
-                blogMonth,
                 blogPostIcon,
                 blogPost,
                 blogUrl,
                 blogTitle,
-                blogBtnText,
+                blogBtn,
+                blogBtnIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
@@ -136,12 +123,12 @@ const Blog = () => {
                       blogThumb={blogThumb}
                       blogDateIcon={blogDateIcon}
                       blogDate={blogDate}
-                      blogMonth={blogMonth}
                       blogPostIcon={blogPostIcon}
                       blogPost={blogPost}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtnText={blogBtnText}
+                      blogBtn={blogBtn}
+                      blogBtnIcon={blogBtnIcon}
                     />
                   </SwiperSlide>
                 );
