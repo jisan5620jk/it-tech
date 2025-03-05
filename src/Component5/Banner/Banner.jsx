@@ -8,7 +8,7 @@ import { HiMiniArrowUpRight } from 'react-icons/hi2';
 const Banner = () => {
   return (
     <div className='bg-BodyBgDark4-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
-      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-bg2.webp')] bg-cover bg-bottom bg-no-repeat h-[700px] sm:h-[1260px] md:h-[1360px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
+      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-bg2.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[1260px] md:h-[1360px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
         <div className='Container'>
           <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-10'>
             <div className='relative'>
@@ -21,7 +21,7 @@ const Banner = () => {
                 />
                 Best software agency
               </h5>
-              <h1 className='font-Rajdhani font-extrabold text-HeadingColor-0 text-[34px] leading-[36px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[70px] 2xl:leading-[68px]'>
+              <h1 className='font-Rajdhani font-extrabold text-HeadingColor-0 text-[27px] leading-[30px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[70px] 2xl:leading-[68px]'>
                 Driving Innovation for
                 <br />
                 Delivering Excellence

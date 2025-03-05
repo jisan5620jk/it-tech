@@ -263,17 +263,17 @@ const Navbar5 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex items-center justify-between bg-BodyBgDark4-0'>
-        <div className='flex items-center gap-2'>
+      <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex flex-col lg:flex-row lg:items-center justify-between bg-BodyBgDark4-0'>
+        <div className='hidden sm:flex lg:flex items-center gap-2 md:hidden py-3 md:py-0'>
           <div className='size-[16px] rounded-full flex items-center justify-center text-BodyBgDark4-0 bg-white'>
             <IoMdStar size={14} />
           </div>
-          <p className='font-Nunito text-white text-opacity-80'>
+          <p className='flex-1 font-Nunito text-white text-opacity-80'>
             Continually formulate B2C partnerships orthogonal software
           </p>
         </div>
-        <div className='flex items-center gap-8'>
-          <div>
+        <div className='flex sm:hidden md:flex items-center md:justify-center lg:justify-end gap-6 sm:gap-8 py-3 md:py-0'>
+          <div className='lg:hidden xl:block'>
             <a
               href='mailto:example@gmail.com'
               className='flex items-center gap-2 text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
@@ -282,7 +282,7 @@ const Navbar5 = () => {
               example@gmail.com
             </a>
           </div>
-          <div className='border-x border-white border-opacity-20 py-[18px] px-8'>
+          <div className='border-x lg:border-l-transparent xl:border-l-white border-white !border-opacity-20 py-2 lg:py-[18px] px-8 hidden md:block'>
             <a
               href='tel:+00123456789'
               className='flex items-center gap-1 text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
@@ -291,7 +291,7 @@ const Navbar5 = () => {
               +00 123 (456) 789
             </a>
           </div>
-          <ul className='flex items-center gap-5'>
+          <ul className='flex items-center gap-2 sm:gap-5'>
             <li>
               <button
                 type='button'
