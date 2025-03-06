@@ -78,7 +78,7 @@ const Faq = () => {
               Write Us Something sending a message
             </p>
             <form
-              action='#'
+              action='https://formspree.io/f/xayrekgy'
               className='space-y-5'
             >
               <div className='relative'>
@@ -99,7 +99,7 @@ const Faq = () => {
                   type='text'
                   name='name'
                   id='name'
-                  placeholder='Your Name'
+                  placeholder='Your E-Mail'
                   required
                   className='h-[60px] w-full rounded-md pl-[80px] text-white font-Nunito bg-white bg-opacity-5 outline-none border-2 border-transparent transition-all duration-500 ease-linear hover:border-PrimaryColor-0 focus:border-PrimaryColor-0'
                 />

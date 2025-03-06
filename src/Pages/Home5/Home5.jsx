@@ -9,6 +9,7 @@ import Testimonial from '../../Component5/Testimonial/Testimonial';
 import WhyChoose from '../../Component5/WhyChoose/WhyChoose';
 import Work from '../../Component5/Work/Work';
 import Counter from '../../Component5/Counter/Counter';
+import Appoinment from '../../Component5/Appoinment/Appoinment';
 
 const Home5 = () => {
   return (
@@ -24,6 +25,7 @@ const Home5 = () => {
       <Testimonial />
       <Blog />
       <Counter />
+      <Appoinment />
     </>
   );
 };
