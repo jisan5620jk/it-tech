@@ -17,7 +17,7 @@ const Footer4 = () => {
     <div className='bg-BodyBgDark3-0 pb-2 sm:pb-3 md:pb-5 2xl:pb-8 3xl:pb-[50px]'>
       <footer className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-b-lg lg:rounded-b-2xl bg-HeadingColor-0 relative pt-16 md:pt-20 lg:pt-28 overflow-hidden'>
         <div className='Container'>
-          <div className='grid gap-y-7 grid-cols-12 lg:mt-8'>
+          <div className='grid gap-y-7 grid-cols-12 '>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
               <div className='mb-[33px]'>
                 <Link to={'/home3'}>

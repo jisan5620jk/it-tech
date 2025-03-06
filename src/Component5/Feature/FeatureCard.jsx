@@ -18,10 +18,11 @@ const FeatureCard = ({
           className='group-hover:animate-wobble_vertical'
         />
       </div>
-      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-9 text-white mt-16 mb-3 mr-20'>
+      <h4 className='font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-2xl xl:text-[28px] 2xl:text-[32px] 2xl:leading-9 text-white mt-10 sm:mt-16 mb-3 mr-20'>
         {featureTitle}
       </h4>
-      <p className='font-Nunito text-white transition-all duration-500 border-t border-white border-opacity-20 pt-5 mt-5 mb-5'>
+      <span className='w-full h-[1px] bg-white bg-opacity-20 inline-block mt-5'></span>
+      <p className='font-Nunito text-white transition-all duration-500 pt-5 mb-5 max-w-[300px] w-full'>
         {featureDesc}
       </p>
       <div className='inline-block text-[40px] text-white text-opacity-40 transition-all duration-500 group-hover:text-opacity-100'>

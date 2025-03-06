@@ -16,7 +16,7 @@ const WhyChoose = () => {
               src={whyChooseThumb}
               draggable={false}
               alt='Why Choose Image'
-              className='xl:w-[inherit] xl:max-w-[inherit] relative -left-20'
+              className='2xl:w-[inherit] 2xl:max-w-[inherit] relative 2xl:-left-20'
             />
             <img
               src={whyChooseShape}
@@ -89,7 +89,7 @@ const WhyChoose = () => {
             src={whyChooseShape2}
             draggable={false}
             alt='Why Choose Shape'
-            className='absolute -right-36 -bottom-32 animate-wiggle hidden md:block'
+            className='absolute -right-36 -bottom-32 animate-wiggle hidden 2xl:block'
           />
         </div>
       </div>

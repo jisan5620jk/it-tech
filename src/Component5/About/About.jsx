@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='pt-16 md:pt-20 lg:pt-[120px] pb-16 md:pb-29 lg:pb-[120px] bg-white relative z-10'>
+    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-29 lg:pb-28 bg-white relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
           <div className='relative z-10 xl:right-[50px]'>
@@ -25,7 +25,7 @@ const About = () => {
               src={shape}
               draggable='false'
               alt='Shape'
-              className='absolute bottom-[127px] left-[84px] animate-wiggle hidden sm:block'
+              className='absolute bottom-[127px] left-[84px] animate-wiggle hidden sm:block lg:hidden xl:block'
             />
             <img
               src={shape2}

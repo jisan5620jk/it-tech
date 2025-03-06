@@ -10,25 +10,25 @@ const Appoinment = () => {
   return (
     <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10">
       <div className='Container'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-center '>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center '>
           <div className='relative'>
             <img
               src={appoinmentThumb}
               draggable={false}
               alt='Appoinment Image'
-              className='2xl:max-w-[inherit] relative -left-12'
+              className='2xl:max-w-[inherit] relative xl:-left-12'
             />
             <img
               src={shape}
               draggable={false}
               alt='Shape'
-              className='absolute top-[32%] left-6 animate-dance3'
+              className='absolute top-[32%] left-6 animate-dance3 hidden md:block'
             />
             <img
               src={shape2}
               draggable={false}
               alt='Shape'
-              className='absolute top-[36%] right-36 animate-wiggle'
+              className='absolute top-[36%] right-36 animate-wiggle hidden md:block'
             />
           </div>
           <div>
@@ -137,7 +137,7 @@ const Appoinment = () => {
         src={shape3}
         draggable={false}
         alt='Shape'
-        className='absolute -top-14 right-0 animate-dance3'
+        className='absolute -top-14 right-0 animate-dance3 hidden 2xl:block'
       />
     </section>
   );

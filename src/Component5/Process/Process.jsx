@@ -58,14 +58,14 @@ const Process = () => {
               Our Proven Process for Digital
               <br /> Excellence IT Solutions
             </h1>
-            <div className='space-y-7 md:space-y-[74px] mt-8'>
+            <div className='space-y-7 md:space-y-[74px] lg:space-y-10 xl:space-y-[74px] mt-8'>
               <div className='process-box group inline-block'>
                 <div className='flex gap-4 sm:gap-7 items-center relative'>
                   <img
                     src={borderShape}
                     draggable={false}
                     alt='Border Shape'
-                    className='absolute -bottom-16 left-[50px] hidden md:block'
+                    className='absolute -bottom-16 left-[50px] hidden md:block lg:hidden xl:block'
                   />
                   <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white flex items-center justify-center shadow-shade relative z-10'>
                     <img
@@ -87,7 +87,7 @@ const Process = () => {
                 </div>
               </div>
               <div className='process-box active group inline-block'>
-                <div className='flex gap-4 sm:gap-7 items-center relative md:left-[192px]'>
+                <div className='flex gap-4 sm:gap-7 items-center relative md:left-[192px] lg:left-20 xl:left-[192px]'>
                   <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white flex items-center justify-center shadow-shade relative z-10 transition-all duration-500'>
                     <img
                       src={processIcon2}
@@ -113,7 +113,7 @@ const Process = () => {
                     src={borderShape}
                     draggable={false}
                     alt='Border Shape'
-                    className='absolute -top-16 left-[50px] [transform:rotateX(180deg)] hidden md:block'
+                    className='absolute -top-16 left-[50px] [transform:rotateX(180deg)] hidden md:block lg:hidden xl:block'
                   />
                   <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white flex items-center justify-center shadow-shade relative z-10'>
                     <img
@@ -136,12 +136,12 @@ const Process = () => {
               </div>
             </div>
           </div>
-          <div className='relative'>
+          <div className='relative flex lg:justify-end'>
             <img
               src={processThumb}
               draggable={false}
               alt='Process Image'
-              className='md:w-[inherit] lg:w-full 2xl:w-[inherit] relative xl:left-5'
+              className='md:w-[inherit] lg:w-11/12 2xl:w-[inherit] relative xl:left-5'
             />
             <img
               src={shape}

@@ -8,9 +8,9 @@ import { HiMiniArrowUpRight } from 'react-icons/hi2';
 const Banner = () => {
   return (
     <div className='bg-BodyBgDark4-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
-      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-bg2.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[1260px] md:h-[1360px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
+      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-bg2.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[780px] md:h-[1560px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
         <div className='Container'>
-          <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-10'>
+          <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] md:pt-0 lg:pt-10'>
             <div className='relative'>
               <h5 className='font-Rajdhani text-PrimaryColor-0 text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
                 <img
@@ -42,11 +42,11 @@ const Banner = () => {
                 </Link>
               </div>
             </div>
-            <div className='sm:flex justify-center lg:justify-end relative -right-[90px] hidden'>
+            <div className='md:flex justify-center lg:justify-end relative 3xl:-right-[90px] hidden md:pb-28'>
               <img
                 src={bannerImg}
                 draggable='false'
-                className='2xl:w-[inherit]'
+                className='3xl:w-[inherit]'
               />
               <div className='absolute top-0 right-0 md:right-20 lg:right-0 xl:right-[90px] size-[65px] rounded-full bg-[#c12dff] flex items-center justify-center animate-rotateX text-white'>
                 <FaDollarSign size={20} />
@@ -61,7 +61,7 @@ const Banner = () => {
             alt='Shape'
           />
         </div>
-        <div className='absolute z-10 bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] bg-white rounded-full flex items-center justify-center border border-PrimaryColor-0 border-opacity-20'>
+        <div className='absolute z-10 bottom-5 md:bottom-24 lg:bottom-0 xl:bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[170px] bg-white rounded-full flex items-center justify-center border border-PrimaryColor-0 border-opacity-20'>
           <div className='size-14 sm:size-24 lg:size-28 xl:size-[100px] animate-rotational'>
             <svg
               xmlns='http://www.w3.org/2000/svg'

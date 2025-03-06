@@ -87,7 +87,7 @@ const Analysis = () => {
               src={whyChooseThumb}
               draggable={false}
               alt='Why Choose Image'
-              className='xl:w-[inherit] xl:max-w-[inherit] relative'
+              className='2xl:w-[inherit] 2xl:max-w-[inherit] relative'
             />
           </div>
         </div>

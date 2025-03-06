@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
       <footer className="bg-[url('/images/footer_bg.jpg')] bg-no-repeat bg-center bg-cover relative pt-28 overflow-hidden">
         <div className='Container'>
-          <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 pb-5 hidden'>
+          <div className='lg:grid gap-y-7 grid-cols-12 border-b border-white border-opacity-10 mt-12 pb-5 hidden'>
             <div className='col-span-12 md:col-span-6 lg:col-span-4'>
               <h4 className='font-Rajdhani text-[28px] text-white font-semibold'>
                 About IT-Tech

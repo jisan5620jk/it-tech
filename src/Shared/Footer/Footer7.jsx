@@ -17,7 +17,7 @@ const Footer7 = () => {
   return (
     <footer className="bg-[url('/images/footer-bg.png')] bg-no-repeat bg-center bg-cover relative pt-16 md:pt-20 lg:pt-28 overflow-hidden">
       <div className='Container'>
-        <div className='grid gap-y-7 grid-cols-12 lg:mt-2'>
+        <div className='grid gap-y-7 grid-cols-12'>
           <div className='col-span-12 md:col-span-6 lg:col-span-4'>
             <div className='mb-[33px]'>
               <Link to={'/home3'}>
