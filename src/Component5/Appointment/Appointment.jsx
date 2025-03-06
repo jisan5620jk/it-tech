@@ -6,7 +6,7 @@ import shape from '/images/contact-shape1.webp';
 import shape2 from '/images/contact-shape2.webp';
 import shape3 from '/images/contact-shape.webp';
 
-const Appoinment = () => {
+const Appointment = () => {
   return (
     <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10">
       <div className='Container'>
@@ -143,4 +143,4 @@ const Appoinment = () => {
   );
 };
 
-export default Appoinment;
+export default Appointment;
