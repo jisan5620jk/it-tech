@@ -15,7 +15,7 @@ const About = () => {
     <section className='pt-16 md:pt-20 lg:pt-[120px] pb-16 md:pb-29 lg:pb-[120px] bg-white relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-          <div className='relative z-10 right-[50px]'>
+          <div className='relative z-10 xl:right-[50px]'>
             <img
               src={aboutThumb}
               draggable='false'
@@ -25,19 +25,19 @@ const About = () => {
               src={shape}
               draggable='false'
               alt='Shape'
-              className='absolute bottom-[127px] left-[84px] animate-wiggle'
+              className='absolute bottom-[127px] left-[84px] animate-wiggle hidden sm:block'
             />
             <img
               src={shape2}
               draggable='false'
               alt='Shape'
-              className='absolute bottom-0 left-20 animate-dance2'
+              className='absolute bottom-0 left-20 animate-dance2 hidden sm:block'
             />
             <img
               src={shape3}
               draggable='false'
               alt='Shape'
-              className='absolute bottom-0 right-0 animate-dance3'
+              className='absolute bottom-0 right-0 animate-dance3 hidden sm:block'
             />
           </div>
           <div className='relative'>

@@ -74,7 +74,7 @@ const Feature = () => {
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute -bottom-24 right-24 animate-dance2'
+        className='absolute -bottom-24 right-24 animate-dance2 hidden lg:block'
       />
     </section>
   );

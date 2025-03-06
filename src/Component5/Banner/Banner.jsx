@@ -61,7 +61,7 @@ const Banner = () => {
             alt='Shape'
           />
         </div>
-        <div className='absolute z-10 2xl:bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] bg-white rounded-full flex items-center justify-center border border-PrimaryColor-0 border-opacity-20'>
+        <div className='absolute z-10 bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[120px] xl:size-[170px] bg-white rounded-full flex items-center justify-center border border-PrimaryColor-0 border-opacity-20'>
           <div className='size-14 sm:size-24 lg:size-28 xl:size-[100px] animate-rotational'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -85,7 +85,7 @@ const Banner = () => {
               </text>
             </svg>
           </div>
-          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-[50px] rounded-full flex items-center justify-center text-white bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0'>
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-8 sm:size-[50px] rounded-full flex items-center justify-center text-white bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0'>
             <HiMiniArrowUpRight size={24} />
           </div>
         </div>
