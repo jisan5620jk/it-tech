@@ -8,11 +8,12 @@ import arrowShape from '/images/arrow-shape.png';
 import shape from '/images/about-shape1.webp';
 import shape2 from '/images/about-shape2.webp';
 import shape3 from '/images/about-shape3.webp';
+import dotShape from '/images/testi-shape.png';
 import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-29 lg:pb-28 bg-white relative z-10'>
+    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-28 bg-white relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
           <div className='relative z-10 xl:right-[50px]'>
@@ -151,6 +152,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <img src={dotShape} draggable={false} alt="Shape"  className='absolute bottom-0 right-0 hidden 2xl:block'/>
     </section>
   );
 };

@@ -4,15 +4,15 @@ import itemIcon from '/images/tam1.png';
 import itemIcon2 from '/images/terget-1.png';
 import itemIcon3 from '/images/time.png';
 import itemIcon4 from '/images/message.png';
-import arrowShape from '/images/arrow-shape.png';
 import shape from '/images/about-shape1.webp';
 import shape2 from '/images/about-shape2.webp';
 import shape3 from '/images/about-shape3.webp';
+import dotShape from '/images/testi-shape.png';
 import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-29 lg:pb-28 bg-white relative z-10'>
+    <section className='pt-[94px] md:pt-[110px] lg:pt-[150px] pb-16 md:pb-20 lg:pb-28 bg-BodyBgDark3-0 relative z-10 -mt-[30px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
           <div className='relative z-10 xl:right-[50px]'>
@@ -111,46 +111,42 @@ const About = () => {
                 </li>
               </ul>
             </div>
-            <div className='flex items-center gap-16'>
-              <Link
-                to={'/about'}
-                className='inline-block'
-              >
-                <button className='primary-btn'>
-                  {`More About`}
-                  <span className='icon-style'>
-                    <svg
-                      className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
-                      xmlns='http://www.w3.org/2000/svg'
-                      stroke='CurrentColor'
-                      width='14.2'
-                      height='14.2'
-                      viewBox='0 0 14.2 14.2'
-                    >
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                      <g>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                        <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
-                      </g>
-                    </svg>
-                  </span>
-                </button>
-              </Link>
-              <div>
-                <img
-                  src={arrowShape}
-                  draggable={false}
-                  alt='Shape'
-                  className='animate-dance3 hidden sm:block'
-                />
-              </div>
-            </div>
+            <Link
+              to={'/about'}
+              className='inline-block'
+            >
+              <button className='primary-btn'>
+                {`More About`}
+                <span className='icon-style'>
+                  <svg
+                    className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    stroke='CurrentColor'
+                    width='14.2'
+                    height='14.2'
+                    viewBox='0 0 14.2 14.2'
+                  >
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                    <g>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                      <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+      <img
+        src={dotShape}
+        draggable={false}
+        alt='Shape'
+        className='brightness-0 invert-[1] absolute bottom-0 right-0 hidden 2xl:block'
+      />
     </section>
   );
 };

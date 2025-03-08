@@ -20,7 +20,7 @@ import { IoMdPaperPlane, IoMdStar } from 'react-icons/io';
 import { GoArrowUpRight } from 'react-icons/go';
 import { GiPhone } from 'react-icons/gi';
 
-const Navbar5 = () => {
+const Navbar6 = () => {
   //sticky
 
   useEffect(() => {
@@ -263,7 +263,7 @@ const Navbar5 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex flex-col lg:flex-row lg:items-center justify-between bg-BodyBgDark4-0'>
+      <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex flex-col lg:flex-row lg:items-center justify-between bg-BodyBgDark5-0'>
         <div className='hidden sm:flex lg:flex items-center gap-2 md:hidden py-3 md:py-0'>
           <div className='size-[16px] rounded-full flex items-center justify-center text-BodyBgDark4-0 bg-white'>
             <IoMdStar size={14} />
@@ -327,7 +327,7 @@ const Navbar5 = () => {
           </ul>
         </div>
       </div>
-      <div className='header-area header-sticky'>
+      <div className='header-area style-two header-sticky'>
         <div className='px-4 sm:px-6 md:px-10 lg:px-4 xl:px-10 2xl:px-14 3xl:px-[90px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
@@ -715,4 +715,4 @@ const Navbar5 = () => {
   );
 };
 
-export default Navbar5;
+export default Navbar6;

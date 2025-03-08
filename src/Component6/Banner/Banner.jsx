@@ -2,17 +2,17 @@ import { Link } from 'react-router-dom';
 import bannerImg from '/images/technology-thumb.png';
 import subTilteShape from '/images/hero-title-shape1.png';
 import shape from '/images/animation-shape.webp';
-import { FaArrowRightLong, FaDollarSign } from 'react-icons/fa6';
+import { FaDollarSign } from 'react-icons/fa6';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const Banner = () => {
   return (
-    <div className='bg-BodyBgDark4-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
-      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-bg2.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[780px] md:h-[1560px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
+    <div className='bg-BodyBgDark5-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
+      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-dark-bg.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[780px] md:h-[1560px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
         <div className='Container'>
           <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] md:pt-0 lg:pt-10'>
             <div className='relative'>
-              <h5 className='font-Rajdhani text-PrimaryColor-0 text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
+              <h5 className='font-Rajdhani text-white text-xl font-semibold flex items-center gap-2 mb-4 uppercase'>
                 <img
                   src={subTilteShape}
                   alt='Shape'
@@ -21,14 +21,14 @@ const Banner = () => {
                 />
                 Best software agency
               </h5>
-              <h1 className='font-Rajdhani font-extrabold text-HeadingColor-0 text-[27px] leading-[30px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[70px] 2xl:leading-[68px]'>
+              <h1 className='font-Rajdhani font-extrabold text-white text-[27px] leading-[30px] sm:text-[56px] sm:leading-[60px] md:text-[68x] lg:text-[50px] xl:text-[58px] xl:leading-[68px] 2xl:text-[70px] 2xl:leading-[68px]'>
                 Driving Innovation for
                 <br />
                 Delivering Excellence
                 <br />
                 Best IT Startup
               </h1>
-              <p className='font-Nunito sm:text-xl text-TextColor2-0 mb-10 mt-6'>
+              <p className='font-Nunito sm:text-xl text-white text-opacity-70 mb-10 mt-6'>
                 Continually formulate B2C partnerships orthogonal software
                 <br className='hidden 2xl:block' /> maintainable quality through
                 low budgets
@@ -36,8 +36,26 @@ const Banner = () => {
               <div className='mb-9'>
                 <Link to={'/about'}>
                   <button className='primary-btn'>
-                    {`Learn More`}
-                    <FaArrowRightLong size={'18'} />
+                    {`Discover More`}
+                    <span className='icon-style'>
+                      <svg
+                        className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                        xmlns='http://www.w3.org/2000/svg'
+                        stroke='CurrentColor'
+                        width='14.2'
+                        height='14.2'
+                        viewBox='0 0 14.2 14.2'
+                      >
+                        <g>
+                          <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                          <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        </g>
+                        <g>
+                          <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                          <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                        </g>
+                      </svg>
+                    </span>
                   </button>
                 </Link>
               </div>
@@ -61,7 +79,7 @@ const Banner = () => {
             alt='Shape'
           />
         </div>
-        <div className='absolute z-10 bottom-5 md:bottom-24 lg:bottom-0 xl:bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[170px] bg-white rounded-full flex items-center justify-center border border-PrimaryColor-0 border-opacity-20'>
+        <div className='absolute z-10 bottom-5 md:bottom-24 lg:bottom-0 xl:bottom-5 left-1/2 -translate-x-1/2 size-[74px] sm:size-[142px] lg:size-[170px] bg-[#306eff] rounded-full flex items-center justify-center border-2 border-white border-opacity-40'>
           <div className='size-14 sm:size-24 lg:size-28 xl:size-[100px] animate-rotational'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -78,7 +96,7 @@ const Banner = () => {
                   id='e-text-path-35ee1b2'
                   href='#e-path-35ee1b2'
                   startOffset='0%'
-                  className='fill-HeadingColor-0'
+                  className='fill-white'
                 >
                   ● STARTUP ● AWARD WINNING ● BEST AGENCY
                 </textPath>
