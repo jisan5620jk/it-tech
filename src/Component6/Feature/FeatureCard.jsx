@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import shape from '/images/border.webp';
+import shape from '/images/border-dark.png';
 
 const FeatureCard = ({
   featureIcon,

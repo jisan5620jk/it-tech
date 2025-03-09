@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar6 from '../Shared/Navbar/Navbar6';
 import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer5 from '../Shared/Footer/Footer5';
+import Footer6 from '../Shared/Footer/Footer6';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -35,7 +35,7 @@ const Main6 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer5 />
+      <Footer6 />
     </>
   );
 };

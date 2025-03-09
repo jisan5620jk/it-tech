@@ -48,11 +48,11 @@ const WhyChoose = () => {
             </p>
             <div className='space-y-6 border-t border-SecondaryColor-0 border-opacity-10 pt-7 mt-6'>
               <div className='flex gap-3 group'>
-                <div className='animate-wobble_vertical text-PrimaryColor-0'>
+                <div className='group-hover:animate-wobble_vertical text-PrimaryColor-0'>
                   <TbRosetteDiscountCheckFilled size={34} />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
                     Market Research
                   </h5>
                   <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>
@@ -62,11 +62,11 @@ const WhyChoose = () => {
                 </div>
               </div>
               <div className='flex gap-3 group'>
-                <div className='animate-wobble_vertical text-PrimaryColor-0'>
+                <div className='group-hover:animate-wobble_vertical text-PrimaryColor-0'>
                   <TbRosetteDiscountCheckFilled size={34} />
                 </div>
                 <div className='flex-1 -mt-1'>
-                  <h5 className='font-Rajdhani font-semibold text-2xl pb-[6px]'>
+                  <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-2xl pb-[6px]'>
                     Project Analysis
                   </h5>
                   <p className='font-Nunito text-TextColor2-0 max-w-[370px] w-full'>

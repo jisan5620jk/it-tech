@@ -88,24 +88,25 @@ const Work = () => {
     },
   };
   return (
-    <section className='work-section mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] py-16 md:py-20 lg:py-28'>
+    <section className='work-section bg-BodyBgDark3-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] py-16 md:py-20 lg:py-28'>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
             <img
               src={titleShape}
               draggable={false}
               alt='Shape'
+              className='brightness-0 invert-[1]'
             />{' '}
             LATEST WORKS{' '}
             <img
               src={titleShape}
               draggable={false}
               alt='Shape'
-              className='rotate-180'
+              className='rotate-180 brightness-0 invert-[1]'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Driving Change with Innovative
             <br />
             Successful Projects

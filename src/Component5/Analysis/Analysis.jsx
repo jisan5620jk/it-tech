@@ -1,5 +1,6 @@
 import titleShape from '/images/sub-title-shape.png';
 import whyChooseThumb from '/images/choose-us-thumb2.webp';
+import analysisShape from '/images/choose-us-shpe2.webp';
 import { RiCheckboxCircleFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
@@ -88,6 +89,12 @@ const Analysis = () => {
               draggable={false}
               alt='Why Choose Image'
               className='2xl:w-[inherit] 2xl:max-w-[inherit] relative'
+            />
+            <img
+              src={analysisShape}
+              draggable={false}
+              alt='Why Choose Shape'
+              className='absolute left-60 bottom-14 animate-dance3 hidden md:block'
             />
           </div>
         </div>

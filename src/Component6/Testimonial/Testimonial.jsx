@@ -89,55 +89,58 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl">
-      <div className='Container md:-mb-[130px]'>
-        <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-          <img
-            src={titleShape}
-            draggable={false}
-            alt='Shape'
-          />{' '}
-          Testimonials
-        </h5>
-        <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-          Trusted By Industry Leader
-          <br /> Clients Testimonial
-        </h1>
-      </div>
-      <div className='mt-[46px]'>
-        <Swiper {...settings}>
-          {testiData.map(
-            ({
-              id,
-              testiShape,
-              testiTitle,
-              testiRatingIcon,
-              testiName,
-              testiProfile,
-              testiDesignation,
-              testiDesc,
-            }) => {
-              return (
-                <SwiperSlide key={id}>
-                  <div className='pt-[100px] md:pt-[138px]'>
-                    <TestimonialCard
-                      testiShape={testiShape}
-                      testiTitle={testiTitle}
-                      testiRatingIcon={testiRatingIcon}
-                      testiName={testiName}
-                      testiProfile={testiProfile}
-                      testiDesignation={testiDesignation}
-                      testiDesc={testiDesc}
-                    />
-                  </div>
-                </SwiperSlide>
-              );
-            }
-          )}
-          <TestiNavigation />
-        </Swiper>
-      </div>
-    </section>
+    <div className='bg-BodyBgDark3-0'>
+      <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-BodyBgDark2-0 relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl'>
+        <div className='Container md:-mb-[130px]'>
+          <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+              className='brightness-0 invert-[1]'
+            />{' '}
+            Testimonials
+          </h5>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
+            Trusted By Industry Leader
+            <br /> Clients Testimonial
+          </h1>
+        </div>
+        <div className='mt-[46px]'>
+          <Swiper {...settings}>
+            {testiData.map(
+              ({
+                id,
+                testiShape,
+                testiTitle,
+                testiRatingIcon,
+                testiName,
+                testiProfile,
+                testiDesignation,
+                testiDesc,
+              }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <div className='pt-[100px] md:pt-[138px]'>
+                      <TestimonialCard
+                        testiShape={testiShape}
+                        testiTitle={testiTitle}
+                        testiRatingIcon={testiRatingIcon}
+                        testiName={testiName}
+                        testiProfile={testiProfile}
+                        testiDesignation={testiDesignation}
+                        testiDesc={testiDesc}
+                      />
+                    </div>
+                  </SwiperSlide>
+                );
+              }
+            )}
+            <TestiNavigation />
+          </Swiper>
+        </div>
+      </section>
+    </div>
   );
 };
 

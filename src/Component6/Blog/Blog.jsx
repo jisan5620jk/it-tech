@@ -4,7 +4,6 @@ import blogThumb2 from '/images/blog_img2.png';
 import blogThumb3 from '/images/blog_img3.png';
 import titleShape from '/images/sub-title-shape.png';
 import BlogCard from './BlogCard';
-import { GoArrowRight } from 'react-icons/go';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
@@ -22,8 +21,6 @@ const blogData = [
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
     blogTitle: 'Expert Advice for Growing Your Digital Presence',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 2,
@@ -34,8 +31,6 @@ const blogData = [
     blogPost: 'By - Samira Khan',
     blogUrl: '/blog_details',
     blogTitle: 'Data-Driven Strategies and Case Studies Success',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
   {
     id: 3,
@@ -46,8 +41,6 @@ const blogData = [
     blogPost: 'By - Anjelina Watson',
     blogTitle: 'The Complete SEO Blog for Digital Success',
     blogUrl: '/blog_details',
-    blogBtn: 'Read More',
-    blogBtnIcon: <GoArrowRight />,
   },
 ];
 
@@ -80,24 +73,25 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white'>
+    <section className='py-16 md:py-20 lg:py-28 bg-BodyBgDark3-0'>
       <div className='Container'>
         <div className='text-center'>
-          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+          <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-white uppercase'>
             <img
               src={titleShape}
               draggable={false}
               alt='Shape'
+              className='brightness-0 invert-[1]'
             />{' '}
             Latest Blog{' '}
             <img
               src={titleShape}
               draggable={false}
               alt='Shape'
-              className='rotate-180'
+              className='rotate-180 brightness-0 invert-[1]'
             />
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[38px] md:leading-[48px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
             Ready Our Latest Insights from
             <br /> Our Blog Posts
           </h1>
@@ -114,8 +108,6 @@ const Blog = () => {
                 blogPost,
                 blogUrl,
                 blogTitle,
-                blogBtn,
-                blogBtnIcon,
               }) => {
                 return (
                   <SwiperSlide key={id}>
@@ -127,8 +119,6 @@ const Blog = () => {
                       blogPost={blogPost}
                       blogUrl={blogUrl}
                       blogTitle={blogTitle}
-                      blogBtn={blogBtn}
-                      blogBtnIcon={blogBtnIcon}
                     />
                   </SwiperSlide>
                 );
