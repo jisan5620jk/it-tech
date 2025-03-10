@@ -435,8 +435,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
 
 /* Stroke */
 
-.portfolio-icon {
-  -webkit-text-stroke: 1px #dadddf;
+.counter-text {
+  -webkit-text-stroke: 1px #042414;
 }
 
 /* Portfolio */
