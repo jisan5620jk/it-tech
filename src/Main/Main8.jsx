@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar8 from '../Shared/Navbar/Navbar8';
 import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer2 from '../Shared/Footer/Footer2';
+import Footer8 from '../Shared/Footer/Footer8';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HelmetChanger from '../Shared/Helmet/Helmet';
@@ -35,7 +35,7 @@ const Main8 = () => {
       <div>
         <Outlet />
       </div>
-      <Footer2 />
+      <Footer8 />
     </>
   );
 };

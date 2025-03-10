@@ -5,12 +5,14 @@ import aboutIcon from '/images/about-icon.webp';
 import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
 import shape from '/images/about-shape.webp';
-import { GoArrowRight, GoCheckCircleFill } from 'react-icons/go';
+import { GoArrowRight } from 'react-icons/go';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import AboutNavigation from './AboutNavigation';
+import './about.css';
+import { FaCheck } from 'react-icons/fa6';
 
 const About = () => {
   const settings = {
@@ -23,6 +25,20 @@ const About = () => {
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
   };
+
+  const tabs = document.querySelectorAll('.mission-vission-tab-btn');
+  const allContent = document.querySelectorAll('.mission-vission-tab-content');
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((tab) => tab.classList.remove('active'));
+      tab.classList.add('active');
+
+      allContent.forEach((content) => content.classList.remove('active'));
+      allContent[index].classList.add('active');
+    });
+  });
+
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBg7-0 relative'>
       <div className='Container'>
@@ -109,65 +125,96 @@ const About = () => {
               </div>
               <h4 className='font-Rajdhani font-semibold text-2xl text-white mt-10'>
                 Secure Your House
-                <br />Office Building And
-                <br />Protected Area
+                <br />
+                Office Building And
+                <br />
+                Protected Area
               </h4>
-              <Link to={'/contact'} className='flex items-center justify-start gap-2 font-Rajdhani font-semibold text-lg text-white uppercase'>Contact Us<GoArrowRight size={22} /></Link>
+              <Link
+                to={'/contact'}
+                className='flex items-center justify-start gap-2 font-Rajdhani font-semibold text-lg text-white uppercase'
+              >
+                Contact Us
+                <GoArrowRight size={22} />
+              </Link>
             </div>
           </div>
           <div className='relative'>
-            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-              <img
-                src={titleShape}
-                draggable={false}
-                alt='Shape'
-              />{' '}
-              About Us
-            </h5>
             <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Discover Our Security Story
             </h1>
-            <p className='font-Nunito text-TextColor2-0 pb-7'>
-              Competently leverage existing top-line bandwidth vis-a-vis
-              client-centric supply chains. Enthusiastically maximize cost
-              effective technologies dynamically negotiate multimedia based
-              e-commerce competitive
-            </p>
-            <ul className='grid grid-cols-1 sm:grid-cols-2'>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
-                <div className='text-PrimaryColor-0'>
-                  <GoCheckCircleFill size={20} />
-                </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
-                  Autonomous Navigation
-                </h5>
+            <ul className='flex items-center gap-10 border-b border-SecondaryColor-0 border-opacity-10'>
+              <li className='mission-vission-tab-btn active font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 relative z-10'>
+                Our Mission
               </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
-                <div className='text-PrimaryColor-0'>
-                  <GoCheckCircleFill size={20} />
-                </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
-                  AI-Powered Decision Making
-                </h5>
-              </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
-                <div className='text-PrimaryColor-0'>
-                  <GoCheckCircleFill size={20} />
-                </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
-                  Real-Time Data Processing
-                </h5>
-              </li>
-              <li className='font-Rajdhani font-semibold text-HeadingColor-0 flex items-center lg:items-start xl:items-center gap-2 mb-3'>
-                <div className='text-PrimaryColor-0'>
-                  <GoCheckCircleFill size={20} />
-                </div>
-                <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl lg:-mt-1 xl:mt-0'>
-                  Adaptive Learning
-                </h5>
+              <li className='mission-vission-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 relative z-10'>
+                Our Vission
               </li>
             </ul>
-
+            <div className='mission-vission-tab-content active'>
+              <p className='font-Nunito text-TextColor2-0 pb-7'>
+                At IT-Tech, our mission is to empower businesses by providing
+                innovative and reliable IT solutions. We aim transform the
+                payment our clients operate through cutting-edge technology,
+                tailored services, and unwavering support. Our goal is to
+                organizations to achieve their full potential by optimizing
+                their IT infrastructure, enhancing security to your busines, and
+                streamlining processes.
+              </p>
+            </div>
+            <div className='mission-vission-tab-content'>
+              <p className='font-Nunito text-TextColor2-0 pb-7'>
+                At IT-Tech, our vission is to empower businesses by providing
+                innovative and reliable IT solutions. We aim transform the
+                payment our clients operate through cutting-edge technology,
+                tailored services, and unwavering support. Our goal is to
+                organizations to achieve their full potential by optimizing
+                their IT infrastructure, enhancing security to your busines, and
+                streamlining processes.
+              </p>
+            </div>
+            <div className='flex flex-wrap gap-5'>
+              <div className='inline-block'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                  <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
+                    <FaCheck size={16} />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-HeadingColor-0 text-lg'>
+                    High-Definition Video Quality
+                  </h5>
+                </div>
+              </div>
+              <div className='inline-block'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                  <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
+                    <FaCheck size={16} />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-HeadingColor-0 text-lg'>
+                    Remote Access & Control
+                  </h5>
+                </div>
+              </div>
+              <div className='inline-block'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                  <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
+                    <FaCheck size={16} />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-HeadingColor-0 text-lg'>
+                    Night Vision Technology
+                  </h5>
+                </div>
+              </div>
+              <div className='inline-block'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                  <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
+                    <FaCheck size={16} />
+                  </div>
+                  <h5 className='flex-1 font-Rajdhani font-semibold text-HeadingColor-0 text-lg'>
+                    6 Years Warranty
+                  </h5>
+                </div>
+              </div>
+            </div>
             <Link
               to={'/about'}
               className='inline-block mt-7'

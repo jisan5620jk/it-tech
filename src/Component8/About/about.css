@@ -1,0 +1,30 @@
+.mission-vission-tab-btn::before {
+    position: absolute;content: '';bottom: -1px;right: 0;width: 0;
+    height: 100%;border-bottom: 2px solid #2852fc;transition: all .5s;
+}
+
+.mission-vission-tab-btn.active::before {left: 0;width: 100%;
+}
+
+
+.mission-vission-tab-content {
+  display: none;
+}
+
+.mission-vission-tab-content.active {
+  display: block !important;
+  animation: fadeInUp 0.5s linear;
+}
+@keyframes fadeInUp {
+  0% {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
