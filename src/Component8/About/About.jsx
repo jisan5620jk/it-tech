@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBg7-0 relative'>
       <div className='Container'>
-        <div className='flex lg:items-center justify-start lg:justify-between gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-4'>
+        <div className='flex lg:items-center justify-start lg:justify-between gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-7'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -140,19 +140,19 @@ const About = () => {
             </div>
           </div>
           <div className='relative'>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[38px] 2xl:leading-[48px] text-HeadingColor-0 mt-[14px] mb-6'>
               Discover Our Security Story
             </h1>
-            <ul className='flex items-center gap-10 border-b border-SecondaryColor-0 border-opacity-10'>
-              <li className='mission-vission-tab-btn active font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 relative z-10'>
+            <ul className='flex items-center gap-10 border-b border-SecondaryColor-0 border-opacity-10 pb-3 mb-8'>
+              <li className='mission-vission-tab-btn active font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 cursor-pointer relative z-10'>
                 Our Mission
               </li>
-              <li className='mission-vission-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 relative z-10'>
+              <li className='mission-vission-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 cursor-pointer relative z-10'>
                 Our Vission
               </li>
             </ul>
             <div className='mission-vission-tab-content active'>
-              <p className='font-Nunito text-TextColor2-0 pb-7'>
+              <p className='font-Nunito text-TextColor2-0'>
                 At IT-Tech, our mission is to empower businesses by providing
                 innovative and reliable IT solutions. We aim transform the
                 payment our clients operate through cutting-edge technology,
@@ -163,7 +163,7 @@ const About = () => {
               </p>
             </div>
             <div className='mission-vission-tab-content'>
-              <p className='font-Nunito text-TextColor2-0 pb-7'>
+              <p className='font-Nunito text-TextColor2-0'>
                 At IT-Tech, our vission is to empower businesses by providing
                 innovative and reliable IT solutions. We aim transform the
                 payment our clients operate through cutting-edge technology,
@@ -173,9 +173,9 @@ const About = () => {
                 streamlining processes.
               </p>
             </div>
-            <div className='flex flex-wrap gap-5'>
+            <div className='flex flex-wrap gap-5 mt-7 mb-3'>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -185,7 +185,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -195,7 +195,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -205,7 +205,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[6px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
