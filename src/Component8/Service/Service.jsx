@@ -1,16 +1,19 @@
-import servicethumb from '/images/faqs-thumb.webp';
+import serviceItemThumb from '/images/faqs-thumb.webp';
+import serviceThumb from '/images/faqs-right.webp';
 import titleShape from '/images/sub-title-shape.png';
 import { useEffect, useRef, useState } from 'react';
 import { FaCheck, FaMinus } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { GoArrowRight } from 'react-icons/go';
+import ProgressBar from 'react-animated-progress-bar';
+import './service.css';
 
 const serviceData = [
   {
     id: 1,
     itemTitle: 'Security Consulting',
     itemBoxTitle: 'Key Features',
-    thumb: servicethumb,
+    thumb: serviceItemThumb,
     btnTitle: 'Details',
     btnIcon: <GoArrowRight />,
   },
@@ -18,7 +21,7 @@ const serviceData = [
     id: 2,
     itemTitle: 'Watchful Eyes CCTV',
     itemBoxTitle: 'Key Features',
-    thumb: servicethumb,
+    thumb: serviceItemThumb,
     btnTitle: 'Details',
     btnIcon: <GoArrowRight />,
   },
@@ -26,7 +29,7 @@ const serviceData = [
     id: 3,
     itemTitle: 'IntelliView Surveillance',
     itemBoxTitle: 'Key Features',
-    thumb: servicethumb,
+    thumb: serviceItemThumb,
     btnTitle: 'Details',
     btnIcon: <GoArrowRight />,
   },
@@ -34,7 +37,7 @@ const serviceData = [
     id: 4,
     itemTitle: 'SecureScope Solutions',
     itemBoxTitle: 'Key Features',
-    thumb: servicethumb,
+    thumb: serviceItemThumb,
     btnTitle: 'Details',
     btnIcon: <GoArrowRight />,
   },
@@ -81,27 +84,60 @@ const Service = () => {
 
   return (
     <section className='bg-HeadingColor-0 py-16 md:py-20 lg:py-28 relative z-10'>
-      <div className='Container '>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-7 relative z-10'>
+      <div className='Container'>
+        <div className='flex items-center justify-between'>
           <div>
-            <div>
-              <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
-                <img
-                  src={titleShape}
-                  draggable={false}
-                  alt='Shape'
-                />{' '}
-                WHAT WE PROVIDE
-              </h5>
-              <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-white mt-[14px] mb-4'>
-                Services we Provide
-              </h1>
-            </div>
-            <ul className='mt-7'>
+            <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              WHAT WE PROVIDE
+            </h5>
+            <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-white mt-[14px] mb-4'>
+              Services we Provide
+            </h1>
+          </div>
+          <div>
+            <Link
+              to={'/service'}
+              className='service-btn group relative z-10 overflow-hidden size-[140px] rounded-full bg-white bg-opacity-10 text-center font-Rajdhani text-lg leading-6 font-semibold uppercase text-white flex flex-col justify-center items-center'
+            >
+              All <br />
+              Services <br />
+              <span className='icon-style'>
+                <svg
+                  className='qodef-svg--custom-arrow qodef-m-arrow inline-block h-[10px] w-auto transition-all duration-500'
+                  xmlns='http://www.w3.org/2000/svg'
+                  stroke='CurrentColor'
+                  width='14.2'
+                  height='14.2'
+                  viewBox='0 0 14.2 14.2'
+                >
+                  <g>
+                    <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                  </g>
+                  <g>
+                    <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                    <path d='M13.2 9V1h-8M13.4.8.7 13.5'></path>
+                  </g>
+                </svg>
+              </span>
+              <span className='absolute left-4 bottom-0 -z-10 size-7 rounded-full bg-PrimaryColor-0 inline-block ease-in transition-all duration-500 group-hover:size-[180px] group-hover:-left-10 group-hover:-bottom-6'></span>
+            </Link>
+          </div>
+        </div>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-7 relative z-10 mt-5'>
+          <div>
+            <ul className=''>
               {serviceData.map((serviceItem, index) => (
                 <li
                   key={index}
-                  className={`border-white border-opacity-10 ${index === 0 ? 'border-t-none' : 'border-t'}`}
+                  className={`border-white border-opacity-10 ${
+                    index === 0 ? 'border-t-none' : 'border-t'
+                  }`}
                 >
                   <div className=''>
                     <div
@@ -180,6 +216,77 @@ const Service = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className='border-t border-white border-opacity-10 max-w-[536px] w-full mt-[76px] ml-auto'>
+            <p className='font-Nunito text-white text-opacity-60 pt-6'>
+              Distinctively matrix highly efficient niches rather than
+              market-driven core Seamlessly maximize dynamic initiatives rather
+              sustainable best practices. negotiate efficient synergy
+              multidisciplinary
+            </p>
+            <div className='my-7'>
+              <img
+                src={serviceThumb}
+                draggable={false}
+                alt='Service Image'
+              />
+            </div>
+            <div>
+              <h5 className='font-Rajdhani font-semibold text-xl text-white relative z-20 mb-[9px]'>
+                Expert Technician
+              </h5>
+              <div className='relative z-10 service-progress'>
+                <ProgressBar
+                  rect
+                  width='100%'
+                  height='7px'
+                  fontColor='#ffffff'
+                  fontSize='20px'
+                  leading='10px'
+                  margin='0px'
+                  rectBorderRadius='10px'
+                  fontWeight='600'
+                  percentage='85'
+                  defColor={{
+                    excellent: '#eff3ff',
+                    good: '#eff3ff',
+                    fair: 'green',
+                    poor: 'red',
+                  }}
+                  trackPathColor='#ffffff24'
+                  trackBorderColor='transparent'
+                  trackPathBorderRadius='6px'
+                />
+              </div>
+            </div>
+            <div className='mt-6'>
+              <h5 className='font-Rajdhani font-semibold text-xl text-white relative z-20 mb-[9px]'>
+                Client Satisfaction
+              </h5>
+              <div className='relative z-10 service-progress'>
+                <ProgressBar
+                  rect
+                  width='100%'
+                  height='7px'
+                  fontColor='#ffffff'
+                  fontSize='20px'
+                  leading='10px'
+                  margin='0px'
+                  rectBorderRadius='10px'
+                  fontWeight='600'
+                  percentage='97'
+                  defColor={{
+                    excellent: '#eff3ff',
+                    good: '#eff3ff',
+                    fair: 'green',
+                    poor: 'red',
+                  }}
+                  trackPathColor='#ffffff24'
+                  trackBorderColor='transparent'
+                  trackPathBorderRadius='6px'
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

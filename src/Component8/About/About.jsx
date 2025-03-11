@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBg7-0 relative'>
       <div className='Container'>
-        <div className='flex lg:items-center justify-start lg:justify-between gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-7'>
+        <div className='flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-7'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -52,7 +52,7 @@ const About = () => {
               />{' '}
               About Us
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[80px] 2xl:leading-[82px] text-HeadingColor-0 mt-[14px] mb-4'>
+            <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-HeadingColor-0 mt-[14px] mb-4'>
               Company Area
             </h1>
           </div>

@@ -49,7 +49,7 @@ const Skill = () => {
                     fontSize='20px'
                     leading='10px'
                     margin='0px'
-                    rectBorderRadius='5px'
+                    rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='80'
                     defColor={{
@@ -77,7 +77,7 @@ const Skill = () => {
                     fontSize='20px'
                     leading='10px'
                     margin='0px'
-                    rectBorderRadius='5px'
+                    rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='90'
                     defColor={{
@@ -105,7 +105,7 @@ const Skill = () => {
                     fontSize='20px'
                     leading='10px'
                     margin='0px'
-                    rectBorderRadius='5px'
+                    rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='70'
                     defColor={{
