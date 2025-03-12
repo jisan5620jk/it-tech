@@ -31,6 +31,7 @@ export default {
         BoxBg: ['#2549d1'],
         BoxBg2: ['#1030a9'],
         BoxBg3: ['#341bfa'],
+        BoxBg4: ['#e6edf3'],
         BorderColor: ['#ffffff21'],
         BorderColor2: ['#dce1e5'],
         BorderColor3: ['#83A8FF'],

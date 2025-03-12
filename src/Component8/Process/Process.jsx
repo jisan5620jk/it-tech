@@ -43,8 +43,8 @@ const Process = () => {
           <div className='absolute top-[38px] left-0 w-full'>
             <span className='w-full h-[2px] border-[1.5px] border-dashed border-SecondaryColor-0 border-opacity-15 inline-block'></span>
             <div className='flex justify-around -mt-[15px]'>
-              <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>{' '}
-              <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>{' '}
+              <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>
+              <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>
               <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>
             </div>
           </div>

@@ -1,93 +1,28 @@
-import star from '/images/star.png';
-import './marquee.css';
+import './marquee2.css';
 
 const Marquee = () => {
   return (
     <div>
-      <div className='marquee-text-section'>
-        <div className='marquee-animation'>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
+      <div className='marquee-text-section2'>
+        <div className='marquee-animation2'>
+          <span className='marquee-text-item2'>New Technology</span>
+          <span className='marquee-text-item2 stroke'>High Security</span>
+          <span className='marquee-text-item2'>Best Safty</span>
+          <span className='marquee-text-item2 stroke'>New Technology</span>
+          <span className='marquee-text-item2'>High Security</span>
+          <span className='marquee-text-item2 stroke'>Best Safty</span>
+          <span className='marquee-text-item2'>New Technology</span>
+          <span className='marquee-text-item2 stroke'>High Security</span>
         </div>
-        <div className='marquee-animation'>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>Industrial Robotics</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item'>DATA SCIENCE</span>
-          <span className='marquee-text-item animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
+        <div className='marquee-animation2'>
+          <span className='marquee-text-item2'>New Technology</span>
+          <span className='marquee-text-item2 stroke'>High Security</span>
+          <span className='marquee-text-item2'>Best Safty</span>
+          <span className='marquee-text-item2 stroke'>New Technology</span>
+          <span className='marquee-text-item2'>High Security</span>
+          <span className='marquee-text-item2 stroke'>Best Safty</span>
+          <span className='marquee-text-item2'>New Technology</span>
+          <span className='marquee-text-item2 stroke'>High Security</span>
         </div>
       </div>
     </div>
