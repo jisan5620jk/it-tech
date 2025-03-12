@@ -41,7 +41,7 @@ const TestimonialCard = ({
       <p className='font-Nunito text-HeadingColor-0 text-[22px]'>{testiDesc}</p>
 
       <div className='flex justify-between flex-wrap items-center mt-[60px]'>
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-5'>
           <div>
             <img
               src={testiProfile}
@@ -53,7 +53,7 @@ const TestimonialCard = ({
             <h5 className='font-Rajdhani font-semibold inline-block text-HeadingColor-0 text-2xl relative'>
               {testiName}
             </h5>
-            <p className='font-Nunito text-TextColor2-0'>{testiDesignation}</p>
+            <p className='font-Nunito text-TextColor2-0 mt-[2px]'>{testiDesignation}</p>
           </div>
         </div>
         <div>
