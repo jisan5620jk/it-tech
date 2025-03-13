@@ -16,7 +16,7 @@ const BlogCard = ({
           src={blogThumb}
           className='transition-all duration-500 scale-100 group-hover:scale-110 w-full'
         />
-        <div className='absolute z-20 left-1/2 -translate-x-1/2 bottom-0 w-[calc(100%-20px)] sm:w-[calc(100%-40px)] mx-auto flex justify-center bg-white rounded-t-lg transition-all duration-500 px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pt-3 sm:pt-5 md:pt-7 sm:-mb-2 group-hover:pb-10'>
+        <div className='absolute z-20 left-1/2 -translate-x-1/2 bottom-0 w-[calc(100%-20px)] sm:w-[calc(100%-40px)] mx-auto flex justify-center bg-BodyBg8-0 rounded-t-lg transition-all duration-500 px-3 md:px-5 lg:px-[30px] 2xl:px-[30px] pt-3 sm:pt-5 md:pt-7 sm:-mb-2 group-hover:pb-10'>
           <div className='mx-auto relative w-full'>
             <p className='font-Rajdhani font-semibold text-HeadingColor-0 sm:text-lg flex gap-2 items-center leading-[15px]'>
               <img

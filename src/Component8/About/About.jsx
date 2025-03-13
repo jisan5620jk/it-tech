@@ -91,30 +91,32 @@ const About = () => {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-[92px] lg:gap-10 2xl:gap-12 items-center'>
           <div className='relative z-10 3xl:pr-12'>
-            <Swiper {...settings}>
-              <SwiperSlide>
-                <img
-                  src={aboutThumb}
-                  draggable='false'
-                  className='w-full'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={aboutThumb2}
-                  draggable='false'
-                  className='w-full'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  src={aboutThumb3}
-                  draggable='false'
-                  className='w-full'
-                />
-              </SwiperSlide>
-              <AboutNavigation />
-            </Swiper>
+            <div className='rounded-[10px] overflow-hidden'>
+              <Swiper {...settings}>
+                <SwiperSlide>
+                  <img
+                    src={aboutThumb}
+                    draggable='false'
+                    className='w-full'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={aboutThumb2}
+                    draggable='false'
+                    className='w-full'
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={aboutThumb3}
+                    draggable='false'
+                    className='w-full'
+                  />
+                </SwiperSlide>
+                <AboutNavigation />
+              </Swiper>
+            </div>
             <div className='absolute z-10 bottom-[82px] -left-[64px] pl-9 pr-[43px] py-8 hidden md:block bg-PrimaryColor2-0 rounded-t-lg rounded-l-lg'>
               <div>
                 <img

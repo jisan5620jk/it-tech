@@ -18,7 +18,7 @@ const blogData = [
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
     blogUrl: '/blog_details',
-    blogTitle: 'Top 5 Ways Robotics Can Boost Your Productivity',
+    blogTitle: 'How to Optimize Your CCTV Camera Placement',
     blogBtnText: 'Read More',
   },
   {
@@ -36,7 +36,7 @@ const blogData = [
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
     blogUrl: '/blog_details',
-    blogTitle: 'Exploring Self-Driving Cars to Factory Automation',
+    blogTitle: 'Top 5 Benefits of Installing CCTV Commercial Properties',
     blogBtnText: 'Read More',
   },
 ];
@@ -73,7 +73,7 @@ const Blog = () => {
     },
   };
   return (
-    <section className='py-16 md:py-20 lg:py-28 bg-white'>
+    <section className='py-16 md:py-20 lg:py-28 bg-BodyBg8-0'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
@@ -85,9 +85,8 @@ const Blog = () => {
               />{' '}
               Latest Blog
             </h5>
-            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-              Ready Our Latest Insights
-              <br /> from Our Blog Posts
+            <h1 className='font-Rajdhani font-bold text-[40px] leading-[42px] sm:text-[50px] sm:leading-[52px] md:text-[60px] md:leading-[72px] lg:text-[60px] lg:leading-[62px] xl:text-[70px] xl:leading-[72px] 2xl:text-[80px] 2xl:leading-[82px] text-HeadingColor-0 mt-[14px]'>
+              Latest Insights
             </h1>
           </div>
           <div className=''>
@@ -120,7 +119,7 @@ const Blog = () => {
             </Link>
           </div>
         </div>
-        <div className='mt-[36px]'>
+        <div className='mt-[54px]'>
           <Swiper {...settings}>
             {blogData.map(
               ({

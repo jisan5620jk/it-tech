@@ -23,6 +23,7 @@ export default {
         BodyBg5: ['#f7fcff'],
         BodyBg6: ['#ecf5fc'],
         BodyBg7: ['#f2f6ff'],
+        BodyBg8: ['#e7effc'],
         BodyBgDark: ['#152534'],
         BodyBgDark2: ['#0f34b9'],
         BodyBgDark3: ['#0b2ba1'],

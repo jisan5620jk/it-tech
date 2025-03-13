@@ -1,96 +1,94 @@
-import star from '/images/star.png';
+import star from '/images/star-1.webp';
 import './marquee3.css';
 
 const Marquee = () => {
   return (
-    <div>
-      <div className='marquee-text-section3'>
-        <div className='marquee-animation3'>
-          <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>DATA SCIENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>Industrial Robotics</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>DATA SCIENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-        </div>
-        <div className='marquee-animation3'>
-          <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>DATA SCIENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>Industrial Robotics</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item3'>DATA SCIENCE</span>
-          <span className='marquee-text-item3 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-        </div>
+    <section className='marquee-text-section3 -mb-[6px]'>
+      <div className='marquee-animation3'>
+        <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Website Development</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>UI/UX Design</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Data Science</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Start-Up Agency</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
       </div>
-    </div>
+      <div className='marquee-animation3'>
+        <span className='marquee-text-item3'>ARTIFICIAL INTELLIGENCE</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Website Development</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>UI/UX Design</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Data Science</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+        <span className='marquee-text-item3'>Start-Up Agency</span>
+        <span className='marquee-text-item3 animate-rotational'>
+          <img
+            src={star}
+            draggable={false}
+            alt='Star'
+          />
+        </span>
+      </div>
+    </section>
   );
 };
 export default Marquee;

@@ -3,14 +3,14 @@
   overflow: hidden;
   white-space: nowrap;
   background: #2a47fb;
-  margin: 100px 0 0;
   display: inline-block;
+  padding: 47px 0 36px;
 }
 
 .marquee-animation3 {
   display: inline-block;
   will-change: transform;
-  animation: marquee 30s linear infinite;
+  animation: marquee 20s linear infinite;
   overflow: hidden;
 }
 
@@ -25,23 +25,12 @@ span.marquee-text-item3 {
   margin: 0 20px; /* Increased margin */
   text-transform: uppercase;
   font-family: 'Rajdhani';
-  font-weight: 600;
+  font-weight: 700;
 }
-
-  span.marquee-text-item3 img {
-    filter: brightness(0) invert(1);
-    width: 30px;
-  }
-
-
 
 /* Responsive here */
 
 @media screen and (max-width: 667px) {
-  .marquee-text-section3 {
-    margin: 40px 0 0;
-  }
-
   span.marquee-text-item3 {
     font-size: 24px;
     margin: 0 5px;

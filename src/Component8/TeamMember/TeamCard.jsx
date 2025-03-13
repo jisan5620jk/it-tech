@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const TeamCard = ({
   teamThumb,
@@ -9,55 +9,50 @@ const TeamCard = ({
   socialIcon4,
   teamTitle,
   teamDesc,
-  teamShareIcon,
 }) => {
   return (
-    <div className="group relative">
-      <div className="relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:bg-[#f5f8ed] before:w-full before:h-1/2 before:rounded-t-md before:-z-10">
-        <img src={teamThumb} className="w-full xl:w-[inherit] m-auto" />
+    <div className='group relative bg-BodyBg7-0 rounded-[10px]'>
+      <div className='relative overflow-hidden'>
+        <img
+          src={teamThumb}
+          className='w-full'
+        />
+        <div className='absolute z-20 -bottom-10 left-[118px] transition-all duration-300 group-hover:bottom-8'>
+          <Link to={'/'}>
+            <button className='size-10 text-sm flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-HeadingColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              {socialIcon}
+            </button>
+          </Link>
+        </div>
+        <div className='absolute z-20 -bottom-10 left-[168px] transition-all duration-500 group-hover:bottom-8'>
+          <Link to={'/'}>
+            <button className='size-10 text-sm flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-HeadingColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              {socialIcon2}
+            </button>
+          </Link>
+        </div>
+        <div className='absolute z-20 -bottom-10 left-[218px] transition-all duration-700 group-hover:bottom-8'>
+          <Link to={'/'}>
+            <button className='size-10 text-sm flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-HeadingColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              {socialIcon3}
+            </button>
+          </Link>
+        </div>
+        <div className='absolute z-20 -bottom-10 left-[268px] transition-all duration-[900ms] group-hover:bottom-8'>
+          <Link to={'/'}>
+            <button className='size-10 text-sm flex justify-center items-center rounded-full overflow-hidden relative bg-white transition-all duration-500 hover:text-white text-HeadingColor-0 z-10 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:rounded-full before:-z-10 before:transition-all before:duration-500 before:scale-0 hover:before:scale-100'>
+              {socialIcon4}
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="bg-white relative transition-all duration-500 [clip-path:polygon(0_0,_100%_0%,_100%_100%,_50%_84%,_0_100%)] rounded-md text-center pt-[22px] pb-10 rounded-b-md before:absolute before:bottom-0 before:left-0 before:w-full before:h-1/2 before:bg-[url('/images/team-shape.png')] before:bg-no-repeat before:bg-cover before:-z-10 before:rounded-md group-hover:bg-PrimaryColor-0 group-hover:-mt-9">
-        <h5 className="font-Rajdhani font-semibold text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white pb-[2px]">
+      <div className='bg-transparent relative transition-all duration-500 rounded-md text-center pt-3 sm:pt-7 pb-3 sm:pb-7 rounded-b-md'>
+        <h5 className='font-Rajdhani font-semibold text-2xl sm:text-3xl text-HeadingColor-0 transition-all duration-500'>
           {teamTitle}
         </h5>
-        <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white">
+        <p className='font-Nunito text-TextColor2-0 transition-all duration-500 mt-1'>
           {teamDesc}
         </p>
-        <ul className="flex gap-4 justify-center mb-[6px]  transition-all duration-500 group-hover:mb-7 group-hover:mt-[14px]">
-          <li>
-            <Link to={"/"}>
-              <button className="text-base text-white transition-all duration-500 hover:text-white">
-                {socialIcon}
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to={"/"}>
-              <button className="text-base text-white transition-all duration-500 hover:text-white">
-                {socialIcon2}
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to={"/"}>
-              <button className="text-base text-white transition-all duration-500 hover:text-white">
-                {socialIcon3}
-              </button>
-            </Link>
-          </li>
-          <li>
-            <Link to={"/"}>
-              <button className="text-base text-white transition-all duration-500 hover:text-white">
-                {socialIcon4}
-              </button>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className="absolute bottom-1 left-1/2 -translate-x-1/2">
-        <button className="w-11 h-11 rounded-full transition-all duration-500 overflow-hidden bg-PrimaryColor-0 relative z-10 text-white flex justify-center items-center text-lg before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-[#fefefc] before:-z-10 before:transition-all before:duration-500 before:scale-0 group-hover:before:scale-100 group-hover:text-PrimaryColor-0">
-          {teamShareIcon}
-        </button>
       </div>
     </div>
   );
