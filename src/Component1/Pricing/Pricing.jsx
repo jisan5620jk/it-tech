@@ -22,7 +22,7 @@ const Pricing = () => {
   }
 
   return (
-    <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-28 pb:pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
+    <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-28 lg:pb-[150px] bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-center">
       <div className='Container'>
         <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-center'>
           <div className='w-full mx-auto'>

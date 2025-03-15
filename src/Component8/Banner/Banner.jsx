@@ -5,7 +5,7 @@ import border2 from '/images/border2.png';
 import { FaCheck } from 'react-icons/fa6';
 const Banner = () => {
   return (
-    <section className="bg-[url('/images/cctv-banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[960px] sm:h-[1200px] md:h-[1400px] lg:h-[760px] xl:h-[850px] 2xl:h-[950px] flex items-center relative z-10 overflow-hidden">
+    <section className="bg-[url('/images/cctv-banner-bg.jpg')] bg-cover bg-center bg-no-repeat h-[760px] sm:h-[1000px] md:h-[1400px] lg:h-[760px] xl:h-[850px] 2xl:h-[950px] flex items-center relative z-10 overflow-hidden">
       <div className='Container'>
         <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] lg:pt-[100px]'>
           <div className='relative'>
@@ -57,7 +57,7 @@ const Banner = () => {
               draggable='false'
               className='2xl:w-[inherit] 2xl:max-w-[inherit] relative z-10 2xl:-right-[52px] 2xl:bottom-8'
             />
-            <div className='absolute -top-7 -right-[234px] flex items-center gap-3 pr-[46px] pl-2 py-[6px] bg-white bg-opacity-30 border border-white border-opacity-60 rounded-full'>
+            <div className='hidden absolute -top-7 -right-[234px] md:flex items-center gap-3 pr-[46px] pl-2 py-[6px] bg-white bg-opacity-30 border border-white border-opacity-60 rounded-full'>
               <div className='size-[38px] rounded-full bg-gradient-to-r to-PrimaryColor2-0 from-PrimaryColor3-0 flex items-center justify-center text-white'>
                 <FaCheck size={20} />
               </div>
@@ -65,9 +65,9 @@ const Banner = () => {
                 6 Years Warranty
               </h5>
             </div>
-            <img src={border} draggable={false} alt="Border" className='absolute bottom-[175px] left-14' />
-            <img src={border2} draggable={false} alt="Border" className='absolute -top-1 right-6' />
-            <div className='absolute -bottom-7 left-3 max-w-[324px] w-full flex items-start gap-3 px-7 py-8 bg-white bg-opacity-30 border-2 border-white border-opacity-60 rounded-2xl'>
+            <img src={border} draggable={false} alt="Border" className='absolute bottom-[175px] left-14 hidden md:block' />
+            <img src={border2} draggable={false} alt="Border" className='absolute -top-1 right-6 hidden md:block' />
+            <div className='hidden absolute -bottom-7 left-3 max-w-[324px] w-full md:flex items-start gap-3 px-7 py-8 bg-white bg-opacity-30 border-2 border-white border-opacity-60 rounded-2xl'>
               <div className='size-[42px] rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 flex items-center justify-center text-white'>
                 <FaCheck size={22} />
               </div>

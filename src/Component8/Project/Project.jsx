@@ -77,7 +77,7 @@ const Project = () => {
   return (
     <section className='project bg-BodyBg7-0 py-16 md:py-20 lg:py-28'>
       <div className='Container'>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col md:flex-row md:items-center justify-between'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img

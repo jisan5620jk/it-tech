@@ -66,6 +66,13 @@ body {
   transition: 0.4s;
 }
 
+@media screen and (max-width: 575px) {
+  .primary-btn {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+}
+
 .primary-btn:hover {
   background-position: -100%;
 }
@@ -84,24 +91,6 @@ body {
 
 .primary-btn5 {
   @apply flex items-center gap-2 overflow-hidden border uppercase border-PrimaryColor-0 bg-PrimaryColor-0 transition-all z-10 hover:text-white duration-500 px-9 py-[13px] relative rounded-full text-lg text-white font-semibold font-Rajdhani before:bg-SecondaryColor-0 before:h-full before:w-0 before:absolute before:top-0 before:right-0 before:-z-10 before:transition-all before:duration-500 hover:before:w-full hover:before:left-0;
-}
-
-.is-sticky {
-  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
-}
-
-.navbar2.is-sticky {
-  @apply fixed top-0 left-0 w-full z-[99999] shadow-lg bg-SecondaryColor-0 backdrop-blur-md animate-headerSlideDown;
-}
-
-@media (min-width: 320px) and (max-width: 991px) {
-  .is-sticky {
-    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-white backdrop-blur-md animate-headerSlideDown;
-  }
-
-  .navbar2.is-sticky {
-    @apply relative top-0 left-0 w-full z-[99999] shadow-lg bg-SecondaryColor-0 backdrop-blur-md animate-headerSlideDown;
-  }
 }
 
 /* Icon Style */
@@ -141,7 +130,7 @@ body {
 .banner-btn:hover .icon-style g:nth-of-type(1),
 .latest-work-btn:hover .icon-style g:nth-of-type(1),
 .blog-button:hover .icon-style g:nth-of-type(1),
-.primary-btn:hover .icon-style g:nth-of-type(1) ,
+.primary-btn:hover .icon-style g:nth-of-type(1),
 .service-btn:hover .icon-style g:nth-of-type(1) {
   transform: translateX(var(--qode-hover-move-x))
     translateY(calc(-1 * var(--qode-hover-move-y))) translateZ(0);
@@ -152,7 +141,7 @@ body {
 .banner-btn:hover .icon-style g:nth-of-type(2),
 .latest-work-btn:hover .icon-style g:nth-of-type(2),
 .blog-button:hover .icon-style g:nth-of-type(2),
-.primary-btn:hover .icon-style g:nth-of-type(2) ,
+.primary-btn:hover .icon-style g:nth-of-type(2),
 .service-btn:hover .icon-style g:nth-of-type(2) {
   transform: translateX(0) translateY(0) translateZ(0);
   opacity: 1;

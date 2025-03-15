@@ -11,7 +11,7 @@ const ProcessCard = ({
       <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-[22px]'>
         {processNumber}
       </h5>
-      <div className="mt-14 mb-5">
+      <div className="mt-6 lg:mt-14 mb-5">
         <img
           src={processIcon}
           draggable={false}

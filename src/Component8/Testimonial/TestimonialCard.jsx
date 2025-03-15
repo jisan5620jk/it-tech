@@ -11,12 +11,13 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-[50px] pt-4 sm:pt-8 lg:pt-4 xl:pt-[66px] pb-5 sm:pb-10 lg:pb-5 xl:pb-[60px] bg-BoxBg4-0 rounded-[10px]'>
+    <div className='relative px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-[50px] pt-8 lg:pt-4 xl:pt-[66px] pb-5 sm:pb-10 lg:pb-5 xl:pb-[60px] bg-BoxBg4-0 rounded-[10px]'>
       <div className='absolute top-0 right-0 z-20'>
         <img
           src={paginationShape}
           draggable={false}
           alt='Shape'
+          className="w-36"
         />
       </div>
       <div className='flex gap-1 items-center mb-6'>
@@ -38,9 +39,9 @@ const TestimonialCard = ({
           {testRatingText}
         </h5>
       </div>
-      <p className='font-Nunito text-HeadingColor-0 text-[22px]'>{testiDesc}</p>
+      <p className='font-Nunito text-HeadingColor-0 text-[17px] sm:text-xl md:text-[22px]'>{testiDesc}</p>
 
-      <div className='flex justify-between flex-wrap items-center mt-[60px]'>
+      <div className='flex justify-between flex-wrap items-center mt-5 sm:mt-10 md:mt-[60px]'>
         <div className='flex items-center gap-5'>
           <div>
             <img
@@ -56,7 +57,7 @@ const TestimonialCard = ({
             <p className='font-Nunito text-TextColor2-0 mt-[2px]'>{testiDesignation}</p>
           </div>
         </div>
-        <div>
+        <div className="hidden sm:block">
           <img
             src={testiShape}
             draggable={false}

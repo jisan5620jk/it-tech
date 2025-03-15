@@ -48,7 +48,7 @@ const Blog = () => {
     modules: [Autoplay],
     speed: 1000,
     autoplay: {
-      delay: 3000, // Set delay time in milliseconds
+      delay: 4000, // Set delay time in milliseconds
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
     breakpoints: {

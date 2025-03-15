@@ -85,7 +85,7 @@ const Service = () => {
   return (
     <section className='bg-HeadingColor-0 py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
-        <div className='flex items-center justify-between'>
+        <div className='flex flex-col md:flex-row md:items-center justify-between'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -174,7 +174,7 @@ const Service = () => {
                       ref={(el) => (contentRefs.current[index] = el)}
                       className='max-h-0 overflow-hidden transition-all duration-500 gap-8'
                     >
-                      <div className='flex items-center gap-8 border-t border-white border-opacity-10 py-7'>
+                      <div className='flex flex-col sm:flex-row items-center gap-8 border-t border-white border-opacity-10 py-7'>
                         <div>
                           <img
                             src={serviceItem.thumb}
@@ -217,7 +217,7 @@ const Service = () => {
               ))}
             </ul>
           </div>
-          <div className='border-t border-white border-opacity-10 max-w-[536px] w-full mt-[76px] ml-auto'>
+          <div className='border-t border-white border-opacity-10 max-w-[536px] w-full lg:mt-[76px] ml-auto'>
             <p className='font-Nunito text-white text-opacity-60 pt-6'>
               Distinctively matrix highly efficient niches rather than
               market-driven core Seamlessly maximize dynamic initiatives rather

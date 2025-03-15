@@ -18,23 +18,23 @@ const ProjectCard = ({
           alt='Image'
           className='w-full'
         />
-        <div className='absolute z-10 bottom-[110px] left-[50px] transition-all duration-500 group-hover:bottom-[184px] delay-100'>
-          <h6 className='bg-white bg-opacity-10 px-6 py-1 rounded-full uppercase font-Rajdhani font-medium text-white inline-block border-white border border-opacity-20'>
+        <div className='absolute z-10 bottom-14 sm:bottom-[110px] left-5 sm:left-[50px] transition-all duration-500 group-hover:bottom-24 sm:group-hover:bottom-[184px] delay-100'>
+          <h6 className='bg-white bg-opacity-10 px-3 sm:px-6 sm:py-1 rounded-full uppercase font-Rajdhani font-medium text-white inline-block border-white border border-opacity-20'>
             {projectSubTitle}
           </h6>
         </div>
-        <div className='absolute z-10 bottom-[55px] left-[50px] transition-all duration-500 group-hover:bottom-[130px] delay-200'>
+        <div className='absolute z-10 bottom-4 sm:bottom-[55px] left-5 sm:left-[50px] transition-all duration-500 group-hover:bottom-14 sm:group-hover:bottom-[130px] delay-200'>
           <Link
             to={projectBoxLink}
-            className='font-Rajdhani font-bold text-2xl md:text-[26px] xl:text-2xl 2xl:text-[40px] leading-8 text-white'
+            className='font-Rajdhani font-bold text-2xl sm:text-[40px] leading-8 text-white'
           >
             {projectTitle}
           </Link>
         </div>
-        <div className='absolute z-10 left-[50px] bottom-0 opacity-0 transition-all duration-500 group-hover:bottom-[70px] group-hover:opacity-100 delay-300'>
+        <div className='absolute z-10 left-5 sm:left-[50px] bottom-0 opacity-0 transition-all duration-500 group-hover:bottom-4 sm:group-hover:bottom-[70px] group-hover:opacity-100 delay-300'>
           <Link
             to={projectBoxLink}
-            className='font-Rajdhani text-white font-medium bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 px-[30px] py-[10px] rounded-full uppercase'
+            className='font-Rajdhani text-white font-medium bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 px-5 sm:px-[30px] py-[6px] sm:py-[10px] rounded-full uppercase'
           >
             {projectBtn}
           </Link>

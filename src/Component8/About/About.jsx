@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BodyBg7-0 relative'>
       <div className='Container'>
-        <div className='flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-7'>
+        <div className='flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between md:gap-8 lg:gap-0 border-b border-SecondaryColor-0 border-opacity-10 mb-10 pb-7'>
           <div>
             <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
               <img
@@ -58,7 +58,7 @@ const About = () => {
           </div>
           <div className='grid grid-cols-2 items-center gap-8'>
             <div className='flex flex-col items-center'>
-              <div className='counter-text font-Rajdhani font-bold text-transparent text-[90px] leading-[90px] flex items-center'>
+              <div className='counter-text font-Rajdhani font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={97}
@@ -67,13 +67,13 @@ const About = () => {
                 <h1>%</h1>
               </div>
               <div>
-                <p className='font-Nunito text-TextColor2-0 -mt-2'>
+                <p className='font-Nunito text-center sm:text-left text-TextColor2-0 -mt-2'>
                   Assesment & Analysis
                 </p>
               </div>
             </div>
             <div className='flex flex-col items-center'>
-              <div className='counter-text font-Rajdhani font-bold text-transparent text-[90px] leading-[90px] flex items-center'>
+              <div className='counter-text font-Rajdhani font-bold text-transparent text-5xl md:text-[90px] leading-[90px] flex items-center'>
                 <OnScrollCounter
                   start={0}
                   end={130}
@@ -82,7 +82,7 @@ const About = () => {
                 <h1>+</h1>
               </div>
               <div>
-                <p className='font-Nunito text-TextColor2-0 -mt-2'>
+                <p className='font-Nunito text-center sm:text-left text-TextColor2-0 -mt-2'>
                   High Expert Technicians
                 </p>
               </div>
@@ -177,7 +177,7 @@ const About = () => {
             </div>
             <div className='flex flex-wrap gap-5 mt-7 mb-3'>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-4 sm:pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -187,7 +187,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-4 sm:pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -197,7 +197,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-4 sm:pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>
@@ -207,7 +207,7 @@ const About = () => {
                 </div>
               </div>
               <div className='inline-block'>
-                <div className='flex items-center gap-3 pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
+                <div className='flex items-center gap-3 pr-4 sm:pr-8 pl-2 py-[7px] bg-white bg-opacity-30 border border-SecondaryColor-0 border-opacity-10 rounded-full shadow-shade'>
                   <div className='size-7 rounded-full bg-white bg-opacity-30 flex items-center justify-center border border-SecondaryColor-0 border-opacity-10 text-PrimaryColor-0'>
                     <FaCheck size={16} />
                   </div>

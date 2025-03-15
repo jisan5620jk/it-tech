@@ -56,7 +56,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='bg-[url("/images/teastimonial-bg.webp")] bg-cover bg-no-repeat bg-center relative z-10 overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-16 md:pb-20 lg:pb-[70px]'>
+    <section className='bg-[url("/images/teastimonial-bg.webp")] bg-cover bg-no-repeat bg-center relative z-10 overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-6 md:pb-20 lg:pb-[70px]'>
       <div className='Container'>
         <div className='max-w-[758px] w-full ml-auto relative z-10'>
           <Swiper {...settings}>
@@ -96,7 +96,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </div>
-      <div className='pt-[72px]'>
+      <div className='md:pt-[72px]'>
         <Marquee />
       </div>
     </section>
