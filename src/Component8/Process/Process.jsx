@@ -40,7 +40,7 @@ const Process = () => {
           </h1>
         </div>
         <div className='relative z-10 mt-12'>
-          <div className='absolute top-[38px] left-0 w-full hidden lg:block'>
+          <div className='absolute top-[38px] left-0 w-full hidden xl:block'>
             <span className='w-full h-[2px] border-[1.5px] border-dashed border-SecondaryColor-0 border-opacity-15 inline-block'></span>
             <div className='flex justify-around -mt-[15px]'>
               <span className='size-4 rounded-full bg-gradient-to-t to-PrimaryColor2-0 from-PrimaryColor3-0 inline-block'></span>

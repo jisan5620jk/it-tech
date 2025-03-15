@@ -217,7 +217,7 @@ const Service = () => {
               ))}
             </ul>
           </div>
-          <div className='border-t border-white border-opacity-10 max-w-[536px] w-full lg:mt-[76px] ml-auto'>
+          <div className='border-t border-white border-opacity-10 max-w-[536px] w-full lg:mt-[76px] lg:ml-auto'>
             <p className='font-Nunito text-white text-opacity-60 pt-6'>
               Distinctively matrix highly efficient niches rather than
               market-driven core Seamlessly maximize dynamic initiatives rather

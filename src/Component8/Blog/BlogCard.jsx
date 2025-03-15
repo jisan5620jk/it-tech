@@ -27,7 +27,7 @@ const BlogCard = ({
               {blogPost}
             </p>
             <Link to={blogUrl}>
-              <button className='font-Rajdhani text-left font-semibold text-lg leading-6 sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-5 sm:mr-14'>
+              <button className='font-Rajdhani text-left font-semibold text-lg leading-6 sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] text-HeadingColor-0 transition-all duration-500 hover:text-PrimaryColor-0 mt-5 sm:mr-14 md:mr-0'>
                 {blogTitle}
               </button>
             </Link>

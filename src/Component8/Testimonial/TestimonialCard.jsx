@@ -11,7 +11,7 @@ const TestimonialCard = ({
   testiDesc,
 }) => {
   return (
-    <div className='relative px-4 sm:px-9 lg:px-4 xl:px-9 2xl:px-[50px] pt-8 lg:pt-4 xl:pt-[66px] pb-5 sm:pb-10 lg:pb-5 xl:pb-[60px] bg-BoxBg4-0 rounded-[10px]'>
+    <div className='relative px-4 sm:px-9 lg:px-[50px] pt-8 lg:pt-[66px] pb-5 sm:pb-10 lg:pb-[60px] bg-BoxBg4-0 rounded-[10px]'>
       <div className='absolute top-0 right-0 z-20'>
         <img
           src={paginationShape}

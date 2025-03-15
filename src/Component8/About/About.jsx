@@ -117,7 +117,7 @@ const About = () => {
                 <AboutNavigation />
               </Swiper>
             </div>
-            <div className='absolute z-10 bottom-[82px] -left-[64px] pl-9 pr-[43px] py-8 hidden md:block bg-PrimaryColor2-0 rounded-t-lg rounded-l-lg'>
+            <div className='absolute z-10 bottom-[82px] -left-[64px] pl-9 pr-[43px] py-8 hidden xl:block bg-PrimaryColor2-0 rounded-t-lg rounded-l-lg'>
               <div>
                 <img
                   src={aboutIcon}
