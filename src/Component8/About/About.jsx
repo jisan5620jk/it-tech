@@ -117,7 +117,7 @@ const About = () => {
                 <AboutNavigation />
               </Swiper>
             </div>
-            <div className='absolute z-10 bottom-[82px] -left-[64px] pl-9 pr-[43px] py-8 hidden xl:block bg-PrimaryColor2-0 rounded-t-lg rounded-l-lg'>
+            <div className='absolute z-10 bottom-[82px] -left-[47px] 3xl:-left-[64px] pl-9 pr-[43px] py-8 hidden 2xl:block bg-PrimaryColor2-0 rounded-t-lg rounded-l-lg'>
               <div>
                 <img
                   src={aboutIcon}
@@ -125,7 +125,7 @@ const About = () => {
                   alt='Icon'
                 />
               </div>
-              <h4 className='font-Rajdhani font-semibold text-2xl text-white mt-10'>
+              <h4 className='font-Rajdhani font-semibold text-2xl text-white mt-10 mb-4'>
                 Secure Your House
                 <br />
                 Office Building And
@@ -251,7 +251,7 @@ const About = () => {
         src={shape}
         draggable={false}
         alt='Shape'
-        className='absolute bottom-10 right-0 animate-wiggle hidden 2xl:block'
+        className='absolute bottom-10 right-0 animate-wiggle hidden 3xl:block'
       />
     </section>
   );

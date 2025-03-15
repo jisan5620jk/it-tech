@@ -80,7 +80,7 @@ const TeamMember = () => {
     },
   };
   return (
-    <section className='bg-BodyBg7-0 pt-16 pb-0 md:pt-0 lg:pt-0 xl:pt-28 relative z-10'>
+    <section className='bg-BodyBg7-0 pt-16 pb-0 md:pt-20 lg:pt-28 relative z-10'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>
