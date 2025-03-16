@@ -29,6 +29,7 @@ export default {
         BodyBgDark3: ['#0b2ba1'],
         BodyBgDark4: ['#0128b8'],
         BodyBgDark5: ['#012095'],
+        BodyBgDark6: ['#0f1f2e'],
         BoxBg: ['#2549d1'],
         BoxBg2: ['#1030a9'],
         BoxBg3: ['#341bfa'],
@@ -40,6 +41,7 @@ export default {
         BorderColor5: ['#041424'],
       },
       screens: {
+        xsm: '380px',
         sm: '576px',
         md: '768px',
         lg: '992px',

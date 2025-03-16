@@ -389,12 +389,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   font-weight: 400;
 }
 
-/* Stroke */
-
-.counter-text {
-  -webkit-text-stroke: 1px #042414;
-}
-
 /* Portfolio */
 
 .portfolio .swiper-slide.swiper-slide-active .portfolio-content {

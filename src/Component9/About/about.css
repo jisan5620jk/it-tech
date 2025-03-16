@@ -1,7 +1,7 @@
 /* Stroke */
 
-.counter-text {
-  -webkit-text-stroke: 1px #042414;
+.counter-text-dark {
+  -webkit-text-stroke: 1px #ffffff;
 }
 
 .mission-vission-tab-btn::before {
