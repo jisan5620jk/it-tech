@@ -529,7 +529,7 @@ nav.main-menu-content > ul > li:hover > a > span {
 
 .header-main-menu nav ul li .submenu > li a,
 .header-main-menu nav ul li .submenu li:hover .submenu > li a {
-  padding: 15px 24px;
+  padding: 12px 24px;
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -966,10 +966,7 @@ li.has-dropdown a button span {
   background: #041424;
 }
 
-
-
 /* Header Sidebar */
-
 
 .body-overlay2 {
   position: fixed;

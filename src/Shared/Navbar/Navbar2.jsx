@@ -287,79 +287,32 @@ const Navbar2 = () => {
                         </span>
                       </Link>
                       <ul className='submenu'>
-                        <li className='has-dropdown'>
-                          <Link to={'/'}>
-                            Buseness Consulting 01
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !-top-[3px]'>
-                            <li>
-                              <Link to={'/'}>Buseness Consulting Creative</Link>
-                            </li>
-                            <li>
-                              <Link to={'/home2'}>
-                                Buseness Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home3'}>
-                                Buseness Consulting Dark
-                              </Link>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className='has-dropdown'>
-                          <Link to={'/home4'}>
-                            Finance Consulting
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[50px]'>
-                            <li>
-                              <Link to={'/home4'}>
-                                Finance Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home5'}>
-                                Finance Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home6'}>Finance Consulting Dark</Link>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link to={'/'}>SEO & Digital Marketing</Link>
                         </li>
                         <li>
-                          <Link to={'/home7'}>IT Consulting</Link>
+                          <Link to={'/home2'}>Artificial Intelligence</Link>
                         </li>
-                        <li className='has-dropdown'>
-                          <Link to={'/home8'}>
-                            Buseness Consulting 02
-                            <span>
-                              <FaChevronDown />
-                            </span>
-                          </Link>
-                          <ul className='submenu !top-[154px]'>
-                            <li>
-                              <Link to={'/home8'}>
-                                Buseness Consulting Creative
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home9'}>
-                                Buseness Consulting Classic
-                              </Link>
-                            </li>
-                            <li>
-                              <Link to={'/home10'}>
-                                Buseness Consulting Dark
-                              </Link>
-                            </li>
-                          </ul>
+                        <li>
+                          <Link to={'/home3'}>Software Agency</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home4'}>Software Agency Dark</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home5'}>Start Up Technology</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home6'}>Start Up Technology Dark</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home7'}>Start Up Agency</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home8'}>CCTV Security</Link>
+                        </li>
+                        <li>
+                          <Link to={'/home9'}>CCTV Security Dark</Link>
                         </li>
                       </ul>
                     </li>
