@@ -43,6 +43,7 @@ import Home8 from '../Pages/Home8/Home8';
 import Main8 from '../Main/Main8';
 import Main9 from '../Main/Main9';
 import Home9 from '../Pages/Home9/Home9';
+import ContactInner2 from '../Pages/InnerPage/ContactInner2/ContactInner2';
 
 const router = createBrowserRouter([
   {
@@ -231,6 +232,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactInner />,
+      },
+      {
+        path: '/contact2',
+        element: <ContactInner2 />,
       },
       {
         path: '/faq_inner',

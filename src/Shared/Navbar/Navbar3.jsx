@@ -260,7 +260,7 @@ const Navbar3 = () => {
         className='body-overlay'
       ></div>
       <div className='header-area style-two header-sticky'>
-        <div className='px-5 md:px-10 xl:px-12'>
+        <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
               <div className='header-logo'>

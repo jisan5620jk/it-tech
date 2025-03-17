@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from '../Shared/Navbar/Navbar';
+import Navbar10 from '../Shared/Navbar/Navbar10';
 import BackToTop from '../Shared/BackToTop/BackToTop';
-import Footer from '../Shared/Footer/Footer';
+import Footer8 from '../Shared/Footer/Footer8';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -28,12 +28,12 @@ const Main14 = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar10 />
       <BackToTop />
       <div>
         <Outlet />
       </div>
-      <Footer />
+      <Footer8 />
     </>
   );
 };
