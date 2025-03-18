@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import Navbar10 from '../Shared/Navbar/Navbar10';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer8 from '../Shared/Footer/Footer8';
 import AOS from 'aos';
@@ -9,8 +8,9 @@ import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Navbar11 from '../Shared/Navbar/Navbar11';
 
-const Main14 = () => {
+const Main11 = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -28,7 +28,7 @@ const Main14 = () => {
 
   return (
     <>
-      <Navbar10 />
+      <Navbar11 />
       <BackToTop />
       <div>
         <Outlet />
@@ -37,4 +37,4 @@ const Main14 = () => {
     </>
   );
 };
-export default Main14;
+export default Main11;

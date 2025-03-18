@@ -7,19 +7,16 @@ import {
   FaChevronDown,
   FaEnvelope,
   FaFacebookF,
-  FaInstagram,
   FaLinkedinIn,
   FaPinterestP,
-  FaRegEnvelope,
   FaXTwitter,
 } from 'react-icons/fa6';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
 import { MdLocationPin } from 'react-icons/md';
-import { IoMdPaperPlane, IoMdStar } from 'react-icons/io';
+import { IoMdPaperPlane } from 'react-icons/io';
 import { GoArrowUpRight } from 'react-icons/go';
-import { GiPhone } from 'react-icons/gi';
 
-const Navbar10 = () => {
+const Navbar11 = () => {
   //sticky
 
   useEffect(() => {
@@ -262,71 +259,7 @@ const Navbar10 = () => {
         ref={bodyOverlayRef}
         className='body-overlay'
       ></div>
-      <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] flex flex-col lg:flex-row lg:items-center justify-between bg-PrimaryColor-0'>
-        <div className='hidden sm:flex lg:flex items-center gap-2 md:hidden py-3 md:py-0'>
-          <div className='size-[16px] rounded-full flex items-center justify-center text-PrimaryColor-0 bg-white'>
-            <IoMdStar size={14} />
-          </div>
-          <p className='flex-1 font-Nunito text-white text-opacity-80'>
-            Continually formulate B2C partnerships orthogonal software
-          </p>
-        </div>
-        <div className='flex sm:hidden md:flex items-center md:justify-center lg:justify-end gap-6 sm:gap-8 py-3 md:py-0'>
-          <div className='lg:hidden xl:block'>
-            <a
-              href='mailto:example@gmail.com'
-              className='flex items-center gap-2 text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-            >
-              <FaRegEnvelope />
-              example@gmail.com
-            </a>
-          </div>
-          <div className='border-x lg:border-l-transparent xl:border-l-white border-white !border-opacity-20 py-2 lg:py-[14px] px-8 hidden md:block'>
-            <a
-              href='tel:+00123456789'
-              className='flex items-center gap-1 text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-            >
-              <GiPhone className='[transform:rotateX(175deg)] text-lg' />
-              +00 123 (456) 789
-            </a>
-          </div>
-          <ul className='flex items-center gap-2 sm:gap-5'>
-            <li>
-              <button
-                type='button'
-                className='text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-              >
-                <FaFacebookF />
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                className='text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-              >
-                <FaInstagram />
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                className='text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-              >
-                <FaXTwitter />
-              </button>
-            </li>
-            <li>
-              <button
-                type='button'
-                className='text-white text-opacity-80 transition-all duration-500 hover:text-opacity-100'
-              >
-                <FaLinkedinIn />
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className='header-area header-sticky border-t lg:border-t-0 border-white border-opacity-25'>
+      <div className='header-area style-two header-sticky'>
         <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
           <div className='flex items-center justify-between lg:grid lg:grid-cols-12'>
             <div className='col-span-2'>
@@ -397,6 +330,9 @@ const Navbar10 = () => {
                         </li>
                         <li>
                           <Link to={'/about2'}>About Style Two</Link>
+                        </li>
+                        <li>
+                          <Link to={'/about3'}>About Style Three</Link>
                         </li>
                       </ul>
                     </li>
@@ -686,4 +622,4 @@ const Navbar10 = () => {
   );
 };
 
-export default Navbar10;
+export default Navbar11;

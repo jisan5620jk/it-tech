@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const CallDoAction = () => {
   return (
-    <section className='bg-[url("./images/cta-bg.jpeg")] bg-no-repeat bg-center bg-cover'>
+    <section className='bg-[url("./images/cta-bg.jpeg")] bg-no-repeat bg-center bg-cover pt-16 md:pt-20 lg:pt-28'>
       <div className='Container'>
         <div className='text-center'>
           <div className='relative z-10'>

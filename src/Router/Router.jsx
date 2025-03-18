@@ -34,7 +34,7 @@ import Home3 from '../Pages/Home3/Home3';
 import Main7 from '../Main/Main7';
 import Home7 from '../Pages/Home7/Home7';
 import Home4 from '../Pages/Home4/Home2';
-import Main14 from '../Main/Main14';
+import Main10 from '../Main/Main10';
 import Main5 from '../Main/Main5';
 import Home5 from '../Pages/Home5/Home5';
 import Main6 from '../Main/Main6';
@@ -44,6 +44,8 @@ import Main8 from '../Main/Main8';
 import Main9 from '../Main/Main9';
 import Home9 from '../Pages/Home9/Home9';
 import ContactInner2 from '../Pages/InnerPage/ContactInner2/ContactInner2';
+import Main11 from '../Main/Main11';
+import AboutInner3 from '../Pages/InnerPage/AboutInner3/AboutInner3';
 
 const router = createBrowserRouter([
   {
@@ -139,7 +141,21 @@ const router = createBrowserRouter([
   },
   {
     errorElement: <ErrorPage />,
-    element: <Main14 />,
+    element: <Main10 />,
+    children: [
+      {
+        path: '/about3',
+        element: <AboutInner3 />,
+      },
+      {
+        path: '/contact2',
+        element: <ContactInner2 />,
+      },
+    ],
+  },
+  {
+    errorElement: <ErrorPage />,
+    element: <Main11 />,
     children: [
       {
         path: '/about',
@@ -232,10 +248,6 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactInner />,
-      },
-      {
-        path: '/contact2',
-        element: <ContactInner2 />,
       },
       {
         path: '/faq_inner',

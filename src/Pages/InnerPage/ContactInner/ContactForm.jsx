@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import contactFormImg from "/images/contact-form-img.png";
+import titleShape from '/images/sub-title-shape.png';
 
 const ContactForm = () => {
   return (
@@ -17,9 +18,9 @@ const ContactForm = () => {
             className='w-full'
             draggable='false'
           />
-          <div className='bg-PrimaryColor-0 pl-9 pt-7 pb-9'>
+          <div className='bg-gradient-to-br to-PrimaryColor2-0 from-PrimaryColor3-0 pl-9 pt-7 pb-9'>
             <h4 className='font-Rajdhani font-semibold text-xl sm:text-[28px] leading-[34px] text-white'>
-              Feel Free to Contact & Hire Us for Your Solution
+              Feel Free to Contact & Hire <br /> Us for Your Solution
             </h4>
             <h6 className='font-Rajdhani font-semibold text-xl text-white mt-6 mb-5'>
               Follow US :
@@ -57,10 +58,15 @@ const ContactForm = () => {
           </div>
         </div>
         <div className='col-span-2 lg:pl-[120px]'>
-          <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
+          <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+            <img
+              src={titleShape}
+              draggable={false}
+              alt='Shape'
+            />{' '}
             Have Any Consultation....?
           </h5>
-          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[18px] mb-12'>
+          <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-8'>
             Get In Touch Your Nearest Local <br />
             Business Sales Executive
           </h1>
@@ -112,7 +118,7 @@ const ContactForm = () => {
             <div className='inline-block mt-3'>
               <button
                 type='submit'
-                className='primary-btn2 !bg-SecondaryColor-0 hover:!border-PrimaryColor-0 !border-SecondaryColor-0 before:!bg-PrimaryColor-0'
+                className='primary-btn'
               >
                 Submit Message
               </button>
