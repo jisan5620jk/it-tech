@@ -42,22 +42,18 @@ const history = () => {
   return (
     <section className='bg-[url("/images/About-Us-history-bg.webp")] bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container '>
-        <div className='text-center'>
+        <div className=''>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
             <img
               src={titleShape}
               draggable={false}
               alt='Shape'
+              className='brightness-0 invert-[1]'
             />{' '}
-            More About{' '}
-            <img
-              src={titleShape}
-              draggable={false}
-              alt='Shape'
-            />
+            More About
           </h5>
           <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
-            Driving Change with Innovative
+            Trusted by Industry Leaders
             <br /> Successful Softwares
           </h1>
         </div>
