@@ -42,10 +42,6 @@ span.marquee-text-item4 img {
 /* Responsive here */
 
 @media screen and (max-width: 667px) {
-  .marquee-text-section4 {
-    margin: 40px 0 0;
-  }
-
   span.marquee-text-item4 {
     font-size: 24px;
     margin: 0 5px;

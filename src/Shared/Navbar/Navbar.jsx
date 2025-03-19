@@ -368,7 +368,10 @@ const Navbar = () => {
                           <Link to={'/pricing'}>Pricing</Link>
                         </li>
                         <li>
-                          <Link to={'/portfolio'}>Portfolio</Link>
+                          <Link to={'/project'}>Project Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/project2'}>Project Style Two</Link>
                         </li>
                         <li>
                           <Link to={'/portfolio_details'}>
@@ -389,7 +392,10 @@ const Navbar = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/portfolio'}>Portfolio</Link>
+                          <Link to={'/project'}>Project Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/project2'}>Project Style Two</Link>
                         </li>
                         <li>
                           <Link to={'/portfolio_details'}>

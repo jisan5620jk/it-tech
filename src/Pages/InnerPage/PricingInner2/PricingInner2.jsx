@@ -4,10 +4,10 @@ import ContactBox from "../ContactInner/ContactBox/ContactBox";
 import Pricing from "./Pricing/Pricing";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
 
-const PricingInner = () => {
+const PricingInner2 = () => {
   return (
     <>
-      <HelmetChanger title={'Pricing Inner Page Style One'} />
+      <HelmetChanger title={'Pricing Inner Page'} />
       <BreadCrumb
         breadCrumbTitle={'Affordable Price'}
         breadCrumbIcon={<FaArrowRightLong />}
@@ -19,4 +19,4 @@ const PricingInner = () => {
   );
 };
 
-export default PricingInner;
+export default PricingInner2;

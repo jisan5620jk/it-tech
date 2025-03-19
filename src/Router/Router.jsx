@@ -46,6 +46,7 @@ import Home9 from '../Pages/Home9/Home9';
 import ContactInner2 from '../Pages/InnerPage/ContactInner2/ContactInner2';
 import Main11 from '../Main/Main11';
 import AboutInner3 from '../Pages/InnerPage/AboutInner3/AboutInner3';
+import ProjectInner2 from '../Pages/InnerPage/ProjectInner2/ProjectInner2';
 
 const router = createBrowserRouter([
   {
@@ -146,6 +147,10 @@ const router = createBrowserRouter([
       {
         path: '/about3',
         element: <AboutInner3 />,
+      },
+      {
+        path: '/project2',
+        element: <ProjectInner2 />,
       },
       {
         path: '/contact2',

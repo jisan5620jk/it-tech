@@ -18,7 +18,7 @@ const ServiceCard = ({
           className='transition-all duration-500 group-hover:animate-wobble_vertical'
         />
       </div>
-      <h4 className='font-Rajdhani font-semibold text-xl sm:text-2xl md:text-[22px] lg:text-xl xl:text-2xl 2xl:text-[28px] text-HeadingColor-0 transition-all duration-500  mt-9 mb-6 max-w-[220px] w-full'>
+      <h4 className='font-Rajdhani font-semibold text-xl sm:text-2xl md:text-[22px] lg:text-2xl xl:text-2xl 2xl:text-[28px] text-HeadingColor-0 transition-all duration-500  mt-9 mb-6 max-w-[220px] w-full'>
         {serviceTitle}
       </h4>
       <p className='font-Nunito text-TextColor2-0 transition-all duration-500 max-w-[318px] w-full'>

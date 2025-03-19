@@ -22,9 +22,7 @@ const TestimonialCard = ({
         <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
         <li className='text-[#ffae14] text-[22px]'>{testiRatingIcon}</li>
       </ul>
-      <p className='font-Nunito text-TextColor2-0 text-lg xl:text-base 2xl:text-lg'>
-        {testiDesc}
-      </p>
+      <p className='font-Nunito text-TextColor2-0 text-lg xl:text-base 2xl:text-lg'>{testiDesc}</p>
       <div className='flex items-center justify-between border-t border-HeadingColor-0 border-opacity-10 transition-all duration-300 ease-linear group-hover:border-PrimaryColor-0 group-hover:border-opacity-100 pt-[26px] mt-[26px]'>
         <div className='flex items-center gap-2 sm:gap-4'>
           <div>

@@ -7,6 +7,7 @@ import TeamMember from "./TeamMember/TeamMember";
 import CallDoAction from "./CallDoAction";
 import Counter from "./Counter/Counter";
 import Service from "./Service/Service";
+import History from "./History/History";
 
 const AboutInner3 = () => {
   return (
@@ -20,6 +21,7 @@ const AboutInner3 = () => {
       <About />
       <Marquee />
       <Service />
+      <History />
       <Counter />
       <TeamMember />
       <CallDoAction />
