@@ -16,7 +16,7 @@ const projectCard = [
     projectImg: projectImg,
     projectSubTitle: 'Camera',
     projectBoxLink: '/',
-    projectTitle: 'Night Vission Camera',
+    projectTitle: 'Night vision Camera',
     projectBtn: 'View Details',
   },
   {

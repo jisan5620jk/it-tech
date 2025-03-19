@@ -361,7 +361,14 @@ const Navbar11 = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/about'}>About</Link>
+                          <Link to={'/mission_inner'}>
+                            Mission & Vision Style One
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/mission_inner2'}>
+                            Mission & Vision Style Two
+                          </Link>
                         </li>
                         <li>
                           <Link to={'/service'}>service</Link>
@@ -370,7 +377,10 @@ const Navbar11 = () => {
                           <Link to={'/service_details'}>service details</Link>
                         </li>
                         <li>
-                          <Link to={'/team'}>Team Member</Link>
+                          <Link to={'/team_inner'}>Team Member Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/team_inner2'}>Team Member Style Two</Link>
                         </li>
                         <li>
                           <Link to={'/pricing'}>Pricing</Link>
@@ -421,7 +431,10 @@ const Navbar11 = () => {
                       </Link>
                       <ul className='submenu'>
                         <li>
-                          <Link to={'/blog_grid'}>blog grid</Link>
+                          <Link to={'/blog_grid'}>Blog Grid Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/blog_grid2'}>Blog Grid Style Two</Link>
                         </li>
                         <li>
                           <Link to={'/blog_details'}>blog details</Link>

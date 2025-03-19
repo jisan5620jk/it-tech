@@ -1,18 +1,18 @@
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { FiCheck } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import Feature from "../../../Component2/Feature/Feature";
-import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import { FaArrowRightLong } from 'react-icons/fa6';
+import { FiCheck } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import Feature from '../../../Component2/Feature/Feature';
+import HelmetChanger from '../../../Shared/Helmet/Helmet';
 
 const MissionInner = () => {
   return (
     <>
-      <HelmetChanger title={'Mission Inner Page'} />
+      <HelmetChanger title={'Mission & Vision Inner Page Style Two'} />
       <BreadCrumb
-        breadCrumbTitle={'Our Mission Vission & Goal'}
+        breadCrumbTitle={'Our Mission vision & Goal'}
         breadCrumbIcon={<FaArrowRightLong />}
-        breadCrumbLink={'Our Mission Vission & Goal'}
+        breadCrumbLink={'Our Mission vision & Goal'}
       />
       <section className='relative pt-28 pb-[120px] bg-[#f5f8ed] z-10'>
         <div className='Container'>

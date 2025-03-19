@@ -4,7 +4,7 @@
   -webkit-text-stroke: 1px #042414;
 }
 
-.mission-vission-tab-btn::before {
+.mission-vision-tab-btn::before {
   position: absolute;
   content: '';
   bottom: -13px;
@@ -15,16 +15,16 @@
   transition: all 0.5s;
 }
 
-.mission-vission-tab-btn.active::before {
+.mission-vision-tab-btn.active::before {
   left: 0;
   width: 100%;
 }
 
-.mission-vission-tab-content {
+.mission-vision-tab-content {
   display: none;
 }
 
-.mission-vission-tab-content.active {
+.mission-vision-tab-content.active {
   display: block !important;
   animation: fadeInUp 0.5s linear;
 }

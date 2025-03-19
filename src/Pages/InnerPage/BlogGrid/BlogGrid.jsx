@@ -88,7 +88,7 @@ const blogData = [
 const BlogGrid = () => {
   return (
     <>
-      <HelmetChanger title={'Blog Grid Inner Page'} />
+      <HelmetChanger title={'Blog Grid Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'Blog Grid'}
         breadCrumbIcon={<FaArrowRightLong />}

@@ -47,6 +47,9 @@ import ContactInner2 from '../Pages/InnerPage/ContactInner2/ContactInner2';
 import Main11 from '../Main/Main11';
 import AboutInner3 from '../Pages/InnerPage/AboutInner3/AboutInner3';
 import ProjectInner2 from '../Pages/InnerPage/ProjectInner2/ProjectInner2';
+import BlogGrid2 from '../Pages/InnerPage/BlogGrid2/BlogGrid2';
+import TeamInner2 from '../Pages/InnerPage/TeamInner2/TeamInner2';
+import MissionInner2 from '../Pages/InnerPage/MissionInner2/MissionInner2';
 
 const router = createBrowserRouter([
   {
@@ -149,8 +152,20 @@ const router = createBrowserRouter([
         element: <AboutInner3 />,
       },
       {
+        path: '/mission_inner2',
+        element: <MissionInner2 />,
+      },
+      {
+        path: '/team_inner2',
+        element: <TeamInner2 />,
+      },
+      {
         path: '/project2',
         element: <ProjectInner2 />,
+      },
+      {
+        path: '/blog_grid2',
+        element: <BlogGrid2 />,
       },
       {
         path: '/contact2',

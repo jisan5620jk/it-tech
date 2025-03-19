@@ -91,7 +91,7 @@ const About = () => {
               </Link>
               <Link to={'/mission_inner'}>
                 <button className='px-8 py-[6px] rounded-full bg-PrimaryColor-0 text-white font-Nunito'>
-                  Vission
+                  vision
                 </button>
               </Link>
             </div>

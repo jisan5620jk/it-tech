@@ -27,8 +27,8 @@ const About = () => {
     },
   };
 
-  const tabs = document.querySelectorAll('.mission-vission-tab-btn');
-  const allContent = document.querySelectorAll('.mission-vission-tab-content');
+  const tabs = document.querySelectorAll('.mission-vision-tab-btn');
+  const allContent = document.querySelectorAll('.mission-vision-tab-content');
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
@@ -180,14 +180,14 @@ const About = () => {
               Discover Our Security Story
             </h1>
             <ul className='flex items-center gap-10 border-b border-white border-opacity-10 pb-3 mb-8'>
-              <li className='mission-vission-tab-btn active font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
+              <li className='mission-vision-tab-btn active font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
                 Our Mission
               </li>
-              <li className='mission-vission-tab-btn font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
-                Our Vission
+              <li className='mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
+                Our vision
               </li>
             </ul>
-            <div className='mission-vission-tab-content active'>
+            <div className='mission-vision-tab-content active'>
               <p className='font-Nunito text-white text-opacity-60'>
                 At IT-Tech, our mission is to empower businesses by providing
                 innovative and reliable IT solutions. We aim transform the
@@ -198,9 +198,9 @@ const About = () => {
                 streamlining processes.
               </p>
             </div>
-            <div className='mission-vission-tab-content'>
+            <div className='mission-vision-tab-content'>
               <p className='font-Nunito text-white text-opacity-60'>
-                At IT-Tech, our vission is to empower businesses by providing
+                At IT-Tech, our vision is to empower businesses by providing
                 innovative and reliable IT solutions. We aim transform the
                 payment our clients operate through cutting-edge technology,
                 tailored services, and unwavering support. Our goal is to

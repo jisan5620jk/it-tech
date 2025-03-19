@@ -29,11 +29,11 @@ const serviceData = [
   {
     id: 3,
     serviceIcon: serviceIcon4,
-    serviceTitle: 'IT-Tech Mission and vission',
+    serviceTitle: 'IT-Tech Mission and vision',
     serviceDesc:
       'Authoritatively disintermediate business to optimal web-readiness task vertical service timely human capital',
     serviceUrl: '/service',
-    serviceBtnText: 'Mission & Vission',
+    serviceBtnText: 'Mission & vision',
     serviceBtnIcon: <GoArrowRight />,
   },
 ];
@@ -49,7 +49,7 @@ const Service = () => {
               draggable={false}
               alt='Shape'
             />{' '}
-           More About{' '}
+            More About{' '}
             <img
               src={titleShape}
               draggable={false}
