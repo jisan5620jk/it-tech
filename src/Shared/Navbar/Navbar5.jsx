@@ -496,6 +496,24 @@ const Navbar5 = () => {
                           <Link to={'/blog_grid2'}>Blog Grid Style Two</Link>
                         </li>
                         <li>
+                          <Link to={'/blog_list'}>Blog List Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/blog_list_left_sidebar'}>
+                            Blog List Left Sidebar
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/blog_list_right_sidebar'}>
+                            Blog List Right Sidebar
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/blog_list_no_sidebar'}>
+                            Blog List No Sidebar
+                          </Link>
+                        </li>
+                        <li>
                           <Link to={'/blog_details'}>blog details</Link>
                         </li>
                       </ul>

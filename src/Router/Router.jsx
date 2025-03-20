@@ -15,8 +15,7 @@ import ServiceDetails4 from '../Pages/InnerPage/ServiceDetails/ServiceDetails4';
 import ServiceDetails5 from '../Pages/InnerPage/ServiceDetails/ServiceDetails5';
 import ServiceDetails6 from '../Pages/InnerPage/ServiceDetails/ServiceDetails6';
 import BlogGrid from '../Pages/InnerPage/BlogGrid/BlogGrid';
-import BlogLeftSideBar from '../Pages/InnerPage/BlogList/BlogLeftSideBar';
-import BlogRightSideBar from '../Pages/InnerPage/BlogList/BlogRightSideBar';
+import BlogList from '../Pages/InnerPage/BlogList2/BlogList';
 import ProjectDetails from '../Pages/InnerPage/ProjectDetails/ProjectDetails';
 import ContactInner from '../Pages/InnerPage/ContactInner/ContactInner';
 import LocationInner from '../Pages/InnerPage/LocationInner/LocationInner';
@@ -50,6 +49,9 @@ import ProjectInner2 from '../Pages/InnerPage/ProjectInner2/ProjectInner2';
 import BlogGrid2 from '../Pages/InnerPage/BlogGrid2/BlogGrid2';
 import TeamInner2 from '../Pages/InnerPage/TeamInner2/TeamInner2';
 import MissionInner2 from '../Pages/InnerPage/MissionInner2/MissionInner2';
+import BlogLeftSideBar from '../Pages/InnerPage/BlogList/BlogLeftSideBar';
+import BlogRightSideBar from '../Pages/InnerPage/BlogList/BlogRightSideBar';
+import BlogNoSideBar from '../Pages/InnerPage/BlogList/BlogNoSideBar';
 
 const router = createBrowserRouter([
   {
@@ -168,6 +170,18 @@ const router = createBrowserRouter([
         element: <BlogGrid2 />,
       },
       {
+        path: '/blog_list_no_sidebar',
+        element: <BlogNoSideBar />,
+      },
+      {
+        path: '/blog_list_left_sidebar',
+        element: <BlogLeftSideBar />,
+      },
+      {
+        path: '/blog_list_right_sidebar',
+        element: <BlogRightSideBar />,
+      },
+      {
         path: '/contact2',
         element: <ContactInner2 />,
       },
@@ -250,12 +264,8 @@ const router = createBrowserRouter([
         element: <BlogGrid />,
       },
       {
-        path: '/blog_left_sidebar',
-        element: <BlogLeftSideBar />,
-      },
-      {
-        path: '/blog_right_sidebar',
-        element: <BlogRightSideBar />,
+        path: '/blog_list',
+        element: <BlogList />,
       },
       {
         path: '/blog_details',
