@@ -53,6 +53,7 @@ import BlogLeftSideBar from '../Pages/InnerPage/BlogList/BlogLeftSideBar';
 import BlogRightSideBar from '../Pages/InnerPage/BlogList/BlogRightSideBar';
 import BlogNoSideBar from '../Pages/InnerPage/BlogList/BlogNoSideBar';
 import BlogDetails2 from '../Pages/InnerPage/BlogDetails2/BlogDetails2';
+import FaqInner2 from '../Pages/InnerPage/Faq2/FaqInner2';
 
 const router = createBrowserRouter([
   {
@@ -165,6 +166,10 @@ const router = createBrowserRouter([
       {
         path: '/project2',
         element: <ProjectInner2 />,
+      },
+      {
+        path: '/faq_inner2',
+        element: <FaqInner2 />,
       },
       {
         path: '/blog_grid2',

@@ -43,7 +43,7 @@ const FaqInner = () => {
 
   return (
     <>
-      <HelmetChanger title={'Faq Inner Page'} />
+      <HelmetChanger title={'Faq Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'FAQ'}
         breadCrumbIcon={<FaArrowRightLong />}

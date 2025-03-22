@@ -50,7 +50,7 @@ const BlogDetails2 = () => {
                     IT Solution
                   </h6>
                 </div>
-                <h4 className='font-Rajdhani font-bold text-left text-lg sm:text-2xl md:text-3xl text-HeadingColor-0 mt-[14px] mb-5'>
+                <h4 className='font-Rajdhani font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 mt-[14px] mb-5'>
                   Expert Advice for Growing Your Digital Presence
                 </h4>
                 <p className='font-Nunito text-TextColor2-0 pb-7 md:w-11/12'>
@@ -66,7 +66,7 @@ const BlogDetails2 = () => {
                   open-source solutions. Objectively customize interactive infrastructures before diverse interfaces. Efficiently 
                   leverage other's optimal models for stand-alone processes.`}
                 </p>
-                <h4 className='font-Rajdhani font-bold text-left text-lg sm:text-2xl md:text-3xl text-HeadingColor-0 mt-[14px] mb-3'>
+                <h4 className='font-Rajdhani font-bold text-left text-xl sm:text-2xl md:text-3xl text-HeadingColor-0 sm:mt-[14px] mb-3'>
                   Rules & Regulations
                 </h4>
                 <p className='font-Nunito text-TextColor2-0'>
@@ -76,34 +76,34 @@ const BlogDetails2 = () => {
                   generation applications.`}
                 </p>
                 <ul className='flex flex-col gap-[14px] mt-8'>
-                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg sm:text-lg text-HeadingColor-0'>
                     <FaAnglesRight
                       size={'16'}
                       className='text-PrimaryColor-0'
                     />
-                    Phosfluorescently envisioneer process done
+                   <span className='flex-1'>Phosfluorescently envisioneer process done</span>
                   </li>
-                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg sm:text-lg text-HeadingColor-0'>
                     <FaAnglesRight
                       size={'16'}
                       className='text-PrimaryColor-0'
                     />
-                    Rapidiously deliver progressive experiences rather
+                   <span className='flex-1'>Rapidiously deliver progressive experiences rather</span>
                   </li>
-                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg sm:text-lg text-HeadingColor-0'>
                     <FaAnglesRight
                       size={'16'}
                       className='text-PrimaryColor-0'
                     />
-                    Professionally actualize intuitive products via
-                    multifunctional
+                    <span className='flex-1'>Professionally actualize intuitive products via multifunctional</span>
+                    
                   </li>
-                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg text-HeadingColor-0'>
+                  <li className='flex gap-2 items-center font-Rajdhani font-semibold text-lg sm:text-lg text-HeadingColor-0'>
                     <FaAnglesRight
                       size={'16'}
                       className='text-PrimaryColor-0'
                     />
-                    Conveniently extend covalent metrics
+                    <span className='flex-1'>Conveniently extend covalent metrics</span>
                   </li>
                 </ul>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-7 mt-14'>
@@ -140,14 +140,14 @@ const BlogDetails2 = () => {
                     <h5 className='font-Rajdhani font-semibold text-xl text-HeadingColor-0 '>
                       Tags :
                     </h5>
-                    <div className='font-Nunito text-lg font-medium flex flex-col sm:flex-row gap-2'>
+                    <div className='font-Nunito text-lg font-medium flex gap-2'>
                       <Link to={'/'}>
-                        <button className='font-Nunito px-5 py-[6px] text-TextColor2-0 text-sm rounded border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
+                        <button className='font-Nunito px-2 md:px-5 py-1 sm:py-[6px] text-TextColor2-0 text-sm rounded border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
                           IT Solution
                         </button>
                       </Link>
                       <Link to={'/'}>
-                        <button className='font-Nunito px-5 py-[6px] text-TextColor2-0 text-sm rounded border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
+                        <button className='font-Nunito px-2 md:px-5 py-1 md:py-[6px] text-TextColor2-0 text-sm rounded border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-PrimaryColor-0 hover:text-white'>
                           Development
                         </button>
                       </Link>
@@ -199,12 +199,12 @@ const BlogDetails2 = () => {
                   <div className=''>
                     <Link
                       to={'/'}
-                      className='flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-2 sm:items-center lg:items-start rounded-md border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-BodyBg-0 py-7 px-7'
+                      className='flex gap-2 rounded-md border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-BodyBg-0 py-3 sm:py-7 px-2 sm:px-7 md:px-4 xl:px-5 2xl:px-7'
                     >
                       <button className='text-TextColor2-0'>
                         <FaAngleLeft size={'16'} />
                       </button>
-                      <div className='size-20 rounded overflow-hidden mr-3'>
+                      <div className='size-20 rounded overflow-hidden sm:mr-3'>
                         <img
                           src={blogListImg2}
                           draggable={false}
@@ -212,7 +212,7 @@ const BlogDetails2 = () => {
                         />
                       </div>
                       <div className='flex-1'>
-                        <h4 className='font-Rajdhani font-semibold sm:text-lg md:text-base 2xl:text-xl text-HoverColor-0'>
+                        <h4 className='font-Rajdhani font-semibold text-sm sm:text-lg md:text-base 2xl:text-xl text-HoverColor-0'>
                           Data-Driven Strategies and Case Studies Success.
                         </h4>
                         <p className='font-Poppins text-sm text-TextColor2-0 mt-1'>
@@ -224,17 +224,17 @@ const BlogDetails2 = () => {
                   <div className=''>
                     <Link
                       to={'/'}
-                      className='flex flex-col sm:flex-row lg:flex-col xl:flex-row xl:items-center gap-2 sm:items-center lg:items-start rounded-md border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-BodyBg-0 py-7 px-7'
+                      className='flex gap-2 rounded-md border border-SecondaryColor-0 border-opacity-10 transition-all duration-500 hover:bg-BodyBg-0 py-3 sm:py-7 px-2 sm:px-7 md:px-4 xl:px-5 2xl:px-7'
                     >
                       <div className='flex-1'>
-                        <h4 className='text-right font-Rajdhani font-semibold sm:text-lg md:text-base 2xl:text-xl text-HoverColor-0'>
+                        <h4 className='text-right font-Rajdhani font-semibold text-sm sm:text-lg md:text-base 2xl:text-xl text-HoverColor-0'>
                           The Complete SEO Blog for Digital Success.
                         </h4>
                         <p className='text-right font-Poppins text-sm text-TextColor2-0 mt-1'>
                           30 Mar, 2025
                         </p>
                       </div>
-                      <div className='size-20 rounded overflow-hidden ml-3'>
+                      <div className='size-20 rounded overflow-hidden sm:ml-3'>
                         <img
                           src={blogListImg2}
                           draggable={false}
@@ -247,10 +247,10 @@ const BlogDetails2 = () => {
                     </Link>
                   </div>
                 </div>
-                <h3 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-3xl mb-10 mt-24'>
+                <h3 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-3xl mb-5 sm:mb-10 mt-10 sm:mt-16 md:mt-24'>
                   {`"02"`} Comments
                 </h3>
-                <div className='flex flex-col sm:flex-row gap-6 border border-HeadingColor-0 border-opacity-10 rounded-md px-8 pt-6 pb-7'>
+                <div className='flex flex-col sm:flex-row gap-6 border border-HeadingColor-0 border-opacity-10 rounded-md px-4 sm:px-8 pt-6 pb-7'>
                   <div>
                     <img
                       src={user}
@@ -261,7 +261,7 @@ const BlogDetails2 = () => {
                   <div className='flex-1 relative'>
                     <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
                       Anjelina Jholi{' '}
-                      <span className='ml-1 pl-7 font-Nunito text-TextColor2-0 text-sm relative before:absolute before:top-1/2 before:left-0 before:w-5 before:h-[1px] before:bg-HeadingColor-0'>
+                      <span className='ml-1 pl-7 block sm:inline-block font-Nunito text-TextColor2-0 text-sm relative before:absolute before:top-1/2 before:left-0 before:w-5 before:h-[1px] before:bg-HeadingColor-0'>
                         January 17, 2025
                       </span>
                     </h5>
@@ -273,13 +273,13 @@ const BlogDetails2 = () => {
                       information.
                     </p>
                     <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full font-Rajdhani font-semibold font-xl uppercase absolute -top-1 right-0 underline'>
+                      <button className='text-HeadingColor-0 text-sm rounded-full font-Rajdhani font-semibold font-xl uppercase absolute top-2 sm:-top-1 right-0 underline'>
                         Reply
                       </button>
                     </Link>
                   </div>
                 </div>
-                <div className='flex flex-col sm:flex-row gap-6 border border-HeadingColor-0 border-opacity-10 rounded-md px-8 pt-6 pb-7 mt-5 md:ml-[100px]'>
+                <div className='flex flex-col sm:flex-row gap-6 border border-HeadingColor-0 border-opacity-10 rounded-md px-4 sm:px-8 pt-6 pb-7 mt-5 md:ml-[100px]'>
                   <div>
                     <img
                       src={user2}
@@ -290,7 +290,7 @@ const BlogDetails2 = () => {
                   <div className='flex-1 relative'>
                     <h5 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl'>
                       Jhon Alexon{' '}
-                      <span className='ml-1 pl-7 font-Nunito text-TextColor2-0 text-sm relative before:absolute before:top-1/2 before:left-0 before:w-5 before:h-[1px] before:bg-HeadingColor-0'>
+                      <span className='ml-1 pl-7 block sm:inline-block font-Nunito text-TextColor2-0 text-sm relative before:absolute before:top-1/2 before:left-0 before:w-5 before:h-[1px] before:bg-HeadingColor-0'>
                         April 23, 2025
                       </span>
                     </h5>
@@ -300,13 +300,13 @@ const BlogDetails2 = () => {
                       after standards in process
                     </p>
                     <Link to={'/'}>
-                      <button className='text-HeadingColor-0 text-sm rounded-full font-Rajdhani font-semibold font-xl uppercase absolute -top-1 right-0 underline'>
+                      <button className='text-HeadingColor-0 text-sm rounded-full font-Rajdhani font-semibold font-xl uppercase absolute top-2 sm:-top-1 right-0 underline'>
                         Reply
                       </button>
                     </Link>
                   </div>
                 </div>
-                <h3 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-3xl mt-20 mb-10'>
+                <h3 className='font-Rajdhani font-semibold text-HeadingColor-0 text-xl sm:text-3xl mt-10 sm:mt-16 md:mt-20 mb-10'>
                   Leave A Comments
                 </h3>
                 <form
