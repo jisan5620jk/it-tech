@@ -22,7 +22,7 @@ import HelmetChanger from '../../../Shared/Helmet/Helmet';
 const BlogDetails = () => {
   return (
     <>
-      <HelmetChanger title={'Blog Details Inner Page'} />
+      <HelmetChanger title={'Blog Details Inner Page Style One'} />
       <BreadCrumb
         breadCrumbTitle={'Blog Details'}
         breadCrumbIcon={<FaArrowRightLong />}

@@ -447,7 +447,14 @@ const Navbar3 = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to={'/blog_details'}>blog details</Link>
+                          <Link to={'/blog_details'}>
+                            Blog Details Style One
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/blog_details2'}>
+                            Blog Details Style Two
+                          </Link>
                         </li>
                       </ul>
                     </li>

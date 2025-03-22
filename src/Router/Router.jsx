@@ -52,6 +52,7 @@ import MissionInner2 from '../Pages/InnerPage/MissionInner2/MissionInner2';
 import BlogLeftSideBar from '../Pages/InnerPage/BlogList/BlogLeftSideBar';
 import BlogRightSideBar from '../Pages/InnerPage/BlogList/BlogRightSideBar';
 import BlogNoSideBar from '../Pages/InnerPage/BlogList/BlogNoSideBar';
+import BlogDetails2 from '../Pages/InnerPage/BlogDetails2/BlogDetails2';
 
 const router = createBrowserRouter([
   {
@@ -180,6 +181,10 @@ const router = createBrowserRouter([
       {
         path: '/blog_list_right_sidebar',
         element: <BlogRightSideBar />,
+      },
+      {
+        path: '/blog_details2',
+        element: <BlogDetails2 />,
       },
       {
         path: '/contact2',
