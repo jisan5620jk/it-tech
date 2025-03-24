@@ -60,7 +60,7 @@ const TeamCard = ({
         <h5 className='font-Rajdhani font-semibold text-2xl sm:text-[28px] text-white transition-all duration-500'>
           {teamTitle}
         </h5>
-        <p className='font-Nunito text-TextColor-0 transition-all duration-500 mt-1'>
+        <p className='font-Nunito text-white text-opacity-70 transition-all duration-500 mt-1'>
           {teamDesc}
         </p>
       </div>

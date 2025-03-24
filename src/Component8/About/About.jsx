@@ -31,10 +31,12 @@ const About = () => {
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
+      // Remove 'active' class from all tabs and contents
       tabs.forEach((tab) => tab.classList.remove('active'));
-      tab.classList.add('active');
-
       allContent.forEach((content) => content.classList.remove('active'));
+
+      // Add 'active' class to the clicked tab and its corresponding content
+      tab.classList.add('active');
       allContent[index].classList.add('active');
     });
   });
@@ -150,7 +152,7 @@ const About = () => {
                 Our Mission
               </li>
               <li className='mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 cursor-pointer relative z-10'>
-                Our vision
+                Our Vision
               </li>
             </ul>
             <div className='mission-vision-tab-content active'>

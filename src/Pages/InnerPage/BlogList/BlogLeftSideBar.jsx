@@ -183,7 +183,7 @@ const BlogRightSideBar = () => {
                         The Complete SEO Blog for Digital Success.
                       </h6>
                       <p className='font-Nunito text-TextColor2-0 text-sm mt-1'>
-                        30 Mar, 2024
+                        30 Mar, 2025
                       </p>
                     </div>
                   </button>

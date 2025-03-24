@@ -14,7 +14,7 @@ const processData = [
   {
     id: 1,
     featureIcon: featureIcon,
-    featureTitle: 'Robotic Automation',
+    featureTitle: 'Custom Softwares Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
@@ -24,7 +24,7 @@ const processData = [
   {
     id: 2,
     featureIcon: featureIcon2,
-    featureTitle: 'Machine Learning',
+    featureTitle: 'Website Design and Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
@@ -34,7 +34,7 @@ const processData = [
   {
     id: 3,
     featureIcon: featureIcon3,
-    featureTitle: 'AI System Design',
+    featureTitle: 'Cloud Computing and Hosting Service',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
@@ -44,7 +44,7 @@ const processData = [
   {
     id: 4,
     featureIcon: featureIcon4,
-    featureTitle: 'AI Integrations',
+    featureTitle: 'Ai & Machine Learning Integrations',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
@@ -54,7 +54,7 @@ const processData = [
   {
     id: 5,
     featureIcon: featureIcon5,
-    featureTitle: 'AI Integrations',
+    featureTitle: 'Androind and IOS Apps Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
@@ -64,7 +64,7 @@ const processData = [
   {
     id: 6,
     featureIcon: featureIcon6,
-    featureTitle: 'AI Integrations',
+    featureTitle: '3D Graphics & Vector Designing',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
     featureUrl: '/service',
