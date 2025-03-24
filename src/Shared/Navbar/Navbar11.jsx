@@ -398,8 +398,8 @@ const Navbar11 = () => {
                       </ul>
                     </li>
                     <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Portfolio
+                      <Link to={'/project2'}>
+                        Project
                         <span>
                           <FaChevronDown />
                         </span>

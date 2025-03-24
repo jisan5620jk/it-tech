@@ -316,8 +316,24 @@ const Navbar8 = () => {
                         </li>
                       </ul>
                     </li>
-                    <li>
-                      <Link to={'/about'}>About</Link>
+                    <li className='has-dropdown'>
+                      <Link to={'/about'}>
+                        About
+                        <span>
+                          <FaChevronDown />
+                        </span>
+                      </Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/about'}>About Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/about2'}>About Style Two</Link>
+                        </li>
+                        <li>
+                          <Link to={'/about3'}>About Style Three</Link>
+                        </li>
+                      </ul>
                     </li>
                     <li className='has-dropdown'>
                       <Link to={'/service'}>
@@ -381,8 +397,8 @@ const Navbar8 = () => {
                       </ul>
                     </li>
                     <li className='has-dropdown'>
-                      <Link to={'/'}>
-                        Portfolio
+                      <Link to={'/project2'}>
+                        Project
                         <span>
                           <FaChevronDown />
                         </span>
@@ -450,8 +466,21 @@ const Navbar8 = () => {
                         </li>
                       </ul>
                     </li>
-                    <li>
-                      <Link to={'/contact'}>Contact</Link>
+                    <li className='has-dropdown'>
+                      <Link to={'/contact'}>
+                        Contact
+                        <span>
+                          <FaChevronDown />
+                        </span>
+                      </Link>
+                      <ul className='submenu'>
+                        <li>
+                          <Link to={'/contact'}>Contact Style One</Link>
+                        </li>
+                        <li>
+                          <Link to={'/contact2'}>Contact Style Two</Link>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </nav>
