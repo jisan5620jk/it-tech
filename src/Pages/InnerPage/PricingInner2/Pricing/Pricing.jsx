@@ -26,7 +26,7 @@ const Pricing = () => {
   const [toggler, setToggler] = useState(false);
 
   return (
-    <section className="pricing relative z-20 overflow-hidden py-16 md:py-20 lg:pt-28 lg:pb-[150px] bg-[#f8f8ff] lg:bg-transparent bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-top lg:bg-center">
+    <section className="pricing relative overflow-hidden py-16 md:py-20 lg:pt-28 lg:pb-[150px] bg-[#f8f8ff] lg:bg-transparent bg-[url('/images/pricing-bg2.png')] bg-cover bg-no-repeat bg-top lg:bg-center">
       <div className='Container'>
         <div className='flex flex-wrap justify-between items-center'>
           <div className=''>
@@ -78,10 +78,6 @@ const Pricing = () => {
                   Play
                 </button>
               </div>
-              <FsLightbox
-                toggler={toggler}
-                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-              />
               <div className='ml-auto max-w-[412px] w-full bg-BodyBg6-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
                 <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
                   Business
@@ -211,10 +207,6 @@ const Pricing = () => {
                   Play
                 </button>
               </div>
-              <FsLightbox
-                toggler={toggler}
-                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-              />
               <div className='ml-auto max-w-[412px] w-full bg-BodyBg-0 px-5 xl:px-10 py-7 xl:py-12 rounded-lg'>
                 <h5 className='font-Rajdhani font-semibold text-2xl leading-4 text-HeadingColor-0'>
                   Business
@@ -332,6 +324,10 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+              <FsLightbox
+                toggler={toggler}
+                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
+              />
     </section>
   );
 };

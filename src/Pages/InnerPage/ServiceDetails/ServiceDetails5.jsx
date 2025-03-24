@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
 import wedgetIcon from "/images/widget-icon.png";
 import serviceDetailsIcon from "/images/services-details-icon-1.png";
 import serviceDetailsIcon2 from "/images/services-details-icon-2.png";
@@ -22,7 +22,7 @@ const ServiceDetails5 = () => {
   return (
     <>
       <HelmetChanger title={'Service Details Inner Page'} />
-      <BreadCrumb
+      <BreadCrumb2
         breadCrumbTitle={'Web Design'}
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Service Details'}

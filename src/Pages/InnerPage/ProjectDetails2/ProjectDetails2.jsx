@@ -5,6 +5,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import HelmetChanger from '../../../Shared/Helmet/Helmet';
 import galleryThumb from '/images/project-details-thumb2.jpg';
 import galleryThumb2 from '/images/project-details-thumb3.jpg';
+import CallDoAction from '../ContactInner2/CallDoAction';
 
 const ProjectDetails2 = () => {
   return (
@@ -96,6 +97,7 @@ const ProjectDetails2 = () => {
           </div>
         </div>
       </section>
+      <CallDoAction />
     </>
   );
 };

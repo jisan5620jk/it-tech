@@ -24,10 +24,7 @@ const About = () => {
                   onClick={() => setToggler(!toggler)}
                 />
               </button>
-              <FsLightbox
-                toggler={toggler}
-                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
-              />
+              
             </div>
           </div>
           <div className='relative'>
@@ -97,7 +94,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div><FsLightbox
+                toggler={toggler}
+                sources={['https://youtu.be/NKJ-6zCSk2E?si=XQUpq01QZ8hNXLdc']}
+              />
     </section>
   );
 };

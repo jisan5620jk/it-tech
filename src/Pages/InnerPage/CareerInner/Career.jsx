@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Career = () => {
   return (
-    <section className="bg-BodyBg-0 py-28">
+    <section className="bg-BodyBg-0 py-16 md:py-20 lg:py-28">
       <div className="Container">
-        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-3 items-center mb-[120px]">
+        <div className="grid grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-3 items-center mb-16 md:mb-20 lg:mb-28">
           <div className="col-span-2">
             <h4 className="font-Rajdhani text-2xl font-semibold">
               Inspire and Get Inspired by{" "}
@@ -40,7 +40,7 @@ const Career = () => {
           </div>
           <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
-              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
+              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border border-HeadingColor-0 border-opacity-10 rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now
               </button>
             </Link>
@@ -67,7 +67,7 @@ const Career = () => {
           </div>
           <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
-              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
+              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border border-HeadingColor-0 border-opacity-10 rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now
               </button>
             </Link>
@@ -94,13 +94,13 @@ const Career = () => {
           </div>
           <div className="col-span-4 flex lg:justify-end">
             <Link to={"/contact"}>
-              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
+              <button className="font-Nunito text-HeadingColor-0 px-[60px] py-[14px] border border-HeadingColor-0 border-opacity-10 rounded-full transition-all duration-500 hover:border-PrimaryColor-0">
                 Apply Now
               </button>
             </Link>
           </div>
         </div>
-        <div className="mt-[120px]">
+        <div className="mt-16 md:mt-20 lg:mt-28">
           <h5 className="font-Rajdhani font-semibold text-HeadingColor-0 text-2xl mb-7">Job Requirements</h5>
           <p className="font-Nunito text-TextColor2-0">
             A job responsibility could be a description of your duties in a very

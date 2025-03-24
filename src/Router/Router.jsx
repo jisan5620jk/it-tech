@@ -56,6 +56,7 @@ import BlogDetails2 from '../Pages/InnerPage/BlogDetails2/BlogDetails2';
 import FaqInner2 from '../Pages/InnerPage/Faq2/FaqInner2';
 import PricingInner2 from '../Pages/InnerPage/PricingInner2/PricingInner2';
 import ProjectDetails2 from '../Pages/InnerPage/ProjectDetails2/ProjectDetails2';
+import WhyChoose2 from '../Pages/InnerPage/WhyChoose2/WhyChoose2';
 
 const router = createBrowserRouter([
   {
@@ -166,6 +167,38 @@ const router = createBrowserRouter([
         element: <TeamInner2 />,
       },
       {
+        path: '/service',
+        element: <ServiceInner />,
+      },
+      {
+        path: '/service_details',
+        element: <ServiceDetails />,
+      },
+      {
+        path: '/service_details2',
+        element: <ServiceDetails2 />,
+      },
+      {
+        path: '/service_details3',
+        element: <ServiceDetails3 />,
+      },
+      {
+        path: '/service_details4',
+        element: <ServiceDetails4 />,
+      },
+      {
+        path: '/service_details5',
+        element: <ServiceDetails5 />,
+      },
+      {
+        path: '/service_details6',
+        element: <ServiceDetails6 />,
+      },
+      {
+        path: '/career',
+        element: <CareerInner />,
+      },
+      {
         path: '/project2',
         element: <ProjectInner2 />,
       },
@@ -180,6 +213,10 @@ const router = createBrowserRouter([
       {
         path: '/faq_inner2',
         element: <FaqInner2 />,
+      },
+      {
+        path: '/why_choose2',
+        element: <WhyChoose2 />,
       },
       {
         path: '/blog_grid2',
@@ -228,40 +265,8 @@ const router = createBrowserRouter([
         element: <TeamDetails />,
       },
       {
-        path: '/service',
-        element: <ServiceInner />,
-      },
-      {
-        path: '/service_details',
-        element: <ServiceDetails />,
-      },
-      {
-        path: '/service_details2',
-        element: <ServiceDetails2 />,
-      },
-      {
-        path: '/service_details3',
-        element: <ServiceDetails3 />,
-      },
-      {
-        path: '/service_details4',
-        element: <ServiceDetails4 />,
-      },
-      {
-        path: '/service_details5',
-        element: <ServiceDetails5 />,
-      },
-      {
-        path: '/service_details6',
-        element: <ServiceDetails6 />,
-      },
-      {
         path: '/project',
         element: <ProjectInner />,
-      },
-      {
-        path: '/career',
-        element: <CareerInner />,
       },
       {
         path: '/project_details',

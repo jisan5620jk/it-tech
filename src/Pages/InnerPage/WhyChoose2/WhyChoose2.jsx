@@ -1,21 +1,23 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import WhyChooseUs from "./WhyChooseUs";
+import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import Service from "./Service";
+import WhyChooseUs from "./WhyChooseUs";
 
 
-const WhyChoose = () => {
+const WhyChoose2 = () => {
   return (
     <>
-      <HelmetChanger title={'Why Choose Us Inner Page Style One'} />
-      <BreadCrumb
+      <HelmetChanger title={'Why Choose Us Inner Page Style Two'} />
+      <BreadCrumb2
         breadCrumbTitle={'Why Choose Us'}
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Why Choose Us'}
       />
       <WhyChooseUs />
+      <Service />
     </>
   );
 };
 
-export default WhyChoose;
+export default WhyChoose2;

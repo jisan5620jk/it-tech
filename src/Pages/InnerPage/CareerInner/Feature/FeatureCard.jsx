@@ -11,9 +11,9 @@ const FeatureCard = ({
   featureBtn,
 }) => {
   return (
-    <div className="text-center shadow-shade overflow-hidden group px-10 pt-[60px] pb-8 rounded-lg bg-white relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[url('/images/feature-box-shape.png')] before:bg-cover before:bg-center before:bg-no-repeat before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0">
+    <div className="text-center shadow-shade overflow-hidden group px-8 sm:px-10 pt-[60px] pb-8 rounded-lg bg-white relative z-10 before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-[url('/images/feature-box-shape.png')] before:bg-cover before:bg-center before:bg-no-repeat before:transition-all before:duration-500 before:-z-10 hover:before:h-full hover:before:top-0">
       <div className="relative text-center z-10">
-        <img src={featureIcon} draggable="false" className="m-auto" />
+        <img src={featureIcon} draggable="false" className="mx-auto group-hover:animate-wobble_vertical" />
         <img
           src={featureshape}
           draggable="false"
@@ -25,7 +25,7 @@ const FeatureCard = ({
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 transition-all duration-500 opacity-0 group-hover:opacity-100"
         />
       </div>
-      <h4 className="font-Rajdhani font-bold text-2xl sm:text-[26px] lg:text-2xl xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-11 mb-2">
+      <h4 className="font-Rajdhani font-semibold text-2xl sm:text-[26px] lg:text-2xl xl:text-[26px] text-HeadingColor-0 transition-all duration-500 group-hover:text-white mt-11 mb-2">
         {featureTitle}
       </h4>
       <p className="font-Nunito text-TextColor2-0 transition-all duration-500 group-hover:text-white mb-[18px]">

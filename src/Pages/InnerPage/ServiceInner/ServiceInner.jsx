@@ -6,9 +6,10 @@ import serviceIcon4 from "/images/service3-icon4.png";
 import serviceIcon5 from "/images/service3-icon5.png";
 import serviceIcon6 from "/images/service3-icon6.png";
 import ServiceCard from "./ServiceCard";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
+import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import titleShape from '/images/sub-title-shape.png';
 
 const serviceData = [
   {
@@ -97,18 +98,28 @@ const ServiceInner = () => {
   return (
     <>
       <HelmetChanger title={'Service Inner Page'} />
-      <BreadCrumb
+      <BreadCrumb2
         breadCrumbTitle={'Our Services'}
         breadCrumbIcon={<FaArrowRightLong />}
         breadCrumbLink={'Our Services'}
       />
-      <section className='pt-28 pb-[120px] p relative z-10 bg-BodyBg-0'>
+      <section className='py-16 md:py-0 lg:py-28 relative z-10 bg-BodyBg-0'>
         <div className='Container'>
           <div className='text-center'>
-            <h5 className='font-Rajdhani text-lg font-semibold text-PrimaryColor-0'>
-              IT Support For Business
+            <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />{' '}
+              IT Support For Business{' '}
+              <img
+                src={titleShape}
+                draggable={false}
+                alt='Shape'
+              />
             </h5>
-            <h1 className='font-Rajdhani font-bold text-[20px] text-HeadingColor-0 leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] mt-[18px]'>
+            <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[44px] md:leading-[54px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] mb-4'>
               Ensuring Your Success Trusted <br />
               IT Services Source
             </h1>

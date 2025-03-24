@@ -371,6 +371,9 @@ const Navbar11 = () => {
                           </Link>
                         </li>
                         <li>
+                          <Link to={'/career'}>IT Solution Career</Link>
+                        </li>
+                        <li>
                           <Link to={'/team_inner'}>Team Member Style One</Link>
                         </li>
                         <li>
@@ -383,29 +386,14 @@ const Navbar11 = () => {
                           <Link to={'/pricing2'}>Pricing Style Two</Link>
                         </li>
                         <li>
-                          <Link to={'/faq_inner'}>Faq Style One</Link>
-                        </li>
-                        <li>
-                          <Link to={'/faq_inner2'}>Faq Style Two</Link>
-                        </li>
-                        <li>
-                          <Link to={'/project'}>Project Style One</Link>
-                        </li>
-                        <li>
-                          <Link to={'/project2'}>Project Style Two</Link>
-                        </li>
-                        <li>
-                          <Link to={'/project_details'}>
-                            Project Details Style One
+                          <Link to={'/why_choose'}>
+                            Why Choose Us Style One
                           </Link>
                         </li>
                         <li>
-                          <Link to={'/project_details2'}>
-                            Project Details Style Two
+                          <Link to={'/why_choose2'}>
+                            Why Choose Us Style Two
                           </Link>
-                        </li>
-                        <li>
-                          <Link to={'/contact'}>Contact</Link>
                         </li>
                       </ul>
                     </li>
