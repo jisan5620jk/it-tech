@@ -459,8 +459,13 @@ const Navbar10 = () => {
                           <Link to={'/project2'}>Project Style Two</Link>
                         </li>
                         <li>
-                          <Link to={'/portfolio_details'}>
-                            Portfolio details
+                          <Link to={'/project_details'}>
+                            Project Details Style One
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/project_details2'}>
+                            Project Details Style Two
                           </Link>
                         </li>
                         <li>
@@ -483,8 +488,13 @@ const Navbar10 = () => {
                           <Link to={'/project2'}>Project Style Two</Link>
                         </li>
                         <li>
-                          <Link to={'/portfolio_details'}>
-                            Portfolio details
+                          <Link to={'/project_details'}>
+                            Project Details Style One
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to={'/project_details2'}>
+                            Project Details Style Two
                           </Link>
                         </li>
                       </ul>

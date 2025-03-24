@@ -55,6 +55,7 @@ import BlogNoSideBar from '../Pages/InnerPage/BlogList/BlogNoSideBar';
 import BlogDetails2 from '../Pages/InnerPage/BlogDetails2/BlogDetails2';
 import FaqInner2 from '../Pages/InnerPage/Faq2/FaqInner2';
 import PricingInner2 from '../Pages/InnerPage/PricingInner2/PricingInner2';
+import ProjectDetails2 from '../Pages/InnerPage/ProjectDetails2/ProjectDetails2';
 
 const router = createBrowserRouter([
   {
@@ -171,6 +172,10 @@ const router = createBrowserRouter([
       {
         path: '/pricing2',
         element: <PricingInner2 />,
+      },
+      {
+        path: '/project_details2',
+        element: <ProjectDetails2 />,
       },
       {
         path: '/faq_inner2',
