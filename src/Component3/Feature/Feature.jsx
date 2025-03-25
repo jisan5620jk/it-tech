@@ -17,7 +17,7 @@ const processData = [
     featureTitle: 'Custom Softwares Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -27,7 +27,7 @@ const processData = [
     featureTitle: 'Website Design and Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -37,7 +37,7 @@ const processData = [
     featureTitle: 'Cloud Computing and Hosting Service',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -47,7 +47,7 @@ const processData = [
     featureTitle: 'Ai & Machine Learning Integrations',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -57,7 +57,7 @@ const processData = [
     featureTitle: 'Androind and IOS Apps Development',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -67,7 +67,7 @@ const processData = [
     featureTitle: '3D Graphics & Vector Designing',
     featureDesc:
       'Competently leverage existing top-line maximize cost effective done',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Learn More',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -95,7 +95,7 @@ const Feature = () => {
           </div>
           <div className=''>
             <Link
-              to={'/service'}
+              to={'/service_details'}
               className='inline-block'
             >
               <button className='primary-btn'>

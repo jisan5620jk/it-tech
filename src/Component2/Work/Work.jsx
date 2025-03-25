@@ -15,7 +15,7 @@ const workCard = [
     id: 1,
     workImg: workImg4,
     workVideoIcon: <IoPlaySharp />,
-    workBoxLink: '/',
+    workBoxLink: '/project_details',
     workTitle: 'High Efficiency Robotics Automotion',
     workTag: 'Artifial',
     workTag2: 'Robotics',
@@ -24,7 +24,7 @@ const workCard = [
     id: 2,
     workImg: workImg3,
     workVideoIcon: <IoPlaySharp />,
-    workBoxLink: '/',
+    workBoxLink: '/project_details',
     workTitle: 'High Efficiency Robotics Automotion',
     workTag: 'Artifial',
     workTag2: 'Robotics',
@@ -33,7 +33,7 @@ const workCard = [
     id: 3,
     workImg: workImg2,
     workVideoIcon: <IoPlaySharp />,
-    workBoxLink: '/',
+    workBoxLink: '/project_details',
     workTitle: 'High Efficiency Robotics Automotion',
     workTag: 'Artifial',
     workTag2: 'Robotics',
@@ -42,7 +42,7 @@ const workCard = [
     id: 4,
     workImg: workImg,
     workVideoIcon: <IoPlaySharp />,
-    workBoxLink: '/',
+    workBoxLink: '/project_details',
     workTitle: 'High Efficiency Robotics Automotion',
     workTag: 'Artifial',
     workTag2: 'Robotics',
@@ -134,7 +134,7 @@ const Work = () => {
           </div>
           <div>
             <Link
-              to={'/about'}
+              to={'/project'}
               className='inline-block'
             >
               <button className='primary-btn'>

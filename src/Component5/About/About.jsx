@@ -114,7 +114,7 @@ const About = () => {
             </div>
             <div className='flex items-center gap-16'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>
@@ -152,7 +152,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={dotShape} draggable={false} alt="Shape"  className='absolute bottom-0 right-0 hidden 2xl:block'/>
+      <img
+        src={dotShape}
+        draggable={false}
+        alt='Shape'
+        className='absolute bottom-0 right-0 hidden 2xl:block'
+      />
     </section>
   );
 };

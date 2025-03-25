@@ -113,7 +113,7 @@ const About = () => {
               </ul>
             </div>
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block'
             >
               <button className='primary-btn'>

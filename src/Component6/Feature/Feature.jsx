@@ -14,7 +14,7 @@ const processData = [
     featureDesc:
       'Distinctively reconceptualize mission tech positioning materials after',
     featureDotIcon: <HiDotsHorizontal />,
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnIcon: <TbArrowRight />,
   },
   {
@@ -24,7 +24,7 @@ const processData = [
     featureDesc:
       'Distinctively reconceptualize mission tech positioning materials after',
     featureDotIcon: <HiDotsHorizontal />,
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnIcon: <TbArrowRight />,
   },
   {
@@ -34,7 +34,7 @@ const processData = [
     featureDesc:
       'Distinctively reconceptualize mission tech positioning materials after',
     featureDotIcon: <HiDotsHorizontal />,
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnIcon: <TbArrowRight />,
   },
 ];

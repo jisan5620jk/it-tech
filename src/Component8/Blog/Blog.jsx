@@ -17,7 +17,7 @@ const blogData = [
     blogThumb: blogThumb,
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'How to Optimize Your CCTV Camera Placement',
     blogBtnText: 'Read More',
   },
@@ -26,7 +26,7 @@ const blogData = [
     blogThumb: blogThumb2,
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Exploring Self-Driving Cars to Factory Automation',
     blogBtnText: 'Read More',
   },
@@ -35,7 +35,7 @@ const blogData = [
     blogThumb: blogThumb3,
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Top 5 Benefits of Installing CCTV Commercial Properties',
     blogBtnText: 'Read More',
   },
@@ -91,7 +91,7 @@ const Blog = () => {
           </div>
           <div className=''>
             <Link
-              to={'/blog_grid'}
+              to={'/blog_grid2'}
               className='inline-block'
             >
               <button className='primary-btn'>

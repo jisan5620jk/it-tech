@@ -79,6 +79,7 @@ const Faq = () => {
             </p>
             <form
               action='https://formspree.io/f/xayrekgy'
+              method='post'
               className='space-y-5'
             >
               <div className='relative'>

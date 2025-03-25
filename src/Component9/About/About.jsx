@@ -14,6 +14,20 @@ import { Autoplay } from 'swiper/modules';
 import AboutNavigation from './AboutNavigation';
 import './about.css';
 import { FaCheck } from 'react-icons/fa6';
+import { useState } from 'react';
+
+  const tabs = [
+    {
+      label: 'Our Mission',
+      content:
+        'At IT-Tech, our mission is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
+    },
+    {
+      label: 'Our Vision',
+      content:
+        'At IT-Tech, our vision is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
+    },
+  ];
 
 const About = () => {
   const settings = {
@@ -27,18 +41,8 @@ const About = () => {
     },
   };
 
-  const tabs = document.querySelectorAll('.mission-vision-tab-btn');
-  const allContent = document.querySelectorAll('.mission-vision-tab-content');
 
-  tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-      tabs.forEach((tab) => tab.classList.remove('active'));
-      tab.classList.add('active');
-
-      allContent.forEach((content) => content.classList.remove('active'));
-      allContent[index].classList.add('active');
-    });
-  });
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className='py-16 md:py-20 lg:py-28 bg-BorderColor5-0 relative'>
@@ -180,35 +184,28 @@ const About = () => {
               Discover Our Security Story
             </h1>
             <ul className='flex items-center gap-10 border-b border-white border-opacity-10 pb-3 mb-8'>
-              <li className='mission-vision-tab-btn active font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
-                Our Mission
-              </li>
-              <li className='mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10'>
-                Our vision
-              </li>
+              {tabs.map((tab, index) => (
+                <li
+                  key={index}
+                  className={`mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-white cursor-pointer relative z-10 ${
+                    activeIndex === index ? 'active' : ''
+                  }`}
+                  onClick={() => setActiveIndex(index)}
+                >
+                  {tab.label}
+                </li>
+              ))}
             </ul>
-            <div className='mission-vision-tab-content active'>
-              <p className='font-Nunito text-white text-opacity-60'>
-                At IT-Tech, our mission is to empower businesses by providing
-                innovative and reliable IT solutions. We aim transform the
-                payment our clients operate through cutting-edge technology,
-                tailored services, and unwavering support. Our goal is to
-                organizations to achieve their full potential by optimizing
-                their IT infrastructure, enhancing security to your busines, and
-                streamlining processes.
-              </p>
-            </div>
-            <div className='mission-vision-tab-content'>
-              <p className='font-Nunito text-white text-opacity-60'>
-                At IT-Tech, our vision is to empower businesses by providing
-                innovative and reliable IT solutions. We aim transform the
-                payment our clients operate through cutting-edge technology,
-                tailored services, and unwavering support. Our goal is to
-                organizations to achieve their full potential by optimizing
-                their IT infrastructure, enhancing security to your busines, and
-                streamlining processes.
-              </p>
-            </div>
+            {tabs.map((tab, index) => (
+              <div
+                key={index}
+                className={`mission-vision-tab-content ${
+                  activeIndex === index ? 'active' : ''
+                }`}
+              >
+                <p className='font-Nunito text-white opacity-70'>{tab.content}</p>
+              </div>
+            ))}
             <div className='flex flex-wrap gap-5 mt-7 mb-3'>
               <div className='inline-block'>
                 <div className='flex items-center gap-3 pr-4 sm:pr-8 pl-2 py-[7px] bg-white bg-opacity-5 border border-white border-opacity-10 rounded-full'>
@@ -252,7 +249,7 @@ const About = () => {
               </div>
             </div>
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block mt-7'
             >
               <button className='primary-btn'>

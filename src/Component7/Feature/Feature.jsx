@@ -8,14 +8,14 @@ const processData = [
     id: 1,
     featureIcon: featureIcon,
     featureTitle: 'Business Collaborations',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnIcon: featureBtnIcon,
   },
   {
     id: 2,
     featureIcon: featureIcon2,
     featureTitle: 'Top Revenue Generation',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnIcon: featureBtnIcon,
   },
 ];

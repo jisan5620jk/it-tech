@@ -11,7 +11,7 @@ const Subscribe = () => {
           Feel free to contact with us. We’re ready for help
         </p>
         <Link
-          to={'/about'}
+          to={'/contact2'}
           className='inline-block mt-8'
         >
           <button className='primary-btn'>

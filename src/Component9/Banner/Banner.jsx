@@ -21,7 +21,7 @@ const Banner = () => {
             </h1>
             <div className='mt-7'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

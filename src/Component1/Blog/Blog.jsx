@@ -20,7 +20,7 @@ const blogData = [
     blogDate: '04 Mar, 2025',
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Expert Advice for Growing Your Digital Presence',
   },
   {
@@ -30,7 +30,7 @@ const blogData = [
     blogDate: '14 Mar, 2025',
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Data-Driven Strategies and Case Studies Success',
   },
   {
@@ -40,6 +40,7 @@ const blogData = [
     blogDate: '24 Mar, 2025',
     blogPostIcon: blogPostIcon3,
     blogPost: 'By - Anjelina Watson',
+    blogUrl: '/blog_details2',
     blogTitle: 'The Complete SEO Blog for Digital Success',
   },
 ];
@@ -92,7 +93,7 @@ const Blog = () => {
           </div>
           <div className=''>
             <Link
-              to={'/blog_grid'}
+              to={'/blog_grid2'}
               className='inline-block'
             >
               <button className='primary-btn'>

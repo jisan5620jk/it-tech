@@ -39,7 +39,9 @@ const About = () => {
                 />
                 <h2 className=' font-Rajdhani'>%</h2>
               </div>
-              <h6 className='font-Nunito text-sm md:text-lg text-white'>Growing Organic Traffics</h6>
+              <h6 className='font-Nunito text-sm md:text-lg text-white'>
+                Growing Organic Traffics
+              </h6>
             </div>
           </div>
           <div className='relative'>
@@ -116,7 +118,7 @@ const About = () => {
             </div>
             <div className='flex items-center gap-16'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

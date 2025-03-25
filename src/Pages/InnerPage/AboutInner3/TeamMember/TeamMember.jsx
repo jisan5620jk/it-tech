@@ -115,7 +115,7 @@ const TeamMember = () => {
           </div>
           <div className='lg:mr-6 xl:mr-0'>
             <Link
-              to={'/blog_grid'}
+              to={'/blog_grid2'}
               className='inline-block'
             >
               <button className='primary-btn'>

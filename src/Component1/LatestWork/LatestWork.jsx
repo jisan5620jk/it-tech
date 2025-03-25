@@ -16,7 +16,7 @@ const latestWorkCard = [
     id: 1,
     latestWorkCardImg: latestWorkCardImg,
     latestWorkSubTitle: 'Marketing',
-    latestWorkCardURL: '/',
+    latestWorkCardURL: '/project_details',
     latestWorkTitle: 'Comprehensive SEO Audit and Keyword Strategy',
     latestWorkBtnText: 'Read More',
   },
@@ -24,7 +24,7 @@ const latestWorkCard = [
     id: 2,
     latestWorkCardImg: latestWorkCardImg2,
     latestWorkSubTitle: 'Marketing',
-    latestWorkCardURL: '/',
+    latestWorkCardURL: '/project_details',
     latestWorkTitle: 'The Complete Guide Technical On-Page Optimization',
     latestWorkBtnText: 'Read More',
   },
@@ -32,7 +32,7 @@ const latestWorkCard = [
     id: 3,
     latestWorkCardImg: latestWorkCardImg3,
     latestWorkSubTitle: 'Marketing',
-    latestWorkCardURL: '/',
+    latestWorkCardURL: '/project_details',
     latestWorkTitle: 'Innovative SEO and Content Marketing Strategies',
     latestWorkBtnText: 'Read More',
   },
@@ -40,7 +40,7 @@ const latestWorkCard = [
     id: 4,
     latestWorkCardImg: latestWorkCardImg4,
     latestWorkSubTitle: 'Marketing',
-    latestWorkCardURL: '/',
+    latestWorkCardURL: '/project_details',
     latestWorkTitle: 'SEO Optimization Effective Lead Generation',
     latestWorkBtnText: 'Read More',
   },
@@ -48,7 +48,7 @@ const latestWorkCard = [
     id: 5,
     latestWorkCardImg: latestWorkCardImg2,
     latestWorkSubTitle: 'Marketing',
-    latestWorkCardURL: '/',
+    latestWorkCardURL: '/project_details',
     latestWorkTitle: 'The Complete Guide Technical On-Page Optimization',
     latestWorkBtnText: 'Read More',
   },
@@ -110,7 +110,7 @@ const LatestWork = () => {
           </div>
           <div className='flex md:items-center md:justify-end'>
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block'
             >
               <button className='primary-btn'>

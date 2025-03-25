@@ -25,7 +25,7 @@ const CallDoAction = () => {
             </div>
             <div>
               <Link
-                to={'/about'}
+                to={'/contact2'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

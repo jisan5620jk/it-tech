@@ -17,7 +17,7 @@ const processData = [
     featureTitle: 'Robotic Automation',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Details',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -27,7 +27,7 @@ const processData = [
     featureTitle: 'Machine Learning',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Details',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -37,7 +37,7 @@ const processData = [
     featureTitle: 'AI System Design',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Details',
     featureBtnIcon: <GoArrowRight />,
   },
@@ -47,7 +47,7 @@ const processData = [
     featureTitle: 'AI Integrations',
     featureDesc:
       'Clients-focused data are centric energistically communicate into installed done.',
-    featureUrl: '/service',
+    featureUrl: '/service_details',
     featureBtnText: 'Details',
     featureBtnIcon: <GoArrowRight />,
   },

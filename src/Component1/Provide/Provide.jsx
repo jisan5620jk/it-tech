@@ -142,7 +142,7 @@ const Provide = () => {
             </ul>
             <div className='flex items-center justify-center mt-10 sm:mt-[72px]'>
               <Link
-                to={'/about'}
+                to={'/service'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

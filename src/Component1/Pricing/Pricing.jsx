@@ -88,7 +88,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
@@ -116,7 +116,7 @@ const Pricing = () => {
                   to={'/'}
                   className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
-                  Get StartTed Now
+                  Download Info
                   <span className='icon-style'>
                     <svg
                       className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
@@ -206,7 +206,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
@@ -234,7 +234,7 @@ const Pricing = () => {
                   to={'/'}
                   className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
-                  Get StartTed Now
+                  Download Info
                   <span className='icon-style'>
                     <svg
                       className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
@@ -319,7 +319,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
@@ -347,7 +347,7 @@ const Pricing = () => {
                   to={'/'}
                   className='mt-3 bg-HeadingColor-0 bg-opacity-10 group text-HeadingColor-0 transition-all duration-500 hover:text-white pricing-btn font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
-                  Get StartTed Now
+                  Download Info
                   <span className='icon-style'>
                     <svg
                       className='qodef-svg--custom-arrow qodef-m-arrow inline-block text-HeadingColor-0 h-[10px] group-hover:text-white w-auto transition-all duration-500'
@@ -440,7 +440,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
@@ -558,7 +558,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now
@@ -671,7 +671,7 @@ const Pricing = () => {
                   </p>
                 </div>
                 <Link
-                  to={'/'}
+                  to={'/pricing2'}
                   className='bg-HeadingColor-0 pricing-btn text-white font-Rajdhani flex items-center gap-2 justify-center font-semibold text-center w-full uppercase py-3 px-7 rounded-full overflow-hidden relative z-10 before:absolute before:top-0 before:right-0 before:bg-gradient-to-r before:ease-linear before:to-PrimaryColor2-0 before:from-PrimaryColor3-0 before:w-0 before:h-full before:transition-all before:duration-300 before:-z-10 hover:before:w-full hover:before:left-0'
                 >
                   Get StartTed Now

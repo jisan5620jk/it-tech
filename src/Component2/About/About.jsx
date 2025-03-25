@@ -82,9 +82,8 @@ const About = () => {
                 </h5>
               </li>
             </ul>
-
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block mt-7'
             >
               <button className='primary-btn'>

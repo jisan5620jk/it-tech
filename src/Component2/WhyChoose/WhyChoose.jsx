@@ -51,8 +51,8 @@ const WhyChoose = () => {
             <p className='font-Nunito text-TextColor2-0'>
               Competently leverage existing top-line bandwidth vis-a-vis
               client-centric supply
-              <br className='hidden md:block lg:hidden 2xl:block'/> chains. Enthusiastically maximize cost effective
-              technologies
+              <br className='hidden md:block lg:hidden 2xl:block' /> chains.
+              Enthusiastically maximize cost effective technologies
             </p>
             <div className='-space-y-2'>
               <div>
@@ -141,7 +141,7 @@ const WhyChoose = () => {
               </div>
             </div>
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block mt-10'
             >
               <button className='primary-btn'>

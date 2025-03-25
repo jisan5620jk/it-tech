@@ -86,7 +86,7 @@ const WhyChoose = () => {
               </div>
             </div>
             <Link
-              to={'/about'}
+              to={'/about3'}
               className='inline-block mt-11'
             >
               <button className='primary-btn'>

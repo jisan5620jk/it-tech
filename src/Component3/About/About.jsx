@@ -105,7 +105,7 @@ const About = () => {
             </div>
             <div className='flex items-center gap-16'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

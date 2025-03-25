@@ -34,7 +34,7 @@ const Banner = () => {
                 low budgets
               </p>
               <div className='mb-9'>
-                <Link to={'/about'}>
+                <Link to={'/about3'}>
                   <button className='primary-btn'>
                     {`Discover More`}
                     <span className='icon-style'>

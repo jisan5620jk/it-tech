@@ -76,7 +76,7 @@ const Integrations = () => {
             </div>
             <div className='flex items-center gap-16 mt-11'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>

@@ -77,7 +77,7 @@ const About = () => {
             </ul>
             <div className='flex flex-col sm:flex-row sm:items-center gap-5'>
               <Link
-                to={'/about'}
+                to={'/about3'}
                 className='inline-block'
               >
                 <button className='primary-btn'>
@@ -110,7 +110,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      <img src={shape} draggable='false' alt="Shape" className='absolute -z-10 right-0 top-[35%] animate-wiggle hidden 2xl:block' />
+      <img
+        src={shape}
+        draggable='false'
+        alt='Shape'
+        className='absolute -z-10 right-0 top-[35%] animate-wiggle hidden 2xl:block'
+      />
     </section>
   );
 };

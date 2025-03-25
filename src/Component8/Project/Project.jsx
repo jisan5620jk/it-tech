@@ -15,7 +15,7 @@ const projectCard = [
     id: 1,
     projectImg: projectImg,
     projectSubTitle: 'Camera',
-    projectBoxLink: '/',
+    projectBoxLink: '/project_details',
     projectTitle: 'Night vision Camera',
     projectBtn: 'View Details',
   },
@@ -23,14 +23,14 @@ const projectCard = [
     id: 2,
     projectImg: projectImg3,
     projectSubTitle: 'Camera',
-    projectBoxLink: '/',
+    projectBoxLink: '/project_details',
     projectTitle: 'Visual Gruard System',
     projectBtn: 'View Details',
   },
   {
     id: 3,
     projectImg: projectImg2,
-    projectBoxLink: '/',
+    projectBoxLink: '/project_details',
     projectTitle: 'Tread Detected',
     projectSubTitle: 'Camera',
     projectBtn: 'View Details',
@@ -93,7 +93,7 @@ const Project = () => {
           </div>
           <div>
             <Link
-              to={'/about'}
+              to={'/project2'}
               className='inline-block'
             >
               <button className='primary-btn'>
