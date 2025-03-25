@@ -379,7 +379,7 @@ const Navbar8 = () => {
                           <Link to={'/team_inner2'}>Team Member Style Two</Link>
                         </li>
                         <li>
-                          <Link to={'/pricing'}>Pricing Style One</Link>
+                          <Link to={'/pricing_inner'}>Pricing Style One</Link>
                         </li>
                         <li>
                           <Link to={'/pricing2'}>Pricing Style Two</Link>

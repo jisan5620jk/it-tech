@@ -4,6 +4,8 @@ import { FiCheck } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Feature from '../../../Component2/Feature/Feature';
 import HelmetChanger from '../../../Shared/Helmet/Helmet';
+import missionImg from "/images/mission-1.png";
+import missionImg2 from "/images/mission-2.png";
 
 const MissionInner = () => {
   return (
@@ -17,6 +19,12 @@ const MissionInner = () => {
       <section className='relative pt-28 pb-[120px] bg-[#f5f8ed] z-10'>
         <div className='Container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md mb-8 lg:mb-0'>
+            <div>
+              <img
+                src={missionImg}
+                draggable='false'
+              />
+            </div>
             <div className='ml-10 2xl:ml-20 mr-10'>
               <h2 className='font-Rajdhani font-bold text-HeadingColor-0 text-[42px] mb-8'>
                 Our Mission
@@ -89,8 +97,20 @@ const MissionInner = () => {
                 <button className='primary-btn4'>Find Out More</button>
               </Link>
             </div>
+            <div>
+              <img
+                src={missionImg2}
+                draggable='false'
+              />
+            </div>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10 lg:gap-0 bg-BodyBg-0 rounded-md'>
+            <div>
+              <img
+                src={missionImg}
+                draggable='false'
+              />
+            </div>
             <div className='ml-10 2xl:ml-20 mr-10'>
               <h2 className='font-Rajdhani font-bold text-HeadingColor-0 text-[42px] mb-8'>
                 Our Goal

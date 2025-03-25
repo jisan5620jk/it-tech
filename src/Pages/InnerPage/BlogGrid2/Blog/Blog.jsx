@@ -18,7 +18,7 @@ const blogData = [
     blogDate: '04 Mar, 2025',
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Expert Advice for Growing Your Digital Presence',
   },
   {
@@ -28,7 +28,7 @@ const blogData = [
     blogDate: '14 Mar, 2025',
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Data-Driven Strategies and Case Studies Success',
   },
   {
@@ -47,7 +47,7 @@ const blogData = [
     blogDate: '24 May, 2025',
     blogPostIcon: blogPostIcon,
     blogPost: 'By - Jhon D. Alexon',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Expert Advice for Growing Your Digital Presence',
   },
   {
@@ -57,7 +57,7 @@ const blogData = [
     blogDate: '26 May, 2025',
     blogPostIcon: blogPostIcon2,
     blogPost: 'By - Samira Khan',
-    blogUrl: '/blog_details',
+    blogUrl: '/blog_details2',
     blogTitle: 'Data-Driven Strategies and Case Studies Success',
   },
   {

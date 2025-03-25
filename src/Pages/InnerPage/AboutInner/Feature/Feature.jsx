@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import featureIcon from "/images/feature-icon-1.png";
 import featureIcon2 from "/images/feature-icon-2.png";
 import featureIcon3 from "/images/feature-icon-3.png";

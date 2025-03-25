@@ -1,8 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
 import ContactBox from "../ContactInner/ContactBox/ContactBox";
-import Pricing from "./Pricing/Pricing";
 import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import Pricing from "../../../Component1/Pricing/Pricing";
 
 const PricingInner = () => {
   return (

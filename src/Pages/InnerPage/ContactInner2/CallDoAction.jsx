@@ -30,7 +30,7 @@ const CallDoAction = () => {
               task vertical service timely human capital business plans with us
             </p>
             <Link
-              to={'/contact'}
+              to={'/contact2'}
               className='inline-block'
             >
               <button className='primary-btn'>

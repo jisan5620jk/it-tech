@@ -1,87 +1,87 @@
-import { FaAngleRight, FaArrowRightLong } from "react-icons/fa6";
-import blogGridImg from "/images/blog-1.png";
-import blogGridImg2 from "/images/blog-2.png";
-import blogGridImg3 from "/images/blog-3.png";
-import blogGridImg4 from "/images/blog-4.png";
-import blogGridImg5 from "/images/blog-5.png";
-import blogGridImg6 from "/images/blog-6.png";
-import BlogGridCard from "./BlogGridCard";
-import BreadCrumb from "../../../Shared/BreadCrumb/BreadCrumb";
-import { LuArrowUpRight } from "react-icons/lu";
-import HelmetChanger from "../../../Shared/Helmet/Helmet";
+import { FaAngleRight, FaArrowRightLong } from 'react-icons/fa6';
+import blogGridImg from '/images/blog-1.png';
+import blogGridImg2 from '/images/blog-2.png';
+import blogGridImg3 from '/images/blog-3.png';
+import blogGridImg4 from '/images/blog-4.png';
+import blogGridImg5 from '/images/blog-5.png';
+import blogGridImg6 from '/images/blog-6.png';
+import BlogGridCard from './BlogGridCard';
+import BreadCrumb from '../../../Shared/BreadCrumb/BreadCrumb';
+import { LuArrowUpRight } from 'react-icons/lu';
+import HelmetChanger from '../../../Shared/Helmet/Helmet';
 
 const blogData = [
   {
     id: 1,
     blogGridImg: blogGridImg,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Solution This Business For is Marketing Blog",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'Solution This Business For is Marketing Blog',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
   {
     id: 2,
     blogGridImg: blogGridImg2,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Easy and Most Powerful Server and Platform.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'Easy and Most Powerful Server and Platform.',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
   {
     id: 3,
     blogGridImg: blogGridImg3,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "In eu fringilla, accumsan purusvel sollicitudin.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'In eu fringilla, accumsan purusvel sollicitudin.',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
   {
     id: 4,
     blogGridImg: blogGridImg4,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Vivamus vehicula nl purus at eros interdum.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'Vivamus vehicula nl purus at eros interdum.',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
   {
     id: 5,
     blogGridImg: blogGridImg5,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Optimizing IT Infrastructure for Cost Efficiency.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'Optimizing IT Infrastructure for Cost Efficiency.',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
   {
     id: 6,
     blogGridImg: blogGridImg6,
-    thumbContent: "IT Solution",
+    thumbContent: 'IT Solution',
     thumbBtn: <LuArrowUpRight />,
-    blogGridUrl: "/blog_details",
-    blogGridTitle: "Business Rules of Running to Web Solution.",
-    postBy: "Admin : Mera",
-    comments: "Comments (04)",
+    blogGridUrl: '/blog_details2',
+    blogGridTitle: 'Business Rules of Running to Web Solution.',
+    postBy: 'Admin : Mera',
+    comments: 'Comments (04)',
     blogGridDesc:
-      "Monotonectaly granular to front markets task data semper maecenas ferform",
+      'Monotonectaly granular to front markets task data semper maecenas ferform',
   },
 ];
 
@@ -103,6 +103,7 @@ const BlogGrid = () => {
                 blogGridImg,
                 thumbContent,
                 thumbBtn,
+                blogGridUrl,
                 blogGridTitle,
                 postBy,
                 comments,
@@ -114,6 +115,7 @@ const BlogGrid = () => {
                       blogGridImg={blogGridImg}
                       thumbContent={thumbContent}
                       thumbBtn={thumbBtn}
+                      blogGridUrl={blogGridUrl}
                       blogGridTitle={blogGridTitle}
                       postBy={postBy}
                       comments={comments}

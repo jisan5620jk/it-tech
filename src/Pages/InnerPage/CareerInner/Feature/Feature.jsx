@@ -14,7 +14,7 @@ const processData = [
     featureTitle: '22+ Year Experience',
     featureDesc:
       'Monotonically synergize grants to business visualize strategic infomediaries',
-    featureUrl: '/',
+    featureUrl: '/service',
     featureBtn: 'Read More',
   },
   {
@@ -25,7 +25,7 @@ const processData = [
     featureTitle: 'Dedicated Members',
     featureDesc:
       'Monotonically synergize grants to business visualize strategic infomediaries',
-    featureUrl: '/',
+    featureUrl: '/service',
     featureBtn: 'Read More',
   },
   {
@@ -36,7 +36,7 @@ const processData = [
     featureTitle: 'Valuable Supports',
     featureDesc:
       'Monotonically synergize grants to business visualize strategic infomediaries',
-    featureUrl: '/',
+    featureUrl: '/service',
     featureBtn: 'Read More',
   },
 ];
