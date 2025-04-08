@@ -71,14 +71,14 @@ const WhyChoose = () => {
               <div className='why-choose-box active transition-all duration-300 inline-block'>
                 <WhyChooseCard
                   whyChooseBoxIcon={whyChooseBoxIcon2}
-                  whyChooseBoxTitle='Social Paid Campaign'
+                  whyChooseBoxTitle='Achieving Digital success'
                   whyChooseBoxDesc='Competently leverage existing line supples Enthusiastically maximize done'
                 />
               </div>
               <div className='why-choose-box transition-all duration-300 inline-block'>
                 <WhyChooseCard
                   whyChooseBoxIcon={whyChooseBoxIcon3}
-                  whyChooseBoxTitle='Social Paid Campaign'
+                  whyChooseBoxTitle='Full Online Potential'
                   whyChooseBoxDesc='Competently leverage existing line supples Enthusiastically maximize done'
                 />
               </div>
