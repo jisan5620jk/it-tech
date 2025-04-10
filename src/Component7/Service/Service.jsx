@@ -1,16 +1,16 @@
-import serviceIcon from '/images/Software-Tecnology-3.webp';
-import serviceIcon2 from '/images/team-2.webp';
-import serviceIcon3 from '/images/support.webp';
-import serviceIcon4 from '/images/icon2-2.webp';
-import serviceIcon5 from '/images/color.webp';
-import serviceIcon6 from '/images/settings1.webp';
-import serviceThumb from '/images/Software-Tecnology-2.webp';
+import serviceIcon from '/images/Software-Tecnology-3.png';
+import serviceIcon2 from '/images/team-2.png';
+import serviceIcon3 from '/images/support.png';
+import serviceIcon4 from '/images/icon2-2.png';
+import serviceIcon5 from '/images/color.png';
+import serviceIcon6 from '/images/settings1.png';
+import serviceThumb from '/images/Software-Tecnology-2.png';
 import ServiceCard from './ServiceCard';
 import titleShape from '/images/sub-title-shape.png';
 
 const Service = () => {
   return (
-    <section className="relative pt-16 md:py-20 lg:pt-28 pb-6 md:pb-48 lg:pb-[190px] bg-[url('/images/service-bg-2.webp')] bg-cover bg-no-repeat bg-bottom">
+    <section className="relative pt-16 md:py-20 lg:pt-28 pb-6 md:pb-48 lg:pb-[190px] bg-[url('/images/service-bg-2.png')] bg-cover bg-no-repeat bg-bottom">
       <div className='Container'>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
@@ -19,7 +19,7 @@ const Service = () => {
               draggable={false}
               alt='Shape'
             />{' '}
-            WAHT WE PROVIDE{' '}
+            MAIN PRINCIPLES{' '}
             <img
               src={titleShape}
               draggable={false}
@@ -28,7 +28,7 @@ const Service = () => {
             />
           </h5>
           <h1 className='font-Rajdhani font-bold text-xl leading-7 sm:text-[34px] sm:leading-[44px] md:text-[36px] md:leading-[46px] lg:text-[30px] lg:leading-[40px] xl:text-[36px] xl:leading-[46px] 2xl:text-[42px] 2xl:leading-[52px] text-HeadingColor-0 mt-[14px] 3xl:mb-2'>
-            We Provide Business Solutions
+            Business Strategy & Solutions
           </h1>
         </div>
       </div>

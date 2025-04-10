@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
-import brandThumb from '/images/brand-1.webp';
-import brandThumb2 from '/images/brand-2.webp';
-import brandThumb3 from '/images/brand-3.webp';
-import brandThumb4 from '/images/brand-4.webp';
+import brandThumb from '/images/brand-1.png';
+import brandThumb2 from '/images/brand-2.png';
+import brandThumb3 from '/images/brand-3.png';
+import brandThumb4 from '/images/brand-4.png';
 
 const Brand = () => {
   const settings = {
@@ -28,7 +28,7 @@ const Brand = () => {
 
   return (
     <div className='bg-BodyBgDark3-0'>
-      <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-PrimaryColor3-0 pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5">
+      <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-PrimaryColor3-0 pt-[100px] pb-[92px] rounded-b-lg lg:rounded-b-2xl -mt-5'>
         <div className='Container'>
           <div className='flex items-center gap-2 sm:gap-4'>
             <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
@@ -97,8 +97,7 @@ const Brand = () => {
           <div className='flex items-center gap-2 sm:gap-4'>
             <div className='flex-1 w-full h-[1px] bg-white bg-opacity-20'></div>{' '}
             <h5 className='font-Rajdhani font-semibold text-base sm:text-lg text-white uppercase'>
-              About 10k+ customers
-              worldwide
+              About 10k+ customers worldwide
             </h5>
           </div>
         </div>

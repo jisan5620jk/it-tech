@@ -1,12 +1,12 @@
-import aboutThumb from '/images/about-thumb.webp';
+import aboutThumb from '/images/about-thumb.png';
 import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/tam1.png';
 import itemIcon2 from '/images/terget-1.png';
 import itemIcon3 from '/images/time.png';
 import itemIcon4 from '/images/message.png';
-import shape from '/images/about-shape1.webp';
-import shape2 from '/images/about-shape2.webp';
-import shape3 from '/images/about-shape3.webp';
+import shape from '/images/about-shape1.png';
+import shape2 from '/images/about-shape2.png';
+import shape3 from '/images/about-shape3.png';
 import dotShape from '/images/testi-shape.png';
 import { Link } from 'react-router-dom';
 

@@ -1,10 +1,10 @@
 import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/choose-us-thumb.webp';
-import whyChooseShape from '/images/choose-us-shpe1.webp';
+import whyChooseThumb from '/images/choose-us-thumb2.png';
+import whyChooseShape from '/images/choose-us-shpe1.png';
 import whyChooseShape2 from '/images/dot-dark.png';
-import icon from '/images/ico1.webp';
-import icon2 from '/images/ico2.webp';
-import shape from '/images/animation-shap2e.webp';
+import icon from '/images/ico1.png';
+import icon2 from '/images/ico2.png';
+import shape from '/images/animation-shap2e.png';
 import Analysis from '../Analysis/Analysis';
 
 const WhyChoose = () => {

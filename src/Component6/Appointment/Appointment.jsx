@@ -1,10 +1,10 @@
 import { FaRegEnvelopeOpen, FaRegUser } from 'react-icons/fa6';
 import { RiSendPlaneFill } from 'react-icons/ri';
-import appoinmentThumb from '/images/contact-thumb.webp';
+import appoinmentThumb from '/images/contact-thumb.png';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/contact-shape1.webp';
-import shape2 from '/images/contact-shape2.webp';
-import shape3 from '/images/contact-shape.webp';
+import shape from '/images/contact-shape1.png';
+import shape2 from '/images/contact-shape2.png';
+import shape3 from '/images/contact-shape.png';
 
 const Appointment = () => {
   return (

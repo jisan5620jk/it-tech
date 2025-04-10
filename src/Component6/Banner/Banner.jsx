@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import bannerImg from '/images/technology-thumb.png';
 import subTilteShape from '/images/hero-title-shape1.png';
-import shape from '/images/animation-shape.webp';
+import shape from '/images/animation-shape.png';
 import { FaDollarSign } from 'react-icons/fa6';
 import { HiMiniArrowUpRight } from 'react-icons/hi2';
 
 const Banner = () => {
   return (
     <div className='bg-BodyBgDark5-0 px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px]'>
-      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-dark-bg.webp')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[780px] md:h-[1560px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
+      <section className="rounded-md lg:rounded-[20px] bg-[url('/images/hero-dark-bg.png')] bg-cover bg-bottom bg-no-repeat h-[600px] sm:h-[780px] md:h-[1560px] lg:h-[700px] xl:h-[900px] flex items-center relative z-20 overflow-hidden">
         <div className='Container'>
           <div className='grid lg:grid-cols-2 items-center gap-16 lg:gap-0 pt-[70px] md:pt-0 lg:pt-10'>
             <div className='relative'>

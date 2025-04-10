@@ -1,10 +1,10 @@
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
-import shape from '/images/call-do-shape2.webp';
+import shape from '/images/call-do-shape2.png';
 
 const Counter = () => {
   return (
     <div className='px-2 sm:px-3 md:px-5 lg:px-2 xl:px-5 2xl:px-8 3xl:px-[50px] bg-BodyBgDark3-0 relative z-10'>
-      <section className="rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat py-14 relative">
+      <section className="rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.jpg')] bg-cover bg-center bg-no-repeat py-14 relative">
         <img
           src={shape}
           draggable={false}

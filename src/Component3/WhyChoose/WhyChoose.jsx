@@ -1,11 +1,11 @@
 import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/choose-us-thumb-1.webp';
-import whyChooseShape from '/images/choose-us-shape.webp';
-import itemIcon from '/images/icon1.webp';
-import itemIcon2 from '/images/icon2.webp';
-import itemIcon3 from '/images/icon3.webp';
+import whyChooseThumb from '/images/choose-us-thumb-1.png';
+import whyChooseShape from '/images/choose-us-shape.png';
+import itemIcon from '/images/icon1.png';
+import itemIcon2 from '/images/icon2.png';
+import itemIcon3 from '/images/icon3.png';
 import { Link } from 'react-router-dom';
-import shape from '/images/shape.webp';
+import shape from '/images/shape.png';
 
 const WhyChoose = () => {
   return (

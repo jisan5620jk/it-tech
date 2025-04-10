@@ -1,6 +1,6 @@
-import serviceIcon from '/images/service-shape1.webp';
-import serviceIcon2 from '/images/service-shape2.webp';
-import serviceIcon3 from '/images/service-shape3.webp';
+import serviceIcon from '/images/service-shape1.png';
+import serviceIcon2 from '/images/service-shape2.png';
+import serviceIcon3 from '/images/service-shape3.png';
 import shape from '/images/service_shape.png';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';

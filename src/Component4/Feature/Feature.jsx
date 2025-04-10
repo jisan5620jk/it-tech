@@ -1,9 +1,9 @@
-import featureIcon from '/images/service-icon4.webp';
-import featureIcon2 from '/images/service-icon1.webp';
-import featureIcon3 from '/images/service-icon2.webp';
-import featureIcon4 from '/images/service-icon3.webp';
-import featureIcon5 from '/images/icon.webp';
-import featureIcon6 from '/images/service-icon5.webp';
+import featureIcon from '/images/service-icon4.png';
+import featureIcon2 from '/images/service-icon1.png';
+import featureIcon3 from '/images/service-icon2.png';
+import featureIcon4 from '/images/service-icon3.png';
+import featureIcon5 from '/images/service-icon4.png';
+import featureIcon6 from '/images/service-icon5.png';
 import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';

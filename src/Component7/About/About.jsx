@@ -3,7 +3,7 @@ import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/about-icon1.png';
 import itemIcon2 from '/images/about-icon2.png';
 import icon from '/images/call-icon.png';
-import shape from '/images/line-shape.webp';
+import shape from '/images/line-shape.png';
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from 'react-icons/fa6';
 

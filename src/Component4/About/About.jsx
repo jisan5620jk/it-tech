@@ -1,10 +1,10 @@
-import aboutThumb from '/images/about-thumb-1.webp';
+import aboutThumb from '/images/about-thumb-1.png';
 import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/tam1.png';
 import itemIcon2 from '/images/terget-1.png';
-import itemIcon3 from '/images/about-icon3.webp';
-import itemIcon4 from '/images/about-icon4.webp';
-import shape from '/images/shape.webp';
+import itemIcon3 from '/images/about-icon3.png';
+import itemIcon4 from '/images/about-icon4.png';
+import shape from '/images/shape.png';
 import { Link } from 'react-router-dom';
 
 const About = () => {

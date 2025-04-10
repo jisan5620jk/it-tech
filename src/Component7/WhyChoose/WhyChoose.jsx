@@ -5,7 +5,7 @@ import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-HeadingColor-0 lg:bg-[url("/images/why-choose.webp")] bg-cover bg-right lg:bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
+    <section className='bg-HeadingColor-0 lg:bg-[url("/images/why-choose.jpg")] bg-cover bg-right lg:bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-28 xl:gap-[190px] lg:grid-cols-2 items-end relative'>
           <div className='relative'>

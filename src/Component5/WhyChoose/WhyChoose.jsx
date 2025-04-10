@@ -1,14 +1,14 @@
 import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/choose-us-thumb.webp';
-import whyChooseShape from '/images/choose-us-shpe1.webp';
-import whyChooseShape2 from '/images/dotte-shpe.webp';
-import shape from '/images/animation-shap2e.webp';
+import whyChooseThumb from '/images/choose-us-thumb2.png';
+import whyChooseShape from '/images/choose-us-shpe1.png';
+import whyChooseShape2 from '/images/dotte-shpe.png';
+import shape from '/images/animation-shap2e.png';
 import { TbRosetteDiscountCheckFilled } from 'react-icons/tb';
 import Analysis from '../Analysis/Analysis';
 
 const WhyChoose = () => {
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/why-choose-us-bg.webp")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/why-choose-us-bg.jpg")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-20 lg:grid-cols-2 items-end relative'>
           <div className='relative inline-block'>

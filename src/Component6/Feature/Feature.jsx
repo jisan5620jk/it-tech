@@ -1,7 +1,7 @@
-import featureIcon from '/images/feature-icon1.webp';
-import featureIcon2 from '/images/feature-icon2.webp';
-import featureIcon3 from '/images/feature-icon3.webp';
-import shape from '/images/animation-shap2e.webp';
+import featureIcon from '/images/feature-icon_1.png';
+import featureIcon2 from '/images/feature-icon_2.png';
+import featureIcon3 from '/images/feature-icon_3.png';
+import shape from '/images/animation-shap2e.png';
 import FeatureCard from './FeatureCard';
 import { HiDotsHorizontal } from 'react-icons/hi';
 import { TbArrowRight } from 'react-icons/tb';

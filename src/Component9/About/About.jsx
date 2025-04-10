@@ -1,11 +1,11 @@
 import aboutThumb from '/images/about-slider-image.jpg';
 import aboutThumb2 from '/images/about-slider-image2.jpg';
 import aboutThumb3 from '/images/about-slider-image3.jpg';
-import aboutIcon from '/images/about-icon.webp';
+import aboutIcon from '/images/about_icon.png';
 import aboutImageShape from '/images/about-image-shape.png';
 import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/about-shape.webp';
+import shape from '/images/about-shape.png';
 import { GoArrowRight } from 'react-icons/go';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,18 +16,18 @@ import './about.css';
 import { FaCheck } from 'react-icons/fa6';
 import { useState } from 'react';
 
-  const tabs = [
-    {
-      label: 'Our Mission',
-      content:
-        'At IT-Tech, our mission is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
-    },
-    {
-      label: 'Our Vision',
-      content:
-        'At IT-Tech, our vision is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
-    },
-  ];
+const tabs = [
+  {
+    label: 'Our Mission',
+    content:
+      'At IT-Tech, our mission is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
+  },
+  {
+    label: 'Our Vision',
+    content:
+      'At IT-Tech, our vision is to empower businesses by providing innovative and reliable IT solutions. We aim to transform the way our clients operate through cutting-edge technology, tailored services, and unwavering support. Our goal is to help organizations achieve their full potential by optimizing their IT infrastructure, enhancing security, and streamlining processes.',
+  },
+];
 
 const About = () => {
   const settings = {
@@ -40,7 +40,6 @@ const About = () => {
       disableOnInteraction: false, // Keep autoplay on user interaction
     },
   };
-
 
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -203,7 +202,9 @@ const About = () => {
                   activeIndex === index ? 'active' : ''
                 }`}
               >
-                <p className='font-Nunito text-white opacity-70'>{tab.content}</p>
+                <p className='font-Nunito text-white opacity-70'>
+                  {tab.content}
+                </p>
               </div>
             ))}
             <div className='flex flex-wrap gap-5 mt-7 mb-3'>

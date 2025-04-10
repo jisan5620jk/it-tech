@@ -1,13 +1,13 @@
 import titleShape from '/images/sub-title-shape.png';
-import processThumb from '/images/process-thumb.webp';
-import processIcon from '/images/process-icon1.webp';
-import processIcon2 from '/images/process-icon2.webp';
-import processIcon3 from '/images/process-icon3.webp';
-import borderShape from '/images/process-shape1.webp';
-import shape from '/images/process-shape3.webp';
-import shape2 from '/images/process-shape5.webp';
-import shape3 from '/images/process-shape4.webp';
-import Shape from '/images/animation-shap2e.webp';
+import processThumb from '/images/process-thumb.png';
+import processIcon from '/images/process-icon1.png';
+import processIcon2 from '/images/process-icon2.png';
+import processIcon3 from '/images/process-icon3.png';
+import borderShape from '/images/process-shape1.png';
+import shape from '/images/process-shape3.png';
+import shape2 from '/images/process-shape5.png';
+import shape3 from '/images/process-shape4.png';
+import Shape from '/images/animation-shap2e.png';
 import { useEffect } from 'react';
 import './process.css';
 
@@ -42,7 +42,7 @@ const Process = () => {
   }, []);
 
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/process-bg.webp")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-20'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url("/images/process-bg.png")] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-20'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
           <div>

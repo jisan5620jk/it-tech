@@ -1,7 +1,7 @@
-import teamThumb from '/images/team.webp';
-import teamThumb2 from '/images/team2-1.webp';
-import teamThumb3 from '/images/team4.webp';
-import teamThumb4 from '/images/team2-1.webp';
+import teamThumb from '/images/team.png';
+import teamThumb2 from '/images/team2-1.jpg';
+import teamThumb3 from '/images/team_4.png';
+import teamThumb4 from '/images/team.png';
 import TeamCard from './TeamCard';
 import {
   FaFacebookF,
@@ -96,7 +96,7 @@ const TeamMember = () => {
     },
   };
   return (
-    <section className='bg-[url("/images/Team-bg.webp")] bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-28 relative'>
+    <section className='bg-[url("/images/Team-bg.jpg")] bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-28 relative'>
       <div className='Container'>
         <div className='flex flex-col gap-5 md:gap-0 md:flex-row justify-between md:items-center'>
           <div>

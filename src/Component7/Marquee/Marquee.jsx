@@ -1,4 +1,4 @@
-import star from '/images/star-1.webp';
+import star from '/images/star-1.png';
 import './marquee3.css';
 
 const Marquee = () => {

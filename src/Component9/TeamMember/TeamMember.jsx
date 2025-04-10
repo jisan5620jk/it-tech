@@ -1,6 +1,6 @@
-import teamThumb from '/images/team3-1.webp';
-import teamThumb2 from '/images/team2.webp';
-import teamThumb3 from '/images/team1.webp';
+import teamThumb from '/images/team3-1.jpg';
+import teamThumb2 from '/images/team2.jpeg';
+import teamThumb3 from '/images/team1.jpg';
 import TeamCard from './TeamCard';
 import {
   FaFacebookF,

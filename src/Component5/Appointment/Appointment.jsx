@@ -1,14 +1,14 @@
 import { FaRegEnvelopeOpen, FaRegUser } from 'react-icons/fa6';
 import { RiSendPlaneFill } from 'react-icons/ri';
-import appoinmentThumb from '/images/contact-thumb.webp';
+import appoinmentThumb from '/images/contact-thumb.png';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/contact-shape1.webp';
-import shape2 from '/images/contact-shape2.webp';
-import shape3 from '/images/contact-shape.webp';
+import shape from '/images/contact-shape1.png';
+import shape2 from '/images/contact-shape2.png';
+import shape3 from '/images/contact-shape.png';
 
 const Appointment = () => {
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.jpg')] bg-cover bg-center bg-no-repeat py-16 md:py-20 lg:py-28 relative z-10">
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center '>
           <div className='relative'>

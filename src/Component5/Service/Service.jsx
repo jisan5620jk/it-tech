@@ -1,8 +1,8 @@
-import serviceIcon2 from '/images/service-icon1.webp';
-import serviceIcon3 from '/images/service-icon2.webp';
-import serviceIcon4 from '/images/service-icon3.webp';
-import serviceIcon5 from '/images/icon.webp';
-import serviceIcon6 from '/images/service-icon5.webp';
+import serviceIcon2 from '/images/service-icon1.png';
+import serviceIcon3 from '/images/service-icon2.png';
+import serviceIcon4 from '/images/service-icon3.png';
+import serviceIcon5 from '/images/service-icon4.png';
+import serviceIcon6 from '/images/service-icon5.png';
 import titleShape from '/images/sub-title-shape.png';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';

@@ -1,5 +1,5 @@
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/shape_About-Us.webp';
+import shape from '/images/shape_About-Us.png';
 import HistoryCard from './HistoryCard';
 
 const historyData = [
@@ -44,7 +44,12 @@ const History = () => {
             Trusted by Industry Leaders
             <br /> Successful Softwares
           </h1>
-          <img src={shape} draggable={false} alt="Shape" className='absolute right-14 top-0 animate-rotational hidden xl:block' />
+          <img
+            src={shape}
+            draggable={false}
+            alt='Shape'
+            className='absolute right-14 top-0 animate-rotational hidden xl:block'
+          />
         </div>
         <div className='relative z-10 mt-12 space-y-7'>
           {historyData.map(({ id, historyTime, historyTitle, historyDesc }) => {

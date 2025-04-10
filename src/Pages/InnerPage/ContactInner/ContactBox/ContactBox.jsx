@@ -26,7 +26,7 @@ const processData = [
 
 const ContactBox = () => {
   return (
-    <section className="py-28 relative bg-[url(/images/about-bg.jpg)] z-10 ">
+    <section className="py-28 relative z-10">
       <div className="Container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-10">
             {processData.map(

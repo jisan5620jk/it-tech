@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
-import shape from '/images/border.webp';
+import shape from '/images/border.png';
 
 const FeatureCard = ({
   featureIcon,
   featureTitle,
-  featureDesc,featureDotIcon,
+  featureDesc,
+  featureDotIcon,
   featureUrl,
   featureBtnIcon,
 }) => {

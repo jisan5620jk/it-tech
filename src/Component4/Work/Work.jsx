@@ -1,10 +1,10 @@
 import WorkCard from './WorkCard';
-import workImg from '/images/port-1-1.webp';
-import workImg2 from '/images/port-2-1.webp';
-import workImg3 from '/images/port-3-1.webp';
-import workImg4 from '/images/port-4.webp';
-import workImg5 from '/images/port-5.webp';
-import workImg6 from '/images/port-6.webp';
+import workImg from '/images/port-1-1.png';
+import workImg2 from '/images/port-2-1.png';
+import workImg3 from '/images/port-3-1.png';
+import workImg4 from '/images/port-4.png';
+import workImg5 from '/images/port-5.png';
+import workImg6 from '/images/port-6.png';
 import './work.css';
 import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';

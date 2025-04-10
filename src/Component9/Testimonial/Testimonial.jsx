@@ -3,10 +3,10 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import testiProfile from '/images/t-author1.webp';
-import testiProfile2 from '/images/t-author2.webp';
-import testiShape from '/images/google.webp';
-import testiQuote from '/images/quote-1.webp';
+import testiProfile from '/images/t-author1.png';
+import testiProfile2 from '/images/t-author2.png';
+import testiShape from '/images/google.png';
+import testiQuote from '/images/quote-1.png';
 import paginationShape from '/images/pagination-shape.png';
 import Marquee from '../Marquee/Marquee';
 import TestiNavigation from './TestiNavigation';
@@ -56,7 +56,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className='bg-[url("/images/teastimonial-bg.webp")] bg-cover bg-no-repeat bg-center relative z-10 overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-6 md:pb-20 lg:pb-[70px]'>
+    <section className='bg-[url("/images/teastimonial-bg.jpg")] bg-cover bg-no-repeat bg-center relative z-10 overflow-hidden pt-16 md:pt-20 lg:pt-28 pb-6 md:pb-20 lg:pb-[70px]'>
       <div className='Container'>
         <div className='max-w-[758px] w-full ml-auto relative z-10'>
           <Swiper {...settings}>

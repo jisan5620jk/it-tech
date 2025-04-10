@@ -1,10 +1,10 @@
 import aboutThumb from '/images/about-slider-image.jpg';
 import aboutThumb2 from '/images/about-slider-image2.jpg';
 import aboutThumb3 from '/images/about-slider-image3.jpg';
-import aboutIcon from '/images/about-icon.webp';
+import aboutIcon from '/images/about_icon.png';
 import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/about-shape.webp';
+import shape from '/images/about-shape.png';
 import { GoArrowRight } from 'react-icons/go';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 import { Swiper, SwiperSlide } from 'swiper/react';

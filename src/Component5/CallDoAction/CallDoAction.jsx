@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import shape from '/images/call-do-shape2.webp';
-import shape2 from '/images/call-do-shape3.webp';
-import shape3 from '/images/call-do-shape1.webp';
+import shape from '/images/call-do-shape2.png';
+import shape2 from '/images/call-do-shape3.png';
+import shape3 from '/images/call-do-shape1.png';
 
 const CallDoAction = () => {
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.webp')] bg-cover bg-center bg-no-repeat pt-4 pb-8 md:py-16 relative z-30">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-t-lg lg:rounded-t-2xl bg-[url('/images/call-do-bg.jpg')] bg-cover bg-center bg-no-repeat pt-4 pb-8 md:py-16 relative z-30">
       <img
         src={shape}
         draggable={false}

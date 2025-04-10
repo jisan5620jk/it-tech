@@ -3,11 +3,11 @@ import 'swiper/css';
 import titleShape from '/images/sub-title-shape.png';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import testiShape from '/images/g-logo.webp';
-import testiProfile from '/images/t-author1.webp';
-import testiProfile2 from '/images/t-author2.webp';
-import testiProfile3 from '/images/t-author3.webp';
-import testiProfile4 from '/images/t-author2.webp';
+import testiShape from '/images/g-logo.png';
+import testiProfile from '/images/t-author1.png';
+import testiProfile2 from '/images/t-author2.png';
+import testiProfile3 from '/images/t-author3.png';
+import testiProfile4 from '/images/t-author2.png';
 import TestiNavigation from './TestiNavigation';
 
 const testiData = [

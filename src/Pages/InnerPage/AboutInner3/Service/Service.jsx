@@ -1,6 +1,6 @@
-import serviceIcon2 from '/images/icon1_About-Us.webp';
-import serviceIcon3 from '/images/icon2_About-Us.webp';
-import serviceIcon4 from '/images/icon3_About-Us.webp';
+import serviceIcon2 from '/images/icon1_About-Us.png';
+import serviceIcon3 from '/images/icon2_About-Us.png';
+import serviceIcon4 from '/images/icon3_About-Us.png';
 import titleShape from '/images/sub-title-shape.png';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';
@@ -40,7 +40,7 @@ const serviceData = [
 
 const Service = () => {
   return (
-    <section className='bg-[url("/images/About-Us-service-bg.webp")] bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-28 relative z-10'>
+    <section className='bg-[url("/images/About-Us-service-bg.jpg")] bg-no-repeat bg-cover bg-center py-16 md:py-20 lg:py-28 relative z-10'>
       <div className='Container '>
         <div className='text-center'>
           <h5 className='flex items-center justify-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>

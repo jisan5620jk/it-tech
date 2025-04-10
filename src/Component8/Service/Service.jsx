@@ -1,5 +1,5 @@
-import serviceItemThumb from '/images/faqs-thumb.webp';
-import serviceThumb from '/images/faqs-right.webp';
+import serviceItemThumb from '/images/faqs-thumb.jpg';
+import serviceThumb from '/images/faqs-right.jpg';
 import titleShape from '/images/sub-title-shape.png';
 import { useEffect, useRef, useState } from 'react';
 import { FaCheck, FaMinus } from 'react-icons/fa6';

@@ -1,7 +1,7 @@
-import teamThumb from '/images/team.webp';
-import teamThumb2 from '/images/team2-1.webp';
-import teamThumb3 from '/images/team4.webp';
-import teamThumb4 from '/images/team2-1.webp';
+import teamThumb from '/images/team.png';
+import teamThumb2 from '/images/team2-1.jpg';
+import teamThumb3 from '/images/team_4.png';
+import teamThumb4 from '/images/team.png';
 import shape from '/images/cube-shape.png';
 import TeamCard from './TeamCard';
 import {
@@ -55,7 +55,7 @@ const teamData = [
   {
     id: 4,
     teamThumb: teamThumb3,
-    teamTitle: 'June D. Vargas',
+    teamTitle: 'Anjelina Jholi',
     socialIcon: <FaFacebookF />,
     socialIcon2: <FaXTwitter />,
     socialIcon3: <FaLinkedinIn />,

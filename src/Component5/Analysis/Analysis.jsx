@@ -1,6 +1,6 @@
 import titleShape from '/images/sub-title-shape.png';
-import whyChooseThumb from '/images/choose-us-thumb2.webp';
-import analysisShape from '/images/choose-us-shpe2.webp';
+import whyChooseThumb from '/images/choose-us-thumb3.png';
+import analysisShape from '/images/choose-us-shpe2.png';
 import { RiCheckboxCircleFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 

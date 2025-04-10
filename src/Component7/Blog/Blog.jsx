@@ -1,13 +1,13 @@
 import { FaRegCalendarCheck } from 'react-icons/fa6';
-import blogThumb from '/images/blog1.webp';
-import blogThumb2 from '/images/blog2.webp';
-import blogThumb3 from '/images/blog3.webp';
+import blogThumb from '/images/blog1.jpg';
+import blogThumb2 from '/images/blog2.jpg';
+import blogThumb3 from '/images/blog3.jpg';
 import titleShape from '/images/sub-title-shape.png';
 import BlogCard from './BlogCard';
 import blogPostIcon from '/images/user1.png';
 import blogPostIcon2 from '/images/user2.png';
 import blogPostIcon3 from '/images/user3.png';
-import bgShape from '/images/blog-bg.webp';
+import bgShape from '/images/blog-bg.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';

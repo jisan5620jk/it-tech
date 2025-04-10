@@ -1,16 +1,16 @@
-import aboutThumb from '/images/about-thumb-1.webp';
+import aboutThumb from '/images/about-thumb-1.png';
 import titleShape from '/images/sub-title-shape.png';
 import itemIcon from '/images/tam1.png';
 import itemIcon2 from '/images/terget-1.png';
-import itemIcon3 from '/images/about-icon3.webp';
-import itemIcon4 from '/images/about-icon4.webp';
+import itemIcon3 from '/images/about-icon3.png';
+import itemIcon4 from '/images/about-icon4.png';
 import arrowShape from '/images/arrow-shape.png';
-import shape from '/images/shape.webp';
+import shape from '/images/shape.png';
 import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.webp)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative z-20'>
+    <section className='mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] rounded-md lg:rounded-[20px] bg-[url(/images/about-bg.jpg)] py-16 md:py-20 lg:py-[120px] bg-white bg-no-repeat bg-center bg-cover relative z-20'>
       <div className='Container'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0 items-center'>
           <div className='relative z-10 xl:-ml-[62px]'>

@@ -1,7 +1,7 @@
 import ProcessCard from './ProcessCard';
-import processIcon from '/images/process1.webp';
-import processIcon2 from '/images/process2.webp';
-import processIcon3 from '/images/process3.webp';
+import processIcon from '/images/process1.png';
+import processIcon2 from '/images/process2.png';
+import processIcon3 from '/images/process3.png';
 
 const processCardData = [
   {

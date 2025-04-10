@@ -3,11 +3,11 @@ import 'swiper/css';
 import titleShape from '/images/sub-title-shape.png';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import TestimonialCard from './TestimonialCard';
-import testiShape from '/images/g-logo.webp';
-import testiProfile from '/images/t-author1.webp';
-import testiProfile2 from '/images/t-author2.webp';
-import testiProfile3 from '/images/t-author3.webp';
-import testiProfile4 from '/images/t-author2.webp';
+import testiShape from '/images/g-logo.png';
+import testiProfile from '/images/t-author1.png';
+import testiProfile2 from '/images/t-author2.png';
+import testiProfile3 from '/images/t-author3.png';
+import testiProfile4 from '/images/t-author2.png';
 import TestiNavigation from './TestiNavigation';
 
 const testiData = [
@@ -89,7 +89,7 @@ const Testimonial = () => {
     },
   };
   return (
-    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.webp')] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl">
+    <section className="mx-2 sm:mx-3 md:mx-5 lg:mx-2 xl:mx-5 2xl:mx-8 3xl:mx-[50px] bg-[url('/images/teasti-bg-2.jpg')] bg-cover bg-center relative z-10 overflow-hidden px-4 sm:px-8 lg:px-2 xl:px-16 2xl:px-14 3xl:px-[100px] py-16 md:py-20 lg:py-[120px] rounded-b-lg lg:rounded-b-2xl">
       <div className='Container md:-mb-[130px]'>
         <h5 className='flex items-center gap-2 font-Rajdhani text-lg sm:text-xl font-semibold text-PrimaryColor-0 uppercase'>
           <img
