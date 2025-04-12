@@ -1,5 +1,5 @@
 import serviceIcon from '/images/Software-Tecnology-3.png';
-import serviceIcon2 from '/images/team-2.png';
+import serviceIcon2 from '/images/tam1.png';
 import serviceIcon3 from '/images/support.png';
 import serviceIcon4 from '/images/icon2-2.png';
 import serviceIcon5 from '/images/color.png';
