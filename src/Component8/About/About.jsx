@@ -4,7 +4,7 @@ import aboutThumb3 from '/images/about-slider-image3.jpg';
 import aboutIcon from '/images/about_icon.png';
 import { Link } from 'react-router-dom';
 import titleShape from '/images/sub-title-shape.png';
-import shape from '/images/about-shape.png';
+import shape from '/images/about_shape.png';
 import { GoArrowRight } from 'react-icons/go';
 import OnScrollCounter from '../../Shared/Counter/OnScrollCounter';
 import { Swiper, SwiperSlide } from 'swiper/react';
