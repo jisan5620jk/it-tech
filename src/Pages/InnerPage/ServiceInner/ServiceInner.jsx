@@ -5,6 +5,8 @@ import serviceIcon3 from "/images/service3-icon3.png";
 import serviceIcon4 from "/images/service3-icon4.png";
 import serviceIcon5 from "/images/service3-icon5.png";
 import serviceIcon6 from "/images/service3-icon6.png";
+import serviceIcon7 from '/images/service-icon7.png';
+import serviceIcon8 from '/images/service-icon8.png';
 import ServiceCard from "./ServiceCard";
 import BreadCrumb2 from "../../../Shared/BreadCrumb/BreadCrumb2";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
@@ -74,7 +76,7 @@ const serviceData = [
   },
   {
     id: 7,
-    serviceIcon: serviceIcon6,
+    serviceIcon: serviceIcon7,
     serviceTitle: "Cyber Security",
     serviceDesc:
     "Monotonectal grants to business visualize provid solution services business provid done",
@@ -84,7 +86,7 @@ const serviceData = [
   },
   {
     id: 8,
-    serviceIcon: serviceIcon6,
+    serviceIcon: serviceIcon8,
     serviceTitle: "Data Analytic",
     serviceDesc:
     "Monotonectal grants to business visualize provid solution services business provid done",
