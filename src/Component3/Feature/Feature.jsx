@@ -8,7 +8,6 @@ import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
-import './feature.css';
 
 const processData = [
   {
@@ -133,23 +132,25 @@ const Feature = () => {
               featureUrl,
               featureBtnText,
               featureBtnIcon,
-            }) => {
-              return (
-                <div
-                  key={id}
-                  className='feature-box3'
-                >
-                  <FeatureCard
-                    featureIcon={featureIcon}
-                    featureTitle={featureTitle}
-                    featureDesc={featureDesc}
-                    featureUrl={featureUrl}
-                    featureBtnText={featureBtnText}
-                    featureBtnIcon={featureBtnIcon}
-                  />
-                </div>
-              );
-            }
+            }) => (
+              <div
+                key={id}
+                className={`rounded-md border ${
+                  [1, 4, 5].includes(id)
+                    ? 'bg-gradient-to-t to-[#f1f8ff] from-transparent'
+                    : 'bg-gradient-to-t to-[#fcf5ed] from-transparent'
+                }`}
+              >
+                <FeatureCard
+                  featureIcon={featureIcon}
+                  featureTitle={featureTitle}
+                  featureDesc={featureDesc}
+                  featureUrl={featureUrl}
+                  featureBtnText={featureBtnText}
+                  featureBtnIcon={featureBtnIcon}
+                />
+              </div>
+            )
           )}
         </div>
       </div>

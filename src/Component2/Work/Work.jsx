@@ -6,7 +6,6 @@ import workImg from '/images/ai3.png';
 import workImg2 from '/images/ai2.png';
 import workImg3 from '/images/ai1-1.png';
 import workImg4 from '/images/AI-3.png';
-import './work.css';
 import { GoArrowUpRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 

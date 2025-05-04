@@ -1,5 +1,4 @@
 import titleShape from '/images/sub-title-shape.png';
-import './pricing-box.css';
 import OnScrollCounter from './OnScrollCounter';
 import { Link } from 'react-router-dom';
 import { FaRegCircleCheck } from 'react-icons/fa6';
@@ -47,13 +46,16 @@ const Pricing = () => {
               <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-lg sm:text-[19px]'>
                 Monthly
               </div>
-              <div className={`toggle ${isMonthly ? 'active' : ''}`}>
+              <div
+                className={`w-[60px] h-[30px] bg-white border border-PrimaryColor-0 rounded-full relative transition-all duration-500 cursor-pointer ${
+                  isMonthly ? '' : ''
+                }`}
+              >
                 <div
                   id='toggleCircle'
-                  className='toggle-circle'
-                  style={{
-                    transform: isMonthly ? 'translateX(0)' : 'translateX(30px)',
-                  }}
+                  className={`w-[30px] h-[30px] bg-gradient-to-r from-PrimaryColor-0 to-PrimaryColor2-0 rounded-full absolute top-[-1px] left-[-1px] transition-transform ${
+                    isMonthly ? 'translate-x-0' : 'translate-x-[30px]'
+                  }`}
                 ></div>
               </div>
               <div className='font-Rajdhani font-semibold text-HeadingColor-0 text-lg sm:text-[19px]'>

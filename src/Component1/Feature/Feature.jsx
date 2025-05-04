@@ -6,9 +6,8 @@ import featureShape from '/images/feature-animate.png';
 import titleShape from '/images/sub-title-shape.png';
 import FeatureCard from './FeatureCard';
 import { GoArrowRight } from 'react-icons/go';
-import './feature.css';
 
-const processData = [
+const featureData = [
   {
     id: 1,
     featureIcon: featureIcon,
@@ -83,20 +82,31 @@ const Feature = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start gap-7 relative z-10 mt-11'>
-          {processData.map(
-            ({
-              id,
-              featureIcon,
-              featureTitle,
-              featureDesc,
-              featureUrl,
-              featureBtnText,
-              featureBtnIcon,
-            }) => {
+          {featureData.map(
+            (
+              {
+                id,
+                featureIcon,
+                featureTitle,
+                featureDesc,
+                featureUrl,
+                featureBtnText,
+                featureBtnIcon,
+              },
+              index
+            ) => {
               return (
                 <div
                   key={id}
-                  className='feature-box1'
+                  className={`feature-box1 rounded-[10px] ${
+                    index === 0
+                      ? 'bg-[#f1f3ff]'
+                      : index === 1
+                      ? 'bg-white'
+                      : index === 2
+                      ? 'bg-[#e2f6ed]'
+                      : 'bg-[#fbf2ed]'
+                  } ${index % 2 === 1 ? 'mt-[42px]' : ''}`}
                 >
                   <FeatureCard
                     featureIcon={featureIcon}

@@ -139,6 +139,10 @@ export default {
           '50%': { transform: 'rotate3d(0, 1, 0, 180deg)' },
           '100%': { transform: 'rotate3d(0, 1, 0, 360deg)' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         movebtn: 'movebtn 3s linear infinite',
@@ -157,6 +161,7 @@ export default {
         headerSlideDown:
           '500ms ease-in-out 0s normal none 1 running headerSlideDown',
         wobble_vertical: 'wobble_vertical 1s forwards ease-in-out',
+        marquee: 'marquee 30s linear infinite',
       },
       boxShadow: {
         cases: '0px 10px 15px rgba(187, 187, 187, 0.2)',

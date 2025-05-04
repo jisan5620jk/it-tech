@@ -4,14 +4,13 @@ import whyChooseThumb from '/images/AI-6.png';
 import whyChooseShape from '/images/AI-1-1.png';
 import featureShape from '/images/AI-5.png';
 import { Link } from 'react-router-dom';
-import './why-choose.css';
 import Counter from './Counter';
 import Testimonial from '../Testimonial/Testimonial';
 import Marquee from '../Marquee/Marquee';
 
 const WhyChoose = () => {
   return (
-    <section className='bg-[url("/images/long_bg.jpg")] bg-cover bg-center bg-no-repeat pt-16 md:pt-20 lg:pt-28 pb-10 sm:pb-16 md:pb-[90px]'>
+    <section className='why-choose-us bg-[url("/images/long_bg.jpg")] bg-cover bg-center bg-no-repeat pt-16 md:pt-20 lg:pt-28 pb-10 sm:pb-16 md:pb-[90px]'>
       <div className='Container'>
         <div className='grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 items-center relative'>
           <div className='absolute top-16 -right-[184px] animate-wiggle hidden md:block'>
