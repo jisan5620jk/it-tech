@@ -16,13 +16,13 @@ const Marquee = () => {
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-4xl text-white uppercase font-Rajdhani font-semibold mx-5'
+              className='inline-block text-3xl md:text-4xl text-white uppercase font-Rajdhani font-semibold mx-5'
             >
               {text}
             </span>
             <span
               key={`star-${index}`}
-              className='inline-block w-5 md:w-[30px]'
+              className='inline-block w-5 md:w-[30px] pt-2 md:pt-0'
             >
               <img
                 src={star}
@@ -39,13 +39,13 @@ const Marquee = () => {
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-4xl text-white uppercase font-Rajdhani font-semibold mx-5'
+              className='inline-block text-3xl md:text-4xl text-white uppercase font-Rajdhani font-semibold mx-5'
             >
               {text}
             </span>
             <span
               key={`star-${index}`}
-              className='inline-block w-5 md:w-[30px]'
+              className='inline-block w-5 md:w-[30px]  pt-2 md:pt-'
             >
               <img
                 src={star}

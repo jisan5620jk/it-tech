@@ -295,7 +295,7 @@
   /* Skill Progress */
 
   .skill-progress h2.rect-progress-bar-percent {
-    @apply absolute top-[-28px] right-0 font-semibold;
+    @apply absolute top-[-28px] right-0 font-Rajdhani !m-0 font-semibold;
   }
 
   .skill-progress .inner-rect-bar {
