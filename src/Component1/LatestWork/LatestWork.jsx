@@ -90,7 +90,7 @@ const LatestWork = () => {
     },
   };
   return (
-    <section className='bg-HeadingColor-0 py-16 md:py-20 lg:py-28'>
+    <section className='bg-HeadingColor-0 py-16 md:py-20 lg:py-28 project dark'>
       <div className='Container'>
         <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0 items-center relative'>
           <div>
