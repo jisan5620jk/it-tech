@@ -418,11 +418,11 @@
   }
 
   .menu-bar span {
-    @apply block h-[2px] bg-white my-[5px] rounded-[30px] transition-all duration-[500ms] ease-in-out;
+    @apply block h-[2px] bg-white my-[5px] rounded-[30px] transition-all duration-500 ease-in-out;
   }
 
   .header-area.style-two.style-eight.style-eleven .menu-bar span {
-    @apply bg-blue-600;
+    @apply bg-PrimaryColor-0;
   }
 
   .menu-bar:hover span:nth-child(1),
@@ -482,11 +482,11 @@
   }
 
   .offcanvas_contact-info ul li a {
-    @apply text-white font-Rajdhani transition-colors duration-[300ms];
+    @apply text-white font-Rajdhani transition-colors duration-300;
   }
 
   .offcanvas_contact-info ul li i {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .offcanvas_input-title h4 {
@@ -502,7 +502,7 @@
   }
 
   .offcanvas_input button {
-    @apply absolute bottom-0 right-0 h-[60px] w-[60px] bg-blue-600 text-white text-[24px] flex items-center justify-center;
+    @apply absolute bottom-0 right-0 h-[60px] w-[60px] bg-PrimaryColor-0 text-white text-[24px] flex items-center justify-center;
   }
 
   .offcanvas_input input::placeholder {
@@ -528,11 +528,11 @@
   }
 
   .offcanvas_contact-info ul li a {
-    @apply ml-[10px] transition-colors duration-[300ms];
+    @apply ml-[10px] transition-colors duration-300;
   }
 
   .offcanvas_contact-info ul li a:hover {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .offcanvas_logo {
@@ -546,11 +546,11 @@
   }
 
   .offcanvas_close-btn button {
-    @apply absolute right-[30px] top-[30px] h-[40px] w-[40px] bg-blue-600 text-white text-[20px] flex items-center justify-center transition-all duration-[300ms] ease-in-out;
+    @apply absolute right-[30px] top-[30px] h-[40px] w-[40px] bg-PrimaryColor-0 text-white text-[20px] flex items-center justify-center transition-all duration-300 ease-in-out;
   }
 
   .offcanvas_close-btn button:hover svg {
-    @apply rotate-180 transition-transform duration-[900ms];
+    @apply rotate-180 transition-transform duration-1000;
   }
 
   .offcanvas_social {
@@ -562,11 +562,11 @@
   }
 
   .offcanvas_social .social-icon a {
-    @apply h-[45px] w-[45px] flex items-center justify-center text-[16px] text-white bg-opacity-20 rounded-full hover:bg-blue-600 transition-all duration-[300ms] relative;
+    @apply h-[45px] w-[45px] flex items-center justify-center text-[16px] text-white bg-opacity-20 rounded-full hover:bg-PrimaryColor-0 transition-all duration-300 relative;
   }
 
   .offcanvas_social .social-icon a::before {
-    @apply absolute inset-0 bg-blue-600 rounded-full scale-0 transition-transform duration-[500ms] -z-10;
+    @apply absolute inset-0 bg-PrimaryColor-0 rounded-full scale-0 transition-transform duration-500 -z-10;
   }
 
   @media (max-width: 767px) {
@@ -598,7 +598,7 @@
 
   @media (max-width: 991px) {
     .header-area {
-      @apply bg-blue-600;
+      @apply bg-PrimaryColor-0;
     }
   }
 
@@ -617,23 +617,17 @@
   }
 
   nav.main-menu-content > ul > li > a {
-    @apply relative flex gap-[4px] items-center px-[21px] py-[36px] text-[18px] font-[500] text-[#041424] capitalize transition-all duration-[500ms] font-Nunito;
+    @apply relative flex gap-[4px] items-center px-[21px] py-[36px] text-[18px] font-[500] text-[#041424] capitalize transition-all duration-500 font-Nunito before:absolute before:top-1/2 before:left-[22px] before:w-[7px] before:h-[7px] before:rounded-[30px] before:border before:border-PrimaryColor-0 before:scale-0 before:-translate-y-[72%] before:transition-all before:duration-500 hover:before:scale-100 hover:before:left-2;
   }
 
-  nav.main-menu-content > ul > li > a::before {
-    content: '';
-    @apply absolute top-1/2 left-[22px] w-[7px] h-[7px] rounded-[30px] border border-blue-600 scale-0 translate-y-[-72%] transition-all duration-[500ms];
-  }
-
-  nav.main-menu-content > ul > li > a.active::before,
-  nav.main-menu-content > ul > li > a:hover::before {
-    @apply left-[8px] scale-100 translate-y-[-72%];
+  nav.main-menu-content > ul > li > a.active {
+    @apply before:left-2 before:scale-100 before:-translate-y-[72%];
   }
 
   @media (max-width: 1400px) {
-    nav.main-menu-content > ul > li > a.active::before,
-    nav.main-menu-content > ul > li > a:hover::before {
-      @apply left-0 scale-100 translate-y-[-72%];
+    nav.main-menu-content > ul > li > a.active,
+    nav.main-menu-content > ul > li > a:hover {
+      @apply before:left-0 before:scale-100 before:-translate-y-[72%];
     }
   }
 
@@ -642,17 +636,17 @@
       @apply px-[10px] py-[8px] text-[16px] text-white;
     }
 
-    nav.main-menu-content > ul > li > a::before {
-      @apply border-white;
+    nav.main-menu-content > ul > li > a {
+      @apply before:border-white;
     }
   }
 
   nav.main-menu-content > ul > li:hover > a {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   nav.main-menu-content > ul > li > a > span {
-    @apply absolute text-[12px] transition-all duration-[500ms] top-[25px] right-[10px];
+    @apply absolute text-[12px] transition-all duration-500 top-[25px] right-[10px];
   }
 
   nav.main-menu-content > ul > li:hover > a > span {
@@ -714,7 +708,7 @@
 
   .header-main-menu nav ul li .submenu,
   .header-main-menu nav ul li .submenu li .submenu {
-    @apply absolute top-full left-[-5px] w-[260px] z-[99] bg-white text-start border-t-[3px] border-blue-600 rounded-[4px] shadow-lg opacity-0 invisible scale-y-0 origin-top transition-all duration-[500ms] ease-in-out;
+    @apply absolute top-full left-[-5px] w-[260px] z-[99] bg-white text-start border-t-[3px] border-PrimaryColor-0 rounded-[4px] shadow-lg opacity-0 invisible scale-y-0 origin-top transition-all duration-500 ease-in-out;
   }
 
   .header-main-menu nav ul li:hover .submenu,
@@ -733,21 +727,20 @@
 
   .header-main-menu nav ul li .submenu > li a,
   .header-main-menu nav ul li .submenu li:hover .submenu > li a {
-    @apply block w-full px-[24px] py-[14px] text-[14px] font-[500] text-[#041424] uppercase font-Nunito border-b border-blue-600 transition-all duration-[500ms];
+    @apply block w-full px-[24px] py-[14px] text-[14px] font-[500] text-[#041424] uppercase font-Nunito border-b border-PrimaryColor-0 transition-all duration-500 relative z-10;
   }
 
   .header-main-menu nav ul li .submenu > li a > span {
-    @apply absolute top-1/2 right-[24px] text-[12px] transition-all duration-[500ms] transform -translate-y-1/2;
+    @apply absolute top-1/2 right-[24px] text-[12px] transition-all duration-500 transform -translate-y-1/2;
   }
 
   .header-main-menu nav ul li .submenu > li:hover > a > span {
-    @apply transform -translate-y-1/2 rotate-[-180deg];
+    @apply transform -translate-y-1/2 -rotate-180;
   }
 
-  .header-main-menu nav ul li .submenu > li a::after,
-  .header-main-menu nav ul li .submenu li:hover .submenu > li a::after {
-    content: '';
-    @apply absolute bottom-0 right-0 w-full h-0 bg-blue-600 transition-all duration-[700ms] -z-10;
+  .header-main-menu nav ul li .submenu > li a,
+  .header-main-menu nav ul li .submenu li:hover .submenu > li a {
+    @apply after:absolute after:bottom-0 after:right-0 after:w-full after:h-0 after:bg-PrimaryColor-0 after:transition-all after:duration-500 after:-z-10;
   }
 
   .header-main-menu nav ul li .submenu > li:hover > a,
@@ -755,9 +748,9 @@
     @apply text-white;
   }
 
-  .header-main-menu nav ul li .submenu > li:hover > a::after,
-  .header-main-menu nav ul li .submenu li:hover .submenu > li:hover > a::after {
-    @apply top-0 h-full bottom-auto;
+  .header-main-menu nav ul li .submenu > li:hover > a,
+  .header-main-menu nav ul li .submenu li:hover .submenu > li:hover > a {
+    @apply after:top-0 after:h-full after:bottom-auto;
   }
 
   .menu-btn {
@@ -765,7 +758,7 @@
   }
 
   .homemenu-btn {
-    @apply absolute bottom-[20%] left-0 right-0 text-center opacity-0 invisible transition-opacity duration-[400ms];
+    @apply absolute bottom-[20%] left-0 right-0 text-center opacity-0 invisible transition-opacity duration-500;
   }
 
   .homemenu-title {
@@ -773,11 +766,11 @@
   }
 
   .homemenu-title:hover {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .main-menu-mobile .submenu {
-    @apply max-h-0 overflow-hidden transition-all duration-[300ms] ease-in-out;
+    @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out;
   }
 
   .main-menu-mobile ul {
@@ -793,19 +786,19 @@
   }
 
   .main-menu-mobile ul > li > ul > li > a {
-    @apply capitalize transition-all duration-[500ms];
+    @apply capitalize transition-all duration-500;
   }
 
   .main-menu-mobile ul > li > ul > li > a:hover {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn {
-    @apply absolute right-0 top-[18%] w-[30px] h-[30px] bg-blue-600 text-white text-[14px] flex items-center justify-center border border-white border-opacity-10 transform -translate-y-1 transition-all duration-[300ms] ease-in-out z-10;
+    @apply absolute right-0 top-[18%] w-[30px] h-[30px] bg-PrimaryColor-0 text-white text-[14px] flex items-center justify-center border border-white border-opacity-10 transform -translate-y-1 transition-all duration-300 ease-in-out z-10;
   }
 
   .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn svg {
-    @apply transition-all duration-[300ms] ease-in-out;
+    @apply transition-all duration-300 ease-in-out;
   }
 
   .main-menu-mobile
@@ -818,7 +811,7 @@
   }
 
   .main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn:hover {
-    @apply bg-blue-600 border-blue-600 text-white;
+    @apply bg-PrimaryColor-0 border-PrimaryColor-0 text-white;
   }
 
   .main-menu-mobile ul li.has-dropdown > a.expanded {
@@ -830,7 +823,7 @@
     li.has-dropdown
     > a.expanded
     .dropdown-toggle-btn.dropdown-opened {
-    @apply bg-blue-600 border-blue-600 text-white;
+    @apply bg-PrimaryColor-0 border-PrimaryColor-0 text-white;
   }
 
   .main-menu-mobile
@@ -842,8 +835,8 @@
     @apply text-white;
   }
 
-  .main-menu-mobile ul li.has-dropdown:hover > a::after {
-    @apply text-green-500;
+  .main-menu-mobile ul li.has-dropdown:hover > a {
+    @apply after:text-green-500;
   }
 
   .main-menu-mobile ul li:last-child a span {
@@ -863,7 +856,7 @@
   }
 
   .main-menu-mobile ul li > a svg {
-    @apply inline-block w-[11%] text-[21px] leading-[1] transform translate-y-[4px] mr-[13px];
+    @apply inline-block text-[21px] leading-[1] transform;
   }
 
   .main-menu-mobile ul li > a .menu-text {
@@ -902,18 +895,6 @@
     @apply w-[750px] p-[20px];
   }
 
-  .homemenu-thumb {
-    @apply relative overflow-hidden rounded-[5px] text-center shadow-lg;
-  }
-
-  .homemenu-thumb img {
-    @apply w-full;
-  }
-
-  .homemenu-thumb a > h6 {
-    @apply absolute top-[-30%] left-1/2 text-center w-[142px] bg-blue-600 text-white rounded-md text-[16px] uppercase py-[8px] opacity-0 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 shadow-lg;
-  }
-
   @media (max-width: 1399px) {
     .header-logo {
       @apply my-[15px];
@@ -925,21 +906,9 @@
       @apply m-0;
     }
 
-    .submenu.has-homemenu.mega-menu {
-      @apply w-full;
-    }
-
-    .homemenu-thumb a > h6 {
-      @apply w-[120px];
-    }
-
     nav.main-menu-content > ul > li > a > span {
       @apply hidden;
     }
-  }
-
-  .homemenu-thumb a:hover h6 {
-    @apply top-1/2 opacity-100;
   }
 
   .homemenu-content a {
@@ -947,7 +916,7 @@
   }
 
   .homemenu-content a:hover {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .main-menu-mobile * li {
@@ -1016,8 +985,8 @@
     @apply text-white;
   }
 
-  .header-area.style-two nav.main-menu-content > ul > li > a:before {
-    @apply border-white;
+  .header-area.style-two nav.main-menu-content > ul > li > a {
+    @apply before:border-white;
   }
 
   .header-area.style-two.is-sticky {
@@ -1037,7 +1006,7 @@
   }
 
   .menu-sidebar span {
-    @apply block h-[2px] bg-white my-[5px] rounded-[30px] transition-all duration-[500ms] ease-in-out;
+    @apply block h-[2px] bg-white my-[5px] rounded-[30px] transition-all duration-500 ease-in-out;
   }
 
   .menu-sidebar:hover span:nth-child(1),
@@ -1081,11 +1050,11 @@
   }
 
   .service_list li {
-    @apply list-disc text-blue-600 ml-[20px];
+    @apply list-disc text-PrimaryColor-0 ml-[20px];
   }
 
   .service_list li button {
-    @apply text-[18px] text-[#a3b7b7] font-medium font-Rajdhani transition-all duration-[500ms] my-[6px];
+    @apply text-[18px] text-[#a3b7b7] font-medium font-Rajdhani transition-all duration-500 my-[6px];
   }
 
   .service_list li button:hover {
@@ -1101,15 +1070,15 @@
   }
 
   .sidebar_contact-info ul li a {
-    @apply text-white font-Rajdhani transition-colors duration-[300ms] ml-[10px];
+    @apply text-white font-Rajdhani transition-colors duration-300 ml-[10px];
   }
 
   .sidebar_contact-info ul li a:hover {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .sidebar_contact-info ul li svg {
-    @apply text-blue-600;
+    @apply text-PrimaryColor-0;
   }
 
   .sidebar_input-title h4 {
@@ -1125,7 +1094,7 @@
   }
 
   .sidebar_input button {
-    @apply absolute bottom-0 right-0 h-[60px] w-[60px] bg-blue-600 text-white text-[24px] flex items-center justify-center;
+    @apply absolute bottom-0 right-0 h-[60px] w-[60px] bg-PrimaryColor-0 text-white text-[24px] flex items-center justify-center;
   }
 
   .sidebar_input input::placeholder {
@@ -1137,11 +1106,11 @@
   }
 
   .sidebar_close-btn button {
-    @apply absolute right-[30px] top-[30px] h-[40px] w-[40px] bg-blue-600 text-white text-[20px] flex items-center justify-center transition-all duration-[300ms] ease-in-out;
+    @apply absolute right-[30px] top-[30px] h-[40px] w-[40px] bg-PrimaryColor-0 text-white text-[20px] flex items-center justify-center transition-all duration-300 ease-in-out;
   }
 
   .sidebar_close-btn button:hover svg {
-    @apply rotate-180 transition-transform duration-[900ms];
+    @apply rotate-180 transition-transform duration-1000;
   }
 
   .sidebar-social-icon {
@@ -1149,11 +1118,11 @@
   }
 
   .sidebar-social-icon li a {
-    @apply h-[45px] w-[45px] flex items-center justify-center text-[16px] text-white bg-opacity-20 rounded-full hover:bg-blue-600 transition-all duration-[300ms] relative;
+    @apply h-[45px] w-[45px] flex items-center justify-center text-[16px] text-white bg-opacity-20 rounded-full hover:bg-PrimaryColor-0 transition-all duration-300 relative;
   }
 
-  .sidebar-social-icon li a::before {
-    @apply absolute inset-0 bg-blue-600 rounded-full scale-0 transition-transform duration-[500ms] -z-10;
+  .sidebar-social-icon li a {
+    @apply before:absolute before:inset-0 before:bg-PrimaryColor-0 before:rounded-full before:scale-0 before:transition-transform before:duration-500 before:-z-10;
   }
 
   @media (max-width: 767px) {
@@ -1162,7 +1131,7 @@
     }
   }
 
-  .sidebar-social-icon li a:hover::before {
-    @apply scale-100;
+  .sidebar-social-icon li a:hover {
+    @apply before:scale-100;
   }
 }
