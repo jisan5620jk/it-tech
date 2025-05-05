@@ -6,7 +6,6 @@ import { FaCheck, FaMinus } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { GoArrowRight } from 'react-icons/go';
 import ProgressBar from 'react-animated-progress-bar';
-import './service.css';
 
 const serviceData = [
   {
@@ -242,6 +241,7 @@ const Service = () => {
                   height='7px'
                   fontColor='#ffffff'
                   fontSize='20px'
+                  fontFamily='Rajdhani'
                   leading='10px'
                   margin='0px'
                   rectBorderRadius='10px'
@@ -270,6 +270,7 @@ const Service = () => {
                   height='7px'
                   fontColor='#ffffff'
                   fontSize='20px'
+                  fontFamily='Rajdhani'
                   leading='10px'
                   margin='0px'
                   rectBorderRadius='10px'

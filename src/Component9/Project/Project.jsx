@@ -6,7 +6,6 @@ import ProjectCard from './ProjectCard';
 import projectImg3 from '/images/work-image.jpg';
 import projectImg2 from '/images/work-image2.jpg';
 import projectImg from '/images/work-image3.jpg';
-import './project.css';
 import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';
 
@@ -75,7 +74,7 @@ const Project = () => {
     },
   };
   return (
-    <section className='project-dark bg-BorderColor5-0 py-16 md:py-20 lg:py-28'>
+    <section className='project dark bg-BorderColor5-0 py-16 md:py-20 lg:py-28'>
       <div className='Container'>
         <div className='flex flex-col md:flex-row md:items-center justify-between'>
           <div>

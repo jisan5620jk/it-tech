@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-import './back-to-top.css'; // Ensure to import the styles
 import { BsArrowUp } from 'react-icons/bs';
 import { useLocation } from 'react-router-dom';
 
@@ -28,7 +27,7 @@ const BackToTop = () => {
         setIsActive(scrollTop > 50);
       };
 
-      handleScroll(); // Initial call to set the progress
+      handleScroll(); // Initial call to set progress
       window.addEventListener('scroll', handleScroll);
 
       return () => {
@@ -48,23 +47,24 @@ const BackToTop = () => {
 
   return (
     <div
-      className={`progress-wrap cursor-pointer ${
-        isActive ? 'active-progress' : ''
+      className={`fixed z-50 bottom-12 right-12 h-12 w-12 cursor-pointer rounded-full [box-shadow:inset_0_0_0_2px_#0025702d] transition-all duration-200 ${
+        isActive
+          ? 'opacity-100 visible translate-y-0'
+          : 'opacity-0 invisible translate-y-8'
       }`}
       id='scrollUp'
       onClick={handleClick}
     >
-      <span>
-        <BsArrowUp className='!fill-PrimaryColor-0' />
+      <span className='absolute text-center text-2xl text-blue-500 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-all duration-200'>
+        <BsArrowUp className='fill-blue-500' />
       </span>
       <svg
-        className='progress-circle svg-content'
-        width='100%'
-        height='100%'
+        className='absolute inset-0 w-full h-full'
         viewBox='-1 -1 102 102'
       >
         <path
           ref={progressRef}
+          className='fill-none stroke-blue-500 stroke-[4] transition-all duration-200'
           d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
         />
       </svg>

@@ -1,7 +1,6 @@
 import ProgressBar from 'react-animated-progress-bar';
 import titleShape from '/images/sub-title-shape.png';
 import whyChooseThumb from '/images/skills.png';
-import './skill.css';
 
 const Skill = () => {
   return (
@@ -47,13 +46,14 @@ const Skill = () => {
                     height='10px'
                     fontColor='#041424'
                     fontSize='20px'
+                    fontFamily='Rajdhani'
                     leading='10px'
                     margin='0px'
                     rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='80'
                     defColor={{
-                      excellent: '#eff3ff',
+                      excellent: '#041424',
                       good: '#eff3ff',
                       fair: 'green',
                       poor: 'red',
@@ -75,13 +75,14 @@ const Skill = () => {
                     height='10px'
                     fontColor='#041424'
                     fontSize='20px'
+                    fontFamily='Rajdhani'
                     leading='10px'
                     margin='0px'
                     rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='90'
                     defColor={{
-                      excellent: '#eff3ff',
+                      excellent: '#041424',
                       good: '#eff3ff',
                       fair: 'green',
                       poor: 'red',
@@ -103,13 +104,14 @@ const Skill = () => {
                     height='10px'
                     fontColor='#041424'
                     fontSize='20px'
+                    fontFamily='Rajdhani'
                     leading='10px'
                     margin='0px'
                     rectBorderRadius='10px'
                     fontWeight='600'
                     percentage='70'
                     defColor={{
-                      excellent: '#eff3ff',
+                      excellent: '#041424',
                       good: '#eff3ff',
                       fair: 'green',
                       poor: 'red',

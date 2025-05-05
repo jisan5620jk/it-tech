@@ -6,7 +6,6 @@ import ProjectCard from './ProjectCard';
 import projectImg3 from '/images/work-image.jpg';
 import projectImg2 from '/images/work-image2.jpg';
 import projectImg from '/images/work-image3.jpg';
-import './project.css';
 import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';
 

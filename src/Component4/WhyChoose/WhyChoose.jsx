@@ -6,7 +6,6 @@ import itemIcon2 from '/images/icon2.png';
 import itemIcon3 from '/images/icon3.png';
 import { Link } from 'react-router-dom';
 import shape from '/images/shape.png';
-import './why-choose.css';
 
 const WhyChoose = () => {
   return (

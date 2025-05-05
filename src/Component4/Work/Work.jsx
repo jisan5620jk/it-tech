@@ -5,7 +5,6 @@ import workImg3 from '/images/port-3-1.png';
 import workImg4 from '/images/port-4.png';
 import workImg5 from '/images/port-5.png';
 import workImg6 from '/images/port-6.png';
-import './work.css';
 import titleShape from '/images/sub-title-shape.png';
 import { Link } from 'react-router-dom';
 

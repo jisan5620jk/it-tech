@@ -7,7 +7,6 @@ import titleShape from '/images/sub-title-shape.png';
 import ServiceCard from './ServiceCard';
 import { GoArrowRight } from 'react-icons/go';
 import { Link } from 'react-router-dom';
-import './service.css';
 
 const serviceData = [
   {

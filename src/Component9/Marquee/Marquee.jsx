@@ -1,29 +1,35 @@
-import './marquee2.css';
-
 const Marquee = () => {
+  const items = [
+    'New Technology',
+    'High Security',
+    'Best Safety',
+    'New Technology',
+    'High Security',
+    'Best Safety',
+    'New Technology',
+    'High Security',
+  ];
+
   return (
     <div>
-      <div className='marquee-text-section2'>
-        <div className='marquee-animation2'>
-          <span className='marquee-text-item2'>New Technology</span>
-          <span className='marquee-text-item2 stroke'>High Security</span>
-          <span className='marquee-text-item2'>Best Safty</span>
-          <span className='marquee-text-item2 stroke'>New Technology</span>
-          <span className='marquee-text-item2'>High Security</span>
-          <span className='marquee-text-item2 stroke'>Best Safty</span>
-          <span className='marquee-text-item2'>New Technology</span>
-          <span className='marquee-text-item2 stroke'>High Security</span>
-        </div>
-        <div className='marquee-animation2'>
-          <span className='marquee-text-item2'>New Technology</span>
-          <span className='marquee-text-item2 stroke'>High Security</span>
-          <span className='marquee-text-item2'>Best Safty</span>
-          <span className='marquee-text-item2 stroke'>New Technology</span>
-          <span className='marquee-text-item2'>High Security</span>
-          <span className='marquee-text-item2 stroke'>Best Safty</span>
-          <span className='marquee-text-item2'>New Technology</span>
-          <span className='marquee-text-item2 stroke'>High Security</span>
-        </div>
+      <div className='w-full overflow-hidden whitespace-nowrap bg-transparent'>
+        {[1, 2].map((_, i) => (
+          <div
+            key={i}
+            className='inline-block will-change-transform overflow-hidden animate-marquee'
+          >
+            {items.map((text, index) => (
+              <span
+                key={index}
+                className={`inline-block uppercase font-Rajdhani font-bold leading-[74px] text-[100px] text-white mx-[25px] ${
+                  index % 2 !== 0 ? 'stroke' : ''
+                }`}
+              >
+                {text}
+              </span>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

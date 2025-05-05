@@ -14,7 +14,7 @@ const Marquee = () => {
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-6xl text-[#041424] uppercase font-Rajdhani font-bold mx-10'
+              className='inline-block text-6xl text-HeadingColor-0 uppercase font-Rajdhani font-bold mx-10'
             >
               {text}
             </span>
@@ -37,7 +37,7 @@ const Marquee = () => {
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-6xl text-[#041424] uppercase font-Rajdhani font-bold mx-10'
+              className='inline-block text-6xl text-HeadingColor-0 uppercase font-Rajdhani font-bold mx-10'
             >
               {text}
             </span>

@@ -9,8 +9,6 @@ import shape2 from '/images/process-shape5.png';
 import shape3 from '/images/process-shape4.png';
 import Shape from '/images/animation-shap2e.png';
 import { useEffect } from 'react';
-import './process.css';
-
 const Process = () => {
   useEffect(() => {
     const handleMouseEnter = (event) => {
@@ -70,7 +68,7 @@ const Process = () => {
                       alt='Border Shape'
                       className='absolute -bottom-16 left-[50px] hidden md:block lg:hidden xl:block brightness-0 invert-[1]'
                     />
-                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10'>
+                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rounded-full before:-z-10 before:scale-0 before:transition-all before:duration-500 group-hover:scale-100'>
                       <img
                         src={processIcon}
                         draggable={false}
@@ -91,7 +89,7 @@ const Process = () => {
                 </div>
                 <div className='process-box active group inline-block'>
                   <div className='flex gap-4 sm:gap-7 items-center relative md:left-[192px] lg:left-20 xl:left-[192px]'>
-                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10 transition-all duration-500'>
+                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rounded-full before:-z-10 before:scale-0 before:transition-all before:duration-500 group-hover:scale-100'>
                       <img
                         src={processIcon2}
                         draggable={false}
@@ -118,7 +116,7 @@ const Process = () => {
                       alt='Border Shape'
                       className='absolute -top-16 left-[50px] [transform:rotateX(180deg)] hidden md:block lg:hidden xl:block brightness-0 invert-[1]'
                     />
-                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10'>
+                    <div className='process-icon size-14 sm:size-[100px] rounded-full bg-white bg-opacity-20 flex items-center justify-center relative z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-gradient-to-t before:to-PrimaryColor-0 before:from-PrimaryColor2-0 before:rounded-full before:-z-10 before:scale-0 before:transition-all before:duration-500 group-hover:scale-100'>
                       <img
                         src={processIcon3}
                         draggable={false}

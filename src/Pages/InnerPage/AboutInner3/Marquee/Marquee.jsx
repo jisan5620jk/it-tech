@@ -1,94 +1,59 @@
 import star from '/images/star.png';
-import './marquee4.css';
 
 const Marquee = () => {
+  const marqueeItems = [
+    'Artificial Intelligence',
+    'Data Science',
+    'Industrial Robotics',
+  ];
+
   return (
-    <div>
-      <div className='marquee-text-section4'>
-        <div className='marquee-animation4'>
-          <span className='marquee-text-item4'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>DATA SCIENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>Industrial Robotics</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>DATA SCIENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-        </div>
-        <div className='marquee-animation4'>
-          <span className='marquee-text-item4'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>DATA SCIENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>Industrial Robotics</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>ARTIFICIAL INTELLIGENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-          <span className='marquee-text-item4'>DATA SCIENCE</span>
-          <span className='marquee-text-item4 animate-rotational'>
-            <img
-              src={star}
-              draggable={false}
-              alt='Star'
-            />
-          </span>
-        </div>
+    <div className='w-full overflow-hidden whitespace-nowrap bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 pt-[33px] pb-[21px]'>
+      <div className='inline-flex items-center will-change-transform overflow-hidden animate-marquee'>
+        {marqueeItems.concat(marqueeItems).map((text, index) => (
+          <>
+            <span
+              key={`text-${index}`}
+              className='inline-block text-[40px] text-white uppercase font-Rajdhani font-semibold mx-8'
+            >
+              {text}
+            </span>
+            <span
+              key={`star-${index}`}
+              className='inline-block w-5 md:w-[35px] pb-1'
+            >
+              <img
+                src={star}
+                draggable={false}
+                alt='Star'
+                className='w-full animate-rotational brightness-0 invert opacity-50'
+              />
+            </span>
+          </>
+        ))}
+      </div>
+      <div className='inline-flex items-center will-change-transform overflow-hidden animate-marquee'>
+        {marqueeItems.concat(marqueeItems).map((text, index) => (
+          <>
+            <span
+              key={`text-${index}`}
+              className='inline-block text-[40px] text-white uppercase font-Rajdhani font-semibold mx-8'
+            >
+              {text}
+            </span>
+            <span
+              key={`star-${index}`}
+              className='inline-block w-5 md:w-[35px] pb-1'
+            >
+              <img
+                src={star}
+                draggable={false}
+                alt='Star'
+                className='w-full animate-rotational brightness-0 invert opacity-50'
+              />
+            </span>
+          </>
+        ))}
       </div>
     </div>
   );

@@ -11,7 +11,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import AboutNavigation from './AboutNavigation';
-import './about.css';
 import { FaCheck } from 'react-icons/fa6';
 import { useState } from 'react';
 
@@ -152,8 +151,8 @@ const About = () => {
               {tabs.map((tab, index) => (
                 <li
                   key={index}
-                  className={`mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 cursor-pointer relative z-10 ${
-                    activeIndex === index ? 'active' : ''
+                  className={`mission-vision-tab-btn font-Rajdhani font-semibold text-[22px] text-HeadingColor-0 cursor-pointer relative z-10 before:absolute before:-bottom-[13px] before:right-0 before:h-full before:w-0 before:border-b-2 before:border-PrimaryColor-0 before:transition-all before:duration-500 before:ease-in-out ${
+                    activeIndex === index ? 'before:left-0 before:w-full' : ''
                   }`}
                   onClick={() => setActiveIndex(index)}
                 >
@@ -164,7 +163,7 @@ const About = () => {
             {tabs.map((tab, index) => (
               <div
                 key={index}
-                className={`mission-vision-tab-content ${
+                className={`mission-vision-tab-content hidden transition-all duration-500 ease-in-out ${
                   activeIndex === index ? 'active' : ''
                 }`}
               >
