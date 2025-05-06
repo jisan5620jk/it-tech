@@ -8,13 +8,13 @@ const Marquee = () => {
   ];
 
   return (
-    <div className='w-full overflow-hidden whitespace-nowrap bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 pt-[33px] pb-[21px]'>
+    <div className='w-full overflow-hidden whitespace-nowrap bg-gradient-to-l from-PrimaryColor2-0 to-PrimaryColor3-0 pt-7 pb-7 md:pt-[33px] md:pb-[29px]'>
       <div className='inline-flex items-center will-change-transform overflow-hidden animate-marquee'>
         {marqueeItems.concat(marqueeItems).map((text, index) => (
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-[40px] text-white uppercase font-Rajdhani font-semibold mx-8'
+              className='inline-block text-3xl md:text-[40px] text-white uppercase font-Rajdhani font-semibold mx-4 md:mx-8'
             >
               {text}
             </span>
@@ -37,7 +37,7 @@ const Marquee = () => {
           <>
             <span
               key={`text-${index}`}
-              className='inline-block text-[40px] text-white uppercase font-Rajdhani font-semibold mx-8'
+              className='inline-block text-3xl md:text-[40px] text-white uppercase font-Rajdhani font-semibold mx-4 md:mx-8'
             >
               {text}
             </span>
