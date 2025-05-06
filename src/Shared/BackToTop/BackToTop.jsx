@@ -1,74 +1,68 @@
-import { useEffect, useState, useRef } from 'react';
-import { BsArrowUp } from 'react-icons/bs';
-import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 const BackToTop = () => {
-  const [isActive, setIsActive] = useState(false);
-  const progressRef = useRef(null);
-  const { pathname } = useLocation();
+  const [scrollPercent, setScrollPercent] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const progressPath = progressRef.current;
-    if (progressPath) {
-      const totalLength = progressPath.getTotalLength();
-      progressPath.style.transition = 'none';
-      progressPath.style.strokeDasharray = `${totalLength} ${totalLength}`;
-      progressPath.style.strokeDashoffset = totalLength;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const percent = Math.round((scrollTop / docHeight) * 100);
 
-      const handleScroll = () => {
-        const scrollTop = window.scrollY;
-        const documentHeight = document.documentElement.scrollHeight;
-        const windowHeight = window.innerHeight;
-        const maxScroll = documentHeight - windowHeight;
+      setScrollPercent(percent);
+      setIsVisible(scrollTop > 200);
+    };
 
-        const dashOffset = totalLength - (scrollTop * totalLength) / maxScroll;
-        progressPath.style.strokeDashoffset = dashOffset;
-
-        setIsActive(scrollTop > 50);
-      };
-
-      handleScroll(); // Initial call to set progress
-      window.addEventListener('scroll', handleScroll);
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  // Custom smooth scroll to top in 1 second
+  const scrollToTop = () => {
+    const start = performance.now();
+    const duration = 1000; // 1 second
+    const initialY = window.scrollY;
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const animateScroll = (timestamp) => {
+    const elapsed = timestamp - start;
+    const progress = Math.min(elapsed / duration, 1); // Clamps between 0-1
+    const ease = 1 - Math.pow(1 - progress, 3); // Ease-out cubic effect
+
+    window.scrollTo(0, initialY * (1 - ease));
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+
+    requestAnimationFrame(animateScroll);
   };
 
   return (
-    <div
-      className={`fixed z-50 bottom-12 right-12 h-12 w-12 cursor-pointer rounded-full [box-shadow:inset_0_0_0_2px_#0025702d] transition-all duration-200 ${
-        isActive
-          ? 'opacity-100 visible translate-y-0'
-          : 'opacity-0 invisible translate-y-8'
-      }`}
-      id='scrollUp'
-      onClick={handleClick}
+    <button
+      onClick={scrollToTop}
+      className={`fixed z-50 right-8 bottom-8 size-14 rounded-full flex items-center justify-center 
+        font-bold text-white cursor-pointer transition-all duration-500 ease-in-out 
+        transform shadow-lg
+        ${
+          isVisible
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 translate-y-8 pointer-events-none'
+        }`}
+      style={{
+        background: `conic-gradient(#1b89fe ${scrollPercent}%, #1e1e1e39 ${scrollPercent}%)`,
+      }}
+      aria-label='Back to Top'
     >
-      <span className='absolute text-center text-2xl text-blue-500 left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-all duration-200'>
-        <BsArrowUp className='fill-blue-500' />
-      </span>
-      <svg
-        className='absolute inset-0 w-full h-full'
-        viewBox='-1 -1 102 102'
+      <div
+        className='absolute size-12 rounded-full font-Rajdhani text-lg font-medium 
+        flex items-center justify-center bg-HeadingColor-0'
       >
-        <path
-          ref={progressRef}
-          className='fill-none stroke-blue-500 stroke-[4] transition-all duration-200'
-          d='M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98'
-        />
-      </svg>
-    </div>
+        {scrollPercent}%
+      </div>
+    </button>
   );
 };
 

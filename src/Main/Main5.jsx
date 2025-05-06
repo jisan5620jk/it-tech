@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar5 from '../Shared/Navbar/Navbar5';
 import BackToTop from '../Shared/BackToTop/BackToTop';
 import Footer5 from '../Shared/Footer/Footer5';
@@ -12,6 +12,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import HelmetChanger from '../Shared/Helmet/Helmet';
 
 const Main5 = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Smooth scroll to the top on route change
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();

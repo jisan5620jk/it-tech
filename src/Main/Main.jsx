@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../Shared/Footer/Footer';
 import Navbar from '../Shared/Navbar/Navbar';
 import AOS from 'aos';
@@ -12,6 +12,14 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Main = () => {
+ const location = useLocation();
+
+  useEffect(() => {
+    // Smooth scroll to the top on route change
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
+
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
