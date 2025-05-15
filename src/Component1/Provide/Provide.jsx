@@ -68,7 +68,7 @@ const Provide = () => {
           </h1>
         </div>
       </div>
-      <div className='px-5'>
+      <div className='xl:px-5'>
         <div className='mt-[46px] relative z-10 overflow-hidden bg-[url(/images/service-bg21.png)] bg-cover bg-center max-w-[1490px] w-full mx-auto xl:rounded-lg py-8 lg:py-[100px]'>
           <div className='Container'>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7'>

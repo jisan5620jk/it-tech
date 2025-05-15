@@ -67,7 +67,7 @@ const WhyChoose = () => {
                     key={id}
                     className={`inline-block transition-all duration-500 group cursor-pointer ${
                       index === activeIndex
-                        ? 'translate-x-[50px]'
+                        ? 'sm:translate-x-[50px]'
                         : ''
                     }`}
                     onMouseEnter={() => setActiveIndex(index)}
